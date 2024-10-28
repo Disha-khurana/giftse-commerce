@@ -122,7 +122,7 @@ function Navbar() {
       },
   ];
 
-  const [openDropdown, setOpenDropdown] = useState('DIWALI');
+  const [openDropdown, setOpenDropdown] = useState(null);
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -158,7 +158,7 @@ function Navbar() {
   };
 
   return (
-    <div className='bg-white shadow-md'>
+    <div className='bg-white shadow-2xl relative z-30'>
       <div className='flex items-center px-12'>
         <ul className='space-x-5 flex py-3 text-sm font-semibold '>
           {menuItems.map((item, index) => (
