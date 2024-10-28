@@ -1,189 +1,273 @@
-'use client'
-import React, { useState, useEffect } from 'react';
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useState, useRef, useEffect } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import Link from 'next/link';
 
-const DropdownMenu = ({ isOpen, options }) => (
-  <ul
-    className={`absolute z-50 bg-white border shadow-lg transition-opacity duration-300 text-sm ${
-      isOpen ? "opacity-100 visible left-0 w-[92.5vw] p-2 top-full" : "opacity-0 invisible"
-    }`}
-  >
-    {options.map((item, index, array) => (
-      <li key={item.href}>
-        <Link
-          href={item.href}
-          className={`block px-4 py-3 hover:bg-gray-100 transition-all duration-200 ${
-            index !== array.length - 1 ? "border-b border-gray-200" : ""
-          }`}
-        >
-          {item.label}
-        </Link>
-      </li>
-    ))}
-  </ul>
-);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdown, setDropdown] = useState(null);
+  const menuRef = useRef(null);
+  const [menuWidth, setMenuWidth] = useState(0);
 
-function Navbar() {
-  const menuItems = [
-    {
-      name: 'DIWALI',
-      options: [
-        { href: "/diwali/gifts", label: "Gifts" },
-        { href: "/diwali/decorations", label: "Decorations" },
-        { href: "/diwali/sweets", label: "Sweets" },
-      ],
-    },
-    {
-      name: 'BIRTHDAY',
-      options: [
-        { href: "/birthday/cakes", label: "Cakes" },
-        { href: "/birthday/cards", label: "Cards" },
-        { href: "/birthday/gifts", label: "Gifts" },
-        
-      ],
-    },
-    {
-      name: 'ANNIVERSARY',
-      options: [
-        { href: "/anniversary/flowers", label: "Flowers" },
-        { href: "/anniversary/gifts", label: "Gifts" },
-      ],
-    },
-    {
-        name: 'CAKES',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'FLOWERS',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'PERSONALIZED',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'PLANTS',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'CHOCOLATES',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'COMBOS',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'LIFESTYLE',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'OCCASIONS',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'GLOBAL',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-      {
-        name: 'ON TREND',
-        options: [
-          { href: "/anniversary/flowers", label: "Flowers" },
-          { href: "/anniversary/gifts", label: "Gifts" },
-        ],
-      },
-  ];
-
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const [isDesktop, setIsDesktop] = useState(false);
-
+  // Calculate width of menu items container
   useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
-
-    handleResize();
-
-    const debounceResize = () => {
-      clearTimeout(window.resizeTimeout);
-      window.resizeTimeout = setTimeout(handleResize, 100);
-    };
-
-    window.addEventListener("resize", debounceResize);
-    return () => {
-      window.removeEventListener("resize", debounceResize);
-    };
+    if (menuRef.current) {
+      setMenuWidth(menuRef.current.offsetWidth);
+    }
   }, []);
 
-  const handleMouseEnter = (menuName) => {
-    if (isDesktop) setOpenDropdown(menuName);
+  // Toggle dropdown visibility
+  const handleMouseEnter = (menu) => {
+    setDropdown(menu);
   };
 
   const handleMouseLeave = () => {
-    if (isDesktop) setOpenDropdown(null);
-  };
-
-  const handleDropdownClick = (menuName) => {
-    if (!isDesktop) {
-      setOpenDropdown((prev) => (prev === menuName ? null : menuName));
-    }
+    setDropdown(null);
   };
 
   return (
-    <div className='bg-white shadow-2xl relative z-30'>
-      <div className='flex items-center px-12'>
-        <ul className='space-x-5 flex py-3 text-sm font-semibold '>
-          {menuItems.map((item, index) => (
-            <li
-              key={index}
-              className='relative flex items-center cursor-pointer'
-              onMouseEnter={() => handleMouseEnter(item.name)}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handleDropdownClick(item.name)}
-            >
-              {item.name}
-              <MdKeyboardArrowDown
-                className={`ml-1 transition-transform text-lg duration-300 ${
-                  openDropdown === item.name ? "rotate-180" : ""
-                }`}
+    <nav className="w-full bg-white shadow-2xl relative z-30">
+      <div className="container mx-auto px-14 py-3 hidden lg:flex  justify-between items-center text-sm">
+       
+        <ul
+          ref={menuRef}
+          className="hidden md:flex space-x-6 font-medium relative "
+        >
+          <li
+            onMouseEnter={() => handleMouseEnter("diwali")}
+            onMouseLeave={handleMouseLeave}
+            className="relative flex items-end"
+          >
+            <Link href="/diwali">DIWALI</Link>
+            <MdKeyboardArrowDown
+              className={`transition-transform text-lg duration-300 ${
+                dropdown === "diwali" ? "rotate-180" : ""
+              }`}
+            />
+          </li>
+          <li
+            onMouseEnter={() => handleMouseEnter("birthday")}
+            onMouseLeave={handleMouseLeave}
+            className="relative flex items-end"
+          >
+            <Link href="/birthday">BIRTHDAY</Link>
+            <MdKeyboardArrowDown
+              className={`transition-transform text-lg duration-300 ${
+                dropdown === "birthday" ? "rotate-180" : ""
+              }`}
+            />
+          </li>
+          <li 
+          onMouseEnter={() => handleMouseEnter("anniversary")}
+          onMouseLeave={handleMouseLeave}
+          className="relative flex items-end"
+          >
+            <Link href="/anniversary">ANNIVERSARY</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'anniversary' ? "rotate-180" : ""}`}
               />
-              {openDropdown === item.name && (
-                <DropdownMenu isOpen={openDropdown === item.name} options={item.options} />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/home-living">CAKES</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/beauty">FLOWERS</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/kids">PERSONALIZED</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/home-living">PLANTS</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/beauty">CHOCOLATES</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/kids">COMBOS</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/home-living">LIFESTYLE</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/beauty">OCCASIONS</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/kids">GLOBAL</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+          <li className=" flex items-end">
+            <Link href="/home-living">ON TREND</Link>
+            <MdKeyboardArrowDown
+                className={`transition-transform text-lg duration-300 ${dropdown === 'women' ? "rotate-180" : ""}`}
+              />
+          </li>
+
+       
+          {dropdown && (
+            <div
+              className="absolute top-full mt-2 bg-white shadow-lg rounded-md p-4 grid grid-cols-2 gap-4"
+              style={{ width: menuWidth, left: 0 }}
+            >
+              {dropdown === "diwali" && (
+                <>
+                  <div>
+                    <p className="font-semibold mb-2">Topwear</p>
+                    <Link
+                      href="/men/tshirts"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      T-Shirts
+                    </Link>
+                    <Link
+                      href="/men/shirts"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Shirts
+                    </Link>
+                    <Link
+                      href="/men/sweatshirts"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Sweatshirts
+                    </Link>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-2">Bottomwear</p>
+                    <Link
+                      href="/men/jeans"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Jeans
+                    </Link>
+                    <Link
+                      href="/men/trousers"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Trousers
+                    </Link>
+                    <Link
+                      href="/men/shorts"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Shorts
+                    </Link>
+                  </div>
+                </>
               )}
-            </li>
-          ))}
+              {dropdown === "women" && (
+                <>
+                  <div>
+                    <p className="font-semibold mb-2">Topwear</p>
+                    <Link
+                      href="/women/tops"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Tops
+                    </Link>
+                    <Link
+                      href="/women/kurtis"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Kurtis
+                    </Link>
+                    <Link
+                      href="/women/blouses"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Blouses
+                    </Link>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-2">Bottomwear</p>
+                    <Link
+                      href="/women/skirts"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Skirts
+                    </Link>
+                    <Link
+                      href="/women/jeans"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Jeans
+                    </Link>
+                    <Link
+                      href="/women/shorts"
+                      className="block py-1 text-sm text-gray-600"
+                    >
+                      Shorts
+                    </Link>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
         </ul>
       </div>
-    </div>
+
+     
+      <div className="lg:hidden flex items-center justify-between px-5 md:px-10 py-3 bg-[#7d8035] sticky top-0 z-50">
+        <Image
+          width={100}
+          height={100}
+          src="/Images/logo.webp"
+          alt="logo"
+          className=""
+        />
+        <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
+          ☰
+        </button>
+      </div>
+
+     
+      {isOpen && (
+        <ul className="lg:hidden bg-white shadow-md space-y-4 p-4 font-medium">
+          <li className=" flex items-end">
+            <Link href="/diwali">DIWALI</Link>
+          </li>
+          <li className=" flex items-end">
+            <Link href="/women">Women</Link>
+          </li>
+          <li className=" flex items-end">
+            <Link href="/kids">Kids</Link>
+          </li>
+          <li className=" flex items-end">
+            <Link href="/home-living">Home & Living</Link>
+          </li>
+          <li className=" flex items-end">
+            <Link href="/beauty">Beauty</Link>
+          </li>
+        </ul>
+      )}
+    </nav>
   );
-}
+};
 
 export default Navbar;

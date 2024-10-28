@@ -38,7 +38,7 @@ function Slider() {
               alt={`Slide ${index}`}
               className="object-cover w-full h-auto lg:h-auto "
               width={1000}
-              height={1000}
+              height={5000}
             />
           </SwiperSlide>
         ))}
