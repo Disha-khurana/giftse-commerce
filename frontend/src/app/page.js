@@ -10,9 +10,9 @@ export default function Home() {
    <div className="space-y-10 md:space-y-20 bg-slate-100">
     <Slider/>
     <Categories/>
-    {/* <Filter/> */}
     <Calender/>
     <Offer/>
+    <Filter/>
    </div>
   );
 }
