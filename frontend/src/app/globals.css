@@ -5,3 +5,37 @@
 input::placeholder {
   font-size: 0.85em;
 }
+
+/* Slider.css */
+.swiper-pagination-bullet {
+  background-color: #7d8035 !important; /* Makes pagination dots green */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;  /* Text color */
+  background-color: white; /* Background color */
+  padding: 25px;
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important; /* Control arrow icon size */
+  font-weight: 800;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.custom-shadow {
+  @apply shadow-[0_0_10px_#e87325];
+}
