@@ -15,7 +15,7 @@ input::placeholder {
 .swiper-button-prev {
   color: black !important;  /* Text color */
   background-color: white; /* Background color */
-  padding: 25px;
+  padding: 20px;
   border-radius: 50%;
   width: 10px !important;
   height: 10px !important;
@@ -27,7 +27,7 @@ input::placeholder {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 20px !important; /* Control arrow icon size */
+  font-size: 15px !important; /* Control arrow icon size */
   font-weight: 800;
 }
 

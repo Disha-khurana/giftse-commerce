@@ -76,8 +76,19 @@ function Topbar() {
 
 
   return (
-    <div className='bg-[#7d8035] sticky top-0 z-50 hidden lg:block '>
-        <div className=' px-5 md:ps-12 md:pe-20 py-4 flex justify-between items-center '>
+    <>
+    <div className='sticky top-0 z-50 hidden lg:block '>
+    <div className='bg-[#707428]'>
+      <div className='items-center justify-end py-1 text-[13px] px-12  text-white font-semibold flex '>
+        <p>Franchise Enquiries | </p>
+        <p className='ps-1'> Corporate Gifts | </p>
+        <p className='ps-1'>More</p>
+
+      </div>
+
+    </div>
+    <div className='bg-[#7d8035] '>
+        <div className=' px-5 md:px-12 py-4 flex justify-between items-center '>
             <div className='flex items-center gap-5 w-full '>
               <div className='relative w-[60%] flex items-center gap-5'>
             <Image width={150} height={200} src='/Images/logo.webp' alt='logo' className='text-white'/>
@@ -120,6 +131,8 @@ function Topbar() {
         </div>
      
     </div>
+    </div>
+    </>
   )
 }
 
