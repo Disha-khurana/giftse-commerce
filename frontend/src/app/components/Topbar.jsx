@@ -7,7 +7,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import Image from 'next/image'
 import Link from 'next/link';
 import { IoLocationSharp } from 'react-icons/io5';
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdOutlineKeyboardArrowDown} from "react-icons/md";
 import SetLocation from './SetLocation';
 
 function Topbar() {
@@ -76,17 +76,36 @@ function Topbar() {
 
 
   return (
-    <>
+   
     <div className='sticky top-0 z-50 hidden lg:block '>
-    <div className='bg-[#707428]'>
+    <div className=' bg-[#707428] '>
       <div className='items-center justify-end py-1 text-[13px] px-12  text-white font-semibold flex '>
         <p>Franchise Enquiries | </p>
-        <p className='ps-1'> Corporate Gifts | </p>
-        <p className='ps-1'>More</p>
+        
+    <div className="relative group">
+        <div className="cursor-pointer ps-1 flex items-center">More
+        <MdOutlineKeyboardArrowDown className='text-white'/>
+        </div>
+        
+        <div className="absolute -left-32 hidden w-40 bg-white text-gray-800 rounded shadow-lg group-hover:block py-2">
+        <div className="flex items-center px-4 py-2 hover:bg-gray-100 border-b border-gray-200">
+                <span className="mr-2">🎁</span> Corporate Gifts
+            </div>
+            <div className="flex items-center px-4 py-2 hover:bg-gray-100 text-nowrap">
+                <span className="mr-2 ">👥</span> Become a Partner
+            </div>
+           
+        </div>
+    </div>
+        
 
       </div>
 
-    </div>
+
+</div>
+
+
+    
     <div className='bg-[#7d8035] '>
         <div className=' px-5 md:px-12 py-4 flex justify-between items-center '>
             <div className='flex items-center gap-5 w-full '>
@@ -132,7 +151,7 @@ function Topbar() {
      
     </div>
     </div>
-    </>
+    
   )
 }
 

@@ -1,5 +1,5 @@
-'use client'
-import React, { useState } from 'react';
+
+import React from 'react';
 import { RxCross2 } from "react-icons/rx";
 
 function Giftover({handleChange,items}) {

@@ -81,7 +81,7 @@ const [openOffer, setOpenOffer] = useState(false);
             {items1.map((item, index) => (
               <li
                 key={index}
-                className='px-4 py-2 hover:bg-gray-200 cursor-pointer'
+                className='px-4 py-1 hover:bg-gray-200 cursor-pointer'
                 onClick={() => {
                   setSelectedOccasion(item.name);
                   setOpenOffer(false); 
@@ -119,7 +119,7 @@ const [openOffer, setOpenOffer] = useState(false);
             {items2.map((item, index) => (
               <li
                 key={index}
-                className='px-4 py-2 hover:bg-gray-200 cursor-pointer'
+                className='px-4 py-1 hover:bg-gray-200 cursor-pointer'
                 onClick={() => {
                   setSelectedGift(item.name);
                   setOpenGifts(false); 
