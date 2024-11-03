@@ -31,8 +31,8 @@ function Offer() {
    
     <div className='px-8 w-full py-10 bg-white space-y-9 rounded-lg '>
         <div className='flex items-center justify-between'>
-    <h3 className='mb-4 text-lg md:text-2xl font-semibold'>Thoughtfully Created Gifts</h3>
-    <Link href='/viewall' className='bg-[#7d8035] py-2 text-sm px-3 rounded-md text-white font-semibold'>VIEW ALL</Link>
+    <h3 className='mb-4 text-lg md:text-xl lg:text-2xl font-semibold'>Thoughtfully Created Gifts</h3>
+    <Link href='/viewall' className='bg-[#7d8035] py-2 text-xs lg:text-sm px-3 rounded-md text-white font-semibold'>VIEW ALL</Link>
     </div>
       <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-8 '>
        
@@ -44,7 +44,7 @@ function Offer() {
       {offer.map((item, index) => (
         <div key={index} className='border border-gray-200 flex flex-col items-center justify-center shadow-lg overflow-hidden'>
         <Image width={300} height={300} src={item.image} alt='name' className='h-[250px] lg:h-[300px] w-full transition-transform duration-300 ease-in-out transform hover:scale-105'/>
-        <h2 className='text-center py-2 px-3'>{item.title}</h2>
+        <h2 className='text-center text-sm lg:text-base py-2 px-3'>{item.title}</h2>
         </div>
       ))}
       </div>

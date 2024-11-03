@@ -40,8 +40,8 @@ const [openOffer, setOpenOffer] = useState(false);
 
   return (
   <section className=''>
-      <div className='flex w-full rounded-lg px-5 md:px-12 gap-12 pb-20  '>
-        <div className='bg-slate-50 px-10 py-6 w-[70%] space-y-6'>
+      <div className='lg:flex w-full rounded-lg px-5 md:px-12 gap-12 pb-20  '>
+        <div className='bg-slate-50 px-10 py-6 lg:w-[70%] space-y-6'>
       <h3 className='font-semibold text-xl text-center'>GIFT FINDER</h3>
      
       <div className="relative flex items-center ">
@@ -140,7 +140,7 @@ const [openOffer, setOpenOffer] = useState(false);
       </div>
       
      
-      <div className='w-full h-auto'>
+      <div className='w-full h-auto hidden lg:block'>
         <Image width={900} height={900} alt='filters' className='w-[800px] h-[400px]' src='/Images/offer/gift.webp'/>
       </div>
     </div>

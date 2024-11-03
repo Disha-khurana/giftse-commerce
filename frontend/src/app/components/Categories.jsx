@@ -26,7 +26,7 @@ function Categories() {
                         alt={item.title}
                         className='rounded-lg'
                     />
-                    <Link href={item.title} className='bg-white px-2 md:px-4 font-semibold text-xs md:text-sm text-nowrap py-1 md:py-2 rounded-3xl border border-gray-300 absolute -bottom-3 md:-bottom-6'>
+                    <Link href={item.title} className='bg-white px-2 md:px-4 font-semibold text-xs lg:text-sm text-nowrap py-1 md:py-2 rounded-3xl border border-gray-300 absolute -bottom-3 md:-bottom-6'>
                             {item.title}
                     </Link>
                 </div>
