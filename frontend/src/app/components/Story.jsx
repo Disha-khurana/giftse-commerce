@@ -110,8 +110,28 @@ function Story() {
       </h3>
       <section>
         <Swiper
-          spaceBetween={20}
-          slidesPerView={6}
+          breakpoints={{
+    
+            0: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+          
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+           
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 20,
+            },
+          }}
           modules={[Navigation]}
           navigation
           className="relative w-full container mx-auto"
