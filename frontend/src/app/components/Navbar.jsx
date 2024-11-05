@@ -14,6 +14,63 @@ const Navbar = () => {
     {
       name: "DIWALI",
       link: "/diwali",
+      diwaliSections: [ {
+        heading: "Exclusive Collection",
+        links: [
+          { href: "/men/tshirts", text: "All Diwali Gifts" },
+          { href: "/men/shirts", text: "Premium Gifts" },
+          { href: "/men/sweatshirts", text: "Same Day Delivery Gifts" },
+          { href: "/men/jeans", text: "Spiritual Gifts" },
+          { href: "/men/jeans", text: "Bestsellers" },
+          { href: "/men/shorts", text: "FNP Exclusive" },
+          { href: "/men/trousers", text: "Gift Sets" },
+        ],
+      },
+      {
+        heading: "Spread the Joy With",
+        links: [
+          { href: "/men/tshirts", text: "Hampers" },
+          { href: "/men/shirts", text: "Home Decor" },
+          { href: "/men/sweatshirts", text: "Diyas" },
+          { href: "/men/jeans", text: "Plants" },
+          { href: "/men/jeans", text: "Personalised Gifts" },
+          { href: "/men/shorts", text: "Flowers" },
+          { href: "/men/trousers", text: "Combos" },
+        ],
+      },
+      {
+        heading: "Gourmet Goodies",
+        links: [
+          { href: "/men/tshirts", text: "Sweets" },
+          { href: "/men/shirts", text: "Dry Fruits" },
+          { href: "/men/sweatshirts", text: "Chocolates" },
+          { href: "/men/jeans", text: "Cakes" },
+        ],
+      },
+      {
+        heading: "Send Abroad",
+        links: [
+          { href: "/men/tshirts", text: "USA" },
+          { href: "/men/shirts", text: "Canada" },
+          { href: "/men/sweatshirts", text: "Australia" },
+          { href: "/men/jeans", text: "UK" },
+          { href: "/men/jeans", text: "UAE" },
+          { href: "/men/trousers", text: "Germany" },
+          { href: "/men/shorts", text: "Singapore" },
+          { href: "/men/shorts", text: "Others" },
+        ],
+      },
+      {
+        heading: "SEND GIFTS TO",
+        links: [
+          { href: "/men/tshirts", text: "Delhi" },
+          { href: "/men/shirts", text: "Mumbai" },
+          { href: "/men/sweatshirts", text: "Bengaluru" },
+          { href: "/men/jeans", text: "Kolkata" },
+          { href: "/men/jeans", text: "Hyderabad" },
+        ],
+      },
+      ]
     },
     {
       name: "FESTIVALS",
@@ -65,64 +122,64 @@ const Navbar = () => {
     },
   ];
 
-  const diwaliSections = [
-    {
-      heading: "Exclusive Collection",
-      links: [
-        { href: "/men/tshirts", text: "All Diwali Gifts" },
-        { href: "/men/shirts", text: "Premium Gifts" },
-        { href: "/men/sweatshirts", text: "Same Day Delivery Gifts" },
-        { href: "/men/jeans", text: "Spiritual Gifts" },
-        { href: "/men/jeans", text: "Bestsellers" },
-        { href: "/men/shorts", text: "FNP Exclusive" },
-        { href: "/men/trousers", text: "Gift Sets" },
-      ],
-    },
-    {
-      heading: "Spread the Joy With",
-      links: [
-        { href: "/men/tshirts", text: "Hampers" },
-        { href: "/men/shirts", text: "Home Decor" },
-        { href: "/men/sweatshirts", text: "Diyas" },
-        { href: "/men/jeans", text: "Plants" },
-        { href: "/men/jeans", text: "Personalised Gifts" },
-        { href: "/men/shorts", text: "Flowers" },
-        { href: "/men/trousers", text: "Combos" },
-      ],
-    },
-    {
-      heading: "Gourmet Goodies",
-      links: [
-        { href: "/men/tshirts", text: "Sweets" },
-        { href: "/men/shirts", text: "Dry Fruits" },
-        { href: "/men/sweatshirts", text: "Chocolates" },
-        { href: "/men/jeans", text: "Cakes" },
-      ],
-    },
-    {
-      heading: "Send Abroad",
-      links: [
-        { href: "/men/tshirts", text: "USA" },
-        { href: "/men/shirts", text: "Canada" },
-        { href: "/men/sweatshirts", text: "Australia" },
-        { href: "/men/jeans", text: "UK" },
-        { href: "/men/jeans", text: "UAE" },
-        { href: "/men/trousers", text: "Germany" },
-        { href: "/men/shorts", text: "Singapore" },
-        { href: "/men/shorts", text: "Others" },
-      ],
-    },
-    {
-      heading: "SEND GIFTS TO",
-      links: [
-        { href: "/men/tshirts", text: "Delhi" },
-        { href: "/men/shirts", text: "Mumbai" },
-        { href: "/men/sweatshirts", text: "Bengaluru" },
-        { href: "/men/jeans", text: "Kolkata" },
-        { href: "/men/jeans", text: "Hyderabad" },
-      ],
-    },
-  ];
+  // const diwaliSections = [
+  //   {
+  //     heading: "Exclusive Collection",
+  //     links: [
+  //       { href: "/men/tshirts", text: "All Diwali Gifts" },
+  //       { href: "/men/shirts", text: "Premium Gifts" },
+  //       { href: "/men/sweatshirts", text: "Same Day Delivery Gifts" },
+  //       { href: "/men/jeans", text: "Spiritual Gifts" },
+  //       { href: "/men/jeans", text: "Bestsellers" },
+  //       { href: "/men/shorts", text: "FNP Exclusive" },
+  //       { href: "/men/trousers", text: "Gift Sets" },
+  //     ],
+  //   },
+  //   {
+  //     heading: "Spread the Joy With",
+  //     links: [
+  //       { href: "/men/tshirts", text: "Hampers" },
+  //       { href: "/men/shirts", text: "Home Decor" },
+  //       { href: "/men/sweatshirts", text: "Diyas" },
+  //       { href: "/men/jeans", text: "Plants" },
+  //       { href: "/men/jeans", text: "Personalised Gifts" },
+  //       { href: "/men/shorts", text: "Flowers" },
+  //       { href: "/men/trousers", text: "Combos" },
+  //     ],
+  //   },
+  //   {
+  //     heading: "Gourmet Goodies",
+  //     links: [
+  //       { href: "/men/tshirts", text: "Sweets" },
+  //       { href: "/men/shirts", text: "Dry Fruits" },
+  //       { href: "/men/sweatshirts", text: "Chocolates" },
+  //       { href: "/men/jeans", text: "Cakes" },
+  //     ],
+  //   },
+  //   {
+  //     heading: "Send Abroad",
+  //     links: [
+  //       { href: "/men/tshirts", text: "USA" },
+  //       { href: "/men/shirts", text: "Canada" },
+  //       { href: "/men/sweatshirts", text: "Australia" },
+  //       { href: "/men/jeans", text: "UK" },
+  //       { href: "/men/jeans", text: "UAE" },
+  //       { href: "/men/trousers", text: "Germany" },
+  //       { href: "/men/shorts", text: "Singapore" },
+  //       { href: "/men/shorts", text: "Others" },
+  //     ],
+  //   },
+  //   {
+  //     heading: "SEND GIFTS TO",
+  //     links: [
+  //       { href: "/men/tshirts", text: "Delhi" },
+  //       { href: "/men/shirts", text: "Mumbai" },
+  //       { href: "/men/sweatshirts", text: "Bengaluru" },
+  //       { href: "/men/jeans", text: "Kolkata" },
+  //       { href: "/men/jeans", text: "Hyderabad" },
+  //     ],
+  //   },
+  // ];
 
   const festivalSections = [
     {
@@ -1118,8 +1175,10 @@ const Navbar = () => {
   
   
   
+
   
-  
+  const diwaliItem = items.find(item => item.name === "DIWALI");
+console.log(diwaliItem.diwaliSections,"fdgdfgdfgdfgdf");
 
   // Calculate width of menu items container
   useEffect(() => {
@@ -1137,19 +1196,23 @@ const Navbar = () => {
     setDropdown(null);
   };
 
+ 
+
   return (
     <nav
       className="w-full bg-slate-100 shadow-2xl relative z-30"
       onMouseLeave={handleMouseLeave}
     >
       <div className="container mx-auto px-14 py-3 hidden lg:flex  justify-between items-center text-sm">
+      {items.map((item, index) => (
         <ul
+        key={index}
           ref={menuRef}
           className="hidden md:flex space-x-5 font-medium relative "
         >
-          {items.map((item, index) => (
+         
             <li
-              key={index}
+              
               onMouseEnter={() => handleMouseEnter(item.name.toLowerCase())}
               className="relative flex items-end"
             >
@@ -1160,7 +1223,7 @@ const Navbar = () => {
                 }`}
               />
             </li>
-          ))}
+          
 
           {dropdown && (
             <div
@@ -1168,9 +1231,9 @@ const Navbar = () => {
               className="absolute top-full mt-2 bg-white shadow-lg rounded-md px-6 grid grid-cols-7 gap-5 "
               style={{ width: menuWidth, left: 0 }}
             >
-              {dropdown === "diwali" && (
+              {dropdown === "diwali" && diwaliItem && diwaliItem.diwaliSections && (
                 <>
-                  {diwaliSections.map((section, index) => (
+                  {diwaliItem.diwaliSections.map((section, index) => (
                     <div
                       key={index}
                       className={`pt-6 pb-20 ps-5 ${
@@ -1180,7 +1243,7 @@ const Navbar = () => {
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
                       </p>
-                      {section.links.map((link, idx) => (
+                      {/* {section.links.map((link, idx) => (
                         <Link
                           key={idx}
                           href={link.href}
@@ -1188,7 +1251,7 @@ const Navbar = () => {
                         >
                           {link.text}
                         </Link>
-                      ))}
+                      ))} */}
                     </div>
                   ))}
                   <div>
@@ -1202,7 +1265,7 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-              {dropdown === "festivals" && (
+              {/* {dropdown === "festivals" && (
                 <>
                   {festivalSections.map((section, index) => (
                     <div
@@ -1624,10 +1687,11 @@ const Navbar = () => {
                     />
                   </div>
                 </>
-              )}
+              )} */}
             </div>
           )}
         </ul>
+      ))}
       </div>
 
       <div className="lg:hidden flex items-center justify-between px-5 md:px-10 py-3 bg-[#7d8035] sticky top-0 z-50">

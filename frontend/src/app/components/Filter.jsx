@@ -40,7 +40,7 @@ const [openOffer, setOpenOffer] = useState(false);
 
   return (
   <section className=''>
-      <div className='lg:flex w-full rounded-lg px-5 md:px-12 gap-12 pb-20  '>
+      <div className='lg:flex w-full rounded-lg px-5 md:px-12 gap-12 '>
         <div className='bg-slate-50 px-10 py-6 lg:w-[70%] space-y-6'>
       <h3 className='font-semibold text-xl text-center'>GIFT FINDER</h3>
      

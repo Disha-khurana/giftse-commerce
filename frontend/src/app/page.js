@@ -4,6 +4,7 @@ import Categories from "./components/Categories";
 import Filter from "./components/Filter";
 import Calender from "./components/Calender";
 import Offer from "./components/Offer";
+import Story from "./components/Story";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <Calender/>
     <Offer/>
     <Filter/>
+    <Story/>
    </div>
   );
 }
