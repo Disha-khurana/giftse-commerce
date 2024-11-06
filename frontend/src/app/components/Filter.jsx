@@ -1,5 +1,10 @@
 'use client'
 import Image from 'next/image'
+import { Swiper, SwiperSlide } from "swiper/react";
+import {  Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import React, { useState } from 'react'
 import { IoLocationSharp } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md';
@@ -7,6 +12,11 @@ import { MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md';
 
 function Filter() {
  
+  const images = [
+    "/Images/offer/offer1.webp",
+    "/Images/offer/offer2.webp",
+  ];
+
   const items1 = [
     { name: 'Diwali' },
     { name: 'Birthday' },
@@ -140,9 +150,24 @@ const [openOffer, setOpenOffer] = useState(false);
       </div>
       
      
-      <div className='w-full h-auto hidden lg:block'>
-        <Image width={900} height={900} alt='filters' className='w-[800px] h-[400px]' src='/Images/offer/gift.webp'/>
-      </div>
+      <Swiper
+        modules={[ Autoplay]}
+        autoplay={{ delay: 3000 }}
+        loop={true}
+        className="w-full h-auto hidden lg:block"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index} className="flex justify-center bg-image  ">
+            <Image
+              src={image}
+              alt={`Slide ${index}`}
+              className="w-full h-full"
+              width={1000}
+              height={5000}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
 
   </section>

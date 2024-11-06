@@ -39,54 +39,65 @@ function Story() {
     {
       name: "/Videos/video1.mp4",
       watch: "1.3K",
-      title:"send flowers"
+      title: "send flowers",
+      link: "/videos/send-flowers",
     },
     {
       name: "/Videos/video2.mp4",
       watch: "1.2K",
-      title:"gift jewellery"
+      title: "gift jewellery",
+      link: "/videos/gift-jewellery",
     },
     {
       name: "/Videos/video3.mp4",
       watch: "900",
-      title:"gift plants"
+      title: "gift plants",
+      link: "/videos/gift-plants",
     },
     {
       name: "/Videos/video4.mp4",
       watch: "750",
-      title:"personalised birthday"
+      title: "personalised birthday",
+      link: "/videos/personalised-birthday",
     },
     {
       name: "/Videos/video5.mp4",
       watch: "1.5K",
-      title:"send cakes"
+      title: "send cakes",
+      link: "/videos/send-cakes",
     },
     {
       name: "/Videos/video6.mp4",
       watch: "2.0K",
-      title:"send flowers"
+      title: "send flowers",
+      link: "/videos/send-flowers",
     },
     {
       name: "/Videos/video7.mp4",
       watch: "850",
-      title:"anniversary gifts"
+      title: "anniversary gifts",
+      link: "/videos/anniversary-gifts",
     },
     {
       name: "/Videos/video8.mp4",
       watch: "1.1K",
-      title:"personalised mugs"
+      title: "personalised mugs",
+      link: "/videos/personalised-mugs",
     },
     {
       name: "/Videos/video9.mp4",
       watch: "620",
-      title:"birthday gifts"
+      title: "birthday gifts",
+      link: "/videos/birthday-gifts",
     },
     {
       name: "/Videos/video10.mp4",
       watch: "1.8K",
-      title:"bhai dooj gifts"
+      title: "bhai dooj gifts",
+      link: "/videos/bhai-dooj-gifts",
     },
   ];
+  
 
   const handleVideoClick = (index, videoElement) => {
     setMutedStates((prevMutedStates) => {
@@ -104,29 +115,28 @@ function Story() {
   };
 
   return (
-    <div className="px-5 md:px-12">
-      <h3 className="mb-4 text-lg md:text-xl lg:text-2xl font-semibold">
+    <div className="px-5 md:px-12 ">
+      <h3 className="mb-6 text-lg md:text-xl lg:text-2xl font-semibold">
         Joyfully Gifting Stories
       </h3>
       <section>
         <Swiper
           breakpoints={{
-    
             0: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-          
+
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-            
+
             768: {
               slidesPerView: 4,
               spaceBetween: 20,
             },
-           
+
             1024: {
               slidesPerView: 6,
               spaceBetween: 20,
@@ -199,7 +209,9 @@ function Story() {
                   } // Call the handle click on play icon
                 />
 
-                
+                <Link href={video.link} className="absolute z-50 text-nowrap bg-white bg-opacity-90 py-1 px-2 rounded-md bottom-5 left-1/2 transform -translate-x-1/2 text-xs font-bold shadow-md">
+                  {video.title.toUpperCase()}
+                </Link>
               </div>
 
               {/* Overlay Section */}

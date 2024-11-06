@@ -18,14 +18,16 @@ function Categories() {
     return (
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-5 px-5 md:px-12">
             {category.map((item, index) => (
-                <div key={index} className="flex flex-col items-center relative">
+                <div key={index} className="flex flex-col items-center relative ">
+                    <div className='overflow-hidden rounded-lg'>
                     <Image
                         width={200}
                         height={200}
                         src={item.img}
                         alt={item.title}
-                        className="rounded-lg transition-transform duration-300 hover:scale-105"
+                        className="transition-transform duration-300 hover:scale-110"
                     />
+                    </div>
                     <Link 
                         href={`/${item.title.toLowerCase().replace(/\s+/g, '-')}`} 
                         className="bg-white px-3 py-1 md:py-2 font-semibold text-xs lg:text-sm rounded-3xl border border-gray-300 absolute -bottom-4 text-center"
