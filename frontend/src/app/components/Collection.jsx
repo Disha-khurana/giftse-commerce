@@ -5,7 +5,7 @@ import React from "react";
 function Collection() {
   const items = [
     { image: "/Images/collection/Ckaes.webp", title: "Cakes" },
-    { image: "/Images/collection/FLowers.webp", title: "FLowers" },
+    { image: "/Images/collection/FLowers.webp", title: "Flowers" },
     {
       image:
         "/Images/collection/fabessentials-sea-breeze-spa-body-care-gift-box.webp",
@@ -32,19 +32,19 @@ function Collection() {
           VIEW ALL
         </Link>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
         {items.map((item, index) => (
-          <div className="flex flex-col items-center gap-7" key={index}>
-            <div className="overflow-hidden rounded-full">
+          <div className="flex flex-col items-center gap-3 md:gap-7 mb-4 lg:mb-0" key={index}>
+            <div className="overflow-hidden rounded-full ">
               <Image
                 src={item.image}
                 height={900}
                 width={900}
                 alt={item.title}
-                className="w-[200px] h-[200px] rounded-full transition-transform duration-300 hover:scale-110"
+                className="lg:w-[200px] lg:h-[200px] w-[150px] h-[150px] object-cover rounded-full transition-transform duration-700 hover:scale-110"
               />
             </div>
-            <span className="font-semibold text-lg tracking-normal">
+            <span className="font-semibold text-base md:text-lg tracking-normal">
               {item.title}
             </span>
           </div>

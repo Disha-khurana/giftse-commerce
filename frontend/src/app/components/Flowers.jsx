@@ -46,10 +46,10 @@ function Flowers() {
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
       {flowers.map((item, index) => (
         <div key={index} className=' relative overflow-hidden group rounded-lg'>
-        <Image src={item.image} width={500} height={500} className='w-full h-full shadow-md' alt={item.title}/>
-        <div className="absolute group-hover:translate-y-0 duration-500 flex flex-col justify-center items-center translate-y-[100%] inset-0 bg-[rgba(0,0,0,0.45)]  z-40">
-            <span className='text-white font-serif text-xl mb-3'>{item.title}</span>
-            <p className='text-white font-serif text-base px-5 text-center'>Brighten their day with our curated collection of fresh, elegant flowers—perfect for every occasion and sentiment.</p>
+        <Image src={item.image} width={500} height={500} className='w-full h-full shadow-md object-cover' alt={item.title}/>
+        <div className="absolute group-hover:translate-y-0 duration-500 flex flex-col py-3 justify-center items-center translate-y-[100%] inset-0 bg-[rgba(0,0,0,0.45)]  z-40">
+            <span className='text-white font-serif text-base md:text-xl mb-1 md:mb-3'>{item.title}</span>
+            <p className='text-white font-serif text-xs md:text-sm lg:text-base px-5 text-center'>Brighten their day with our curated collection of fresh, elegant flowers—perfect for every occasion and sentiment.</p>
         </div>
         </div>
       ))}

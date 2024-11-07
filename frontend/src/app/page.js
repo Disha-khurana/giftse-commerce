@@ -11,10 +11,14 @@ import Flowers from "./components/Flowers";
 import Cakes from "./components/Cakes";
 import Anniversary from "./components/Anniversary";
 import Gifts from "./components/Gifts";
+import Together from "./components/Together";
+import Stories from "./components/Stories";
+import Plants from "./components/Plants";
+import Countries from "./components/Countries";
 
 export default function Home() {
   return (
-   <div className="space-y-10 md:space-y-16 bg-slate-100">
+   <div className="space-y-10 md:space-y-12 lg:space-y-20 bg-slate-100">
     <Slider/>
     <Categories/>
     <Calender/>
@@ -27,7 +31,10 @@ export default function Home() {
     <Cakes/>
     <Anniversary/>
     <Gifts/>
-    
+    <Together/>
+    <Stories/>
+    <Plants/>
+    <Countries/>
    </div>
   );
 }

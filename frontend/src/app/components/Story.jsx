@@ -201,7 +201,7 @@ function Story() {
 
                 {/* Play Icon in Center */}
                 <FaPlay
-                  className={`absolute inset-0 m-auto text-white shadow-lg w-10 h-10 transition-opacity duration-300 flex justify-center items-center ${
+                  className={`absolute inset-0 m-auto text-white shadow-lg w-10 h-10 transition-opacity duration-700 flex justify-center items-center ${
                     hoveredVideo === index ? "opacity-0" : "opacity-100"
                   }`}
                   onClick={() =>

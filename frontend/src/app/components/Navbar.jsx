@@ -1155,7 +1155,7 @@ const Navbar = () => {
             >
               <Link href={item.link}>{item.name}</Link>
               <MdKeyboardArrowDown
-                className={`transition-transform text-lg duration-300 ${
+                className={`transition-transform text-lg duration-700 ${
                   dropdown === item.name.toLowerCase() ? "rotate-180" : ""
                 }`}
               />

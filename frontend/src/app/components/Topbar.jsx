@@ -113,7 +113,7 @@ function Topbar() {
                 type="text"
                 placeholder={placeholder}
                 className="w-full px-4 py-[8px] rounded-md focus:outline-none placeholder-sm focus:ring-0 border-none"
-                readOnly
+               
               />
               <IoIosSearch className="absolute right-3 text-2xl inset-y-0 mt-2" />
             </div>
