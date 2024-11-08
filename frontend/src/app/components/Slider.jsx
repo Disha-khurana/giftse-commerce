@@ -19,6 +19,14 @@ function Slider() {
     "/Images/slider/img7.webp",
   ];
 
+  const slide=[
+    "/Images/slider/LUXE_Mob.webp",
+    "/Images/slider/Wedding_Mob.webp",
+    "/Images/slider/Childrens_Day.webp",
+    "/Images/slider/Birthday_banner.webp",
+    "/Images/slider/Anniversary_Mob.webp"
+  ]
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -34,11 +42,22 @@ function Slider() {
         className="relative w-full container mx-auto"
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index} className="flex justify-center bg-image">
+          <SwiperSlide key={`desktop-${index}`} className=" justify-center flex bg-image">
             <img
               src={image}
               alt={`Slide ${index}`}
-              className="object-cover w-full h-auto lg:h-auto"
+              className="object-cover w-full h-auto hidden lg:block "
+              width={1000}
+              height={5000}
+            />
+          </SwiperSlide>
+        ))}
+        {slide.map((image, index) => (
+          <SwiperSlide key={`mobile-${index}`} className="flex justify-center bg-image">
+            <img
+              src={image}
+              alt={`Slide ${index}`}
+              className="object-cover w-full h-auto lg:hidden"
               width={1000}
               height={5000}
             />

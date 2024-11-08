@@ -28,7 +28,7 @@ function Plants() {
 ]
   return (
     <div className='px-5 md:px-12 '>
-        <div className='bg-white p-10 rounded-lg'>
+        <div className='bg-white p-5 md:p-8 rounded-lg'>
        <div className="flex items-center justify-between mb-10">
       <h3 className=" text-lg md:text-xl lg:text-2xl font-semibold ">
       Plants For Every Vibe
@@ -40,11 +40,13 @@ function Plants() {
           VIEW ALL
         </Link>
       </div>
-      <div className='grid grid-cols-4 gap-4 '>
+      <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mb-4 '>
       {plants.map((item, index) => (
         <Link href={item.link} key={index}>
+          <div>
             <Image src={item.image} height={500} width={500} alt={item.title} className='h-[95%] object-cover w-full rounded-3xl'/>
-            <h3 className='text-lg py-2 px-4 font-semibold'>{item.title}</h3>
+            <h3 className='text-base md:text-lg py-2 px-4 font-semibold text-nowrap'>{item.title}</h3>
+            </div>
          </Link>   
       ))}
   

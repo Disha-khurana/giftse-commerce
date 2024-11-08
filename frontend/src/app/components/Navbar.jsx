@@ -1630,9 +1630,9 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="lg:hidden flex items-center justify-between px-5 md:px-10 py-3 bg-[#7d8035] sticky top-0 z-50">
+      <div className="lg:hidden flex items-center justify-between px-5 md:px-10 py-5 bg-[#7d8035] sticky top-0 z-50">
         <Image
-          width={100}
+          width={130}
           height={100}
           src="/Images/logo.webp"
           alt="logo"

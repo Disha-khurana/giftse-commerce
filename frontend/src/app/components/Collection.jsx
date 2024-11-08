@@ -22,7 +22,7 @@ function Collection() {
   return (
     <div className="px-5 md:px-12">
       <div className="flex items-center justify-between mb-12">
-      <h3 className=" text-lg md:text-xl lg:text-2xl font-semibold ">
+      <h3 className=" text-lg md:text-xl lg:text-2xl font-semibold text-nowrap ">
         The 2024 Birthday Collection
       </h3>
         <Link

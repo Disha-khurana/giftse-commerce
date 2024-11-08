@@ -45,7 +45,7 @@ function Stories() {
             <Link href={item.link} key={index} className='relative overflow-hidden rounded-lg'>
                 <Image src={item.image} height={500} width={500} alt={item.title} className='object-cover w-full h-auto transition-transform duration-700 ease-in-out transform hover:scale-110'/>
            
-            <div className="absolute inset-0 bottom-36 md:bottom-40 lg:bottom-[17rem]  bg-[rgba(0,0,0,0.30)] z-40 transform transition duration-500 ease-in-out">
+            <div className="absolute inset-0 bottom-32 md:bottom-40 lg:bottom-[17rem]  bg-[rgba(0,0,0,0.30)] z-40 transform transition duration-500 ease-in-out">
             <span className="text-white font-serif text-sm md:text-base lg:text-lg flex items-center justify-center pt-2 md:pt-3 lg:pt-5 tracking-normal">{item.title.toUpperCase()}</span>
             
           </div>

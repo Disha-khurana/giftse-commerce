@@ -30,7 +30,7 @@ function Categories() {
                     </div>
                     <Link 
                         href={`/${item.title.toLowerCase().replace(/\s+/g, '-')}`} 
-                        className="bg-white px-3 py-1 md:py-2 font-semibold text-xs lg:text-sm rounded-3xl border border-gray-300 absolute -bottom-4 text-center"
+                        className="bg-white px-3 py-1 md:py-2 font-semibold text-[0.65rem] md:text-xs lg:text-sm rounded-3xl border border-gray-300 absolute -bottom-4 text-center"
                     >
                         {item.title}
                     </Link>

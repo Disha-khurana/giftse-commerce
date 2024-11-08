@@ -32,7 +32,7 @@ function Cakes() {
     ]
   return (
     <div className='px-5 md:px-12'>
-      <div className='bg-white p-10 rounded-lg'>
+      <div className='bg-white p-5 md:p-8 rounded-lg'>
       <div className="flex items-center justify-between mb-12">
       <h3 className=" text-lg md:text-xl lg:text-2xl font-semibold ">
       Bakery-Fresh Cakes
@@ -44,12 +44,12 @@ function Cakes() {
           VIEW ALL
         </Link>
       </div>
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10'>
       {cakes.map((item, index) => (
         <div key={index} className=' relative overflow-hidden group rounded-lg'>
-        <Image src={item.image} width={500} height={500} className='w-full h-full shadow-md object-cover' alt={item.title}/>
+        <Image src={item.image} width={500} height={500} className='w-full h-full shadow-md object-cover ' alt={item.title}/>
         <div className="absolute group-hover:translate-y-0 py-4 duration-500 flex flex-col justify-center items-center translate-y-[100%] inset-0 bg-[rgba(0,0,0,0.45)]  z-40">
-            <span className='text-white font-serif text-base md:text-xl mb-3'>{item.title}</span>
+            <span className='text-white font-serif text-base md:text-xl mb-1 md:mb-3 text-nowrap'>{item.title}</span>
             <p className='text-white font-serif text-xs md:text-sm lg:text-base px-5 text-center'>Indulge in our delightful range of cakes, crafted to make every celebration unforgettable.</p>
         </div>
         </div>

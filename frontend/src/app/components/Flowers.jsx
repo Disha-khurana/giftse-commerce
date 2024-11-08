@@ -43,7 +43,7 @@ function Flowers() {
           VIEW ALL
         </Link>
       </div>
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10'>
       {flowers.map((item, index) => (
         <div key={index} className=' relative overflow-hidden group rounded-lg'>
         <Image src={item.image} width={500} height={500} className='w-full h-full shadow-md object-cover' alt={item.title}/>

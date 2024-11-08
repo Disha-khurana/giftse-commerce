@@ -28,12 +28,12 @@ function Offer() {
 
     return (
         <div className="px-5 md:px-12 ">
-            <div className="px-8 w-full py-10 bg-white space-y-9 rounded-lg shadow-md ">
+            <div className="px-5 md:px-8 w-full py-10 bg-white space-y-9 rounded-lg shadow-md ">
                 <div className="flex items-center justify-between ">
                     <h3 className="mb-4 text-lg md:text-xl lg:text-2xl font-semibold">
                         Thoughtfully Created Gifts
                     </h3>
-                    <Link href="/viewall" className="bg-[#7d8035] py-2 text-xs lg:text-sm px-3 rounded-md text-white font-semibold">
+                    <Link href="/viewall" className="bg-[#7d8035] py-2 text-nowrap text-xs lg:text-sm px-3 rounded-md text-white font-semibold">
                         VIEW ALL
                     </Link>
                 </div>

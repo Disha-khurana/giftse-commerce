@@ -55,7 +55,7 @@ function Together() {
           VIEW ALL
         </Link>
       </div>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-4">
   {together.map((image, index) => {
     return (
       <div key={index} className="relative overflow-hidden ">
@@ -66,8 +66,8 @@ function Together() {
           alt={image.title} // Use dynamic alt based on title
           className={`${image.customWidth} h-[270px] rounded-xl object-cover transition-transform duration-700 ease-in-out transform hover:scale-110`}
         />
-        <div className="absolute inset-0 top-52 bg-[rgba(0,0,0,0.30)] z-40 transform transition duration-500 ease-in-out">
-          <span className="text-white font-serif text-xl flex items-center justify-center pt-4">{image.title}</span>
+        <div className="absolute inset-0 top-56 md:top-52 bg-[rgba(0,0,0,0.30)] z-40 transform transition duration-500 ease-in-out">
+          <span className="text-white font-serif text-base md:text-xl flex items-center justify-center pt-2 md:pt-4">{image.title}</span>
         </div>
       </div>
     );

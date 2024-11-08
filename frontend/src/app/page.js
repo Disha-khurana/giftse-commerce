@@ -21,9 +21,11 @@ export default function Home() {
    <div className="space-y-10 md:space-y-12 lg:space-y-20 bg-slate-100">
     <Slider/>
     <Categories/>
+    <div className="space-y-7 lg:space-y-10">
     <Calender/>
     <Slide/>
     <Offer/>
+    </div>
     <Filter/>
     {/* <Story/> */}
     <Collection/>

@@ -51,7 +51,7 @@ const [openOffer, setOpenOffer] = useState(false);
   return (
   <section className=''>
       <div className='lg:flex w-full rounded-lg px-5 md:px-12 gap-12 '>
-        <div className='bg-slate-50 px-10 py-6 lg:w-[70%] space-y-6 mb-6 lg:mb-0'>
+        <div className='bg-slate-50 px-5 md:px-10 py-6 lg:w-[70%] space-y-6 mb-6 lg:mb-0'>
       <h3 className='font-semibold text-xl text-center'>GIFT FINDER</h3>
      
       <div className="relative flex items-center ">
