@@ -30,7 +30,7 @@ function Plants() {
     <div className='px-5 md:px-12 '>
         <div className='bg-white p-5 md:p-8 rounded-lg'>
        <div className="flex items-center justify-between mb-10">
-      <h3 className=" text-lg md:text-xl lg:text-2xl font-semibold ">
+      <h3 className=" text-base md:text-xl lg:text-2xl font-semibold ">
       Plants For Every Vibe
       </h3>
         <Link

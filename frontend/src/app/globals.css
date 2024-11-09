@@ -40,3 +40,42 @@ input::placeholder {
   @apply shadow-[0_0_10px_#e87325];
 }
 
+@media screen and (min-width: 320px) {
+  #set{
+    bottom: 90px;
+    background-color: rgba(0,0,0,0.30) ;
+  }
+  
+}
+
+@media screen and (min-width: 375px) {
+  #set{
+    bottom: 120px;
+    background-color: rgba(0,0,0,0.30) ;
+  }
+  
+}
+
+@media screen and (min-width: 425px) {
+  #set{
+    bottom: 143px;
+    background-color: rgba(0,0,0,0.30) ;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  #set{
+    bottom: 160px;
+    background-color: rgba(0,0,0,0.30) ;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  #set{
+    bottom: 272px;
+    background-color:rgba(0,0,0,0.30);
+  }
+  
+}

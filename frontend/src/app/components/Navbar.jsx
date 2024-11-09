@@ -14,6 +14,7 @@ const Navbar = () => {
     {
       name: "DIWALI",
       link: "/diwali",
+     
     },
     {
       name: "FESTIVALS",
@@ -65,7 +66,11 @@ const Navbar = () => {
     },
   ];
 
-  const diwaliSections = [
+  const [barData,setbarData]=useState("")
+const newData={
+
+
+  DIWALI : [
     {
       heading: "Exclusive Collection",
       links: [
@@ -122,9 +127,10 @@ const Navbar = () => {
         { href: "/men/jeans", text: "Hyderabad" },
       ],
     },
-  ];
+  ],
 
-  const festivalSections = [
+
+  FESTIVALS : [
     {
       heading: "Bhai Dooj",
       links: [
@@ -193,9 +199,9 @@ const Navbar = () => {
         { href: "/milestones/retirement", text: "Retirement" },
       ],
     },
-  ];
+  ],
 
-  const birthdaySections = [
+   birthdaySections : [
     {
       heading: "Must Haves",
       links: [
@@ -263,9 +269,9 @@ const Navbar = () => {
         { href: "/gifts/below-500", text: "Below Rs500" },
       ],
     },
-  ];
+  ],
 
-  const anniversarySections = [
+   anniversarySections : [
     {
       heading: "FEATURED",
       links: [
@@ -332,9 +338,9 @@ const Navbar = () => {
         { href: "/gifts/50th-anniversary", text: "50th Anniversary" },
       ],
     },
-  ];
+  ],
 
-  const cakeSections = [
+   cakeSections : [
     {
       heading: "Celebrate Special Occasions",
       links: [
@@ -409,9 +415,9 @@ const Navbar = () => {
         { href: "/cakes/send/kolkata", text: "Kolkata" },
       ],
     },
-  ];
+  ],
 
-  const flowerSections = [
+   flowerSections : [
     {
       heading: "IN FOCUS",
       links: [
@@ -494,9 +500,9 @@ const Navbar = () => {
         { href: "/flowers/send/other-cities", text: "All Other Cities" },
       ],
     },
-  ];
+  ],
 
-  const personalizedSections = [
+   personalizedSections : [
     {
       heading: "GIFTS IN SPOTLIGHT",
       links: [
@@ -578,9 +584,9 @@ const Navbar = () => {
         { href: "/personalised/send/all-other-cities", text: "All Other Cities" },
       ],
     },
-  ];
+  ],
   
-  const plantSections = [
+   plantSections : [
     {
       heading: "ELITE GREENS",
       links: [
@@ -668,9 +674,9 @@ const Navbar = () => {
         { href: "/plants/send/all-other-cities", text: "All Other Cities" },
       ],
     },
-  ];
+  ],
 
-  const chocolateSections = [
+   chocolateSections : [
     {
       heading: "BY FEATURED",
       links: [
@@ -747,9 +753,9 @@ const Navbar = () => {
         { href: "/send-to/all-cities", text: "All Other Cities" },
       ],
     },
-  ];
+  ],
 
-  const comboSections = [
+   comboSections : [
     {
       heading: "FEATURED COMBOS",
       links: [
@@ -815,9 +821,9 @@ const Navbar = () => {
         { href: "/hampers/diy-kits", text: "DIY Kits Hampers" },
       ],
     },
-  ];
+  ],
 
-  const lifestyleSections = [
+   lifestyleSections : [
     {
       heading: "Trending",
       links: [
@@ -917,9 +923,9 @@ const Navbar = () => {
     //     { href: "/brands/carlton-london", text: "Carlton London" },
     //   ],
     // },
-  ];
+  ],
 
-  const globalSections = [
+   globalSections : [
     {
       country: "USA",
       links: [
@@ -1022,9 +1028,9 @@ const Navbar = () => {
         { href: "/other-countries/all", text: "Other Countries" },
       ],
     },
-  ];
+  ],
 
-  const newArrivalsTrends = [
+  newArrivalsTrends :[
     {
       category: "New Arrivals",
       links: [
@@ -1110,11 +1116,12 @@ const Navbar = () => {
         { href: "/cities/all-other-cities", text: "All Other Cities" },
       ],
     },
-  ];
+  ]
+}
   
   
-  
-  
+
+
   
   
   
@@ -1136,7 +1143,7 @@ const Navbar = () => {
   const handleMouseLeave = () => {
     setDropdown(null);
   };
-
+console.log(newData[barData])
   return (
     <nav
       className="w-full bg-slate-100 shadow-2xl relative z-30"
@@ -1150,7 +1157,7 @@ const Navbar = () => {
           {items.map((item, index) => (
             <li
               key={index}
-              onMouseEnter={() => handleMouseEnter(item.name.toLowerCase())}
+              onMouseEnter={() => setbarData(item.name)}
               className="relative flex items-end"
             >
               <Link href={item.link}>{item.name}</Link>
@@ -1168,9 +1175,13 @@ const Navbar = () => {
               className="absolute top-full mt-2 bg-white shadow-lg rounded-md px-6 grid grid-cols-7 gap-5 "
               style={{ width: menuWidth, left: 0 }}
             >
-              {dropdown === "diwali" && (
+
+              {barData && (
                 <>
-                  {diwaliSections.map((section, index) => (
+                  
+                  
+                  
+                  {newData[barData].map((section, index) => (
                     <div
                       key={index}
                       className={`pt-6 pb-20 ps-5 ${
@@ -1200,9 +1211,10 @@ const Navbar = () => {
                       src="/Images/dropdown/diwalinav.webp"
                     />
                   </div>
+                
                 </>
               )}
-              {dropdown === "festivals" && (
+              {/* {dropdown === "festivals" && (
                 <>
                   {festivalSections.map((section, index) => (
                     <div
@@ -1624,7 +1636,7 @@ const Navbar = () => {
                     />
                   </div>
                 </>
-              )}
+              )} */}
             </div>
           )}
         </ul>

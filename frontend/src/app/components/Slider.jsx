@@ -39,30 +39,42 @@ function Slider() {
         navigation
         autoplay={{ delay: 4000 }}
         loop={true}
-        className="relative w-full container mx-auto"
+        className="relative w-full container mx-auto "
       >
         {images.map((image, index) => (
           <SwiperSlide key={`desktop-${index}`} className=" justify-center flex bg-image">
             <img
               src={image}
               alt={`Slide ${index}`}
-              className="object-cover w-full h-auto hidden lg:block "
+              className="object-cover w-full h-auto  hidden lg:block"
               width={1000}
               height={5000}
             />
           </SwiperSlide>
         ))}
-        {slide.map((image, index) => (
+       
+      </Swiper>
+     
+        <Swiper
+        modules={[Pagination, Autoplay, Navigation]}
+        pagination={{ clickable: true }}
+        navigation
+        autoplay={{ delay: 4000 }}
+        loop={true}
+        className="relative w-full container mx-auto"
+      >
+         {slide.map((image, index) => (
           <SwiperSlide key={`mobile-${index}`} className="flex justify-center bg-image">
             <img
               src={image}
               alt={`Slide ${index}`}
-              className="object-cover w-full h-auto lg:hidden"
+              className="object-cover w-full h-auto lg:hidden "
               width={1000}
               height={5000}
             />
           </SwiperSlide>
         ))}
+       
       </Swiper>
     </section>
   );
