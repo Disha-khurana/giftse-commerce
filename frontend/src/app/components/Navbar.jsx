@@ -11,11 +11,7 @@ const Navbar = () => {
   const [menuWidth, setMenuWidth] = useState(0);
 
   const items = [
-    {
-      name: "DIWALI",
-      link: "/diwali",
-     
-    },
+   
     {
       name: "FESTIVALS",
       link: "/festivals",
@@ -70,64 +66,7 @@ const Navbar = () => {
 const newData={
 
 
-  DIWALI : [
-    {
-      heading: "Exclusive Collection",
-      links: [
-        { href: "/men/tshirts", text: "All Diwali Gifts" },
-        { href: "/men/shirts", text: "Premium Gifts" },
-        { href: "/men/sweatshirts", text: "Same Day Delivery Gifts" },
-        { href: "/men/jeans", text: "Spiritual Gifts" },
-        { href: "/men/jeans", text: "Bestsellers" },
-        { href: "/men/shorts", text: "FNP Exclusive" },
-        { href: "/men/trousers", text: "Gift Sets" },
-      ],
-    },
-    {
-      heading: "Spread the Joy With",
-      links: [
-        { href: "/men/tshirts", text: "Hampers" },
-        { href: "/men/shirts", text: "Home Decor" },
-        { href: "/men/sweatshirts", text: "Diyas" },
-        { href: "/men/jeans", text: "Plants" },
-        { href: "/men/jeans", text: "Personalised Gifts" },
-        { href: "/men/shorts", text: "Flowers" },
-        { href: "/men/trousers", text: "Combos" },
-      ],
-    },
-    {
-      heading: "Gourmet Goodies",
-      links: [
-        { href: "/men/tshirts", text: "Sweets" },
-        { href: "/men/shirts", text: "Dry Fruits" },
-        { href: "/men/sweatshirts", text: "Chocolates" },
-        { href: "/men/jeans", text: "Cakes" },
-      ],
-    },
-    {
-      heading: "Send Abroad",
-      links: [
-        { href: "/men/tshirts", text: "USA" },
-        { href: "/men/shirts", text: "Canada" },
-        { href: "/men/sweatshirts", text: "Australia" },
-        { href: "/men/jeans", text: "UK" },
-        { href: "/men/jeans", text: "UAE" },
-        { href: "/men/trousers", text: "Germany" },
-        { href: "/men/shorts", text: "Singapore" },
-        { href: "/men/shorts", text: "Others" },
-      ],
-    },
-    {
-      heading: "SEND GIFTS TO",
-      links: [
-        { href: "/men/tshirts", text: "Delhi" },
-        { href: "/men/shirts", text: "Mumbai" },
-        { href: "/men/sweatshirts", text: "Bengaluru" },
-        { href: "/men/jeans", text: "Kolkata" },
-        { href: "/men/jeans", text: "Hyderabad" },
-      ],
-    },
-  ],
+  
 
 
   FESTIVALS : [
