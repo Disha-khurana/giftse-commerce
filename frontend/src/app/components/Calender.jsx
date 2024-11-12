@@ -39,7 +39,7 @@ function Calender() {
                             height={400}
                             src={item.img}
                             alt={item.name}
-                            className=" w-full md:w-[300px] lg:w-full h-auto transition-transform duration-700 ease-in-out transform hover:scale-110"
+                            className=" w-full md:w-[300px] lg:w-full h-auto shadow-lg"
                         />
                         </div>
                         <h3 className="bg-slate-50 px-2 md:px-4 font-semibold tracking-wide text-[0.65rem] md:text-xs lg:text-sm py-1 md:py-2 text-nowrap rounded-b-3xl w-full text-center border border-gray-300">

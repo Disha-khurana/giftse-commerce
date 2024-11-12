@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsCurrencyRupee } from "react-icons/bs";
@@ -15,6 +15,7 @@ function page() {
     personalise:"personalise",
     delivery:"delivery"
   });
+
 
   const price = [
     { min: 0, max: 499, total: 540 },
@@ -88,602 +89,784 @@ function page() {
   ];
 
   const data=[{
-    image:'/Images/birthday/decorated-chocolate-truffle-cake-half-kg_1.webp',
-    link:"/decorated-chocolate-truffle-cake-half-kg_1",
+    image:['/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_1.webp',
+      '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_2.webp',
+      '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_3.webp',
+      '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_4.webp',
+      '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_5.webp',
+    ],
+    link:"/decorated-chocolate-truffle-cake-half-kg",
     title:'Decorated Chocolate Truffle Cake Half Kg',
     rate:'4.5',
     price:'575'
   },
   {
-    image:'/Images/birthday/fruit-overload-cake-half-kg_1.webp',
-    link:"/fruit-overload-cake-half-kg_1",
+    image:['/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_1.webp',
+      '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_2.webp',
+      '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_3.webp',
+      '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_4.webp',
+      '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_5.webp'
+    ],
+    link:"/fruit-overload-cake-half-kg",
     title:'Overload Fruit Cake Half Kg',
     rate:'5.0',
     price:'725'
   },
   {
-    image:'/Images/birthday/fudge-brownie-cake-half-kg_1.webp',
-    link:"/fudge-brownie-cake-half-kg_1",
+    image:['/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_1.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_2.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_3.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_4.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_5.webp',
+    ],
+    link:"/fudge-brownie-cake-half-kg",
     title:'Fudge Brownie Cake Half Kg',
     rate:'4.5',
     price:'675'
   },
+  // {
+  //   image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
+  //   link:"/love-for-pastel-carnations-bouquet_1",
+  //   title:'Love For Pastel Carnations Bouquet',
+  //   rate:'4.8',
+  //   price:'949'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-desk-organisers_1.webp',
+  //   link:"/personalised-desk-organisers_1",
+  //   title:'Personalised Desk Organisers',
+  //   rate:'4.5',
+  //   price:'549'
+  // },
   {
-    image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
-    link:"/love-for-pastel-carnations-bouquet_1",
-    title:'Love For Pastel Carnations Bouquet',
-    rate:'4.8',
-    price:'949'
-  },
-  {
-    image:'/Images/birthday/personalised-desk-organisers_1.webp',
-    link:"/personalised-desk-organisers_1",
-    title:'Personalised Desk Organisers',
-    rate:'4.5',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/rich-coffee-cream-cake-half-kg_1.webp',
-    link:"/rich-coffee-cream-cake-half-kg_1",
+    image:['/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_1.webp',
+      '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_2.webp',
+      '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_3.webp',
+      '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_4.webp',
+      '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_2.webp',
+    ],
+    link:"/rich-coffee-cream-cake-half-kg",
     title:'Rich Coffee Cream Cake Half Kg',
     rate:'5.0',
     price:'725'
   },
   {
-    image:'/Images/birthday/shimmering-heart-pendant_1.webp',
-    link:"/shimmering-heart-pendant_1",
+    image:['/Images/birthday/heart pendant/shimmering-heart-pendant_1.webp',
+      '/Images/birthday/heart pendant/shimmering-heart-pendant_2.webp',
+      '/Images/birthday/heart pendant/shimmering-heart-pendant_3.webp',
+      '/Images/birthday/heart pendant/shimmering-heart-pendant_2.webp',
+      '/Images/birthday/heart pendant/shimmering-heart-pendant_3.webp'
+    ],
+    link:"/shimmering-heart-pendant",
     title:'Shimmering Heart Pendant',
     rate:'4.5',
     price:'449'
   },
   {
-    image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
-    link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
+    image:['/Images/birthday/bliss vanilla/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
+      '/Images/birthday/bliss vanilla/birthday-bliss-vanilla-dream-cake-half-kg_2.webp',
+      '/Images/birthday/bliss vanilla/birthday-bliss-vanilla-dream-cake-half-kg_3.webp',
+      '/Images/birthday/bliss vanilla/birthday-bliss-vanilla-dream-cake-half-kg_4.webp',
+      '/Images/birthday/bliss vanilla/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
+      
+    ],
+    link:"/birthday-bliss-vanilla-dream-cake-half-kg",
     title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
     rate:'5.0',
     price:'649'
   },
   {
-    image:'/Images/birthday/birthday-celebration-mugs_1.webp',
-    link:"/birthday-celebration-mugs_1",
+    image:['/Images/birthday/celebration mug/birthday-celebration-mugs_1.webp',
+      '/Images/birthday/celebration mug/birthday-celebration-mugs_2.webp',
+      '/Images/birthday/celebration mug/birthday-celebration-mugs_3.webp',
+      '/Images/birthday/celebration mug/birthday-celebration-mugs_4.webp',
+      '/Images/birthday/celebration mug/birthday-celebration-mugs_1.webp',
+    ],
+    link:"/birthday-celebration-mugs",
     title:'Birthday Celebration Mug',
     rate:'4.5',
     price:'249'
   },
   {
-    image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
-    link:"/dates-walnuts-mixed-dry-cake-500gms_1",
+    image:['/Images/birthday/dry cake/dates-walnuts-mixed-dry-cake-500gms_1.webp',
+      '/Images/birthday/dry cake/dates-walnuts-mixed-dry-cake-500gms_2.webp',
+      '/Images/birthday/dry cake/dates-walnuts-mixed-dry-cake-500gms_3.webp',
+      '/Images/birthday/dry cake/dates-walnuts-mixed-dry-cake-500gms_4.webp',
+      '/Images/birthday/dry cake/dates-walnuts-mixed-dry-cake-500gms_1.webp',
+    ],
+    link:"/dates-walnuts-mixed-dry-cake-500gms",
     title:'Dates & Walnuts Mixed Dry Cake 500gms',
     rate:'5.0',
     price:'999'
   },
   {
-    image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
-    link:"/feminine-fragrance-collection-for-her_1",
+    image:['/Images/birthday/perfume col/feminine-fragrance-collection-for-her_1.webp',
+      '/Images/birthday/perfume col/feminine-fragrance-collection-for-her_1.webp',
+      '/Images/birthday/perfume col/feminine-fragrance-collection-for-her_1.webp',
+      '/Images/birthday/perfume col/feminine-fragrance-collection-for-her_1.webp',
+      '/Images/birthday/perfume col/feminine-fragrance-collection-for-her_1.webp',
+    ],
+    link:"/feminine-fragrance-collection-for-her",
     title:'Feminine Fragrance Collection for Her',
     rate:'4.5',
     price:'899'
   },
   {
-    image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
-    link:"/jade-plant-in-gold-tone-metal-pot_1",
+    image:['/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_1.webp',
+      '/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_2.webp',
+      '/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_3.webp',
+      '/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_4.webp',
+      '/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_5.webp',
+    ],
+    link:"/jade-plant-in-gold-tone-metal-pot",
     title:'Jade Plant In Gold Tone Metal Pot',
     rate:'4.8',
     price:'249'
   },
   {
-    image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
-    link:"/mixed-brilliance-gerbera-blossoms_1",
-    title:'Special 8 Mixed Roses Bouquet',
-    rate:'4.3',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
-    link:"/personalised-blue-notebook-and-pen-combo_1",
-    title:'Personalised Blue Notebook & Pen Combo',
-    rate:'4.8',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
-    link:"/personalised-mens-classy-essentials-gift-box_1",
-    title:'Personalised Mens Classy Essentials Gift Box',
-    rate:'4.7',
-    price:'1499'
-  },
-  {
-    image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
-    link:"/personalised-temperature-hydration-bottle_1",
-    title:'Personalised Temperature Hydration Bottle',
-    rate:'4.6',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/rocher-choco-bouquet_1.webp',
-    link:"/rocher-choco-bouquet_1",
-    title:'Rocher Choco Bouquet',
-    rate:'4.8',
-    price:'1899'
-  },
-  {
-    image:'/Images/birthday/decorated-chocolate-truffle-cake-half-kg_1.webp',
-    link:"/decorated-chocolate-truffle-cake-half-kg_1",
-    title:'Decorated Chocolate Truffle Cake Half Kg',
-    rate:'4.5',
-    price:'575'
-  },
-  {
-    image:'/Images/birthday/fruit-overload-cake-half-kg_1.webp',
-    link:"/fruit-overload-cake-half-kg_1",
-    title:'Overload Fruit Cake Half Kg',
-    rate:'5.0',
-    price:'725'
-  },
-  {
-    image:'/Images/birthday/fudge-brownie-cake-half-kg_1.webp',
-    link:"/fudge-brownie-cake-half-kg_1",
-    title:'Fudge Brownie Cake Half Kg',
-    rate:'4.5',
-    price:'675'
-  },
-  {
-    image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
-    link:"/love-for-pastel-carnations-bouquet_1",
-    title:'Love For Pastel Carnations Bouquet',
-    rate:'4.8',
-    price:'949'
-  },
-  {
-    image:'/Images/birthday/personalised-desk-organisers_1.webp',
-    link:"/personalised-desk-organisers_1",
-    title:'Personalised Desk Organisers',
-    rate:'4.5',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/rich-coffee-cream-cake-half-kg_1.webp',
-    link:"/rich-coffee-cream-cake-half-kg_1",
-    title:'Rich Coffee Cream Cake Half Kg',
-    rate:'5.0',
-    price:'725'
-  },
-  {
-    image:'/Images/birthday/shimmering-heart-pendant_1.webp',
-    link:"/shimmering-heart-pendant_1",
-    title:'Shimmering Heart Pendant',
-    rate:'4.5',
-    price:'449'
-  },
-  {
-    image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
-    link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
-    title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
-    rate:'5.0',
-    price:'649'
-  },
-  {
-    image:'/Images/birthday/birthday-celebration-mugs_1.webp',
-    link:"/birthday-celebration-mugs_1",
-    title:'Birthday Celebration Mug',
-    rate:'4.5',
-    price:'249'
-  },
-  {
-    image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
-    link:"/dates-walnuts-mixed-dry-cake-500gms_1",
-    title:'Dates & Walnuts Mixed Dry Cake 500gms',
-    rate:'5.0',
-    price:'999'
-  },
-  {
-    image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
-    link:"/feminine-fragrance-collection-for-her_1",
-    title:'Feminine Fragrance Collection for Her',
-    rate:'4.5',
-    price:'899'
-  },
-  {
-    image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
-    link:"/jade-plant-in-gold-tone-metal-pot_1",
-    title:'Jade Plant In Gold Tone Metal Pot',
-    rate:'4.8',
-    price:'249'
-  },
-  {
-    image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
-    link:"/mixed-brilliance-gerbera-blossoms_1",
-    title:'Special 8 Mixed Roses Bouquet',
-    rate:'4.3',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
-    link:"/personalised-blue-notebook-and-pen-combo_1",
-    title:'Personalised Blue Notebook & Pen Combo',
-    rate:'4.8',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
-    link:"/personalised-mens-classy-essentials-gift-box_1",
-    title:'Personalised Mens Classy Essentials Gift Box',
-    rate:'4.7',
-    price:'1499'
-  },
-  {
-    image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
-    link:"/personalised-temperature-hydration-bottle_1",
-    title:'Personalised Temperature Hydration Bottle',
-    rate:'4.6',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/rocher-choco-bouquet_1.webp',
-    link:"/rocher-choco-bouquet_1",
-    title:'Rocher Choco Bouquet',
-    rate:'4.8',
-    price:'1899'
-  },
-  {
-    image:'/Images/birthday/decorated-chocolate-truffle-cake-half-kg_1.webp',
-    link:"/decorated-chocolate-truffle-cake-half-kg_1",
-    title:'Decorated Chocolate Truffle Cake Half Kg',
-    rate:'4.5',
-    price:'575'
-  },
-  {
-    image:'/Images/birthday/fruit-overload-cake-half-kg_1.webp',
-    link:"/fruit-overload-cake-half-kg_1",
-    title:'Overload Fruit Cake Half Kg',
-    rate:'5.0',
-    price:'725'
-  },
-  {
-    image:'/Images/birthday/fudge-brownie-cake-half-kg_1.webp',
-    link:"/fudge-brownie-cake-half-kg_1",
-    title:'Fudge Brownie Cake Half Kg',
-    rate:'4.5',
-    price:'675'
-  },
-  {
-    image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
-    link:"/love-for-pastel-carnations-bouquet_1",
-    title:'Love For Pastel Carnations Bouquet',
-    rate:'4.8',
-    price:'949'
-  },
-  {
-    image:'/Images/birthday/personalised-desk-organisers_1.webp',
-    link:"/personalised-desk-organisers_1",
-    title:'Personalised Desk Organisers',
-    rate:'4.5',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/rich-coffee-cream-cake-half-kg_1.webp',
-    link:"/rich-coffee-cream-cake-half-kg_1",
-    title:'Rich Coffee Cream Cake Half Kg',
-    rate:'5.0',
-    price:'725'
-  },
-  {
-    image:'/Images/birthday/shimmering-heart-pendant_1.webp',
-    link:"/shimmering-heart-pendant_1",
-    title:'Shimmering Heart Pendant',
-    rate:'4.5',
-    price:'449'
-  },
-  {
-    image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
-    link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
-    title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
-    rate:'5.0',
-    price:'649'
-  },
-  {
-    image:'/Images/birthday/birthday-celebration-mugs_1.webp',
-    link:"/birthday-celebration-mugs_1",
-    title:'Birthday Celebration Mug',
-    rate:'4.5',
-    price:'249'
-  },
-  {
-    image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
-    link:"/dates-walnuts-mixed-dry-cake-500gms_1",
-    title:'Dates & Walnuts Mixed Dry Cake 500gms',
-    rate:'5.0',
-    price:'999'
-  },
-  {
-    image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
-    link:"/feminine-fragrance-collection-for-her_1",
-    title:'Feminine Fragrance Collection for Her',
-    rate:'4.5',
-    price:'899'
-  },
-  {
-    image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
-    link:"/jade-plant-in-gold-tone-metal-pot_1",
-    title:'Jade Plant In Gold Tone Metal Pot',
-    rate:'4.8',
-    price:'249'
-  },
-  {
-    image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
-    link:"/mixed-brilliance-gerbera-blossoms_1",
-    title:'Special 8 Mixed Roses Bouquet',
-    rate:'4.3',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
-    link:"/personalised-blue-notebook-and-pen-combo_1",
-    title:'Personalised Blue Notebook & Pen Combo',
-    rate:'4.8',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
-    link:"/personalised-mens-classy-essentials-gift-box_1",
-    title:'Personalised Mens Classy Essentials Gift Box',
-    rate:'4.7',
-    price:'1499'
-  },
-  {
-    image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
-    link:"/personalised-temperature-hydration-bottle_1",
-    title:'Personalised Temperature Hydration Bottle',
-    rate:'4.6',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/rocher-choco-bouquet_1.webp',
-    link:"/rocher-choco-bouquet_1",
-    title:'Rocher Choco Bouquet',
-    rate:'4.8',
-    price:'1899'
-  },
-  {
-    image:'/Images/birthday/decorated-chocolate-truffle-cake-half-kg_1.webp',
-    link:"/decorated-chocolate-truffle-cake-half-kg_1",
-    title:'Decorated Chocolate Truffle Cake Half Kg',
-    rate:'4.5',
-    price:'575'
-  },
-  {
-    image:'/Images/birthday/fruit-overload-cake-half-kg_1.webp',
-    link:"/fruit-overload-cake-half-kg_1",
-    title:'Overload Fruit Cake Half Kg',
-    rate:'5.0',
-    price:'725'
-  },
-  {
-    image:'/Images/birthday/fudge-brownie-cake-half-kg_1.webp',
-    link:"/fudge-brownie-cake-half-kg_1",
-    title:'Fudge Brownie Cake Half Kg',
-    rate:'4.5',
-    price:'675'
-  },
-  {
-    image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
-    link:"/love-for-pastel-carnations-bouquet_1",
-    title:'Love For Pastel Carnations Bouquet',
-    rate:'4.8',
-    price:'949'
-  },
-  {
-    image:'/Images/birthday/personalised-desk-organisers_1.webp',
-    link:"/personalised-desk-organisers_1",
-    title:'Personalised Desk Organisers',
-    rate:'4.5',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/rich-coffee-cream-cake-half-kg_1.webp',
-    link:"/rich-coffee-cream-cake-half-kg_1",
-    title:'Rich Coffee Cream Cake Half Kg',
-    rate:'5.0',
-    price:'725'
-  },
-  {
-    image:'/Images/birthday/shimmering-heart-pendant_1.webp',
-    link:"/shimmering-heart-pendant_1",
-    title:'Shimmering Heart Pendant',
-    rate:'4.5',
-    price:'449'
-  },
-  {
-    image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
-    link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
-    title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
-    rate:'5.0',
-    price:'649'
-  },
-  {
-    image:'/Images/birthday/birthday-celebration-mugs_1.webp',
-    link:"/birthday-celebration-mugs_1",
-    title:'Birthday Celebration Mug',
-    rate:'4.5',
-    price:'249'
-  },
-  {
-    image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
-    link:"/dates-walnuts-mixed-dry-cake-500gms_1",
-    title:'Dates & Walnuts Mixed Dry Cake 500gms',
-    rate:'5.0',
-    price:'999'
-  },
-  {
-    image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
-    link:"/feminine-fragrance-collection-for-her_1",
-    title:'Feminine Fragrance Collection for Her',
-    rate:'4.5',
-    price:'899'
-  },
-  {
-    image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
-    link:"/jade-plant-in-gold-tone-metal-pot_1",
-    title:'Jade Plant In Gold Tone Metal Pot',
-    rate:'4.8',
-    price:'249'
-  },
-  {
-    image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
-    link:"/mixed-brilliance-gerbera-blossoms_1",
-    title:'Special 8 Mixed Roses Bouquet',
-    rate:'4.3',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
-    link:"/personalised-blue-notebook-and-pen-combo_1",
-    title:'Personalised Blue Notebook & Pen Combo',
-    rate:'4.8',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
-    link:"/personalised-mens-classy-essentials-gift-box_1",
-    title:'Personalised Mens Classy Essentials Gift Box',
-    rate:'4.7',
-    price:'1499'
-  },
-  {
-    image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
-    link:"/personalised-temperature-hydration-bottle_1",
-    title:'Personalised Temperature Hydration Bottle',
-    rate:'4.6',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/rocher-choco-bouquet_1.webp',
-    link:"/rocher-choco-bouquet_1",
-    title:'Rocher Choco Bouquet',
-    rate:'4.8',
-    price:'1899'
-  },
-  {
-    image:'/Images/birthday/decorated-chocolate-truffle-cake-half-kg_1.webp',
-    link:"/decorated-chocolate-truffle-cake-half-kg_1",
-    title:'Decorated Chocolate Truffle Cake Half Kg',
-    rate:'4.5',
-    price:'575'
-  },
-  {
-    image:'/Images/birthday/fruit-overload-cake-half-kg_1.webp',
-    link:"/fruit-overload-cake-half-kg_1",
-    title:'Overload Fruit Cake Half Kg',
-    rate:'5.0',
-    price:'725'
-  },
-  {
-    image:'/Images/birthday/fudge-brownie-cake-half-kg_1.webp',
-    link:"/fudge-brownie-cake-half-kg_1",
-    title:'Fudge Brownie Cake Half Kg',
-    rate:'4.5',
-    price:'675'
-  },
-  {
-    image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
-    link:"/love-for-pastel-carnations-bouquet_1",
-    title:'Love For Pastel Carnations Bouquet',
-    rate:'4.8',
-    price:'949'
-  },
-  {
-    image:'/Images/birthday/personalised-desk-organisers_1.webp',
-    link:"/personalised-desk-organisers_1",
-    title:'Personalised Desk Organisers',
-    rate:'4.5',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/rich-coffee-cream-cake-half-kg_1.webp',
-    link:"/rich-coffee-cream-cake-half-kg_1",
-    title:'Rich Coffee Cream Cake Half Kg',
-    rate:'5.0',
-    price:'725'
-  },
-  {
-    image:'/Images/birthday/shimmering-heart-pendant_1.webp',
-    link:"/shimmering-heart-pendant_1",
-    title:'Shimmering Heart Pendant',
-    rate:'4.5',
-    price:'449'
-  },
-  {
-    image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
-    link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
-    title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
-    rate:'5.0',
-    price:'649'
-  },
-  {
-    image:'/Images/birthday/birthday-celebration-mugs_1.webp',
-    link:"/birthday-celebration-mugs_1",
-    title:'Birthday Celebration Mug',
-    rate:'4.5',
-    price:'249'
-  },
-  {
-    image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
-    link:"/dates-walnuts-mixed-dry-cake-500gms_1",
-    title:'Dates & Walnuts Mixed Dry Cake 500gms',
-    rate:'5.0',
-    price:'999'
-  },
-  {
-    image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
-    link:"/feminine-fragrance-collection-for-her_1",
-    title:'Feminine Fragrance Collection for Her',
-    rate:'4.5',
-    price:'899'
-  },
-  {
-    image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
-    link:"/jade-plant-in-gold-tone-metal-pot_1",
-    title:'Jade Plant In Gold Tone Metal Pot',
-    rate:'4.8',
-    price:'249'
-  },
-  {
-    image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
-    link:"/mixed-brilliance-gerbera-blossoms_1",
-    title:'Special 8 Mixed Roses Bouquet',
-    rate:'4.3',
-    price:'549'
-  },
-  {
-    image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
-    link:"/personalised-blue-notebook-and-pen-combo_1",
-    title:'Personalised Blue Notebook & Pen Combo',
-    rate:'4.8',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
-    link:"/personalised-mens-classy-essentials-gift-box_1",
-    title:'Personalised Mens Classy Essentials Gift Box',
-    rate:'4.7',
-    price:'1499'
-  },
-  {
-    image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
-    link:"/personalised-temperature-hydration-bottle_1",
-    title:'Personalised Temperature Hydration Bottle',
-    rate:'4.6',
-    price:'599'
-  },
-  {
-    image:'/Images/birthday/rocher-choco-bouquet_1.webp',
-    link:"/rocher-choco-bouquet_1",
-    title:'Rocher Choco Bouquet',
-    rate:'4.8',
-    price:'1899'
-  }
-]
+    image:['/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp',
+      '/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp',
+      '/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp',
+      '/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp',
+      '/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp',
 
+    ],
+    link:"/mixed-brilliance-gerbera-blossoms",
+    title:'Special 8 Mixed Roses Bouquet',
+    rate:'4.3',
+    price:'549'
+  },
+  {
+    image:['/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_1.webp',
+      '/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_2.webp',
+      '/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_3.webp',
+      '/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_4.webp',
+      '/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_5.webp',
+    ],
+    link:"/personalised-blue-notebook-and-pen-combo",
+    title:'Personalised Blue Notebook & Pen Combo',
+    rate:'4.8',
+    price:'599'
+  },
+  {
+    image:['/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_1.webp',
+      '/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_2.webp',
+      '/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_3.webp',
+      '/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_4.webp',
+      '/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_5.webp',
+    ],
+    link:"/personalised-mens-classy-essentials-gift-box",
+    title:'Personalised Mens Classy Essentials Gift Box',
+    rate:'4.7',
+    price:'1499'
+  },
+  {
+    image:['/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp',
+      '/Images/birthday/bottle/personalised-temperature-hydration-bottle_2.webp',
+      '/Images/birthday/bottle/personalised-temperature-hydration-bottle_3.webp',
+      '/Images/birthday/bottle/personalised-temperature-hydration-bottle_4.webp',
+      '/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp',
+    ],
+    link:"/personalised-temperature-hydration-bottle",
+    title:'Personalised Temperature Hydration Bottle',
+    rate:'4.6',
+    price:'599'
+  },
+  {
+    image:['/Images/birthday/rocher/rocher-choco-bouquet_1.webp',
+      '/Images/birthday/rocher/rocher-choco-bouquet_2.webp',
+      '/Images/birthday/rocher/rocher-choco-bouquet_3.webp',
+      '/Images/birthday/rocher/rocher-choco-bouquet_4.webp',
+      '/Images/birthday/rocher/rocher-choco-bouquet_1.webp',
+    ],
+    link:"/rocher-choco-bouquet",
+    title:'Rocher Choco Bouquet',
+    rate:'4.8',
+    price:'1899'
+  },
+  {
+    image:['/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_1.webp',
+      '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_2.webp',
+      '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_3.webp',
+      '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_4.webp',
+      '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_5.webp',
+    ],
+    link:"/decorated-chocolate-truffle-cake-half-kg",
+    title:'Decorated Chocolate Truffle Cake Half Kg',
+    rate:'4.5',
+    price:'575'
+  },
+  {
+    image:['/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_1.webp',
+      '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_2.webp',
+      '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_3.webp',
+      '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_4.webp',
+      '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_5.webp'
+    ],
+    link:"/fruit-overload-cake-half-kg",
+    title:'Overload Fruit Cake Half Kg',
+    rate:'5.0',
+    price:'725'
+  },
+  {
+    image:['/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_1.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_2.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_3.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_4.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_5.webp',
+      '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_6.webp',
+    ],
+    link:"/fudge-brownie-cake-half-kg",
+    title:'Fudge Brownie Cake Half Kg',
+    rate:'4.5',
+    price:'675'
+  },
+  // {
+  //   image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
+  //   link:"/love-for-pastel-carnations-bouquet_1",
+  //   title:'Love For Pastel Carnations Bouquet',
+  //   rate:'4.8',
+  //   price:'949'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-desk-organisers_1.webp',
+  //   link:"/personalised-desk-organisers_1",
+  //   title:'Personalised Desk Organisers',
+  //   rate:'4.5',
+  //   price:'549'
+  // },
+  // {
+  //   image:'/Images/birthday/rich-coffee-cream-cake-half-kg_1.webp',
+  //   link:"/rich-coffee-cream-cake-half-kg_1",
+  //   title:'Rich Coffee Cream Cake Half Kg',
+  //   rate:'5.0',
+  //   price:'725'
+  // },
+  // {
+  //   image:['/Images/birthday/heart pendant/shimmering-heart-pendant_1.webp',
+  //     '/Images/birthday/heart pendant/shimmering-heart-pendant_2.webp',
+  //     '/Images/birthday/heart pendant/shimmering-heart-pendant_3.webp'
+  //   ],
+  //   link:"/shimmering-heart-pendant",
+  //   title:'Shimmering Heart Pendant',
+  //   rate:'4.5',
+  //   price:'449'
+  // },
+  // {
+  //   image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
+  //   link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
+  //   title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
+  //   rate:'5.0',
+  //   price:'649'
+  // },
+  // {
+  //   image:'/Images/birthday/birthday-celebration-mugs_1.webp',
+  //   link:"/birthday-celebration-mugs_1",
+  //   title:'Birthday Celebration Mug',
+  //   rate:'4.5',
+  //   price:'249'
+  // },
+  // {
+  //   image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
+  //   link:"/dates-walnuts-mixed-dry-cake-500gms_1",
+  //   title:'Dates & Walnuts Mixed Dry Cake 500gms',
+  //   rate:'5.0',
+  //   price:'999'
+  // },
+  // {
+  //   image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
+  //   link:"/feminine-fragrance-collection-for-her_1",
+  //   title:'Feminine Fragrance Collection for Her',
+  //   rate:'4.5',
+  //   price:'899'
+  // },
+  // {
+  //   image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
+  //   link:"/jade-plant-in-gold-tone-metal-pot_1",
+  //   title:'Jade Plant In Gold Tone Metal Pot',
+  //   rate:'4.8',
+  //   price:'249'
+  // },
+  // {
+  //   image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
+  //   link:"/mixed-brilliance-gerbera-blossoms_1",
+  //   title:'Special 8 Mixed Roses Bouquet',
+  //   rate:'4.3',
+  //   price:'549'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
+  //   link:"/personalised-blue-notebook-and-pen-combo_1",
+  //   title:'Personalised Blue Notebook & Pen Combo',
+  //   rate:'4.8',
+  //   price:'599'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
+  //   link:"/personalised-mens-classy-essentials-gift-box_1",
+  //   title:'Personalised Mens Classy Essentials Gift Box',
+  //   rate:'4.7',
+  //   price:'1499'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
+  //   link:"/personalised-temperature-hydration-bottle_1",
+  //   title:'Personalised Temperature Hydration Bottle',
+  //   rate:'4.6',
+  //   price:'599'
+  // },
+  // {
+  //   image:'/Images/birthday/rocher-choco-bouquet_1.webp',
+  //   link:"/rocher-choco-bouquet_1",
+  //   title:'Rocher Choco Bouquet',
+  //   rate:'4.8',
+  //   price:'1899'
+  // },
+  // {
+  //   image:['/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_1.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_2.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_3.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_4.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_5.webp',
+  //   ],
+  //   link:"/decorated-chocolate-truffle-cake-half-kg",
+  //   title:'Decorated Chocolate Truffle Cake Half Kg',
+  //   rate:'4.5',
+  //   price:'575'
+  // },
+  // {
+  //   image:['/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_1.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_2.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_3.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_4.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_5.webp'
+  //   ],
+  //   link:"/fruit-overload-cake-half-kg",
+  //   title:'Overload Fruit Cake Half Kg',
+  //   rate:'5.0',
+  //   price:'725'
+  // },
+  // {
+  //   image:['/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_1.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_2.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_3.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_4.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_5.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_6.webp',
+  //   ],
+  //   link:"/fudge-brownie-cake-half-kg",
+  //   title:'Fudge Brownie Cake Half Kg',
+  //   rate:'4.5',
+  //   price:'675'
+  // },
+  // {
+  //   image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
+  //   link:"/love-for-pastel-carnations-bouquet_1",
+  //   title:'Love For Pastel Carnations Bouquet',
+  //   rate:'4.8',
+  //   price:'949'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-desk-organisers_1.webp',
+  //   link:"/personalised-desk-organisers_1",
+  //   title:'Personalised Desk Organisers',
+  //   rate:'4.5',
+  //   price:'549'
+  // },
+  // {
+  //   image:['/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_1.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_2.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_3.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_4.webp'
+  //   ],
+  //   link:"/rich-coffee-cream-cake-half-kg",
+  //   title:'Rich Coffee Cream Cake Half Kg',
+  //   rate:'5.0',
+  //   price:'725'
+  // },
+  // {
+  //   image:['/Images/birthday/heart pendant/shimmering-heart-pendant_1.webp',
+  //     '/Images/birthday/heart pendant/shimmering-heart-pendant_2.webp',
+  //     '/Images/birthday/heart pendant/shimmering-heart-pendant_3.webp'
+  //   ],
+  //   link:"/shimmering-heart-pendant",
+  //   title:'Shimmering Heart Pendant',
+  //   rate:'4.5',
+  //   price:'449'
+  // },
+  // {
+  //   image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
+  //   link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
+  //   title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
+  //   rate:'5.0',
+  //   price:'649'
+  // },
+  // {
+  //   image:'/Images/birthday/birthday-celebration-mugs_1.webp',
+  //   link:"/birthday-celebration-mugs_1",
+  //   title:'Birthday Celebration Mug',
+  //   rate:'4.5',
+  //   price:'249'
+  // },
+  // {
+  //   image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
+  //   link:"/dates-walnuts-mixed-dry-cake-500gms_1",
+  //   title:'Dates & Walnuts Mixed Dry Cake 500gms',
+  //   rate:'5.0',
+  //   price:'999'
+  // },
+  // {
+  //   image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
+  //   link:"/feminine-fragrance-collection-for-her_1",
+  //   title:'Feminine Fragrance Collection for Her',
+  //   rate:'4.5',
+  //   price:'899'
+  // },
+  // {
+  //   image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
+  //   link:"/jade-plant-in-gold-tone-metal-pot_1",
+  //   title:'Jade Plant In Gold Tone Metal Pot',
+  //   rate:'4.8',
+  //   price:'249'
+  // },
+  // {
+  //   image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
+  //   link:"/mixed-brilliance-gerbera-blossoms_1",
+  //   title:'Special 8 Mixed Roses Bouquet',
+  //   rate:'4.3',
+  //   price:'549'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
+  //   link:"/personalised-blue-notebook-and-pen-combo_1",
+  //   title:'Personalised Blue Notebook & Pen Combo',
+  //   rate:'4.8',
+  //   price:'599'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
+  //   link:"/personalised-mens-classy-essentials-gift-box_1",
+  //   title:'Personalised Mens Classy Essentials Gift Box',
+  //   rate:'4.7',
+  //   price:'1499'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
+  //   link:"/personalised-temperature-hydration-bottle_1",
+  //   title:'Personalised Temperature Hydration Bottle',
+  //   rate:'4.6',
+  //   price:'599'
+  // },
+  // {
+  //   image:'/Images/birthday/rocher-choco-bouquet_1.webp',
+  //   link:"/rocher-choco-bouquet_1",
+  //   title:'Rocher Choco Bouquet',
+  //   rate:'4.8',
+  //   price:'1899'
+  // },
+  // {
+  //   image:['/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_1.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_2.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_3.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_4.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_5.webp',
+  //   ],
+  //   link:"/decorated-chocolate-truffle-cake-half-kg",
+  //   title:'Decorated Chocolate Truffle Cake Half Kg',
+  //   rate:'4.5',
+  //   price:'575'
+  // },
+  // {
+  //   image:['/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_1.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_2.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_3.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_4.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_5.webp'
+  //   ],
+  //   link:"/fruit-overload-cake-half-kg",
+  //   title:'Overload Fruit Cake Half Kg',
+  //   rate:'5.0',
+  //   price:'725'
+  // },
+  // {
+  //   image:['/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_1.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_2.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_3.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_4.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_5.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_6.webp',
+  //   ],
+  //   link:"/fudge-brownie-cake-half-kg",
+  //   title:'Fudge Brownie Cake Half Kg',
+  //   rate:'4.5',
+  //   price:'675'
+  // },
+  // {
+  //   image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
+  //   link:"/love-for-pastel-carnations-bouquet_1",
+  //   title:'Love For Pastel Carnations Bouquet',
+  //   rate:'4.8',
+  //   price:'949'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-desk-organisers_1.webp',
+  //   link:"/personalised-desk-organisers_1",
+  //   title:'Personalised Desk Organisers',
+  //   rate:'4.5',
+  //   price:'549'
+  // },
+  // {
+  //   image:['/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_1.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_2.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_3.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_4.webp'
+  //   ],
+  //   link:"/rich-coffee-cream-cake-half-kg",
+  //   title:'Rich Coffee Cream Cake Half Kg',
+  //   rate:'5.0',
+  //   price:'725'
+  // },
+  // {
+  //   image:['/Images/birthday/heart pendant/shimmering-heart-pendant_1.webp',
+  //     '/Images/birthday/heart pendant/shimmering-heart-pendant_2.webp',
+  //     '/Images/birthday/heart pendant/shimmering-heart-pendant_3.webp'
+  //   ],
+  //   link:"/shimmering-heart-pendant",
+  //   title:'Shimmering Heart Pendant',
+  //   rate:'4.5',
+  //   price:'449'
+  // },
+  // {
+  //   image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
+  //   link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
+  //   title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
+  //   rate:'5.0',
+  //   price:'649'
+  // },
+  // {
+  //   image:'/Images/birthday/birthday-celebration-mugs_1.webp',
+  //   link:"/birthday-celebration-mugs_1",
+  //   title:'Birthday Celebration Mug',
+  //   rate:'4.5',
+  //   price:'249'
+  // },
+  // {
+  //   image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
+  //   link:"/dates-walnuts-mixed-dry-cake-500gms_1",
+  //   title:'Dates & Walnuts Mixed Dry Cake 500gms',
+  //   rate:'5.0',
+  //   price:'999'
+  // },
+  // {
+  //   image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
+  //   link:"/feminine-fragrance-collection-for-her_1",
+  //   title:'Feminine Fragrance Collection for Her',
+  //   rate:'4.5',
+  //   price:'899'
+  // },
+  // {
+  //   image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
+  //   link:"/jade-plant-in-gold-tone-metal-pot_1",
+  //   title:'Jade Plant In Gold Tone Metal Pot',
+  //   rate:'4.8',
+  //   price:'249'
+  // },
+  // {
+  //   image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
+  //   link:"/mixed-brilliance-gerbera-blossoms_1",
+  //   title:'Special 8 Mixed Roses Bouquet',
+  //   rate:'4.3',
+  //   price:'549'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
+  //   link:"/personalised-blue-notebook-and-pen-combo_1",
+  //   title:'Personalised Blue Notebook & Pen Combo',
+  //   rate:'4.8',
+  //   price:'599'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
+  //   link:"/personalised-mens-classy-essentials-gift-box_1",
+  //   title:'Personalised Mens Classy Essentials Gift Box',
+  //   rate:'4.7',
+  //   price:'1499'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
+  //   link:"/personalised-temperature-hydration-bottle_1",
+  //   title:'Personalised Temperature Hydration Bottle',
+  //   rate:'4.6',
+  //   price:'599'
+  // },
+  // {
+  //   image:'/Images/birthday/rocher-choco-bouquet_1.webp',
+  //   link:"/rocher-choco-bouquet_1",
+  //   title:'Rocher Choco Bouquet',
+  //   rate:'4.8',
+  //   price:'1899'
+  // },
+  // {
+  //   image:['/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_1.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_2.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_3.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_4.webp',
+  //     '/Images/birthday/decorated truffle/decorated-chocolate-truffle-cake-half-kg_5.webp',
+  //   ],
+  //   link:"/decorated-chocolate-truffle-cake-half-kg",
+  //   title:'Decorated Chocolate Truffle Cake Half Kg',
+  //   rate:'4.5',
+  //   price:'575'
+  // },
+  // {
+  //   image:['/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_1.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_2.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_3.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_4.webp',
+  //     '/Images/birthday/fruit overload cake/fruit-overload-cake-half-kg_5.webp'
+  //   ],
+  //   link:"/fruit-overload-cake-half-kg",
+  //   title:'Overload Fruit Cake Half Kg',
+  //   rate:'5.0',
+  //   price:'725'
+  // },
+  // {
+  //   image:['/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_1.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_2.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_3.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_4.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_5.webp',
+  //     '/Images/birthday/fudge brownie/fudge-brownie-cake-half-kg_6.webp',
+  //   ],
+  //   link:"/fudge-brownie-cake-half-kg",
+  //   title:'Fudge Brownie Cake Half Kg',
+  //   rate:'4.5',
+  //   price:'675'
+  // },
+  // {
+  //   image:'/Images/birthday/love-for-pastel-carnations-bouquet_1.webp',
+  //   link:"/love-for-pastel-carnations-bouquet_1",
+  //   title:'Love For Pastel Carnations Bouquet',
+  //   rate:'4.8',
+  //   price:'949'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-desk-organisers_1.webp',
+  //   link:"/personalised-desk-organisers_1",
+  //   title:'Personalised Desk Organisers',
+  //   rate:'4.5',
+  //   price:'549'
+  // },
+  // {
+  //   image:['/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_1.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_2.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_3.webp',
+  //     '/Images/birthday/rich coffee cream cake/rich-coffee-cream-cake-half-kg_4.webp'
+  //   ],
+  //   link:"/rich-coffee-cream-cake-half-kg",
+  //   title:'Rich Coffee Cream Cake Half Kg',
+  //   rate:'5.0',
+  //   price:'725'
+  // },
+  // {
+  //   image:['/Images/birthday/heart pendant/shimmering-heart-pendant_1.webp',
+  //     '/Images/birthday/heart pendant/shimmering-heart-pendant_2.webp',
+  //     '/Images/birthday/heart pendant/shimmering-heart-pendant_3.webp'
+  //   ],
+  //   link:"/shimmering-heart-pendant",
+  //   title:'Shimmering Heart Pendant',
+  //   rate:'4.5',
+  //   price:'449'
+  // },
+  // {
+  //   image:'/Images/birthday/birthday-bliss-vanilla-dream-cake-half-kg_1.webp',
+  //   link:"/birthday-bliss-vanilla-dream-cake-half-kg_1",
+  //   title:'Birthday Bliss Vanilla Dream Cake- Half Kg',
+  //   rate:'5.0',
+  //   price:'649'
+  // },
+  // {
+  //   image:'/Images/birthday/birthday-celebration-mugs_1.webp',
+  //   link:"/birthday-celebration-mugs_1",
+  //   title:'Birthday Celebration Mug',
+  //   rate:'4.5',
+  //   price:'249'
+  // },
+  // {
+  //   image:'/Images/birthday/dates-walnuts-mixed-dry-cake-500gms_1.webp',
+  //   link:"/dates-walnuts-mixed-dry-cake-500gms_1",
+  //   title:'Dates & Walnuts Mixed Dry Cake 500gms',
+  //   rate:'5.0',
+  //   price:'999'
+  // },
+  // {
+  //   image:'/Images/birthday/feminine-fragrance-collection-for-her_1.webp',
+  //   link:"/feminine-fragrance-collection-for-her_1",
+  //   title:'Feminine Fragrance Collection for Her',
+  //   rate:'4.5',
+  //   price:'899'
+  // },
+  // {
+  //   image:'/Images/birthday/jade-plant-in-gold-tone-metal-pot_1.webp',
+  //   link:"/jade-plant-in-gold-tone-metal-pot_1",
+  //   title:'Jade Plant In Gold Tone Metal Pot',
+  //   rate:'4.8',
+  //   price:'249'
+  // },
+  // {
+  //   image:'/Images/birthday/mixed-brilliance-gerbera-blossoms_1.webp',
+  //   link:"/mixed-brilliance-gerbera-blossoms_1",
+  //   title:'Special 8 Mixed Roses Bouquet',
+  //   rate:'4.3',
+  //   price:'549'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-blue-notebook-and-pen-combo_1.webp',
+  //   link:"/personalised-blue-notebook-and-pen-combo_1",
+  //   title:'Personalised Blue Notebook & Pen Combo',
+  //   rate:'4.8',
+  //   price:'599'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-mens-classy-essentials-gift-box_1.webp',
+  //   link:"/personalised-mens-classy-essentials-gift-box_1",
+  //   title:'Personalised Mens Classy Essentials Gift Box',
+  //   rate:'4.7',
+  //   price:'1499'
+  // },
+  // {
+  //   image:'/Images/birthday/personalised-temperature-hydration-bottle_1.webp',
+  //   link:"/personalised-temperature-hydration-bottle_1",
+  //   title:'Personalised Temperature Hydration Bottle',
+  //   rate:'4.6',
+  //   price:'599'
+  // },
+  // {
+  //   image:'/Images/birthday/rocher-choco-bouquet_1.webp',
+  //   link:"/rocher-choco-bouquet_1",
+  //   title:'Rocher Choco Bouquet',
+  //   rate:'4.8',
+  //   price:'1899'
+  // }
+]
+const [hoverEffect,setHoverEffect]=useState(null)
+const [count,setcount]=useState(0)
+   useEffect(()=>{
+  if(hoverEffect){
+let intercel= setInterval(() => {
+ if(count>=5){
+  setcount(0)
+ }
+ else{ setcount(count+1)
+
+ }
+
+}, 1000);
+
+return ()=>clearInterval(intercel)
+
+  }
+},[hoverEffect])
   const handleChange = (auth) => {
     setShow({...show,[auth]:show[auth]?"":auth}); 
   };
@@ -828,9 +1011,13 @@ function page() {
               {data.map((item,index)=>(
 
               
-              <div key={index} className="bg-white p-2 ">
+              <div key={index} className="bg-white p-2 " onMouseEnter={()=>setHoverEffect(index)} onMouseLeave={()=>setHoverEffect(null)} >
                 <Link href={item.link} className="space-y-2">
-                  <Image width={500} height={500} className="w-full h-auto" src={item.image} alt={item.title}/>
+                { hoverEffect===index ?<Image width={500} height={500} className="w-full h-auto" src={item.image[count]} alt={item.title}/>:<Image width={500} height={500} className="w-full h-auto" src={item.image[0]} alt={item.title}/>
+
+                }
+                  
+
                   <h3 className="text-slate-800">{item.title}</h3>
                   <div className="flex justify-between">
                   <span className="flex items-center font-semibold text-lg"><BsCurrencyRupee />{item.price}</span>
