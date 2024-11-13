@@ -11,11 +11,7 @@ const Navbar = () => {
   const [menuWidth, setMenuWidth] = useState(0);
 
   const items = [
-   
-    {
-      name: "FESTIVALS",
-      link: "/festivals",
-    },
+    
     {
       name: "BIRTHDAY",
       link: "/birthday",
@@ -53,6 +49,10 @@ const Navbar = () => {
       link: "/lifestyle",
     },
     {
+      name: "OCCASIONS",
+      link: "/occasions",
+    },
+    {
       name: "GLOBAL",
       link: "/global",
     },
@@ -62,14 +62,9 @@ const Navbar = () => {
     },
   ];
 
-  const [barData,setbarData]=useState("")
-const newData={
-
-
   
 
-
-  FESTIVALS : [
+  const festivalSections = [
     {
       heading: "Bhai Dooj",
       links: [
@@ -138,79 +133,80 @@ const newData={
         { href: "/milestones/retirement", text: "Retirement" },
       ],
     },
-  ],
+  ];
 
-   birthdaySections : [
+  const birthdaySections = [
     {
       heading: "Must Haves",
       links: [
-        { href: "/gifts/flowers", text: "Flowers" },
-        { href: "/gifts/flowers-cakes", text: "Flowers N Cakes" },
-        { href: "/gifts/cakes", text: "Cakes" },
-        { href: "/gifts/flowers-chocolates", text: "Flowers N Chocolates" },
-        { href: "/gifts/plants", text: "Plants" },
-        { href: "/gifts/combos", text: "Combos" },
-        { href: "/gifts/gift-hampers", text: "Gift Hampers" },
-        { href: "/gifts/personalised", text: "Personalised Gifts" },
-        { href: "/gifts/chocolates", text: "Chocolates" },
-        { href: "/gifts/greeting-cards", text: "Greeting Cards" },
+        { href: "/birthday/flowers", text: "Flowers" },
+        { href: "/birthday/flowers-cakes", text: "Flowers N Cakes" },
+        { href: "/birthday/cakes", text: "Cakes" },
+        { href: "/birthday/flowers-chocolates", text: "Flowers N Chocolates" },
+        { href: "/birthday/plants", text: "Plants" },
+        { href: "/birthday/combos", text: "Combos" },
+        { href: "/birthday/gift-hampers", text: "Gift Hampers" },
+        { href: "/birthday/personalised", text: "Personalised Gifts" },
+        { href: "/birthday/chocolates", text: "Chocolates" },
+        { href: "/birthday/greeting-cards", text: "Greeting Cards" },
       ],
     },
     {
       heading: "Prime Picks",
       links: [
-        { href: "/gifts/all", text: "All Gifts" },
-        { href: "/gifts/bestsellers", text: "Bestsellers" },
-        { href: "/gifts/premium", text: "Premium Gifts" },
-        { href: "/gifts/unusual", text: "Unusual Gifts" },
-        { href: "/gifts/new-arrivals", text: "New Arrivals" },
-        { href: "/gifts/midnight-delivery", text: "Midnight Delivery" },
-        { href: "/gifts/return-gifts", text: "Return Gifts" },
+        { href: "/birthday/all", text: "All Gifts" },
+        { href: "/birthday/bestsellers", text: "Bestsellers" },
+        { href: "/birthday/premium", text: "Premium Gifts" },
+        { href: "/birthday/unusual", text: "Unusual Gifts" },
+        { href: "/birthday/new-arrivals", text: "New Arrivals" },
+        { href: "/birthday/midnight-delivery", text: "Midnight Delivery" },
+        { href: "/birthday/return-gifts", text: "Return Gifts" },
       ],
     },
     {
       heading: "Personal Picks",
       links: [
-        { href: "/gifts/plant-lover", text: "Plant Lover" },
-        { href: "/gifts/wanderer", text: "Wanderer" },
-        { href: "/gifts/foodies", text: "Foodies" },
-        { href: "/gifts/music-fan", text: "Music Fan" },
+        { href: "/birthday/plant-lover", text: "Plant Lover" },
+        { href: "/birthday/wanderer", text: "Wanderer" },
+        { href: "/birthday/foodies", text: "Foodies" },
+        { href: "/birthday/music-fan", text: "Music Fan" },
       ],
     },
     {
       heading: "Age Perfect Gifts",
       links: [
-        { href: "/gifts/1st-birthday", text: "1st Birthday" },
-        { href: "/gifts/10th-birthday", text: "10th Birthday" },
-        { href: "/gifts/18th-birthday", text: "18th Birthday" },
-        { href: "/gifts/50th-birthday", text: "50th Birthday" },
+        { href: "/birthday/1st-birthday", text: "1st Birthday" },
+        { href: "/birthday/10th-birthday", text: "10th Birthday" },
+        { href: "/birthday/18th-birthday", text: "18th Birthday" },
+        { href: "/birthday/50th-birthday", text: "50th Birthday" },
       ],
     },
     {
       heading: "Treasure Trove",
       links: [
-        { href: "/gifts/spiritual", text: "Spiritual Gifts" },
-        { href: "/gifts/electronics", text: "Electronics" },
-        { href: "/gifts/jewellery", text: "Jewellery" },
-        { href: "/gifts/exotic-flowers", text: "Exotic Flowers" },
-        { href: "/gifts/experiential", text: "Experiential Gifts" },
-        { href: "/gifts/toys-games", text: "Toys N Games" },
-        { href: "/gifts/balloon-decor", text: "Balloon Decor" },
-        { href: "/gifts/gifts-guitarist", text: "Gifts N Guitarist" },
+        { href: "/birthday/spiritual", text: "Spiritual Gifts" },
+        { href: "/birthday/electronics", text: "Electronics" },
+        { href: "/birthday/jewellery", text: "Jewellery" },
+        { href: "/birthday/exotic-flowers", text: "Exotic Flowers" },
+        { href: "/birthday/experiential", text: "Experiential Gifts" },
+        { href: "/birthday/toys-games", text: "Toys N Games" },
+        { href: "/birthday/balloon-decor", text: "Balloon Decor" },
+        { href: "/birthday/gifts-guitarist", text: "Gifts N Guitarist" },
       ],
     },
     {
       heading: "Price Wise Gifts",
       links: [
-        { href: "/gifts/range-500-1000", text: "Rs500 - Rs1000" },
-        { href: "/gifts/range-1000-2000", text: "Rs1000 - Rs2000" },
-        { href: "/gifts/above-2000", text: "Above Rs2000" },
-        { href: "/gifts/below-500", text: "Below Rs500" },
+        { href: "/birthday/range-500-1000", text: "Rs500 - Rs1000" },
+        { href: "/birthday/range-1000-2000", text: "Rs1000 - Rs2000" },
+        { href: "/birthday/above-2000", text: "Above Rs2000" },
+        { href: "/birthday/below-500", text: "Below Rs500" },
       ],
     },
-  ],
+  ];
+  
 
-   anniversarySections : [
+  const anniversarySections = [
     {
       heading: "FEATURED",
       links: [
@@ -277,9 +273,9 @@ const newData={
         { href: "/gifts/50th-anniversary", text: "50th Anniversary" },
       ],
     },
-  ],
+  ];
 
-   cakeSections : [
+  const cakeSections = [
     {
       heading: "Celebrate Special Occasions",
       links: [
@@ -354,9 +350,9 @@ const newData={
         { href: "/cakes/send/kolkata", text: "Kolkata" },
       ],
     },
-  ],
+  ];
 
-   flowerSections : [
+  const flowerSections = [
     {
       heading: "IN FOCUS",
       links: [
@@ -439,9 +435,9 @@ const newData={
         { href: "/flowers/send/other-cities", text: "All Other Cities" },
       ],
     },
-  ],
+  ];
 
-   personalizedSections : [
+  const personalizedSections = [
     {
       heading: "GIFTS IN SPOTLIGHT",
       links: [
@@ -523,9 +519,9 @@ const newData={
         { href: "/personalised/send/all-other-cities", text: "All Other Cities" },
       ],
     },
-  ],
+  ];
   
-   plantSections : [
+  const plantSections = [
     {
       heading: "ELITE GREENS",
       links: [
@@ -613,9 +609,9 @@ const newData={
         { href: "/plants/send/all-other-cities", text: "All Other Cities" },
       ],
     },
-  ],
+  ];
 
-   chocolateSections : [
+  const chocolateSections = [
     {
       heading: "BY FEATURED",
       links: [
@@ -692,9 +688,9 @@ const newData={
         { href: "/send-to/all-cities", text: "All Other Cities" },
       ],
     },
-  ],
+  ];
 
-   comboSections : [
+  const comboSections = [
     {
       heading: "FEATURED COMBOS",
       links: [
@@ -760,9 +756,9 @@ const newData={
         { href: "/hampers/diy-kits", text: "DIY Kits Hampers" },
       ],
     },
-  ],
+  ];
 
-   lifestyleSections : [
+  const lifestyleSections = [
     {
       heading: "Trending",
       links: [
@@ -862,9 +858,9 @@ const newData={
     //     { href: "/brands/carlton-london", text: "Carlton London" },
     //   ],
     // },
-  ],
+  ];
 
-   globalSections : [
+  const globalSections = [
     {
       country: "USA",
       links: [
@@ -967,9 +963,9 @@ const newData={
         { href: "/other-countries/all", text: "Other Countries" },
       ],
     },
-  ],
+  ];
 
-  newArrivalsTrends :[
+  const newArrivalsTrends = [
     {
       category: "New Arrivals",
       links: [
@@ -1055,18 +1051,8 @@ const newData={
         { href: "/cities/all-other-cities", text: "All Other Cities" },
       ],
     },
-  ]
-}
+  ];
   
-  
-
-
-  
-  
-  
-  
-  
-
   // Calculate width of menu items container
   useEffect(() => {
     if (menuRef.current) {
@@ -1082,7 +1068,7 @@ const newData={
   const handleMouseLeave = () => {
     setDropdown(null);
   };
-console.log(newData[barData])
+
   return (
     <nav
       className="w-full bg-slate-100 shadow-2xl relative z-30"
@@ -1096,7 +1082,7 @@ console.log(newData[barData])
           {items.map((item, index) => (
             <li
               key={index}
-              onMouseEnter={() => setbarData(item.name)}
+              onMouseEnter={() => handleMouseEnter(item.name.toLowerCase())}
               className="relative flex items-end"
             >
               <Link href={item.link}>{item.name}</Link>
@@ -1114,95 +1100,8 @@ console.log(newData[barData])
               className="absolute top-full mt-2 bg-white shadow-lg rounded-md px-6 grid grid-cols-7 gap-5 "
               style={{ width: menuWidth, left: 0 }}
             >
-
-              {barData && (
-                <>
-                  
-                  
-                  
-                  {newData[barData].map((section, index) => (
-                    <div
-                      key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
-                    >
-                      <p className="font-semibold text-sm mb-2">
-                        {section.heading.toUpperCase()}
-                      </p>
-                      {section.links.map((link, idx) => (
-                        <Link
-                          key={idx}
-                          href={link.href}
-                          className="block py-1 text-sm text-gray-600"
-                        >
-                          {link.text}
-                        </Link>
-                      ))}
-                    </div>
-                  ))}
-                  <div>
-                    <Image
-                      width={500}
-                      height={500}
-                      className="w-full h-auto pt-6 pb-10"
-                      alt="diwali-nav"
-                      src="/Images/dropdown/diwalinav.webp"
-                    />
-                  </div>
-                
-                </>
-              )}
-              {/* {dropdown === "festivals" && (
-                <>
-                  {festivalSections.map((section, index) => (
-                    <div
-                      key={index}
-                      className={`pt-6 pb-20 ps-4 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
-                    >
-                      <p className="font-semibold text-sm mb-2">
-                        {section.heading.toUpperCase()}
-                      </p>
-                      {section.links.map((link, idx) => (
-                        <Link
-                          key={idx}
-                          href={link.href}
-                          className="block py-1 text-sm text-gray-600"
-                        >
-                          {link.text}
-                        </Link>
-                      ))}
-                    </div>
-                  ))}
-                  <div className="flex items-start gap-6">
-                    <Image
-                      width={300}
-                      height={300}
-                      className="w-full h-auto pt-6 pb-10"
-                      alt="bhai-nav"
-                      src="/Images/dropdown/bhaidooj.webp"
-                    />
-
-                    <Image
-                      width={300}
-                      height={300}
-                      className="w-full h-auto pt-6 pb-10"
-                      alt="bday-nav"
-                      src="/Images/dropdown/bdaynav.webp"
-                    />
-
-                    <Image
-                      width={300}
-                      height={300}
-                      className="w-full h-auto pt-6 pb-10"
-                      alt="anniversary-nav"
-                      src="/Images/dropdown/anniversarynav.webp"
-                    />
-                  </div>
-                </>
-              )}
+             
+             
               {dropdown === "birthday" && (
                 <>
                   {birthdaySections.map((section, index) => (
@@ -1516,6 +1415,56 @@ console.log(newData[barData])
                   </div>
                 </>
               )}
+               {dropdown === "occasions" && (
+                <>
+                  {festivalSections.map((section, index) => (
+                    <div
+                      key={index}
+                      className={`pt-6 pb-20 ps-4 ${
+                        index % 2 === 1 ? "bg-slate-50" : ""
+                      }`}
+                    >
+                      <p className="font-semibold text-sm mb-2">
+                        {section.heading.toUpperCase()}
+                      </p>
+                      {section.links.map((link, idx) => (
+                        <Link
+                          key={idx}
+                          href={link.href}
+                          className="block py-1 text-sm text-gray-600"
+                        >
+                          {link.text}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                  <div className="flex items-start gap-6">
+                    <Image
+                      width={300}
+                      height={300}
+                      className="w-full h-auto pt-6 pb-10"
+                      alt="bhai-nav"
+                      src="/Images/dropdown/bhaidooj.webp"
+                    />
+
+                    <Image
+                      width={300}
+                      height={300}
+                      className="w-full h-auto pt-6 pb-10"
+                      alt="bday-nav"
+                      src="/Images/dropdown/bdaynav.webp"
+                    />
+
+                    <Image
+                      width={300}
+                      height={300}
+                      className="w-full h-auto pt-6 pb-10"
+                      alt="anniversary-nav"
+                      src="/Images/dropdown/anniversarynav.webp"
+                    />
+                  </div>
+                </>
+              )}
               {dropdown === "global" && (
                 <>
                   {globalSections.map((section, index) => (
@@ -1575,15 +1524,15 @@ console.log(newData[barData])
                     />
                   </div>
                 </>
-              )} */}
+              )}
             </div>
           )}
         </ul>
       </div>
 
-      <div className="lg:hidden flex items-center justify-between px-5 md:px-10 py-5 bg-[#7d8035] sticky top-0 z-50">
+      <div className="lg:hidden flex items-center justify-between px-5 md:px-10 py-3 bg-[#7d8035] sticky top-0 z-50">
         <Image
-          width={130}
+          width={100}
           height={100}
           src="/Images/logo.webp"
           alt="logo"
