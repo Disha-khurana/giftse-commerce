@@ -1621,8 +1621,8 @@ function page() {
         <h4 className="text-gray-500">Birthday Gifts Online</h4>
       </div>
 
-      <div className="flex gap-8">
-        <div className="bg-white py-4 w-[20%]">
+      <div className="lg:flex gap-8">
+        <div className="bg-white py-4 w-full lg:w-[30%]">
           <div className="sticky top-36">
             <h4 className="border-b border-b-gray-300 font-semibold px-4 pb-2 text-lg">
               Filters
@@ -1725,11 +1725,11 @@ function page() {
             </div>
           </div>
         </div>
-        <div className="w-[80%] space-y-6">
-          <div className="bg-white p-4">
-            <div className="flex gap-10 pb-2">
+        <div className="w-full space-y-6">
+          <div className="bg-white p-3 md:p-4 mt-6 lg:mt-0">
+            <div className="md:flex gap-10 pb-4 md:pb-2">
               <div className="flex gap-5">
-                <h2 className="font-semibold text-lg">
+                <h2 className="font-semibold text-lg lg:text-xl">
                   Memorable Birthday Gifts
                 </h2>
                 <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
@@ -1737,12 +1737,12 @@ function page() {
                   <RiStarHalfSFill />
                 </div>
               </div>
-              <div className="flex gap-5 text-[17px]">
+              <div className="flex gap-5 text-base md:text-[17px]">
                 <h4 className="text-blue-500 font-normal ">65784 Reviews</h4>
                 <span className="text-gray-600 ">| 30 of 100 Gifts</span>
               </div>
             </div>
-            <div className="flex gap-7 ">
+            <div className="hidden md:flex gap-7 ">
               <h3 className="font-normal text-[17px]">Sort By:</h3>
               <ul className="flex gap-7 text-gray-600">
                 <li>Recommended</li>
@@ -1752,12 +1752,12 @@ function page() {
               </ul>
             </div>
           </div>
-          <div className="p-4 ">
-            <div className="grid grid-cols-3 gap-4">
+          <div className="md:p-4 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white p-2"
+                  className="bg-white p-2 group"
                   onMouseEnter={() => {
                     setHoverEffect(index);
                     setCount(0);
@@ -1783,7 +1783,7 @@ function page() {
                       />
                     )}
 
-                    <div className="hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 space-y-2">
+                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 space-y-2">
                       <h3 className="text-slate-800 text-sm">{item.title}</h3>
                       <div className="flex justify-between">
                         <span className="flex items-center font-semibold text-lg">

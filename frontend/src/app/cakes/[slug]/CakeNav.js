@@ -7,25 +7,15 @@ import { BsCurrencyRupee } from "react-icons/bs";
 import { FiMinus } from "react-icons/fi";
 import { RiStarHalfSFill } from "react-icons/ri";
 import Image from "next/image";
-import {  data } from "@/app/components/common/Data";
-import { price } from "@/app/components/common/Data";
-import { heading } from "@/app/components/common/Data";
-import { flowerArrangements } from "@/app/components/common/Data";
-import { flowerColors } from "@/app/components/common/Data";
-import { flowertype } from "@/app/components/common/Data";
-import { cakeFlavors } from "@/app/components/common/Data";
-import { cakeCategories } from "@/app/components/common/Data";
-import { cakeShapes } from "@/app/components/common/Data";
-import { cakeOptions } from "@/app/components/common/Data";
-import { cakeWeights } from "@/app/components/common/Data";
+import { cakeCategories, cakeFlavors, cakeOptions, cakeShapes, cakeWeights, data, heading } from "@/app/components/common/Cake";
+import { price } from "@/app/components/common/Cake";
 
-function Content({ slug }) {
+
+
+function CakeNav({ slug }) {
   const [show, setShow] = useState({
     price: "price",
-    flower: "flower",
     cake: "cake",
-    arrangements: "arrangements",
-    colors: "colors",
     category: "category",
     options: "options",
     shape: "shape",
@@ -58,7 +48,7 @@ function Content({ slug }) {
       </div>
 
       <div className="lg:flex gap-6 ">
-      {(price[slug] || cakeFlavors[slug] || cakeCategories[slug] || cakeOptions[slug] || cakeShapes[slug] || cakeWeights[slug] || flowertype[slug] || flowerArrangements[slug] || flowerColors[slug]) && (
+      {(price[slug] || cakeFlavors[slug] || cakeCategories[slug] || cakeOptions[slug] || cakeShapes[slug] || cakeWeights[slug] ) && (
   <div className="bg-white py-4 w-full lg:w-[30%] ">
     <div className="sticky top-32 z-10">
       <h4 className="border-b border-b-gray-300 font-semibold px-4 pb-2 text-lg">
@@ -81,7 +71,7 @@ function Content({ slug }) {
                 <div key={index} className="flex items-center gap-3 mb-2">
                   <input type="checkbox" />
                   <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.range} ({item.total})
+                    {item.range} ({item.count})
                   </span>
                 </div>
               ))}
@@ -131,7 +121,7 @@ function Content({ slug }) {
                 <div key={index} className="flex items-center gap-3 mb-2">
                   <input type="checkbox" />
                   <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.category} ({item.count})
+                    {item.type} ({item.count})
                   </span>
                 </div>
               ))}
@@ -215,80 +205,6 @@ function Content({ slug }) {
         </div>
       )}
 
-      {flowertype[slug] && (
-        <div className="px-4 py-2 border-b border-b-gray-300">
-          <div className="flex justify-between py-2">
-            <h4 className="font-semibold">Flower Type</h4>
-            {show.flower === "flower" ? (
-              <FiMinus onClick={() => handleChange("flower")} />
-            ) : (
-              <HiOutlinePlusSm onClick={() => handleChange("flower")} />
-            )}
-          </div>
-          {show.flower && (
-            <div>
-              {flowertype[slug]?.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 mb-2">
-                  <input type="checkbox" />
-                  <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.title} ({item.max})
-                  </span>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {flowerArrangements[slug] && (
-        <div className="px-4 py-2 border-b border-b-gray-300">
-          <div className="flex justify-between py-2">
-            <h4 className="font-semibold">Arrangements</h4>
-            {show.arrangements === "arrangements" ? (
-              <FiMinus onClick={() => handleChange("arrangements")} />
-            ) : (
-              <HiOutlinePlusSm onClick={() => handleChange("arrangements")} />
-            )}
-          </div>
-          {show.arrangements && (
-            <div>
-              {flowerArrangements[slug]?.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 mb-2">
-                  <input type="checkbox" />
-                  <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.title} ({item.total})
-                  </span>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {flowerColors[slug] && (
-        <div className="px-4 py-2 ">
-          <div className="flex justify-between py-2">
-            <h4 className="font-semibold">Color</h4>
-            {show.colors === "colors" ? (
-              <FiMinus onClick={() => handleChange("colors")} />
-            ) : (
-              <HiOutlinePlusSm onClick={() => handleChange("colors")} />
-            )}
-          </div>
-          {show.colors && (
-            <div>
-              {flowerColors[slug]?.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 mb-2">
-                  <input type="checkbox" />
-                  <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.color} ({item.total})
-                  </span>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
     </div>
   </div>
 )}
@@ -300,10 +216,12 @@ function Content({ slug }) {
                 <h2 className="font-semibold text-lg lg:text-xl">
                   {heading[slug]?.title}
                 </h2>
+                {heading[slug].rate &&
                 <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
                   <span>{heading[slug]?.rate}</span>
                   <RiStarHalfSFill />
                 </div>
+}
               </div>
               <div className="flex gap-2 md:gap-5 text-sm md:text-[17px]">
                 <h4 className="text-blue-500 font-normal ">65784 Reviews</h4>
@@ -320,7 +238,7 @@ function Content({ slug }) {
               </ul>
             </div>
           </div>
-          <div className="lg:p-4 ">
+          <div className="lg:p-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {data[slug]?.map((item, index) => (
                 <div
@@ -393,4 +311,4 @@ function Content({ slug }) {
   );
 }
 
-export default Content;
+export default CakeNav;
