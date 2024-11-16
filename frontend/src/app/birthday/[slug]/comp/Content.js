@@ -49,6 +49,9 @@ function Content({ slug }) {
     setShow({ ...show, [auth]: show[auth] ? "" : auth });
   };
 
+  const category = slug;
+  const categoryData = price?.find(item => item.category === category)?.data || [];
+
   return (
     <div className="px-5 md:px-12 py-10 bg-slate-100">
       <div className="flex items-center pb-10">
@@ -321,7 +324,7 @@ function Content({ slug }) {
             </div>
           </div>
           <div className="lg:p-4 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className={`grid grid-cols-1 md:grid-cols-2  ${categoryData.length <= 0 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'}`} >
               {data[slug]?.map((item, index) => (
                 <div
                   key={index}

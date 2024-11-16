@@ -1,5 +1,7 @@
-export const price = {
-    flowers: [
+export const price =[
+  {
+    category: "flowers",
+    data: [
       { range: "₹ 500 TO ₹ 999", total: 55 },
       { range: "₹ 1000 TO ₹ 1499", total: 42 },
       { range: "₹ 1500 TO ₹ 1999", total: 14 },
@@ -7,8 +9,10 @@ export const price = {
       { range: "₹ 2500 TO ₹ 2999", total: 4 },
       { range: "₹ 3000 AND ABOVE", total: 1 },
     ],
-
-    "flowers-cakes": [
+  },
+  {
+    category: "flowers-cakes",
+    data: [
       { range: "₹ 500 TO ₹ 999", total: 55 },
       { range: "₹ 1000 TO ₹ 1499", total: 42 },
       { range: "₹ 1500 TO ₹ 1999", total: 14 },
@@ -16,8 +20,10 @@ export const price = {
       { range: "₹ 2500 TO ₹ 2999", total: 4 },
       { range: "₹ 3000 AND ABOVE", total: 1 },
     ],
-
-    cakes: [
+  },
+  {
+    category: "cakes",
+    data: [
       { range: "₹ 0 TO ₹ 499", total: 6 },
       { range: "₹ 500 TO ₹ 999", total: 180 },
       { range: "₹ 1000 TO ₹ 1499", total: 63 },
@@ -26,7 +32,9 @@ export const price = {
       { range: "₹ 2500 TO ₹ 2999", total: 5 },
       { range: "₹ 3000 AND ABOVE", total: 1 },
     ],
-  };
+  },
+];
+
 
   export const cakeFlavors = {
     cakes: [
