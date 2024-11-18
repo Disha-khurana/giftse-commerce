@@ -5,6 +5,11 @@
 input::placeholder {
   font-size: 0.85em;
 }
+.shadow {
+  box-shadow: 0px 0px 5px 1px orangered;
+}
+
+
 
 /* Slider.css */
 .swiper-pagination-bullet {
