@@ -121,7 +121,7 @@ console.log(categoryData,'hghgjhjgjgy');
                   }}
                   onMouseLeave={() => setHoverEffect(null)}
                 >
-                  <Link href={item.link} className="space-y-2">
+                  <Link href={`/gift${item.link}`} className="space-y-2">
                     {hoverEffect === index ? (
                       <Image
                         width={500}
