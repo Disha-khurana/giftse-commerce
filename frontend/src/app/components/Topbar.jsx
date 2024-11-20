@@ -126,10 +126,12 @@ function Topbar() {
 
           {/* Right Section - Icons */}
           <div className="flex-shrink-0 flex items-center gap-5 text-white">
+            <Link href='/login'>
             <div className='flex flex-col items-center justify-center mt-1'>
               <FaRegUser className="text-[20px] mb-1 " />
               <span className='text-xs'>Profile</span>
             </div>
+            </Link>
             <div className='flex flex-col items-center justify-center'>
               <AiOutlineHeart className="text-[23px] mb-1" />
               <span className='text-xs'>Wishlist</span>
