@@ -148,10 +148,10 @@ function GiftCompo({ slug }) {
     <div >
       {product ? (
         <div>
-          <div className="flex px-48 items-start gap-6 pt-20 pb-12">
-            <div className="flex flex-col sticky top-32 mb-6">
+          <div className="lg:flex px-5 md:px-20 lg:px-48 items-center lg:items-start gap-6 pt-20 pb-12">
+            <div className="flex flex-row lg:flex-col gap-4 lg:gap-0 lg:sticky lg:top-32 mb-6">
 
-              <div className="w-full max-w-lg">
+              <div className="w-full lg:max-w-lg">
                 <ReactImageMagnify
                   {...{
                     smallImage: {
@@ -170,14 +170,14 @@ function GiftCompo({ slug }) {
               </div>
 
               {/* Thumbnails */}
-              <div className="flex max-w-lg w-full gap-4 mt-4">
+              <div className="lg:flex lg:max-w-lg lg:w-full gap-4 mt-5 md:mt-7 lg:mt-4">
                 {product.image.map((img, index) => (
                   <img
                     key={index}
                     src={img}
                     alt={`${product.title} thumbnail ${index + 1}`}
                     onClick={() => handleImageClick(index)}
-                    className={`w-24 h-20 object-cover rounded cursor-pointer transition-transform duration-300 ${mainImage === img ? 'ring-2 ring-[#707428] scale-110' : ''
+                    className={`w-14 md:w-24 mb-3 lg:mb-0 h-12 md:h-20 object-cover rounded cursor-pointer transition-transform duration-300 ${mainImage === img ? 'ring-2 ring-[#707428] scale-110' : ''
                       }`}
                   />
                 ))}
@@ -187,7 +187,7 @@ function GiftCompo({ slug }) {
             <div className='space-y-6'>
 
               <div>
-                <h1 className="text-2xl lg:text-3xl font-semibold text-nowrap mb-2">{product.title}</h1>
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-nowrap mb-2">{product.title}</h1>
                 <div className='flex items-center gap-2 mb-2'>
                   {product.rate ?
                     <button className='  gap-1 rounded-full flex items-center font-semibold text-base'> {product.rate}
@@ -258,8 +258,8 @@ function GiftCompo({ slug }) {
                 </div>
               </div>
               <div className='space-y-3'>
-                <div className='flex items-center gap-5'>
-                  <div className="flex items-center relative">
+                <div className='md:flex items-center gap-5'>
+                  <div className="flex mb-5 md:mb-0 items-center relative">
                     <input
                       type="text"
                       name="pincode"
@@ -551,13 +551,13 @@ function GiftCompo({ slug }) {
 
 
 
-          <div className='px-48 py-12 bg-slate-50' >
+          <div className='px-5 md:px-20 lg:px-48 py-12 bg-slate-50' >
             <h1 className='font-semibold pb-5 text-2xl'> Recently Viewed by You</h1>
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-3  lg:grid-cols-5'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-3 lg:grid-cols-5'>
 
               {product_details.map((item, index) => (
-                <Link href={`/gift${item.link}`}>
-                  <div key={index} className='space-y-1 bg-white p-3 '>
+                <Link key={index} href={`/gift${item.link}`}>
+                  <div className='space-y-1 bg-white p-3 '>
                     <Image src={item.image[0]} height={500} width={500} alt={item.title} />
                     <span className='flex justify-center items-center text-slate-800 text-base font-semibold pt-2' id='details'>{item.title}</span>
                     <span className='font-semibold flex items-start'>₹<span className='text-lg'>{item.price}</span></span>
@@ -573,7 +573,7 @@ function GiftCompo({ slug }) {
             </div>
           </div>
 
-          <div className='px-48 py-10' >
+          <div className='px-5 md:px-20 lg:px-48 py-10' >
             <h1 className='font-bold text-2xl mb-4'>Important Information:</h1>
             <p className='font-bold mb-2'>Directions:</p>
             {product.storage ?

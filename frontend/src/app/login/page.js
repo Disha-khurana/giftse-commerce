@@ -29,29 +29,35 @@ function Page() {
   return (
     <div className='flex bg-slate-100 justify-center py-20'>
       {/* Left section (Social Media Login) */}
-      <div className='bg-[#7d8035] py-32 px-7 w-80'>
+      <div className='bg-[#b1b268] py-32 px-7 w-80'>
         <div className='flex flex-col justify-center space-y-3'>
           <p className='text-white pb-5'>Login using social media to get quick access</p>
 
+          <Link href='https://www.facebook.com/' target='blank'>
           <div className='flex items-center justify-center px-3 gap-2 bg-blue-600 py-1'>
             <Image src='/Images/icon/fb.webp' height={500} width={500} alt='facebook' className='w-6 h-6' />
             <span className='text-white text-sm'>Signin with Facebook</span>
           </div>
+          </Link>
 
+          <Link href='https://x.com/' target='blank'>
           <div className='flex items-center justify-center px-3 gap-2 bg-blue-400 py-1'>
             <Image src='/Images/icon/twitter.webp' height={500} width={500} alt='twitter' className='w-5 h-6' />
             <span className='text-white text-sm'>Signin with Twitter</span>
           </div>
+          </Link>
 
-          <div className='flex items-center justify-center px-3 gap-2 bg-red-600 py-1'>
+          <Link href='https://www.google.com/' target='blank'>
+          <div className='flex items-center justify-center px-3 gap-2 bg-slate-400 py-1'>
             <Image src='/Images/icon/google.webp' height={500} width={500} alt='google' className='w-6 h-6' />
             <span className='text-white text-sm'>Signin with Google</span>
           </div>
+          </Link>
         </div>
       </div>
 
       {/* Right section (Login / Signup Form) */}
-      <div className='flex flex-col items-center justify-center py-10 h-[480px] bg-white px-5 w-[500px]'>
+      <div className='flex flex-col items-center justify-center py-10 h-[480px] bg-white shadow-lg px-5 w-[500px]'>
         <h2 className='text-2xl font-bold'>{isLogin ? 'Log into your account' : 'Create an account'}</h2>
         <div className='flex gap-2'>
           <p>{isLogin ? "Don’t have an account?" : "Already have an account?"}</p>
@@ -77,7 +83,7 @@ function Page() {
                 </label>
                 <span className='text-blue-500'>Forgot Password?</span>
               </div>
-              <button className='bg-blue-600 text-white p-1 w-full'>Login with email</button>
+              <button className='bg-blue-600 text-white p-1 w-full mt-20'>Login with email</button>
             </>
           ) : (
             <>
