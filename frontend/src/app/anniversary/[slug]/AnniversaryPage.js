@@ -2,9 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsCurrencyRupee } from "react-icons/bs";
-import { FiMinus } from "react-icons/fi";
 import { RiStarHalfSFill } from "react-icons/ri";
 import Image from "next/image";
 import { heading } from "@/app/components/common/Anniversarydata";

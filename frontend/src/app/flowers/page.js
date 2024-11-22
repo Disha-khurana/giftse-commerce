@@ -1,444 +1,160 @@
-"use client";
-import React, { useEffect } from "react";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import CategorySlide from './CategorySlide'
+import PlantsOccasion from "./FlowersOccasion";
+import ChooseUs from "./ChooseUs";
+import Range from "./Range";
+import Showstopper from "./Showstopper";
+import Pairslide from "./Pairslide";
+import Colors from "./Colors";
+import Autoplay from "./Autoplay";
 
 function Page() {
 
     const flowerData = {
-        images: [
-            "/Images/flowers/slider/blooms.webp",
-            "/Images/flowers/slider/premium.webp",
-            "/Images/flowers/slider/subs.webp",
-        ],
-
-        range: [
+        country: [
             {
-                image: "/Images/flowers/range/Roses.webp",
-                link: "/roses",
+                img: '/Images/flowers/country/Bengaluru.webp',
+                title: 'Bengaluru',
+                link: '/bengaluru'
             },
             {
-                image: "/Images/flowers/range/Orchids.webp",
-                link: "/orchids",
+                img: '/Images/flowers/country/Chennai.webp',
+                title: 'Chennai',
+                link: '/chennai'
             },
             {
-                image: "/Images/flowers/range/Lily.webp",
-                link: "/lily",
+                img: '/Images/flowers/country/Delhi NCR.webp',
+                title: 'Delhi NCR',
+                link: '/delhi-ncr'
             },
             {
-                image: "/Images/flowers/range/Carnations.webp",
-                link: "/carnations",
+                img: '/Images/flowers/country/Hyderabad.webp',
+                title: 'Hyderabad',
+                link: '/hyderabad'
             },
             {
-                image: "/Images/flowers/range/Gerbaras.webp",
-                link: "/gerbaras",
+                img: '/Images/flowers/country/Mumbai.webp',
+                title: 'Mumbai',
+                link: '/mumbai'
             },
             {
-                image: "/Images/flowers/range/Mixed.webp",
-                link: "/mixed",
-            },
-        ],
-
-        chooseUs: [
-            {
-                img: "/Images/flowers/choose/Premium-Flowers.svg",
-                title: "Premium Flowers",
-            },
-            {
-                img: "/Images/flowers/choose/Handcrafted-arrangements.svg",
-                title: "Handcrafted Arrangements",
-            },
-            {
-                img: "/Images/flowers/choose/Hassle-Free-Delivery.svg",
-                title: "Hassle-Free Delivery",
-            },
-            {
-                img: "/Images/flowers/choose/Customer-Support.svg",
-                title: "Customer Support",
-            },
-        ],
-
-        Occasion: [
-            {
-                img: "/Images/flowers/occasion/Anniversary.webp",
-                link: "/anniversary",
-            },
-            {
-                img: "/Images/flowers/occasion/Birthday.webp",
-                link: "/birthday",
-            },
-            {
-                img: "/Images/flowers/occasion/Celebrations.webp",
-                link: "/celebrations",
-            },
-            {
-                img: "/Images/flowers/occasion/Condolences.webp",
-                link: "/condolences",
-            },
-            {
-                img: "/Images/flowers/occasion/Desk.webp",
-                link: "/desk",
-            },
-            {
-                img: "/Images/flowers/occasion/Farewell.webp",
-                link: "/farewell",
-            },
-            {
-                img: "/Images/flowers/occasion/Get well soon.webp",
-                link: "/get-well-soon",
-            },
-            {
-                img: "/Images/flowers/occasion/Housewarming.webp",
-                link: "/housewarming",
-            },
-            {
-                img: "/Images/flowers/occasion/I am Sorry.webp",
-                link: "/i-am-sorry",
-            },
-            {
-                img: "/Images/flowers/occasion/I love you.webp",
-                link: "/i-love-you",
-            },
-            {
-                img: "/Images/flowers/occasion/I miss you.webp",
-                link: "/i-miss-you",
-            },
-            {
-                img: "/Images/flowers/occasion/Thank You.webp",
-                link: "/thank-you",
-            },
-        ],
-
-        surprise: [
-            {
-                img: '/Images/flowers/surprise/Him.webp',
-                link: '/him'
-            },
-            {
-                img: '/Images/flowers/surprise/Her.webp',
-                link: '/her'
-            },
-            {
-                img: '/Images/flowers/surprise/Them.webp',
-                link: '/them'
+                img: '/Images/flowers/country/Pune.webp',
+                title: 'Pune',
+                link: '/pune'
             }
         ],
 
-        color: [
+        globe: [
             {
-                image: "/Images/flowers/color/Blue.webp",
-                link: "/blue",
-                title: "Blue",
+                img: '/Images/flowers/globe/Australia.webp',
+                title: 'Australia',
+                link: '/australia'
             },
             {
-                image: "/Images/flowers/color/Cool.webp",
-                link: "/cool",
-                title: "Cool",
+                img: '/Images/flowers/globe/Canada.webp',
+                title: 'Canada',
+                link: '/canada'
             },
             {
-                image: "/Images/flowers/color/Mixed.webp",
-                link: "/mixed",
-                title: "Mixed",
+                img: '/Images/flowers/globe/UAE.webp',
+                title: 'UAE',
+                link: '/uae'
             },
             {
-                image: "/Images/flowers/color/Orange.webp",
-                link: "/orange",
-                title: "Orange",
+                img: '/Images/flowers/globe/UK.webp',
+                title: 'UK',
+                link: '/uk'
             },
             {
-                image: "/Images/flowers/color/Pastel.webp",
-                link: "/pastel",
-                title: "Pastel",
+                img: '/Images/flowers/globe/USA.webp',
+                title: 'USA',
+                link: '/usa'
             },
             {
-                image: "/Images/flowers/color/Peach.webp",
-                link: "/peach",
-                title: "Peach",
-            },
-            {
-                image: "/Images/flowers/color/Pink.webp",
-                link: "/pink",
-                title: "Pink",
-            },
-            {
-                image: "/Images/flowers/color/Purple.webp",
-                link: "/purple",
-                title: "Purple",
-            },
-            {
-                image: "/Images/flowers/color/Red.webp",
-                link: "/red",
-                title: "Red",
-            },
-            {
-                image: "/Images/flowers/color/Warm.webp",
-                link: "/warm",
-                title: "Warm",
-            },
-            {
-                image: "/Images/flowers/color/White.webp",
-                link: "/white",
-                title: "White",
-            },
-            {
-                image: "/Images/flowers/color/Yellow.webp",
-                link: "/yellow",
-                title: "Yellow",
-            },
+                img: '/Images/flowers/globe/Worldwide.webp',
+                title: 'Worldwide',
+                link: '/worldwide'
+            }
         ]
-
-
     }
 
 
-    // Autoplay logic
-    const [sliderRef, slider] = useKeenSlider({
-        loop: true,
-        animation: { duration: 1000 },
-        slides: {
-            perView: 1,
-            spacing: 15,
-        },
-    });
-
-    const [slideRef, slide] = useKeenSlider({
-        loop: true,
-        slides: {
-            perView: 5, // Number of visible slides
-            spacing: 15, // Space between slides
-        },
-        breakpoints: {
-            "(max-width: 1024px)": {
-                slides: { perView: 5, spacing: 2 },
-            },
-            "(max-width: 768px)": {
-                slides: { perView: 2, spacing: 8 },
-            },
-            "(max-width: 480px)": {
-                slides: { perView: 1, spacing: 5 },
-            },
-        },
-    });
-
-    const [sliderrRef, sliderr] = useKeenSlider({
-        loop: true,
-        slides: {
-            perView: 10, // Number of visible slides
-            spacing: 5, // Space between slides
-        },
-        breakpoints: {
-            "(max-width: 1024px)": {
-                slides: { perView: 10, spacing: 2 },
-            },
-            "(max-width: 768px)": {
-                slides: { perView: 2, spacing: 8 },
-            },
-            "(max-width: 480px)": {
-                slides: { perView: 1, spacing: 5 },
-            },
-        },
-    });
-
-    useEffect(() => {
-        // Check if slider instance exists
-        if (slider) {
-            const interval = setInterval(() => {
-                slider.current?.next();
-            }, 4000);
-
-            // Clear interval on unmount or if slider changes
-            return () => clearInterval(interval);
-        }
-    }, [slider]);
 
     return (
         <div className=" space-y-20">
-            <div className="flex flex-col md:flex-row px-5 md:px-12 items-center justify-center">
-                {/* Slider with Arrow Controls */}
-                <div className="relative w-full">
-                    <div ref={sliderRef} className="keen-slider">
-                        {flowerData.images.map((image, index) => (
-                            <div
-                                key={`slide-${index}`}
-                                className="keen-slider__slide flex justify-center"
-                            >
-                                <img
-                                    src={image}
-                                    alt={`Slide ${index}`}
-                                    className="object-cover w-full rounded-lg shadow-lg"
-                                />
-                            </div>
-                        ))}
-                    </div>
+            <Autoplay />
+            <CategorySlide />
 
-                    {/* Left Arrow */}
-                    <button
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
-                        onClick={() => slider?.current?.prev()}
-                    >
-                        &#x276E;
-                    </button>
+            <Range />
 
-                    {/* Right Arrow */}
-                    <button
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
-                        onClick={() => slider?.current?.next()}
-                    >
-                        &#x276F;
-                    </button>
-                </div>
-            </div>
-
-            <div className="space-y-10 px-5 md:px-12">
-                <div className="flex items-center justify-center space-x-4">
-                    <div className="w-16 h-px bg-[#7d8035] "></div>
-                    <h2 className="font-bold text-3xl text-center">Explore Our Exquisite Range</h2>
-                    <div className="w-16 h-px bg-[#7d8035]"></div>
-                </div>
-                <div className="grid grid-cols-6 gap-6 ">
-                    {flowerData.range.map((item, index) => (
-                        <Link href={`/flowers${item.link}`}>
-                            <img key={index} src={item.image} className='w-full h-auto rounded-xl' />
-                        </Link>
-                    ))}
-                </div>
-            </div>
-
-            <div className="space-y-10 bg-[url('/Images/flowers/bg-img.webp')] py-9 rounded-xl">
-                <div className="flex items-center justify-center space-x-4">
-                    <Image src='/Images/flowers/choose/spark.svg' height={500} width={500} className="w-10 h-10" alt="spark" />
-                    <h2 className="font-bold text-3xl text-center">Why Choose FNP ?</h2>
-                    <Image src='/Images/flowers/choose/spark.svg' height={500} width={500} className="w-10 h-10" alt="spark" />
-                </div>
-                <div className="flex flex-wrap  gap-20 justify-center ">
-                    {flowerData.chooseUs.map((item, index) => (
-                        <div key={index} className="flex flex-col items-center gap-4">
-                            <Image src={item.img} height={500} width={500} className="w-20 h-20" />
-                            <p className=" font-normal text-xl font-serif">{item.title}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <ChooseUs />
 
             <div>
-                <div className="space-y-10 bg-[url('/Images/flowers/bg.webp')] py-12 rounded-xl px-5 md:px-12">
-                    <div className="flex items-center justify-center space-x-4">
-                        <div className="w-16 h-px bg-[#7d8035] "></div>
-                        <h2 className="font-bold text-3xl text-center">Flowers for Every Occasion</h2>
+
+                <PlantsOccasion />
+
+
+                <Colors />
+
+                <Showstopper />
+                <Pairslide />
+
+                <div className="relative h-[400px] bg-black bg-cover  bg-no-repeat" style={{ backgroundImage: "url('/Images/flowers/country/countrybg.webp')" }}>
+                    {/* Semi-transparent black overlay */}
+                    <div className="absolute inset-0 bg-black opacity-80 z-10"></div>
+
+                    {/* Text Section */}
+                    <div className="absolute flex items-center justify-center left-[30%] py-20 space-x-4 z-20 ">
+                        <div className="w-16 h-px bg-[#7d8035]"></div>
+                        <h2 className="font-bold text-3xl text-center text-white">Delivering Blooms Across India</h2>
                         <div className="w-16 h-px bg-[#7d8035]"></div>
                     </div>
-                    <div className="relative">
-                        <button
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
-                            onClick={() => slide?.current?.prev()}
-                        >
-                            &#x276E;
-                        </button>
 
-                        <div ref={slideRef} className="keen-slider">
-                            {flowerData.Occasion.map((item, index) => (
-                                <div key={index} className="keen-slider__slide">
-                                    <Link href={`/flowers${item.link}`}>
-                                        <Image
-                                            src={item.img}
-                                            height={500}
-                                            width={500}
-                                            className="w-full h-[200px] rounded-3xl rounded-br-[64px] rounded-tl-[64px]"
-                                            alt="title"
-                                        />
-                                    </Link>
-
-
-
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Right Arrow */}
-                        <button
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
-                            onClick={() => slide?.current?.next()}
-                        >
-                            &#x276F;
-                        </button>
-                    </div>
-                    <div>
-
-                    </div>
-
-                </div>
-
-                <div className="space-y-10 relative bg-[url('/Images/flowers/Background.webp')] py-20 rounded-xl px-5 md:px-12">
-                    {/* Title Section */}
-                    <div className="flex items-center justify-center space-x-4 relative z-10">
-                        <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
-                        <h2 className="font-bold text-3xl text-center">Plan The Perfect Surprise</h2>
-                        <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
-                    </div>
-
-                    {/* Grid Section */}
-                    <div className="grid grid-cols-3 gap-5 relative z-10">
-                        {flowerData.surprise.map((item, index) => (
-                            <Link href={`/flowers${item.link}`} key={index} className="group relative">
-                                <Image
-                                    src={item.img}
-                                    height={500}
-                                    width={500}
-                                    alt="title"
-                                    className="w-[400px] transform transition-transform duration-300 hover:scale-105 rounded-md"
-                                />
+                    {/* Grid of Images */}
+                    <div className="absolute px-14 py-40 inset-0 grid grid-cols-6 gap-5 z-20">
+                        {flowerData.country.map((item, index) => (
+                            <Link key={index} href={`/flowers${item.link}`}>
+                                <Image src={item.img} height={500} width={500} className="w-full h-auto rounded-3xl" alt={item.title} />
                             </Link>
                         ))}
                     </div>
-
-                    {/* Background Image */}
-                    <img src="/Images/flowers/suprise-n.svg" className="absolute inset-0 z-0" alt="background" />
                 </div>
 
-                <div className="relative bg-[url('/Images/flowers/bg.webp')] py-16">
-                <div className="flex items-center justify-center space-x-4 relative z-10 mb-6">
-                        <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
-                        <h2 className="font-bold text-3xl text-center">Choose a Favourite Colour</h2>
-                        <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
-                    </div>
-                    <button
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
-                        onClick={() => sliderr?.current?.prev()}
-                    >
-                        &#x276E;
-                    </button>
+                <Link href='/flowers/preserved'>
+                    <Image src='/Images/flowers/globe/Preserved-Flowers.webp' height={3000} width={3000} className="w-full h-auto py-20" alt="flowers" />
+                </Link>
 
-                    <div ref={sliderrRef} className="keen-slider  rounded-xl px-5 md:px-12">
-                        {flowerData.color.map((item, index) => (
-                            <Link href={`/flowers${item.link}`} key={index} className="keen-slider__slide space-y-4">
-                                {/* Image */}
-                                <Image
-                                    src={item.image}
-                                    height={500}
-                                    width={500}
-                                    alt={item.title}
-                                    className="w-full h-auto rounded-lg"
-                                />
-                                {/* Title */}
-                                <span className="flex justify-center text-lg font-semibold">{item.title}</span>
+                <div className="relative h-[400px] bg-black bg-cover bg-no-repeat" style={{ backgroundImage: "url('/Images/flowers/globe/globe.webp')" }}>
+                    {/* Semi-transparent black overlay */}
+                    <div className="absolute inset-0 bg-black opacity-80 z-10"></div>
+
+                    {/* Text Section */}
+                    <div className="absolute flex items-center justify-center left-[30%] py-20 space-x-4 z-20 ">
+
+                        <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
+                        <h2 className="font-bold text-white text-3xl text-center">Delivering Blooms Globally </h2>
+                        <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
+
+                    </div>
+
+                    {/* Grid of Images */}
+                    <div className="absolute px-14 py-40 inset-0 grid grid-cols-6 gap-5 z-20">
+                        {flowerData.globe.map((item, index) => (
+                            <Link key={index} href={`/flowers${item.link}`}>
+                                <Image src={item.img} height={500} width={500} className="w-full h-auto rounded-3xl" alt={item.title} />
                             </Link>
                         ))}
-                        </div>
-
-                        <button
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
-                            onClick={() => sliderr?.current?.next()}
-                        >
-                            &#x276F;
-                        </button>
                     </div>
-
                 </div>
+
+
 
             </div>
-            );
+
+        </div>
+    );
 }
 
-            export default Page;
+export default Page;
