@@ -209,7 +209,7 @@ function GiftCompo({ slug }) {
 
                   </div>
 
-                  <div onClick={goDownHandler} className='bg-gray-500 cursor-pointer flex items-center -ms-8 text-white rounded p-1'>
+                  <div onClick={goDownHandler} className='bg-gray-500 cursor-pointer flex items-center -ms-2 text-white rounded p-1'>
                     <FaTag />
                     <span className='text-xs ps-1'>Offers Available </span>
                     <MdKeyboardArrowDown />

@@ -1,7 +1,8 @@
 import React from 'react'
 import ComboPage from './ComboPage'
 
-function page({params:{slug}}) {
+function page({slug}) {
+  const { slug } = params;
   return (
     <ComboPage slug={slug}/>
   )

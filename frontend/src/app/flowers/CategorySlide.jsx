@@ -107,7 +107,7 @@ export default function Slider() {
       <div ref={sliderRef} className="keen-slider">
         {flowerData.variety.map((item, index) => (
           <div key={index} className="keen-slider__slide">
-            <Link href={item.link}>
+            <Link href={`/flowers${item.link}`}>
               <Image
                 src={item.img}
                 className="w-full h-auto rounded-full mb-3"

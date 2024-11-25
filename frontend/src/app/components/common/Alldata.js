@@ -261,51 +261,51 @@ export const data = {
       "review": "273 reviews",
       "delivery": "Today",
       "slug": "dates-walnuts-mixed-dry-cake-500gms",
-      
-  delivery: ["A healthy and delicious cake made with the goodness of dates and walnuts. Perfect for those who prefer eggless cakes with a rich, dry texture. A wonderful choice for any occasion."],
-  productDetails: [
-    { label: "Cake Flavour", value: "Dates Walnuts" },
-    { label: "Type of Cake", value: "Eggless Dry Cake" },
-    { label: "Weight", value: "500 gms" },
-    { label: "Net Quantity", value: "1 Cake" },
-    { label: "Shape", value: "Round" },
-    { label: "Serves", value: "4-6 People" },
-    { label: "Diameter", value: "7.5 inch" },
-    { label: "Candles & Knife", value: "Not included" },
-    { label: "Country of Origin", value: "India" }
-  ],
-  ingredients: [
-    "Calpro Choco Premix",
-    "Refined Oil",
-    "Bake Magic",
-    "Dates",
-    "Walnut"
-  ],
-  notes: [
-    "The cake stand, cutlery, and accessories used in the image are only for representation purposes. They are not delivered with the cake.",
-    "All orders will be delivered between 9 AM and 9 PM.",
-    "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product delivered.",
-    "Since cakes are perishable in nature, we attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitutions of flavours/designs are necessary due to temporary and/or regional unavailability issues."
-  ],
-  storage: [
-    "Store cream cakes in a refrigerator.",
-    "Fondant cakes should be stored in an air-conditioned environment.",
-    "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
-    "Use a serrated knife to cut a fondant cake.",
-    "Sculptural elements and figurines may contain wire supports, toothpicks, or wooden skewers for support.",
-    "Please check the placement of these items before serving to small children.",
-    "The cake should be consumed within 24 hours.",
-    "Enjoy your cake!"
-  ],
-  details: [
-    "Ferns N Petals Private Limited",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+
+      delivery: ["A healthy and delicious cake made with the goodness of dates and walnuts. Perfect for those who prefer eggless cakes with a rich, dry texture. A wonderful choice for any occasion."],
+      productDetails: [
+        { label: "Cake Flavour", value: "Dates Walnuts" },
+        { label: "Type of Cake", value: "Eggless Dry Cake" },
+        { label: "Weight", value: "500 gms" },
+        { label: "Net Quantity", value: "1 Cake" },
+        { label: "Shape", value: "Round" },
+        { label: "Serves", value: "4-6 People" },
+        { label: "Diameter", value: "7.5 inch" },
+        { label: "Candles & Knife", value: "Not included" },
+        { label: "Country of Origin", value: "India" }
+      ],
+      ingredients: [
+        "Calpro Choco Premix",
+        "Refined Oil",
+        "Bake Magic",
+        "Dates",
+        "Walnut"
+      ],
+      notes: [
+        "The cake stand, cutlery, and accessories used in the image are only for representation purposes. They are not delivered with the cake.",
+        "All orders will be delivered between 9 AM and 9 PM.",
+        "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product delivered.",
+        "Since cakes are perishable in nature, we attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitutions of flavours/designs are necessary due to temporary and/or regional unavailability issues."
+      ],
+      storage: [
+        "Store cream cakes in a refrigerator.",
+        "Fondant cakes should be stored in an air-conditioned environment.",
+        "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
+        "Use a serrated knife to cut a fondant cake.",
+        "Sculptural elements and figurines may contain wire supports, toothpicks, or wooden skewers for support.",
+        "Please check the placement of these items before serving to small children.",
+        "The cake should be consumed within 24 hours.",
+        "Enjoy your cake!"
+      ],
+      details: [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       "image": [
@@ -322,42 +322,42 @@ export const data = {
       "review": "227 reviews",
       "delivery": "Today",
       "slug": "butterscotch-cake-with-rasmalai-1kg",
-      delivery:[ "A fusion of Butterscotch and Rasmalai, this cake brings a delightful combination of flavors for your celebrations. Perfect for large gatherings, this creamy cake serves 10-12 people."],
-  productDetails: [
-    { label: "Cake Flavour", value: "Butterscotch with Rasmalai" },
-    { label: "Type of Cake", value: "Cream" },
-    { label: "Weight", value: "1 Kg" },
-    { label: "Shape", value: "Round" },
-    { label: "Serves", value: "10-12 People" },
-    { label: "Size", value: "9 inches in Diameter" },
-    { label: "Net Quantity", value: "1" },
-    { label: "Country of Origin", value: "India" }
-  ],
-  notes: [
-    "The above mentioned weight is for the Cake only. The sweet added to the cake is not added in the weight.",
-    "The cake stand, cutlery accessories used in the image are only for representation purposes. They are not delivered with the cake.",
-    "This cake is hand delivered in a good quality cardboard box.",
-    "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since cakes are perishable in nature, we attempt delivery of your order only once. The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitutions of flavours/designs is necessary due to temporary and/or regional unavailability issues."
-  ],
-  storage: [
-    "Store cream cakes in a refrigerator.",
-    "Fondant cakes should be stored in an air-conditioned environment.",
-    "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
-    "Use a serrated knife to cut a fondant cake.",
-    "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support.",
-    "Please check the placement of these items before serving to small children.",
-    "The cake should be consumed within 24 hours.",
-    "Enjoy your cake!"
-  ],
-  details: [
-    "Ferns N Petals Private Limited",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+      delivery: ["A fusion of Butterscotch and Rasmalai, this cake brings a delightful combination of flavors for your celebrations. Perfect for large gatherings, this creamy cake serves 10-12 people."],
+      productDetails: [
+        { label: "Cake Flavour", value: "Butterscotch with Rasmalai" },
+        { label: "Type of Cake", value: "Cream" },
+        { label: "Weight", value: "1 Kg" },
+        { label: "Shape", value: "Round" },
+        { label: "Serves", value: "10-12 People" },
+        { label: "Size", value: "9 inches in Diameter" },
+        { label: "Net Quantity", value: "1" },
+        { label: "Country of Origin", value: "India" }
+      ],
+      notes: [
+        "The above mentioned weight is for the Cake only. The sweet added to the cake is not added in the weight.",
+        "The cake stand, cutlery accessories used in the image are only for representation purposes. They are not delivered with the cake.",
+        "This cake is hand delivered in a good quality cardboard box.",
+        "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since cakes are perishable in nature, we attempt delivery of your order only once. The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitutions of flavours/designs is necessary due to temporary and/or regional unavailability issues."
+      ],
+      storage: [
+        "Store cream cakes in a refrigerator.",
+        "Fondant cakes should be stored in an air-conditioned environment.",
+        "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
+        "Use a serrated knife to cut a fondant cake.",
+        "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support.",
+        "Please check the placement of these items before serving to small children.",
+        "The cake should be consumed within 24 hours.",
+        "Enjoy your cake!"
+      ],
+      details: [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       "image": [
@@ -374,46 +374,46 @@ export const data = {
       "review": "161 reviews",
       "delivery": "Today",
       "slug": "red-velvet-bento-cake",
-      delivery:[ "Elevate your gifting experience with our red velvet bento cream cake. A symphony of flavours where layers of cocoa intertwine with creamy perfection. Crafted for 2-3 people to relish, it's a heartfelt gift. Share the joy of taste that brings a moment of indulgence to any occasion."],
-  productDetails: [
-    { label: "Flavour", value: "Red Velvet" },
-    { label: "Type of Cake", value: "Cream Cake" },
-    { label: "Shape", value: "Round" },
-    { label: "Cakes Version", value: "Contains Egg" },
-    { label: "Weight", value: "250 gm" },
-    { label: "Net Quantity", value: "1 Cake" },
-    { label: "Diameter", value: "5 inch" },
-    { label: "Country of Origin", value: "India" },
-    { label: "Serves", value: "2-3 People" }
-  ],
-  ingredients: [
-    "Red Velvet Premix",
-    "Whip topping Cream",
-    "Cream Cheese",
-    "Breakfast Sugar"
-  ],
-  notes: [
-    "The cake stand, cutlery, and accessories used in the image are only for representation purposes. They are not delivered with the cake.",
-    "This cake is hand delivered in a good quality cardboard box.",
-    "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since cakes are perishable in nature, we attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitutions of flavours/designs are necessary due to temporary and/or regional unavailability issues."
-  ],
-  storage: [
-    "Store cream cakes in a refrigerator.",
-    "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support.",
-    "Please check the placement of these items before serving to small children.",
-    "The cake should be consumed within 24 hours.",
-    "Enjoy your cake!"
-  ],
-  details: [
-    "Ferns N Petals Private Limited",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+      delivery: ["Elevate your gifting experience with our red velvet bento cream cake. A symphony of flavours where layers of cocoa intertwine with creamy perfection. Crafted for 2-3 people to relish, it's a heartfelt gift. Share the joy of taste that brings a moment of indulgence to any occasion."],
+      productDetails: [
+        { label: "Flavour", value: "Red Velvet" },
+        { label: "Type of Cake", value: "Cream Cake" },
+        { label: "Shape", value: "Round" },
+        { label: "Cakes Version", value: "Contains Egg" },
+        { label: "Weight", value: "250 gm" },
+        { label: "Net Quantity", value: "1 Cake" },
+        { label: "Diameter", value: "5 inch" },
+        { label: "Country of Origin", value: "India" },
+        { label: "Serves", value: "2-3 People" }
+      ],
+      ingredients: [
+        "Red Velvet Premix",
+        "Whip topping Cream",
+        "Cream Cheese",
+        "Breakfast Sugar"
+      ],
+      notes: [
+        "The cake stand, cutlery, and accessories used in the image are only for representation purposes. They are not delivered with the cake.",
+        "This cake is hand delivered in a good quality cardboard box.",
+        "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since cakes are perishable in nature, we attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitutions of flavours/designs are necessary due to temporary and/or regional unavailability issues."
+      ],
+      storage: [
+        "Store cream cakes in a refrigerator.",
+        "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support.",
+        "Please check the placement of these items before serving to small children.",
+        "The cake should be consumed within 24 hours.",
+        "Enjoy your cake!"
+      ],
+      details: [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       "image": [
@@ -428,42 +428,42 @@ export const data = {
       "price": "649",
       "delivery": "Today",
       "slug": "velvety-chocolate-truffle-cake-500-gm",
-      delivery:[ "Elevate the art of gifting with our divine chocolate truffle cake, a luxurious blend of velvety chocolate ganache and moist cake layers. Perfect for those who appreciate the finer things in life, this indulgent treat is a symphony of rich flavours and decadent textures. Its exquisite taste and elegant presentation make it an unforgettable gift for anyone seeking pure delight and culinary perfection."],
-  productDetails: [
-    { label: "Flavour", value: "Chocolate Truffle" },
-    { label: "Weight", value: "Half Kg" },
-    { label: "Cake Version", value: "Contains egg" },
-    { label: "Type of Cake", value: "Cream Cake" },
-    { label: "Shape", value: "Round" },
-    { label: "Serves", value: "4-6 People" },
-    { label: "Size", value: "6 inches approx" },
-    { label: "Net Quantity", value: "1" },
-    { label: "Country of Origin", value: "India" },
-    { label: "FSSAI License No.", value: "10019011006502" }
-  ],
-  notes: [
-    "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
-    "The chosen delivery time is an estimate and depends on the product's availability and the destination to which you want the product delivered.",
-    "Since cakes are perishable, we attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand-delivered and will not be delivered along with courier products.",
-    "Occasionally, substitutions of flavours/designs are necessary due to temporary and regional unavailability issues."
-  ],
-  storage: [
-    "Store cream cakes in a refrigerator.",
-    "Fondant cakes should be stored in an air-conditioned environment.",
-    "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
-    "Use a serrated knife to cut a fondant cake.",
-    "Sculptural elements and figurines may contain wire supports, toothpicks or wooden skewers for support.",
-    "Please check the placement of these items before serving to small children.",
-    "The cake should be consumed within 24 hours.",
-    "Enjoy your cake!"
-  ],
-  details: [
-    "Ferns N Petals Private Limited",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+      delivery: ["Elevate the art of gifting with our divine chocolate truffle cake, a luxurious blend of velvety chocolate ganache and moist cake layers. Perfect for those who appreciate the finer things in life, this indulgent treat is a symphony of rich flavours and decadent textures. Its exquisite taste and elegant presentation make it an unforgettable gift for anyone seeking pure delight and culinary perfection."],
+      productDetails: [
+        { label: "Flavour", value: "Chocolate Truffle" },
+        { label: "Weight", value: "Half Kg" },
+        { label: "Cake Version", value: "Contains egg" },
+        { label: "Type of Cake", value: "Cream Cake" },
+        { label: "Shape", value: "Round" },
+        { label: "Serves", value: "4-6 People" },
+        { label: "Size", value: "6 inches approx" },
+        { label: "Net Quantity", value: "1" },
+        { label: "Country of Origin", value: "India" },
+        { label: "FSSAI License No.", value: "10019011006502" }
+      ],
+      notes: [
+        "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
+        "The chosen delivery time is an estimate and depends on the product's availability and the destination to which you want the product delivered.",
+        "Since cakes are perishable, we attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand-delivered and will not be delivered along with courier products.",
+        "Occasionally, substitutions of flavours/designs are necessary due to temporary and regional unavailability issues."
+      ],
+      storage: [
+        "Store cream cakes in a refrigerator.",
+        "Fondant cakes should be stored in an air-conditioned environment.",
+        "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
+        "Use a serrated knife to cut a fondant cake.",
+        "Sculptural elements and figurines may contain wire supports, toothpicks or wooden skewers for support.",
+        "Please check the placement of these items before serving to small children.",
+        "The cake should be consumed within 24 hours.",
+        "Enjoy your cake!"
+      ],
+      details: [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       image: [
@@ -479,65 +479,65 @@ export const data = {
       rate: "4.8",
       price: "1899",
       delivery: ["We all deserve to include some sweetness in our lives. Why not make room for some delicacies with this special Ferrero Rocher bunch entwined in the form of an elegant bouquet? When given as a gift, it will represent luck and the promise of adventure."],
-  productDetails: [
-    { label: "Bouquet of Ferrero Rocher Chocolates", value: "16 pcs." },
-    { label: "Red Color Non Woven Paper", value: "Yes" },
-    { label: "Golden Color Ribbon", value: "Yes" },
-    { label: "Ferrero Rocher", value: "16 pcs, 14g each" },
-    { label: "Net Quantity", value: "1 Set" },
-    { label: "Dimensions", value: "15x12x10 cm" },
-    { label: "Weight", value: "Approx 1.5 Kg" },
-    { label: "Country of Origin", value: "India" },
-    { label: "Veg", value: "Yes" }
-  ],
-  ingredients: [
-    "Milk Chocolate 30%",
-    "Sugar",
-    "Cocoa Butter",
-    "Cocoa Mass",
-    "Skimmed Milk Powder",
-    "Anhydrous Milkfat",
-    "Emulsifier: Lecithin-INS 322",
-    "Hazelnuts 28.5%",
-    "Palm Oil",
-    "Refined Wheat Flour (Maida)",
-    "Whey Powder",
-    "Low Fat Cocoa Powder",
-    "Raising Agent INS 500ii",
-    "Edible Common Salt",
-    "Contains Added Flavor",
-    "Nature Identical Flavouring Substances - Vanillin"
-  ],
-  nutritionalInfo: [
-    "Energy: 595 Kcal",
-    "Protein: 8.2g",
-    "Carbohydrate: 44.4g",
-    "Sugar: 39.9g",
-    "Fat: 42.7g"
-  ],
-  foodAdditives: [
-    "Emulsifier Lecithin-INS 322",
-    "Raising Agent INS 500ii"
-  ],
-  foodAllergens: [
-    "Contains Milk",
-    "Hazelnuts",
-    "Gluten",
-    "Soy"
-  ],
-  notes: [
-    "The image displayed is indicative in nature. Actual product may vary in shape or design as per availability.",
-    "The chosen delivery date is an estimate and depends on the availability of the product and the destination to which you want the product delivered.",
-    "We will be able to attempt delivery of your order only once. The delivery cannot be redirected to any other address."
-  ],
-  storage: [
-    "Store your chocolates in the refrigerator.",
-    "If they are exposed to high temperatures, they may begin to soften, compromising the appearance and flavor."
-  ],
-  details: [
-    "FNP E Retail Private Limited",
-    "Address: Vatika 44, Plot no 75, Sector 44, Gurugram, Haryana 122003"
-  ]
+      productDetails: [
+        { label: "Bouquet of Ferrero Rocher Chocolates", value: "16 pcs." },
+        { label: "Red Color Non Woven Paper", value: "Yes" },
+        { label: "Golden Color Ribbon", value: "Yes" },
+        { label: "Ferrero Rocher", value: "16 pcs, 14g each" },
+        { label: "Net Quantity", value: "1 Set" },
+        { label: "Dimensions", value: "15x12x10 cm" },
+        { label: "Weight", value: "Approx 1.5 Kg" },
+        { label: "Country of Origin", value: "India" },
+        { label: "Veg", value: "Yes" }
+      ],
+      ingredients: [
+        "Milk Chocolate 30%",
+        "Sugar",
+        "Cocoa Butter",
+        "Cocoa Mass",
+        "Skimmed Milk Powder",
+        "Anhydrous Milkfat",
+        "Emulsifier: Lecithin-INS 322",
+        "Hazelnuts 28.5%",
+        "Palm Oil",
+        "Refined Wheat Flour (Maida)",
+        "Whey Powder",
+        "Low Fat Cocoa Powder",
+        "Raising Agent INS 500ii",
+        "Edible Common Salt",
+        "Contains Added Flavor",
+        "Nature Identical Flavouring Substances - Vanillin"
+      ],
+      nutritionalInfo: [
+        "Energy: 595 Kcal",
+        "Protein: 8.2g",
+        "Carbohydrate: 44.4g",
+        "Sugar: 39.9g",
+        "Fat: 42.7g"
+      ],
+      foodAdditives: [
+        "Emulsifier Lecithin-INS 322",
+        "Raising Agent INS 500ii"
+      ],
+      foodAllergens: [
+        "Contains Milk",
+        "Hazelnuts",
+        "Gluten",
+        "Soy"
+      ],
+      notes: [
+        "The image displayed is indicative in nature. Actual product may vary in shape or design as per availability.",
+        "The chosen delivery date is an estimate and depends on the availability of the product and the destination to which you want the product delivered.",
+        "We will be able to attempt delivery of your order only once. The delivery cannot be redirected to any other address."
+      ],
+      storage: [
+        "Store your chocolates in the refrigerator.",
+        "If they are exposed to high temperatures, they may begin to soften, compromising the appearance and flavor."
+      ],
+      details: [
+        "FNP E Retail Private Limited",
+        "Address: Vatika 44, Plot no 75, Sector 44, Gurugram, Haryana 122003"
+      ]
     },
     {
       image: [
@@ -555,49 +555,49 @@ export const data = {
       review: "273 reviews",
       'delivery': "Today",
       delivery: ["A delicious and indulgent Truffle cake that is perfect for celebrations. Adorned with chocolate glaze and cherries, this creamy, decadent cake will leave everyone asking for more."],
-  productDetails: [
-    { label: "Cake Flavour", value: "Truffle" },
-    { label: "Shape", value: "Round" },
-    { label: "Weight", value: "500 gm" },
-    { label: "Net Quantity", value: "1 Cake" },
-    { label: "Diameter", value: "7.5 inch" },
-    { label: "Country of Origin", value: "India" },
-    { label: "Serves", value: "4-6 People" }
-  ],
-  ingredients: [
-    "Chocolate premix",
-    "Refined oil",
-    "Breakfast Sugar",
-    "Chocolate Truffle Base",
-    "Dark Chocolate compound",
-    "Karonda Cherry",
-    "Chocolate Glaze"
-  ],
-  notes: [
-    "The cake stand, cutlery, and accessories used in the image are only for representation purposes. They are not delivered with the cake.",
-    "This cake is hand delivered in a good quality cardboard box.",
-    "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since cakes are perishable in nature, we attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitutions of flavours/designs are necessary due to temporary and/or regional unavailability issues."
-  ],
-  storage: [
-    "Store cream cakes in a refrigerator.",
-    "Fondant cakes should be stored in an air-conditioned environment.",
-    "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
-    "Use a serrated knife to cut a fondant cake.",
-    "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support.",
-    "Please check the placement of these items before serving to small children.",
-    "The cake should be consumed within 24 hours.",
-    "Enjoy your cake!"
-  ],
-  details: [
-    "Ferns N Petals Private Limited",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+      productDetails: [
+        { label: "Cake Flavour", value: "Truffle" },
+        { label: "Shape", value: "Round" },
+        { label: "Weight", value: "500 gm" },
+        { label: "Net Quantity", value: "1 Cake" },
+        { label: "Diameter", value: "7.5 inch" },
+        { label: "Country of Origin", value: "India" },
+        { label: "Serves", value: "4-6 People" }
+      ],
+      ingredients: [
+        "Chocolate premix",
+        "Refined oil",
+        "Breakfast Sugar",
+        "Chocolate Truffle Base",
+        "Dark Chocolate compound",
+        "Karonda Cherry",
+        "Chocolate Glaze"
+      ],
+      notes: [
+        "The cake stand, cutlery, and accessories used in the image are only for representation purposes. They are not delivered with the cake.",
+        "This cake is hand delivered in a good quality cardboard box.",
+        "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since cakes are perishable in nature, we attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitutions of flavours/designs are necessary due to temporary and/or regional unavailability issues."
+      ],
+      storage: [
+        "Store cream cakes in a refrigerator.",
+        "Fondant cakes should be stored in an air-conditioned environment.",
+        "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
+        "Use a serrated knife to cut a fondant cake.",
+        "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support.",
+        "Please check the placement of these items before serving to small children.",
+        "The cake should be consumed within 24 hours.",
+        "Enjoy your cake!"
+      ],
+      details: [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       image: [
@@ -615,39 +615,39 @@ export const data = {
       review: "28 reviews",
       delivery: "Today",
       delivery: ["A heart-shaped chocolate cake perfect for your loved ones. Made with the finest ingredients, this cake combines the richness of chocolate and the creamy texture of a smooth cream base, ideal for a romantic gesture or special celebration."],
-  productDetails: [
-    { label: "Flavour", value: "Chocolate" },
-    { label: "Type of Cake", value: "Cream" },
-    { label: "Weight", value: "Half Kg" },
-    { label: "Cake Shape", value: "Heart Shaped" },
-    { label: "Serves", value: "4-6 People" },
-    { label: "Size", value: "6 Inches in Diameter" },
-    { label: "Net Quantity", value: "1" },
-    { label: "Country of Origin", value: "India" }
-  ],
-  notes: [
-    "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since cakes are perishable in nature, we attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitutions of flavours/designs is necessary due to temporary and/or regional unavailability issues."
-  ],
-  storage: [
-    "Store cream cakes in a refrigerator.",
-    "Fondant cakes should be stored in an air-conditioned environment.",
-    "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
-    "Use a serrated knife to cut a fondant cake.",
-    "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support.",
-    "Please check the placement of these items before serving to small children.",
-    "The cake should be consumed within 24 hours.",
-    "Enjoy your cake!"
-  ],
-  details: [
-    "Ferns N Petals Private Limited",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+      productDetails: [
+        { label: "Flavour", value: "Chocolate" },
+        { label: "Type of Cake", value: "Cream" },
+        { label: "Weight", value: "Half Kg" },
+        { label: "Cake Shape", value: "Heart Shaped" },
+        { label: "Serves", value: "4-6 People" },
+        { label: "Size", value: "6 Inches in Diameter" },
+        { label: "Net Quantity", value: "1" },
+        { label: "Country of Origin", value: "India" }
+      ],
+      notes: [
+        "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since cakes are perishable in nature, we attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitutions of flavours/designs is necessary due to temporary and/or regional unavailability issues."
+      ],
+      storage: [
+        "Store cream cakes in a refrigerator.",
+        "Fondant cakes should be stored in an air-conditioned environment.",
+        "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
+        "Use a serrated knife to cut a fondant cake.",
+        "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support.",
+        "Please check the placement of these items before serving to small children.",
+        "The cake should be consumed within 24 hours.",
+        "Enjoy your cake!"
+      ],
+      details: [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       image: [
@@ -731,49 +731,110 @@ export const data = {
       rate: "4.3",
       price: "549",
       "delivery": [
-    "2 Red Roses",
-    "2 Yellow Roses",
-    "2 Aqua Pink Roses",
-    "2 White Roses",
-    "Red Non Woven Packing Paper",
-    "Yellow Ribbon",
-    "Green Asparagus Fillers",
-    "FNP Green Color Rectangular Paper Tag",
-    "Net Quantity: 1 Bouquet",
-    "Dimensions: 18x8 inch",
-    "Weight: Approx 250-500 gms"
-  ],
-  "personalisation": [
-    "For personalisation, please provide us with 6 images, the couple's names, and the date in dd/mm/yy format."
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Actual product may vary in shape or design as per the availability.",
-    "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues.",
-    "Please Note: The Ribbon can be saved and used later for decorating gifts.",
-    "Green Fillers may vary as per local and seasonal availability.",
-    "Due to government policies, non woven fabric used to wrap this bouquet will be substituted by paper wrapping in Mumbai, Pune, Bangalore."
-  ],
-  "storage": [
-    "When your flowers arrive, simply cut the stems and put them in water.",
-    "Cut the stems at 45 degrees, about 1-2 inches from the bottom.",
-    "Remove the leaves below the waterline.",
-    "Check the water level every day and add more if necessary.",
-    "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
-    "All flowers benefit from a daily mist of water."
-  ],
-  "flowers_trivia": [
-    "When you are confused about your feelings, a Mixed Roses Bouquet is a perfect gift."
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
-  ]
+        "2 Red Roses",
+        "2 Yellow Roses",
+        "2 Aqua Pink Roses",
+        "2 White Roses",
+        "Red Non Woven Packing Paper",
+        "Yellow Ribbon",
+        "Green Asparagus Fillers",
+        "FNP Green Color Rectangular Paper Tag",
+        "Net Quantity: 1 Bouquet",
+        "Dimensions: 18x8 inch",
+        "Weight: Approx 250-500 gms"
+      ],
+      "personalisation": [
+        "For personalisation, please provide us with 6 images, the couple's names, and the date in dd/mm/yy format."
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Actual product may vary in shape or design as per the availability.",
+        "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues.",
+        "Please Note: The Ribbon can be saved and used later for decorating gifts.",
+        "Green Fillers may vary as per local and seasonal availability.",
+        "Due to government policies, non woven fabric used to wrap this bouquet will be substituted by paper wrapping in Mumbai, Pune, Bangalore."
+      ],
+      "storage": [
+        "When your flowers arrive, simply cut the stems and put them in water.",
+        "Cut the stems at 45 degrees, about 1-2 inches from the bottom.",
+        "Remove the leaves below the waterline.",
+        "Check the water level every day and add more if necessary.",
+        "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
+        "All flowers benefit from a daily mist of water."
+      ],
+      "flowers_trivia": [
+        "When you are confused about your feelings, a Mixed Roses Bouquet is a perfect gift."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      id: 4,
+      image: [
+        "/Images/flowers/exotic/exotic-flowers-bouquet_1.webp",
+        "/Images/flowers/exotic/exotic-flowers-bouquet_2.webp",
+        "/Images/flowers/exotic/exotic-flowers-bouquet_3.webp",
+        "/Images/flowers/exotic/exotic-flowers-bouquet_4.webp",
+        "/Images/flowers/exotic/exotic-flowers-bouquet_5.webp",
+      ],
+      link: "/exotic-flowers-bouquet",
+      title: "Exotic Flowers Bouquet",
+      rate: "5.0",
+      price: "749",
+      slug: 'exotic-flowers-bouquet',
+      review: "34 reviews",
+      delivery: "Today",
+      delivery: [
+        "4 Pink Gerberas",
+        "3 Red Roses",
+        "3 White Carnations",
+        "Fillers - Green Color Canocaria Leaf, Murraya Leaf",
+        "Beautifully Wrapped In Pink and Red Paper",
+        "Tied with a Red Ribbon"
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      id: 4,
+      image: [
+        "/Images/flowers/roses/majestic-50-red-roses-bouquet_1.webp",
+        "/Images/flowers/roses/majestic-50-red-roses-bouquet_2.webp",
+        "/Images/flowers/roses/majestic-50-red-roses-bouquet_3.webp",
+        "/Images/flowers/roses/majestic-50-red-roses-bouquet_4.webp",
+        "/Images/flowers/roses/majestic-50-red-roses-bouquet_5.webp",
+
+      ],
+      link: "/majestic-50-red-roses-bouquet",
+      title: "Exotic Flowers Bouquet",
+      rate: "4.8",
+      price: "2899",
+      slug: 'majestic-50-red-roses-bouquet',
+      review: "20 reviews",
+      delivery: "Today",
+      delivery: [
+        '50 Red Roses',
+        'Green Morpankhi Leaf Filler',
+        'Wrapped in Non-Woven White Paper',
+        'Tied with Red Ribbon',
+        'Net Quantity: 1 Bouquet',
+        'Dimensions: 24x18 inch',
+        'Weight: Approx 50o-750 gms',
+        'Country of Origin: India'
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
     },
     {
       image: [
@@ -827,7 +888,7 @@ export const data = {
         "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
       ]
     },
-   
+
     {
       "image": [
         "/Images/anniversary/memories-frame/heartfelt-memories-frame_1.webp",
@@ -842,32 +903,32 @@ export const data = {
       "delivery": "Today",
       "slug": "heartfelt-memories-frame",
       "delivery": [
-    "Personalised photo frame: 1",
-    "Material: MDF and wooden",
-    "Size: 7X7.2 inches",
-    "Frame stand: 7X3 inches",
-    "Red cardboard box: 10 x 10 inches"
-  ],
-  "personalisation": [
-    "For personalisation, please provide us with 6 images, the couple's names, and the date in dd/mm/yy format."
-  ],
-  "notes": [
-    "Since this product is shipped using the services of our courier partners, the date of delivery is an estimate.",
-    "Your gift may be delivered prior to or after the chosen date of delivery.",
-    "A courier product is delivered separately from other hand-delivered products.",
-    "Our courier partners do not call prior to delivering an order, so we recommend that you provide an address at which someone will be present to receive the package.",
-    "The delivery cannot be redirected to any other address.",
-    "All courier orders are carefully packed and shipped from our warehouse.",
-    "Soon after the order has been dispatched, you will receive a tracking number that will help you trace your gift."
-  ],
-  "storage": [
-    "Keep it away from water.",
-    "Wipe clean with a soft cloth."
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
-  ]
+        "Personalised photo frame: 1",
+        "Material: MDF and wooden",
+        "Size: 7X7.2 inches",
+        "Frame stand: 7X3 inches",
+        "Red cardboard box: 10 x 10 inches"
+      ],
+      "personalisation": [
+        "For personalisation, please provide us with 6 images, the couple's names, and the date in dd/mm/yy format."
+      ],
+      "notes": [
+        "Since this product is shipped using the services of our courier partners, the date of delivery is an estimate.",
+        "Your gift may be delivered prior to or after the chosen date of delivery.",
+        "A courier product is delivered separately from other hand-delivered products.",
+        "Our courier partners do not call prior to delivering an order, so we recommend that you provide an address at which someone will be present to receive the package.",
+        "The delivery cannot be redirected to any other address.",
+        "All courier orders are carefully packed and shipped from our warehouse.",
+        "Soon after the order has been dispatched, you will receive a tracking number that will help you trace your gift."
+      ],
+      "storage": [
+        "Keep it away from water.",
+        "Wipe clean with a soft cloth."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
     },
     {
       "image": [
@@ -885,61 +946,61 @@ export const data = {
       "delivery": "Today",
       "review": "86 reviews",
       "delivery": [
-    "10 Red Roses",
-    "Green Murraya Leaf Filler",
-    "FNP White & Black Non Woven Packing",
-    "Beautifully Tied with FNP Branded Ribbon",
-    "One Message Card",
-    "1 Pineapple Cake - 500 gms",
-    "Net Quantity: 1 Flower Bouquet and 1 Cake",
-    "Dimensions: Approx 2.5x2 feet",
-    "Weight: Approx 2-2.5 Kg"
-  ],
-  "personalisation": [
-    "For personalisation, please provide us with 6 images, the couple's names, and the date in dd/mm/yy format."
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Actual product may vary in shape or design as per the availability.",
-    "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
-  ],
-  "storage": [
-    "When your flowers arrive, just trim the stems and add water.",
-    "Re-cut 1-2 of the stems at a 45-degree angle.",
-    "Use a clean vase and clean water.",
-    "Remove the leaves below the waterline but do not remove all leaves along the stem length.",
-    "Check the water level daily and replenish as needed.",
-    "Don't place flowers in direct sunlight or near any other source of excessive heat.",
-    "All flowers benefit from a daily mist of water."
-  ],
-  "flowers_trivia": [
-    "Did you know a rose bush can grow quite tall? The tallest ever recorded rose bush stands at over 23 feet (7 meters) tall.",
-    "Red Roses are perfect expressions of love and romance since ancient times."
-  ],
-  "ingredients": [
-    "Vanilla premix",
-    "Refined oil",
-    "Breakfast Sugar",
-    "Whip topping cream",
-    "Pineapple Essence",
-    "Pineapple Crush",
-    "Pineapple Slice",
-    "Karonda Cherry"
-  ],
-  "price_breakup": [
-    "Fresh Flower ₹1146",
-    "Cake ₹303"
-  ],
-  "details": [
-    "Ferns N Petals Private Limited",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+        "10 Red Roses",
+        "Green Murraya Leaf Filler",
+        "FNP White & Black Non Woven Packing",
+        "Beautifully Tied with FNP Branded Ribbon",
+        "One Message Card",
+        "1 Pineapple Cake - 500 gms",
+        "Net Quantity: 1 Flower Bouquet and 1 Cake",
+        "Dimensions: Approx 2.5x2 feet",
+        "Weight: Approx 2-2.5 Kg"
+      ],
+      "personalisation": [
+        "For personalisation, please provide us with 6 images, the couple's names, and the date in dd/mm/yy format."
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Actual product may vary in shape or design as per the availability.",
+        "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
+      ],
+      "storage": [
+        "When your flowers arrive, just trim the stems and add water.",
+        "Re-cut 1-2 of the stems at a 45-degree angle.",
+        "Use a clean vase and clean water.",
+        "Remove the leaves below the waterline but do not remove all leaves along the stem length.",
+        "Check the water level daily and replenish as needed.",
+        "Don't place flowers in direct sunlight or near any other source of excessive heat.",
+        "All flowers benefit from a daily mist of water."
+      ],
+      "flowers_trivia": [
+        "Did you know a rose bush can grow quite tall? The tallest ever recorded rose bush stands at over 23 feet (7 meters) tall.",
+        "Red Roses are perfect expressions of love and romance since ancient times."
+      ],
+      "ingredients": [
+        "Vanilla premix",
+        "Refined oil",
+        "Breakfast Sugar",
+        "Whip topping cream",
+        "Pineapple Essence",
+        "Pineapple Crush",
+        "Pineapple Slice",
+        "Karonda Cherry"
+      ],
+      "price_breakup": [
+        "Fresh Flower ₹1146",
+        "Cake ₹303"
+      ],
+      "details": [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       image: [
@@ -956,46 +1017,46 @@ export const data = {
       slug: "heavenly-6-white-roses-bunch",
       delivery: "Today",
       "delivery": [
-    "6 White Roses",
-    "White Packing Paper",
-    "White Color Ribbon",
-    "Green Color Murraya Leaf Filler",
-    "Net Quantity: 1 Bouquet",
-    "Dimensions: 18x8 inch",
-    "Weight: Approx 250-500 gms"
-  ],
-  "personalisation": [
-    "For personalisation, please provide us with 6 images, the couple's names, and the date in dd/mm/yy format."
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Actual product may vary in shape or design as per the availability.",
-    "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
-  ],
-  "storage": [
-    "When your flowers arrive, simply cut the stems and put them in water.",
-    "Cut the stems at 45 degrees, about 1-2 inches from the bottom.",
-    "Remove the leaves below the waterline.",
-    "Check the water level every day and add more if necessary.",
-    "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
-    "All flowers benefit from a daily mist of water."
-  ],
-  "flowers_trivia": [
-    "Did you know that white roses symbolize purity, innocence, and new beginnings?",
-    "White roses are often used in weddings to convey messages of eternal love and unity."
-  ],
-  "price_breakup": [
-    "Fresh Flower ₹799"
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
-  ]
+        "6 White Roses",
+        "White Packing Paper",
+        "White Color Ribbon",
+        "Green Color Murraya Leaf Filler",
+        "Net Quantity: 1 Bouquet",
+        "Dimensions: 18x8 inch",
+        "Weight: Approx 250-500 gms"
+      ],
+      "personalisation": [
+        "For personalisation, please provide us with 6 images, the couple's names, and the date in dd/mm/yy format."
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Actual product may vary in shape or design as per the availability.",
+        "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
+      ],
+      "storage": [
+        "When your flowers arrive, simply cut the stems and put them in water.",
+        "Cut the stems at 45 degrees, about 1-2 inches from the bottom.",
+        "Remove the leaves below the waterline.",
+        "Check the water level every day and add more if necessary.",
+        "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
+        "All flowers benefit from a daily mist of water."
+      ],
+      "flowers_trivia": [
+        "Did you know that white roses symbolize purity, innocence, and new beginnings?",
+        "White roses are often used in weddings to convey messages of eternal love and unity."
+      ],
+      "price_breakup": [
+        "Fresh Flower ₹799"
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
     },
     {
       image: [
@@ -1012,49 +1073,49 @@ export const data = {
       slug: "happy-times-carnations-bouquet",
       delivery: "Today",
       "delivery": [
-    "6 Baby Pink Carnations",
-    "6 Yellow Carnations",
-    "White Gypsophila Gypsy Fillers",
-    "Green Morpankhi Leaf Filler",
-    "FNP Baby Pink Non Woven Packing Sheet",
-    "One Non-Woven Yellow Paper",
-    "Beautifully Tied with FNP Branded Ribbon",
-    "Net Quantity: 1 Bouquet",
-    "Dimensions: 24x15 inch",
-    "Weight: Approx 500-750 gms"
-  ],
-  "personalisation": [
-    "For personalisation, please provide us with 6 images, the recipient's name, and the date in dd/mm/yy format."
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Actual product may vary in shape or design as per the availability.",
-    "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
-  ],
-  "storage": [
-    "When your flowers arrive, simply cut the stems and put them in water.",
-    "Cut the stems at 45 degrees, about 1-2 inches from the bottom.",
-    "Remove the leaves below the waterline.",
-    "Check the water level every day and add more if necessary.",
-    "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
-    "All flowers benefit from a daily mist of water."
-  ],
-  "flowers_trivia": [
-    "Did you know that for over 400 years, Carnations have been used to add flavour to different wines, liquors, and beers?",
-    "Carnations were cultivated as garden flowers in ancient Rome and Greece."
-  ],
-  "price_breakup": [
-    "Fresh Flower ₹999"
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
-  ]
+        "6 Baby Pink Carnations",
+        "6 Yellow Carnations",
+        "White Gypsophila Gypsy Fillers",
+        "Green Morpankhi Leaf Filler",
+        "FNP Baby Pink Non Woven Packing Sheet",
+        "One Non-Woven Yellow Paper",
+        "Beautifully Tied with FNP Branded Ribbon",
+        "Net Quantity: 1 Bouquet",
+        "Dimensions: 24x15 inch",
+        "Weight: Approx 500-750 gms"
+      ],
+      "personalisation": [
+        "For personalisation, please provide us with 6 images, the recipient's name, and the date in dd/mm/yy format."
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Actual product may vary in shape or design as per the availability.",
+        "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
+      ],
+      "storage": [
+        "When your flowers arrive, simply cut the stems and put them in water.",
+        "Cut the stems at 45 degrees, about 1-2 inches from the bottom.",
+        "Remove the leaves below the waterline.",
+        "Check the water level every day and add more if necessary.",
+        "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
+        "All flowers benefit from a daily mist of water."
+      ],
+      "flowers_trivia": [
+        "Did you know that for over 400 years, Carnations have been used to add flavour to different wines, liquors, and beers?",
+        "Carnations were cultivated as garden flowers in ancient Rome and Greece."
+      ],
+      "price_breakup": [
+        "Fresh Flower ₹999"
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
     },
     {
       image: [
@@ -1070,47 +1131,47 @@ export const data = {
       slug: "blushing-rose-love-elegance",
       delivery: "Today",
       "delivery": [
-    "Premium, unscented peach rose: 10",
-    "Premium, unscented aqua pink rose: 10",
-    "Embellished with murraya filler",
-    "Housed in a collapsible paper base",
-    "Tied elegantly with a pink satin ribbon",
-    "Net Quantity: 1 Set",
-    "Dimensions: 20x10 inch",
-    "Weight: Approx 250-500 gms"
-  ],
-  "personalisation": [
-    "For personalisation, please provide us with 2 names and the date in dd/mm/yy format."
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Actual product may vary in shape or design as per the availability.",
-    "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
-    "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-    "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
-    "The delivery cannot be redirected to any other address.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
-  ],
-  "storage": [
-    "When your flowers arrive, simply cut the stems and put them in water.",
-    "Cut the stems at 45 degrees, about 1-2 inches from the bottom.",
-    "Remove the leaves below the waterline.",
-    "Check the water level every day and add more if necessary.",
-    "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
-    "All flowers benefit from a daily mist of water."
-  ],
-  "flowers_trivia": [
-    "A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears.",
-    "Did you know a rose bush can grow quite tall? The tallest ever recorded rose bush stands at over 23 feet (7 meters) tall."
-  ],
-  "price_breakup": [
-    "Fresh Flower ₹1146"
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
-  ]
+        "Premium, unscented peach rose: 10",
+        "Premium, unscented aqua pink rose: 10",
+        "Embellished with murraya filler",
+        "Housed in a collapsible paper base",
+        "Tied elegantly with a pink satin ribbon",
+        "Net Quantity: 1 Set",
+        "Dimensions: 20x10 inch",
+        "Weight: Approx 250-500 gms"
+      ],
+      "personalisation": [
+        "For personalisation, please provide us with 2 names and the date in dd/mm/yy format."
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Actual product may vary in shape or design as per the availability.",
+        "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
+        "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+        "Since flowers are perishable in nature, we will be able to attempt delivery of your order only once.",
+        "The delivery cannot be redirected to any other address.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
+      ],
+      "storage": [
+        "When your flowers arrive, simply cut the stems and put them in water.",
+        "Cut the stems at 45 degrees, about 1-2 inches from the bottom.",
+        "Remove the leaves below the waterline.",
+        "Check the water level every day and add more if necessary.",
+        "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
+        "All flowers benefit from a daily mist of water."
+      ],
+      "flowers_trivia": [
+        "A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears.",
+        "Did you know a rose bush can grow quite tall? The tallest ever recorded rose bush stands at over 23 feet (7 meters) tall."
+      ],
+      "price_breakup": [
+        "Fresh Flower ₹1146"
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
     },
     {
       "image": [
@@ -1354,43 +1415,43 @@ export const data = {
       price: "399",
       delivery: "Tomorrow",
       "delivery": [
-    "Plant Name: Syngonium Plant",
-    "Plant Type: Air Purifying Foliage",
-    "Plant Placement: Indoors and Outdoors",
-    "Plant Height: Upto 6 Inches",
-    "Grey Ceramic Pot Dimensions: 3 x 3 Inches",
-    "Coverage: One plant in a 6-8 inch diameter container can purify air in roughly 100 square feet of floor space."
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Since plants are natural products, actual product may vary in shape, size, and design.",
-    "The plant's size and number of leaves may vary depending on regional availability.",
-    "Flowers, if present, may be in fully bloomed, semi-bloomed, or bud stage.",
-    "Delivery may occur before or after the chosen date depending on courier schedules.",
-    "No deliveries are made on Sundays or National Holidays.",
-    "The product will be delivered separately from other hand-delivered products."
-  ],
-  "plant_care": [
-    "Keep the plant in medium light, away from direct sunlight.",
-    "Natural light is ideal, but it can also thrive under office fluorescent lighting.",
-    "Ensure the soil is kept moist at all times, but avoid overwatering.",
-    "Do not let plants stand in water.",
-    "Avoid excessive wetting of plant leaves.",
-    "Spray water on leaves for humidity if required.",
-    "Maintain a cool spot for the plant (between 18-28°C).",
-    "Remove waste leaves and stems periodically to encourage new growth."
-  ],
-  "plant_trivia": [
-    "Syngonium plants have a high transpiration rate, helping increase humidity in a room.",
-    "Also known as the Arrow Head Plant, it has distinct arrow-shaped leaves.",
-    "Believed to help reduce stress, anxiety, and sleep disorders due to its calming presence.",
-    "Syngonium is a popular air-purifying plant known for improving indoor air quality."
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+        "Plant Name: Syngonium Plant",
+        "Plant Type: Air Purifying Foliage",
+        "Plant Placement: Indoors and Outdoors",
+        "Plant Height: Upto 6 Inches",
+        "Grey Ceramic Pot Dimensions: 3 x 3 Inches",
+        "Coverage: One plant in a 6-8 inch diameter container can purify air in roughly 100 square feet of floor space."
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Since plants are natural products, actual product may vary in shape, size, and design.",
+        "The plant's size and number of leaves may vary depending on regional availability.",
+        "Flowers, if present, may be in fully bloomed, semi-bloomed, or bud stage.",
+        "Delivery may occur before or after the chosen date depending on courier schedules.",
+        "No deliveries are made on Sundays or National Holidays.",
+        "The product will be delivered separately from other hand-delivered products."
+      ],
+      "plant_care": [
+        "Keep the plant in medium light, away from direct sunlight.",
+        "Natural light is ideal, but it can also thrive under office fluorescent lighting.",
+        "Ensure the soil is kept moist at all times, but avoid overwatering.",
+        "Do not let plants stand in water.",
+        "Avoid excessive wetting of plant leaves.",
+        "Spray water on leaves for humidity if required.",
+        "Maintain a cool spot for the plant (between 18-28°C).",
+        "Remove waste leaves and stems periodically to encourage new growth."
+      ],
+      "plant_trivia": [
+        "Syngonium plants have a high transpiration rate, helping increase humidity in a room.",
+        "Also known as the Arrow Head Plant, it has distinct arrow-shaped leaves.",
+        "Believed to help reduce stress, anxiety, and sleep disorders due to its calming presence.",
+        "Syngonium is a popular air-purifying plant known for improving indoor air quality."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       image: [
@@ -1408,43 +1469,43 @@ export const data = {
       review: "2 reviews",
       delivery: "Tomorrow",
       "delivery": [
-    "Plant Name: Syngonium Plant",
-    "Plant Type: Air Purifying Foliage",
-    "Plant Placement: Indoors and Outdoors",
-    "Plant Height: Upto 6 Inches",
-    "Grey Ceramic Pot Dimensions: 3 x 3 Inches",
-    "Coverage: One plant in a 6-8 inch diameter container can purify air in roughly 100 square feet of floor space."
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Since plants are natural products, actual product may vary in shape, size, and design.",
-    "The plant's size and number of leaves may vary depending on regional availability.",
-    "Flowers, if present, may be in fully bloomed, semi-bloomed, or bud stage.",
-    "Delivery may occur before or after the chosen date depending on courier schedules.",
-    "No deliveries are made on Sundays or National Holidays.",
-    "The product will be delivered separately from other hand-delivered products."
-  ],
-  "plant_care": [
-    "Keep the plant in medium light, away from direct sunlight.",
-    "Natural light is ideal, but it can also thrive under office fluorescent lighting.",
-    "Ensure the soil is kept moist at all times, but avoid overwatering.",
-    "Do not let plants stand in water.",
-    "Avoid excessive wetting of plant leaves.",
-    "Spray water on leaves for humidity if required.",
-    "Maintain a cool spot for the plant (between 18-28°C).",
-    "Remove waste leaves and stems periodically to encourage new growth."
-  ],
-  "plant_trivia": [
-    "Syngonium plants have a high transpiration rate, helping increase humidity in a room.",
-    "Also known as the Arrow Head Plant, it has distinct arrow-shaped leaves.",
-    "Believed to help reduce stress, anxiety, and sleep disorders due to its calming presence.",
-    "Syngonium is a popular air-purifying plant known for improving indoor air quality."
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+        "Plant Name: Syngonium Plant",
+        "Plant Type: Air Purifying Foliage",
+        "Plant Placement: Indoors and Outdoors",
+        "Plant Height: Upto 6 Inches",
+        "Grey Ceramic Pot Dimensions: 3 x 3 Inches",
+        "Coverage: One plant in a 6-8 inch diameter container can purify air in roughly 100 square feet of floor space."
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Since plants are natural products, actual product may vary in shape, size, and design.",
+        "The plant's size and number of leaves may vary depending on regional availability.",
+        "Flowers, if present, may be in fully bloomed, semi-bloomed, or bud stage.",
+        "Delivery may occur before or after the chosen date depending on courier schedules.",
+        "No deliveries are made on Sundays or National Holidays.",
+        "The product will be delivered separately from other hand-delivered products."
+      ],
+      "plant_care": [
+        "Keep the plant in medium light, away from direct sunlight.",
+        "Natural light is ideal, but it can also thrive under office fluorescent lighting.",
+        "Ensure the soil is kept moist at all times, but avoid overwatering.",
+        "Do not let plants stand in water.",
+        "Avoid excessive wetting of plant leaves.",
+        "Spray water on leaves for humidity if required.",
+        "Maintain a cool spot for the plant (between 18-28°C).",
+        "Remove waste leaves and stems periodically to encourage new growth."
+      ],
+      "plant_trivia": [
+        "Syngonium plants have a high transpiration rate, helping increase humidity in a room.",
+        "Also known as the Arrow Head Plant, it has distinct arrow-shaped leaves.",
+        "Believed to help reduce stress, anxiety, and sleep disorders due to its calming presence.",
+        "Syngonium is a popular air-purifying plant known for improving indoor air quality."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       image: [
@@ -1653,7 +1714,7 @@ export const data = {
         "FSSAI License No. 10019011006502"
       ]
     },
-    
+
     {
       image: [
         "/Images/birthday/red-rose-pineapple/elegant-vibe-red-roses-bouquet-pineapple-cake_1.webp",
@@ -1686,6 +1747,103 @@ export const data = {
     },
     {
       image: [
+        "/Images/flowers/rustic-dry/rustic-dry-flower-arrangement_1.webp",
+        "/Images/flowers/rustic-dry/rustic-dry-flower-arrangement_2.webp",
+        "/Images/flowers/rustic-dry/rustic-dry-flower-arrangement_3.webp",
+        "/Images/flowers/rustic-dry/rustic-dry-flower-arrangement_4.webp",
+        "/Images/flowers/rustic-dry/rustic-dry-flower-arrangement_5.webp",
+      ],
+      link: "/rustic-dry-flower-arrangement",
+      title: "Rustic Dry Flower Arrangement",
+      price: "549",
+      slug: "rustic-dry-flower-arrangement",
+      delivery: "Tomorrow",
+      'delivery': [
+        'Pampaas grass',
+        'Palm stick',
+        'Tishi grass in pink',
+        'Sola belli 2',
+        'Jute fabric',
+        'White raffia knot',
+        'Net quantity 1',
+        'Dimensions 8x6 inch',
+        'Weight Approx 500gms1kg',
+        'Country of origin India'
+      ],
+      "details": [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi 110030",
+        "FSSAI License No. 10019011006502"
+      ]
+    },
+    {
+      image: [
+        "/Images/flowers/personalised/personalised-blushing-beauty-love-combo_1.webp",
+        "/Images/flowers/personalised/personalised-blushing-beauty-love-combo_2.webp",
+        "/Images/flowers/personalised/personalised-blushing-beauty-love-combo_3.webp",
+        "/Images/flowers/personalised/personalised-blushing-beauty-love-combo_5.webp",
+        "/Images/flowers/personalised/personalised-blushing-beauty-love-combo_6.webp",
+      ],
+      link: "/personalised-blushing-beauty-love-combo",
+      title: "Personalised Antique Beauty Love Combo",
+      price: "1199",
+      rate: '5.0',
+      slug: "personalised-blushing-beauty-love-combo",
+      delivery: "Tomorrow",
+      review: '1 reviews',
+      delivery: [
+        'Antique pink preserved rose',
+        'FNP black colour forever kappa board box: 11 x 11 x 9.5 inches',
+        'Personalised box cover cum frame',
+        'Frame stand: 7 x 3 inches',
+        'For personalisation, please provide us with 1 photo'
+      ],
+      notes: [
+        'Since this product is shipped using the services of our courier partners, the date of delivery is an estimate.',
+        'Your gift may be delivered prior or after the chosen date of delivery.',
+        'A courier product is delivered separately from other hand delivered products.',
+        'Our courier partners do not call prior to delivering an order, so we recommend that you provide an address at which someone will be present to receive the package.',
+        'The delivery cannot be redirected to any other address.',
+        'All courier orders are carefully packed and shipped from our warehouse.',
+        'Soon after the order has been dispatched, you will receive a tracking number that will help you trace your gift1'
+      ],
+      "details": [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi 110030",
+        "FSSAI License No. 10019011006502"
+      ]
+    },
+    {
+      image: [
+        "/Images/flowers/orchids/vibrant-purple-orchid-bunch_1.webp",
+        "/Images/flowers/orchids/vibrant-purple-orchid-bunch_2.webp",
+        "/Images/flowers/orchids/vibrant-purple-orchid-bunch_3.webp",
+        "/Images/flowers/orchids/vibrant-purple-orchid-bunch_4.webp",
+        "/Images/flowers/orchids/vibrant-purple-orchid-bunch_5.webp",
+      ],
+      link: "/vibrant-purple-orchid-bunch",
+      title: "Vibrant Purple Orchid Flower Bunch",
+      price: "1425",
+      rate: '5.0',
+      slug: "vibrant-purple-orchid-bunch",
+      delivery: "Tomorrow",
+      review: '91 reviews',
+      delivery: [
+        "Green Color Dracaena Leaf Filler",
+        "Transparent Pipni Glass Vase 9 In",
+        "Net Quantity: 1 Bouquet",
+        "Dimensions: 20x9 inch",
+        "Weight: Approx 250-500 gms",
+        "Country of Origin: India"
+      ],
+      "details": [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi 110030",
+        "FSSAI License No. 10019011006502"
+      ]
+    },
+    {
+      image: [
         "/Images/birthday/yellow-rose-pineapple/brighten-up-the-day-roses-bouquet-pineapple-cake_1.webp",
         "/Images/birthday/yellow-rose-pineapple/brighten-up-the-day-roses-bouquet-pineapple-cake_2.webp",
         "/Images/birthday/yellow-rose-pineapple/brighten-up-the-day-roses-bouquet-pineapple-cake_4.webp",
@@ -1700,65 +1858,65 @@ export const data = {
       delivery: "Today",
       review: "76 reviews",
       "delivery": [
-    "10 Yellow Roses",
-    "White Gypsophila Fillers",
-    "Net Quantity: 1 Flower Bouquet and 1 Cake",
-    "Dimensions: Approx 2x2.5 feet",
-    "FNP White N Black Non Woven Packing",
-    "One Yellow Paper",
-    "Beautifully Tied with Raffia",
-    "One Message Card",
-    "Weight: Approx 2-2.5 Kg",
-    "1 Pineapple Cake-500 gms"
-  ],
-  "personalisation": [
-    "For personalisation, please provide us with 2 names and the date in dd/mm/yy format."
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Actual product may vary in shape or design as per the availability.",
-    "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
-    "This product is hand delivered and will not be delivered along with courier products.",
-    "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
-  ],
-  "storage": [
-    "When your flowers arrive, just trim the stems and add water.",
-    "Re-cut 1-2 of the stems at a 45-degree angle.",
-    "Use a clean vase and clean water.",
-    "Remove the leaves below the waterline but do not remove all leaves along the stem length.",
-    "Check the water level daily and replenish as needed.",
-    "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
-    "All flowers benefit from a daily mist of water.",
-    "Store cream cakes in a refrigerator.",
-    "Fondant cakes should be stored in an air-conditioned environment.",
-    "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
-    "Use a serrated knife to cut a fondant cake.",
-    "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support. Please check the placement of these items before serving to small children.",
-    "The cake should be consumed within 24 hours."
-  ],
-  "flowers_trivia": [
-    "Did you know a rose bush can grow quite tall? The tallest ever recorded rose bush stands at over 23 feet (7 meters) tall.",
-    "Yellow Roses signify friendship and are perfect for expressing friendly feelings towards someone."
-  ],
-  "ingredients": [
-    "Vanilla premix",
-    "Refined oil",
-    "Breakfast Sugar",
-    "Whip topping cream",
-    "Pineapple Essence",
-    "Pineapple Crush",
-    "Pineapple Slice",
-    "Karonda Cherry"
-  ],
-  "price_breakup": [
-    "Fresh Flower ₹1246",
-    "Cake ₹303"
-  ],
-  "details": [
-    "Ferns N Petals Private Limited",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+        "10 Yellow Roses",
+        "White Gypsophila Fillers",
+        "Net Quantity: 1 Flower Bouquet and 1 Cake",
+        "Dimensions: Approx 2x2.5 feet",
+        "FNP White N Black Non Woven Packing",
+        "One Yellow Paper",
+        "Beautifully Tied with Raffia",
+        "One Message Card",
+        "Weight: Approx 2-2.5 Kg",
+        "1 Pineapple Cake-500 gms"
+      ],
+      "personalisation": [
+        "For personalisation, please provide us with 2 names and the date in dd/mm/yy format."
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Actual product may vary in shape or design as per the availability.",
+        "Flowers may be delivered in fully bloomed, semi-bloomed or bud stage.",
+        "This product is hand delivered and will not be delivered along with courier products.",
+        "Occasionally, substitution of flowers is necessary due to temporary and/or regional unavailability issues."
+      ],
+      "storage": [
+        "When your flowers arrive, just trim the stems and add water.",
+        "Re-cut 1-2 of the stems at a 45-degree angle.",
+        "Use a clean vase and clean water.",
+        "Remove the leaves below the waterline but do not remove all leaves along the stem length.",
+        "Check the water level daily and replenish as needed.",
+        "Don’t place flowers in direct sunlight or near any other source of excessive heat.",
+        "All flowers benefit from a daily mist of water.",
+        "Store cream cakes in a refrigerator.",
+        "Fondant cakes should be stored in an air-conditioned environment.",
+        "Slice and serve the cake at room temperature and make sure it is not exposed to heat.",
+        "Use a serrated knife to cut a fondant cake.",
+        "Sculptural elements and figurines may contain wire supports or toothpicks or wooden skewers for support. Please check the placement of these items before serving to small children.",
+        "The cake should be consumed within 24 hours."
+      ],
+      "flowers_trivia": [
+        "Did you know a rose bush can grow quite tall? The tallest ever recorded rose bush stands at over 23 feet (7 meters) tall.",
+        "Yellow Roses signify friendship and are perfect for expressing friendly feelings towards someone."
+      ],
+      "ingredients": [
+        "Vanilla premix",
+        "Refined oil",
+        "Breakfast Sugar",
+        "Whip topping cream",
+        "Pineapple Essence",
+        "Pineapple Crush",
+        "Pineapple Slice",
+        "Karonda Cherry"
+      ],
+      "price_breakup": [
+        "Fresh Flower ₹1246",
+        "Cake ₹303"
+      ],
+      "details": [
+        "Ferns N Petals Private Limited",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       image: [
@@ -2087,37 +2245,37 @@ export const data = {
       "review": "242 reviews",
       "delivery": "Tomorrow",
       "delivery": [
-    "Golden Syngonium Plant - 5 Inch",
-    "Green Money Plant - 5 Inch",
-    "Jade Plant - 5 Inch",
-    "White Color Plastic Pot - 3x3 Inch",
-    "Blue Color Plastic Pot - 3x3 Inch",
-    "Red Color Plastic Pot - 3x3 Inch"
-  ],
-  "notes": [
-    "The image displayed is indicative in nature. Actual product may vary in shape or design as per availability.",
-    "The number of leaves and the size of the plants depends on seasonal availability.",
-    "Flowers, if present in plants, may be in fully bloomed, semi-bloomed, or bud stage.",
-    "Since this product is shipped using the services of our courier partners, the date of delivery is an estimate.",
-    "Your gift may be delivered prior to or after the chosen date of delivery.",
-    "This product is delivered separately from other hand-delivered items.",
-    "No deliveries are made on Sundays or National Holidays.",
-    "Our courier partners do not call prior to delivering an order. Please ensure someone is present to receive the package.",
-    "The delivery cannot be redirected to any other address."
-  ],
-  "storage": [
-    "Keep plants in medium light locations, out of direct sunlight.",
-    "Natural light is best, but some plants can also thrive in office fluorescent light.",
-    "Plant soil should be kept moist at all times, but be careful not to overwater.",
-    "Do not allow plants to stand in water.",
-    "Avoid wetting plant leaves excessively; a light spray of water is ideal for flowering plants.",
-    "Plants should be kept in a cool spot (between 18-28°C).",
-    "Remove waste leaves and stems from time to time to maintain plant health."
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
-  ]
+        "Golden Syngonium Plant - 5 Inch",
+        "Green Money Plant - 5 Inch",
+        "Jade Plant - 5 Inch",
+        "White Color Plastic Pot - 3x3 Inch",
+        "Blue Color Plastic Pot - 3x3 Inch",
+        "Red Color Plastic Pot - 3x3 Inch"
+      ],
+      "notes": [
+        "The image displayed is indicative in nature. Actual product may vary in shape or design as per availability.",
+        "The number of leaves and the size of the plants depends on seasonal availability.",
+        "Flowers, if present in plants, may be in fully bloomed, semi-bloomed, or bud stage.",
+        "Since this product is shipped using the services of our courier partners, the date of delivery is an estimate.",
+        "Your gift may be delivered prior to or after the chosen date of delivery.",
+        "This product is delivered separately from other hand-delivered items.",
+        "No deliveries are made on Sundays or National Holidays.",
+        "Our courier partners do not call prior to delivering an order. Please ensure someone is present to receive the package.",
+        "The delivery cannot be redirected to any other address."
+      ],
+      "storage": [
+        "Keep plants in medium light locations, out of direct sunlight.",
+        "Natural light is best, but some plants can also thrive in office fluorescent light.",
+        "Plant soil should be kept moist at all times, but be careful not to overwater.",
+        "Do not allow plants to stand in water.",
+        "Avoid wetting plant leaves excessively; a light spray of water is ideal for flowering plants.",
+        "Plants should be kept in a cool spot (between 18-28°C).",
+        "Remove waste leaves and stems from time to time to maintain plant health."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
     },
     {
       "image": [
@@ -2135,47 +2293,47 @@ export const data = {
       "review": "132 reviews",
       "delivery": "Today",
       "delivery": [
-    "Eggless Chocolate Truffle Cake - 500 gms",
-    "Money Plant - Upto 5 Inches",
-    "Round Glass Vase - 6 Inches",
-    "Plant Placement: Indoors & Outdoors",
-    "Cake Size: 6 Inches in Diameter",
-    "Serves: 4-6 People"
-  ],
-  "notes": [
-    "The cake stand, cutlery accessories used in the image are only for representation purposes. They are not delivered with the cake.",
-    "This cake is hand delivered in a good quality cardboard box.",
-    "The plant may vary in shape or size based on regional availability.",
-    "The number of leaves and the size of the plant may vary based on the time of year.",
-    "Since plants are natural products, there might be variations from the image."
-  ],
-  "cake_ingredients": [
-    "Chocolate premix",
-    "Refined oil",
-    "Breakfast Sugar",
-    "Chocolate Truffle Base",
-    "Dark Chocolate compound",
-    "Karonda Cherry",
-    "Chocolate Glaze"
-  ],
-  "plant_trivia": [
-    "Origin: The Money Plant originated in Mo'orea, a high island in French Polynesia.",
-    "Money plants can also be put in aquariums where the roots branch out and partly float, providing a beautiful look and essential nutrients to fish."
-  ],
-  "storage": [
-    "Keep plants in medium light locations, out of direct sunlight.",
-    "Natural light is best, but some plants can also thrive in office fluorescent light.",
-    "Plant soil should be kept moist at all times but avoid overwatering.",
-    "Do not allow plants to stand in water.",
-    "Avoid excessive watering of plant leaves.",
-    "Store cream cakes in a refrigerator. Slice and serve at room temperature.",
-    "For fondant cakes, keep them in an air-conditioned environment and use a serrated knife to cut."
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+        "Eggless Chocolate Truffle Cake - 500 gms",
+        "Money Plant - Upto 5 Inches",
+        "Round Glass Vase - 6 Inches",
+        "Plant Placement: Indoors & Outdoors",
+        "Cake Size: 6 Inches in Diameter",
+        "Serves: 4-6 People"
+      ],
+      "notes": [
+        "The cake stand, cutlery accessories used in the image are only for representation purposes. They are not delivered with the cake.",
+        "This cake is hand delivered in a good quality cardboard box.",
+        "The plant may vary in shape or size based on regional availability.",
+        "The number of leaves and the size of the plant may vary based on the time of year.",
+        "Since plants are natural products, there might be variations from the image."
+      ],
+      "cake_ingredients": [
+        "Chocolate premix",
+        "Refined oil",
+        "Breakfast Sugar",
+        "Chocolate Truffle Base",
+        "Dark Chocolate compound",
+        "Karonda Cherry",
+        "Chocolate Glaze"
+      ],
+      "plant_trivia": [
+        "Origin: The Money Plant originated in Mo'orea, a high island in French Polynesia.",
+        "Money plants can also be put in aquariums where the roots branch out and partly float, providing a beautiful look and essential nutrients to fish."
+      ],
+      "storage": [
+        "Keep plants in medium light locations, out of direct sunlight.",
+        "Natural light is best, but some plants can also thrive in office fluorescent light.",
+        "Plant soil should be kept moist at all times but avoid overwatering.",
+        "Do not allow plants to stand in water.",
+        "Avoid excessive watering of plant leaves.",
+        "Store cream cakes in a refrigerator. Slice and serve at room temperature.",
+        "For fondant cakes, keep them in an air-conditioned environment and use a serrated knife to cut."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estate, Ashram Marg, Mandi Road, Gadaipur, South Delhi, Delhi, 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     },
     {
       "image": [
@@ -2285,51 +2443,51 @@ export const data = {
       "review": "28 reviews",
       "delivery": "Today",
       "delivery": [
-    "Plant Name: Jade Plant",
-    "Plant Height: 5 Inches",
-    "Golden Tropical Metal Pot: 3 x 3 Inches",
-    "Chocolate Cream Cake: 500 Gms",
-    "Net Quantity: 1 Plant and 1 Cake",
-    "Dimensions: Approx 1 x 1.5 Feet",
-    "Weight: Approx 1-1.5 Kg"
-  ],
-  "notes": [
-    "The image displayed is indicative in nature.",
-    "Since plants are natural products, actual product may vary in shape and size based on availability.",
-    "The plant's size and number of leaves may vary depending on regional availability.",
-    "Flowers, if present, may be in fully bloomed, semi-bloomed, or bud stage.",
-    "The delivery of this product may occur before or after the chosen date as per courier schedules.",
-    "No deliveries are made on Sundays or National Holidays.",
-    "This product is hand delivered and will not be delivered along with courier products."
-  ],
-  "plant_care": [
-    "Keep plants in medium light locations, out of direct sunlight.",
-    "Natural light is best, but some plants can also thrive in office fluorescent light.",
-    "Ensure plant soil remains moist at all times, but avoid overwatering.",
-    "Do not allow plants to stand in water.",
-    "Avoid excessive wetting of plant leaves.",
-    "Keep plants in a cool spot (between 18-28°C).",
-    "Remove waste leaves and stems periodically."
-  ],
-  "cake_care": [
-    "Store cream cakes in a refrigerator.",
-    "Fondant cakes should be stored in an air-conditioned environment.",
-    "Slice and serve the cake at room temperature, ensuring it is not exposed to heat.",
-    "Use a serrated knife to cut a fondant cake.",
-    "Sculptural elements or figurines may contain wire supports or toothpicks for stability, so check before serving to small children.",
-    "The cake should be consumed within 24 hours."
-  ],
-  "plant_trivia": [
-    "Origin: Jade plant originates from South Africa, but it is now found in temperate regions worldwide.",
-    "Jade Plant is a perennial plant, often blooming delicate pink or white flowers in spring, with a lifespan of over 2 years.",
-    "Jade Plant is a low-maintenance succulent known for its attractive, vibrant green leaves.",
-    "The Jade plant symbolizes luck and prosperity, making it a great gift for any occasion."
-  ],
-  "details": [
-    "Ferns N Petals Pvt Ltd",
-    "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030",
-    "FSSAI License No. 10019011006502"
-  ]
+        "Plant Name: Jade Plant",
+        "Plant Height: 5 Inches",
+        "Golden Tropical Metal Pot: 3 x 3 Inches",
+        "Chocolate Cream Cake: 500 Gms",
+        "Net Quantity: 1 Plant and 1 Cake",
+        "Dimensions: Approx 1 x 1.5 Feet",
+        "Weight: Approx 1-1.5 Kg"
+      ],
+      "notes": [
+        "The image displayed is indicative in nature.",
+        "Since plants are natural products, actual product may vary in shape and size based on availability.",
+        "The plant's size and number of leaves may vary depending on regional availability.",
+        "Flowers, if present, may be in fully bloomed, semi-bloomed, or bud stage.",
+        "The delivery of this product may occur before or after the chosen date as per courier schedules.",
+        "No deliveries are made on Sundays or National Holidays.",
+        "This product is hand delivered and will not be delivered along with courier products."
+      ],
+      "plant_care": [
+        "Keep plants in medium light locations, out of direct sunlight.",
+        "Natural light is best, but some plants can also thrive in office fluorescent light.",
+        "Ensure plant soil remains moist at all times, but avoid overwatering.",
+        "Do not allow plants to stand in water.",
+        "Avoid excessive wetting of plant leaves.",
+        "Keep plants in a cool spot (between 18-28°C).",
+        "Remove waste leaves and stems periodically."
+      ],
+      "cake_care": [
+        "Store cream cakes in a refrigerator.",
+        "Fondant cakes should be stored in an air-conditioned environment.",
+        "Slice and serve the cake at room temperature, ensuring it is not exposed to heat.",
+        "Use a serrated knife to cut a fondant cake.",
+        "Sculptural elements or figurines may contain wire supports or toothpicks for stability, so check before serving to small children.",
+        "The cake should be consumed within 24 hours."
+      ],
+      "plant_trivia": [
+        "Origin: Jade plant originates from South Africa, but it is now found in temperate regions worldwide.",
+        "Jade Plant is a perennial plant, often blooming delicate pink or white flowers in spring, with a lifespan of over 2 years.",
+        "Jade Plant is a low-maintenance succulent known for its attractive, vibrant green leaves.",
+        "The Jade plant symbolizes luck and prosperity, making it a great gift for any occasion."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030",
+        "FSSAI License No. 10019011006502"
+      ]
     }
   ]
 }

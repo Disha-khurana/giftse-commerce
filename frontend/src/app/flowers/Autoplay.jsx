@@ -36,10 +36,10 @@ function Autoplay() {
 
     const flowerData = {
         images: [
-            "/Images/flowers/slider/blooms.webp",
-            "/Images/flowers/slider/premium.webp",
-            "/Images/flowers/slider/subs.webp",
-        ],
+            { src: "/Images/flowers/slider/blooms.webp", link: "/flowers/personalised" },
+            { src: "/Images/flowers/slider/premium.webp", link: "/flowers/all-flowers"  },
+            { src: "/Images/flowers/slider/subs.webp", link: "/flowers/flower-subscription"  }
+        ]        
     }
   return (
     <div className="flex flex-col md:flex-row px-5 md:px-12 items-center justify-center">
@@ -47,16 +47,18 @@ function Autoplay() {
     <div className="relative w-full">
         <div ref={sliderRef} className="keen-slider">
             {flowerData.images.map((image, index) => (
+                <Link key={`slide-${index}`} href={image.link}>
                 <div
-                    key={`slide-${index}`}
+                    
                     className="keen-slider__slide flex justify-center"
                 >
                     <img
-                        src={image}
+                        src={image.src}
                         alt={`Slide ${index}`}
                         className="object-cover w-full rounded-lg shadow-lg"
                     />
                 </div>
+                </Link>
             ))}
         </div>
 

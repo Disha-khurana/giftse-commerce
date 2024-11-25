@@ -358,7 +358,7 @@ const Navbar = () => {
       links: [
        
         { href: "/flowers/all-flowers", text: "All Flowers" },
-        { href: "/flowers/best-sellers", text: "Best Sellers" },
+        { href: "/flowers/bestsellers", text: "Best Sellers" },
         { href: "/flowers/same-day-delivery", text: "Same Day Delivery" },
         { href: "/flowers/new-arrivals", text: "New Arrivals" },
         { href: "/flowers/personalised", text: "Personalised Flowers" },

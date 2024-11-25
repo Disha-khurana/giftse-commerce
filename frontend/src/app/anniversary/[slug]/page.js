@@ -1,7 +1,8 @@
 import React from 'react'
 import AnniversaryPage from './AnniversaryPage'
 
-const page = ({params:{slug}}) => {
+const page = ({slug}) => {
+  const { slug } = params;
   return (
     <AnniversaryPage slug={slug}/>
   )

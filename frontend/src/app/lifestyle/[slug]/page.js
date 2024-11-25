@@ -1,7 +1,8 @@
 import React from 'react'
 import LifestylePage from './LifestylePage'
 
-function page({params:{slug}}) {
+function page({slug}) {
+  const { slug } = params;
   return (
     <LifestylePage slug={slug}/>
   )

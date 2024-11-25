@@ -1,7 +1,8 @@
 import React from 'react'
 import Trend from './Trend'
 
-function page({params:{slug}}) {
+function page({slug}) {
+  const { slug } = params;
   return (
     <Trend slug={slug}/>
   )

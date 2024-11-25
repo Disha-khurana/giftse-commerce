@@ -2,7 +2,8 @@ import React from 'react'
 import PlantsData from './PlantsData'
 
 
-function page({params:{slug}}) {
+function page({slug}) {
+  const { slug } = params;
   return (
     <PlantsData slug={slug}/>
   )

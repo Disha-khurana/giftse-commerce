@@ -32,7 +32,6 @@ function Choco({ slug }) {
     setShow({ ...show, [auth]: show[auth] ? "" : auth });
   };
 
-  const filterMine = [{}];
 
   const category = slug; // or "best-sellers"
 const categoryData = price?.find(item => item.category === category)?.data || [];

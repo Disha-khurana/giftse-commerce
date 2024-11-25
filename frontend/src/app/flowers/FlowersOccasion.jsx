@@ -27,7 +27,7 @@ function PlantsOccasion() {
             },
             {
                 img: "/Images/flowers/occasion/Desk.webp",
-                link: "/desk",
+                link: "/wedding",
             },
             {
                 img: "/Images/flowers/occasion/Farewell.webp",
