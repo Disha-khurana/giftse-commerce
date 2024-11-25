@@ -1,7 +1,7 @@
 import React from 'react'
 import Variety from './Variety'
 
-function page ({slug}) {
+function page ({params}) {
   const { slug } = params;
   return (
     <Variety slug={slug}/>

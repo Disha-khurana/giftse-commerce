@@ -1,7 +1,7 @@
 import React from 'react'
 import CakeNav from './CakeNav'
 
-function page({slug}) {
+function page({params}) {
   const { slug } = params;
   return (
    

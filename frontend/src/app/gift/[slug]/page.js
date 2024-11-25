@@ -1,7 +1,7 @@
 import React from 'react'
 import GiftCompo from './GiftCompo'
 
-const page = ({slug}) => {
+const page = ({params}) => {
   const { slug } = params;
   return (
    <GiftCompo  slug={slug} />

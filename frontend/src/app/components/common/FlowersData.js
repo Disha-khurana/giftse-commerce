@@ -517,8 +517,6 @@ export const data = {
             delivery: "Today",
         },
 
-
-
     ],
     condolences:[
         {
@@ -536,6 +534,70 @@ export const data = {
             slug: "flowers",
             delivery: "Today",
         },
+    ],
+    farewell:[
+        {
+            image: [
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_2.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_3.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_4.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
+            ],
+            link: "/heavenly-6-white-roses-bunch",
+            title: "Heavenly 6 White Roses Bunch",
+            rate: "4.3",
+            price: "549",
+            slug: "flowers",
+            delivery: "Today",
+        },
+        {
+            id: 4,
+            image: [
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_1.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_2.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_3.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_4.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_5.webp",
+            ],
+            link: "/love-for-pastel-carnations-bouquet",
+            title: "Love For Pastel Carnations Bouquet",
+            rate: "4.8",
+            price: "949",
+            review: "92 reviews",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp",
+            ],
+            link: "/mixed-brilliance-gerbera-blossoms",
+            title: "Special 8 Mixed Roses Bouquet",
+            rate: "4.3",
+            slug: "flowers",
+            price: "549",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp",
+            ],
+            link: "/mixed-brilliance-gerbera-blossoms",
+            title: "Special 8 Mixed Roses Bouquet",
+            rate: "4.3",
+            slug: "flowers",
+            price: "549",
+            delivery: "Today",
+        },
+
     ]
 }
 
@@ -555,7 +617,8 @@ export const heading = {
     mixed:{title:'Mixed Flowers',rate:'4.6'},
     wedding:{title:'Wedding Flowers',rate:'4.6'},
     celebrations:{title:'Congratulations Flowers',rate:'4.7'},
-    condolences:{title:'Flowers for Condolence',rate:'5.0'}
+    condolences:{title:'Flowers for Condolence',rate:'5.0'},
+    farewell:{title:'Farewell Flowers'}
 }
 
 export const price = [
