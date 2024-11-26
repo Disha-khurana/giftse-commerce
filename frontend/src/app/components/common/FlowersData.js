@@ -393,33 +393,33 @@ export const data = {
             review: '91 reviews'
         },
     ],
-    gerbaras:[
+    gerbaras: [
         {
             id: 13,
             image: [
-              "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
-              "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
-              "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp",
-              "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp",
-              "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp",
             ],
             link: "/mixed-brilliance-gerbera-blossoms",
             slug: "mixed-brilliance-gerbera-blossoms",
             title: "Special 8 Mixed Roses Bouquet",
             rate: "4.3",
             price: "549",
-            delivery:'Today'
+            delivery: 'Today'
         }
     ],
-    carnations:[
+    carnations: [
         {
             id: 4,
             image: [
-              "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_1.webp",
-              "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_2.webp",
-              "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_3.webp",
-              "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_4.webp",
-              "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_5.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_1.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_2.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_3.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_4.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_5.webp",
             ],
             link: "/love-for-pastel-carnations-bouquet",
             title: "Love For Pastel Carnations Bouquet",
@@ -427,65 +427,65 @@ export const data = {
             price: "949",
             review: "92 reviews",
             delivery: "Today",
-          },
+        },
     ],
-    mixed:[
+    mixed: [
         {
             id: 4,
             image: [
-              "/Images/flowers/exotic/exotic-flowers-bouquet_1.webp",
-              "/Images/flowers/exotic/exotic-flowers-bouquet_2.webp",
-              "/Images/flowers/exotic/exotic-flowers-bouquet_3.webp",
-              "/Images/flowers/exotic/exotic-flowers-bouquet_4.webp",
-              "/Images/flowers/exotic/exotic-flowers-bouquet_5.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_1.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_2.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_3.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_4.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_5.webp",
             ],
             link: "/exotic-flowers-bouquet",
             title: "Exotic Flowers Bouquet",
             rate: "5.0",
             price: "749",
-            slug:'exotic-flowers-bouquet',
+            slug: 'exotic-flowers-bouquet',
             review: "34 reviews",
             delivery: "Today",
-          },
+        },
     ],
-    wedding:[
+    wedding: [
         {
             id: 4,
             image: [
-              "/Images/flowers/roses/majestic-50-red-roses-bouquet_1.webp",
-              "/Images/flowers/roses/majestic-50-red-roses-bouquet_2.webp",
-              "/Images/flowers/roses/majestic-50-red-roses-bouquet_3.webp",
-              "/Images/flowers/roses/majestic-50-red-roses-bouquet_4.webp",
-              "/Images/flowers/roses/majestic-50-red-roses-bouquet_5.webp",
-              
+                "/Images/flowers/roses/majestic-50-red-roses-bouquet_1.webp",
+                "/Images/flowers/roses/majestic-50-red-roses-bouquet_2.webp",
+                "/Images/flowers/roses/majestic-50-red-roses-bouquet_3.webp",
+                "/Images/flowers/roses/majestic-50-red-roses-bouquet_4.webp",
+                "/Images/flowers/roses/majestic-50-red-roses-bouquet_5.webp",
+
             ],
             link: "/majestic-50-red-roses-bouquet",
             title: "Exotic Flowers Bouquet",
             rate: "4.8",
             price: "2899",
-            slug:'majestic-50-red-roses-bouquet',
+            slug: 'majestic-50-red-roses-bouquet',
             review: "20 reviews",
             delivery: "Today",
-          } 
+        }
     ],
-    celebrations:[
+    celebrations: [
         {
             id: 4,
             image: [
-              "/Images/flowers/exotic/exotic-flowers-bouquet_1.webp",
-              "/Images/flowers/exotic/exotic-flowers-bouquet_2.webp",
-              "/Images/flowers/exotic/exotic-flowers-bouquet_3.webp",
-              "/Images/flowers/exotic/exotic-flowers-bouquet_4.webp",
-              "/Images/flowers/exotic/exotic-flowers-bouquet_5.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_1.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_2.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_3.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_4.webp",
+                "/Images/flowers/exotic/exotic-flowers-bouquet_5.webp",
             ],
             link: "/exotic-flowers-bouquet",
             title: "Exotic Flowers Bouquet",
             rate: "5.0",
             price: "749",
-            slug:'exotic-flowers-bouquet',
+            slug: 'exotic-flowers-bouquet',
             review: "34 reviews",
             delivery: "Today",
-          },
+        },
         {
             image: [
                 "/Images/birthday/red rose/vivid-love-6-red-roses-bouquet_1.webp",
@@ -518,7 +518,7 @@ export const data = {
         },
 
     ],
-    condolences:[
+    condolences: [
         {
             image: [
                 "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
@@ -535,7 +535,7 @@ export const data = {
             delivery: "Today",
         },
     ],
-    farewell:[
+    farewell: [
         {
             image: [
                 "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
@@ -598,7 +598,432 @@ export const data = {
             delivery: "Today",
         },
 
+    ],
+    'get-well-soon': [
+        {
+            image: [
+                "/Images/flowers/orchids/vibrant-purple-orchid-bunch_1.webp",
+                "/Images/flowers/orchids/vibrant-purple-orchid-bunch_2.webp",
+                "/Images/flowers/orchids/vibrant-purple-orchid-bunch_3.webp",
+                "/Images/flowers/orchids/vibrant-purple-orchid-bunch_4.webp",
+                "/Images/flowers/orchids/vibrant-purple-orchid-bunch_5.webp",
+            ],
+            link: "/vibrant-purple-orchid-bunch",
+            title: "Vibrant Purple Orchid Flower Bunch",
+            price: "1425",
+            rate: '5.0',
+            slug: "vibrant-purple-orchid-bunch",
+            delivery: "Tomorrow",
+            review: '91 reviews'
+        },
+        {
+            id: 4,
+            image: [
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_1.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_2.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_3.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_4.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_5.webp",
+            ],
+            link: "/love-for-pastel-carnations-bouquet",
+            title: "Love For Pastel Carnations Bouquet",
+            rate: "4.8",
+            price: "949",
+            review: "92 reviews",
+            delivery: "Today",
+        },
+        {
+            id: 13,
+            image: [
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp",
+            ],
+            link: "/mixed-brilliance-gerbera-blossoms",
+            slug: "mixed-brilliance-gerbera-blossoms",
+            title: "Special 8 Mixed Roses Bouquet",
+            rate: "4.3",
+            price: "549",
+            delivery: 'Today'
+        }
+
+    ],
+    housewarming: [
+        {
+            image: [
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_2.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_3.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_4.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
+            ],
+            link: "/heavenly-6-white-roses-bunch",
+            title: "Heavenly 6 White Roses Bunch",
+            rate: "4.3",
+            price: "549",
+            slug: "flowers",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_1.webp",
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_2.webp",
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_3.webp",
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_4.webp",
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_5.webp",
+            ],
+            link: "/blushing-rose-love-elegance",
+            title: "Blushing Rose Love Elegance",
+            price: "1749",
+            slug: "flowers",
+            delivery: "Today",
+        },
+    ],
+    blue: [
+        {
+            image: [
+                "/Images/flowers/blue/indigo-hued-flower-tabletop_1.webp",
+                "/Images/flowers/blue/indigo-hued-flower-tabletop_2.webp",
+                "/Images/flowers/blue/indigo-hued-flower-tabletop_3.webp",
+                "/Images/flowers/blue/indigo-hued-flower-tabletop_4.webp",
+                "/Images/flowers/blue/indigo-hued-flower-tabletop_5.webp",
+            ],
+            link: "/indigo-hued-flower-tabletop",
+            title: "Indigo Hued Flower Tabletop",
+            price: "699",
+            slug: "indigo-hued-flower-tabletop",
+            delivery: "Today",
+        },
+    ],
+    'flower-bouquets': [
+        {
+            image: [
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_1.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_2.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_3.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_4.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_5.webp",
+            ],
+            link: "/love-for-pastel-carnations-bouquet",
+            title: "Love For Pastel Carnations Bouquet",
+            rate: "4.8",
+            slug: "flowers",
+            price: "949",
+            review: "92 reviews",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp",
+            ],
+            link: "/mixed-brilliance-gerbera-blossoms",
+            title: "Special 8 Mixed Roses Bouquet",
+            rate: "4.3",
+            slug: "flowers",
+            price: "549",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_2.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_3.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_4.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
+            ],
+            link: "/heavenly-6-white-roses-bunch",
+            title: "Heavenly 6 White Roses Bunch",
+            rate: "4.3",
+            price: "549",
+            slug: "flowers",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_1.webp",
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_2.webp",
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_3.webp",
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_4.webp",
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_5.webp",
+            ],
+            link: "/happy-times-carnations-bouquet",
+            title: "Happy Times Carnations Flower Bouquet",
+            rate: "4.9",
+            price: "899",
+            slug: "flowers",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_1.webp",
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_2.webp",
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_3.webp",
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_4.webp",
+                "/Images/birthday/blushing rose/blushing-rose-love-elegance_5.webp",
+            ],
+            link: "/blushing-rose-love-elegance",
+            title: "Blushing Rose Love Elegance",
+            price: "1749",
+            slug: "flowers",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/red rose/vivid-love-6-red-roses-bouquet_1.webp",
+                "/Images/birthday/red rose/vivid-love-6-red-roses-bouquet_2.webp",
+                "/Images/birthday/red rose/vivid-love-6-red-roses-bouquet_3.webp",
+                "/Images/birthday/red rose/vivid-love-6-red-roses-bouquet_4.webp",
+                "/Images/birthday/red rose/vivid-love-6-red-roses-bouquet_1.webp",
+            ],
+            link: "/vivid-love-6-red-roses-bouquet",
+            title: "Vivid Love 6 Red Roses Bouquet",
+            rate: "5.0",
+            price: "549",
+            slug: "flowers",
+            delivery: "Today",
+        },
+    ],
+
+    "flowers-cakes": [
+        {
+            image: [
+                "/Images/birthday/pink-rose-and-cake/sweet-memories-pink-roses-bouquet-chocolate-cake_1.webp",
+                "/Images/birthday/pink-rose-and-cake/sweet-memories-pink-roses-bouquet-chocolate-cake_2.webp",
+                "/Images/birthday/pink-rose-and-cake/sweet-memories-pink-roses-bouquet-chocolate-cake_3.webp",
+                "/Images/birthday/pink-rose-and-cake/sweet-memories-pink-roses-bouquet-chocolate-cake_4.webp",
+                "/Images/birthday/pink-rose-and-cake/sweet-memories-pink-roses-bouquet-chocolate-cake_8.webp",
+            ],
+            link: "/sweet-memories-pink-roses-bouquet-chocolate-cake",
+            title: "Sweet Memories Pink Roses Bouquet & Chocolate Cake",
+            rate: "5.0",
+            price: "1499",
+            slug: "flowers-cakes",
+            delivery: "Today",
+            review: "767 reviews",
+        },
+        {
+            image: [
+                "/Images/birthday/dust-carnations-truffle/magical-dust-carnations-n-truffle-cake-combo_1.webp",
+                "/Images/birthday/dust-carnations-truffle/magical-dust-carnations-n-truffle-cake-combo_2.webp",
+                "/Images/birthday/dust-carnations-truffle/magical-dust-carnations-n-truffle-cake-combo_3.webp",
+                "/Images/birthday/dust-carnations-truffle/magical-dust-carnations-n-truffle-cake-combo_4.webp",
+                "/Images/birthday/dust-carnations-truffle/magical-dust-carnations-n-truffle-cake-combo_8.webp",
+            ],
+            link: "/magical-dust-carnations-n-truffle-cake-combo",
+            title: "Magical Dust Carnations & Truffle Cake Combo",
+            rate: "4.9",
+            price: "1799",
+            slug: "flowers-cakes",
+            delivery: "Today",
+            review: "302 reviews",
+        },
+        {
+            image: [
+                "/Images/birthday/timeless-love-cake/timeless-love-red-roses-bouquet-chocolate-cake_1.webp",
+                "/Images/birthday/timeless-love-cake/timeless-love-red-roses-bouquet-chocolate-cake_2.webp",
+                "/Images/birthday/timeless-love-cake/timeless-love-red-roses-bouquet-chocolate-cake_4.webp",
+                "/Images/birthday/timeless-love-cake/timeless-love-red-roses-bouquet-chocolate-cake_5.webp",
+                "/Images/birthday/timeless-love-cake/timeless-love-red-roses-bouquet-chocolate-cake_6.webp",
+            ],
+            link: "/timeless-love-red-roses-bouquet-chocolate-cake",
+            title: "Timeless Love Red Roses Bouquet & Chocolate Cake",
+            rate: "4.7",
+            price: "1449",
+            slug: "flowers-cakes",
+            delivery: "Today",
+            review: "360 reviews",
+        },
+        {
+            image: [
+                "/Images/birthday/red-rose-pineapple/elegant-vibe-red-roses-bouquet-pineapple-cake_1.webp",
+                "/Images/birthday/red-rose-pineapple/elegant-vibe-red-roses-bouquet-pineapple-cake_2.webp",
+                "/Images/birthday/red-rose-pineapple/elegant-vibe-red-roses-bouquet-pineapple-cake_4.webp",
+                "/Images/birthday/red-rose-pineapple/elegant-vibe-red-roses-bouquet-pineapple-cake_5.webp",
+                "/Images/birthday/red-rose-pineapple/elegant-vibe-red-roses-bouquet-pineapple-cake_8.webp",
+            ],
+            link: "/elegant-vibe-red-roses-bouquet-pineapple-cake",
+            title: "Elegant Vibe Red Roses Bouquet & Pineapple Cake",
+            rate: "4.9",
+            price: "1449",
+            slug: "flowers-cakes",
+            delivery: "Today",
+            review: "86 reviews",
+        },
+        {
+            image: [
+                "/Images/birthday/yellow-rose-pineapple/brighten-up-the-day-roses-bouquet-pineapple-cake_1.webp",
+                "/Images/birthday/yellow-rose-pineapple/brighten-up-the-day-roses-bouquet-pineapple-cake_2.webp",
+                "/Images/birthday/yellow-rose-pineapple/brighten-up-the-day-roses-bouquet-pineapple-cake_4.webp",
+                "/Images/birthday/yellow-rose-pineapple/brighten-up-the-day-roses-bouquet-pineapple-cake_5.webp",
+                "/Images/birthday/yellow-rose-pineapple/brighten-up-the-day-roses-bouquet-pineapple-cake_9.webp",
+            ],
+            link: "/brighten-up-the-day-roses-bouquet-pineapple-cake",
+            title: "Brighten Up The Day Roses Bouquet & Pineapple Cake",
+            rate: "5.0",
+            price: "1540",
+            slug: "flowers-cakes",
+            delivery: "Today",
+            review: "76 reviews",
+        },
+        {
+            image: [
+                "/Images/birthday/pink-rose-cake/10-pink-roses-with-pineapple-cake-standard_1.webp",
+                "/Images/birthday/pink-rose-cake/10-pink-roses-with-pineapple-cake-standard_2.webp",
+                "/Images/birthday/pink-rose-cake/10-pink-roses-with-pineapple-cake-standard_3.webp",
+                "/Images/birthday/pink-rose-cake/10-pink-roses-with-pineapple-cake-standard_4.webp",
+                "/Images/birthday/pink-rose-cake/10-pink-roses-with-pineapple-cake-standard_5.webp",
+            ],
+            link: "/10-pink-roses-with-pineapple-cake-standard",
+            title: "10 Pink Roses With Pineapple Cake Standard",
+            rate: "4.8",
+            price: "1149",
+            slug: "flowers-cakes",
+            delivery: "Today",
+            review: "13 reviews",
+        },
+    ],
+
+    'delhi-ncr':[
+        {
+            id: 13,
+            image: [
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp",
+            ],
+            link: "/mixed-brilliance-gerbera-blossoms",
+            slug: "mixed-brilliance-gerbera-blossoms",
+            title: "Special 8 Mixed Roses Bouquet",
+            rate: "4.3",
+            price: "549",
+            delivery: 'Today'
+        },
+        {
+            id: 4,
+            image: [
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_1.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_2.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_3.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_4.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_5.webp",
+            ],
+            link: "/love-for-pastel-carnations-bouquet",
+            title: "Love For Pastel Carnations Bouquet",
+            rate: "4.8",
+            price: "949",
+            review: "92 reviews",
+            delivery: "Today",
+        },
+
+    ],
+
+    'usa':[
+        {
+            image: [
+           "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp",
+           "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp",
+           "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp",
+           "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp",
+           "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp"
+            ],
+            link: "/beautifully-tied-12-red-roses-bouquet",
+            slug: "beautifully-tied-12-red-roses-bouquet",
+            title: "Beautifully Tied 12 Red Roses Bouquet",
+            rate: "5.0",
+            price: "3799",
+            delivery: 'Today'
+        }, 
+        {
+            image: [
+              '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_1.webp',
+              '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_2.webp',
+              '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_3.webp',
+              '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_4.webp',
+              '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_1.webp'
+            ],
+            link: "/lush-lavender-bouquet-regular",
+            slug: "lush-lavender-bouquet-regular",
+            title: "Lush Lavender Bouquet_Regular",
+            price: "5799",
+            delivery: 'Today',
+        }
+    ],
+    him:[
+        {
+            image: [
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_2.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_3.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_4.webp",
+                "/Images/birthday/white roses/heavenly-6-white-roses-bunch_1.webp",
+            ],
+            link: "/heavenly-6-white-roses-bunch",
+            title: "Heavenly 6 White Roses Bunch",
+            rate: "4.3",
+            price: "549",
+            slug: "flowers",
+            delivery: "Today",
+        },
+        {
+            image: [
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_3.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_4.webp",
+                "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_5.webp",
+            ],
+            link: "/mixed-brilliance-gerbera-blossoms",
+            title: "Special 8 Mixed Roses Bouquet",
+            rate: "4.3",
+            slug: "flowers",
+            price: "549",
+            delivery: "Today",
+        },
+    ],
+    her:[
+        {
+            id: 4,
+            image: [
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_1.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_2.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_3.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_4.webp",
+                "/Images/birthday/pastel carnations/love-for-pastel-carnations-bouquet_5.webp",
+            ],
+            link: "/love-for-pastel-carnations-bouquet",
+            title: "Love For Pastel Carnations Bouquet",
+            rate: "4.8",
+            price: "949",
+            review: "92 reviews",
+            delivery: "Today",
+        }, 
+    ],
+    them:[
+        {
+            image: [
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_1.webp",
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_2.webp",
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_3.webp",
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_4.webp",
+                "/Images/birthday/happy times carnation/happy-times-carnations-bouquet_5.webp",
+            ],
+            link: "/happy-times-carnations-bouquet",
+            title: "Happy Times Carnations Flower Bouquet",
+            rate: "4.9",
+            price: "899",
+            slug: "flowers",
+            delivery: "Today",
+        },
     ]
+
 }
 
 export const heading = {
@@ -612,16 +1037,48 @@ export const heading = {
     roses: { title: 'Magnificent Rose Bouquets', rate: '4.3' },
     'preserved-flowers': { title: 'Forever Flowers' },
     'orchids': { title: 'Orchid Flower Bouquets', rate: '4.4' },
-    'gerbaras':{title:'Gerberas Online',rate:'5.0'},
-    carnations:{title:'Send Carnations Online',rate:'4.7'},
-    mixed:{title:'Mixed Flowers',rate:'4.6'},
-    wedding:{title:'Wedding Flowers',rate:'4.6'},
-    celebrations:{title:'Congratulations Flowers',rate:'4.7'},
-    condolences:{title:'Flowers for Condolence',rate:'5.0'},
-    farewell:{title:'Farewell Flowers'}
+    'gerbaras': { title: 'Gerberas Online', rate: '5.0' },
+    carnations: { title: 'Send Carnations Online', rate: '4.7' },
+    mixed: { title: 'Mixed Flowers', rate: '4.6' },
+    wedding: { title: 'Wedding Flowers', rate: '4.6' },
+    celebrations: { title: 'Congratulations Flowers', rate: '4.7' },
+    condolences: { title: 'Flowers for Condolence', rate: '5.0' },
+    farewell: { title: 'Farewell Flowers' },
+    'get-well-soon': { title: 'Get Well Soon Flowers', rate: '4.8' },
+    housewarming: { title: 'House Warming Flowers', rate: '4.8' },
+    'flower-bouquets': { title: 'Splendid Flower Bouquets', rate: '4.3' },
+    'flowers-cakes': { title: 'Flowers and Cake', rate: '4.4' },
+    'delhi-ncr':{title:'Flowers Delivery in Delhi',rate:'4.4'},
+    'usa':{title:'Send Flowers to USA',rate:'4.5'},
+    him:{title:'Flowers for Him'},
+    her:{title:'Flowers for Her'},
+    them:{title:'Flowers for Them'}
 }
 
 export const price = [
+    {
+        category: 'flower-bouquets',
+        data: [
+            { "range": "₹ 0 TO ₹ 499", "total": 3 },
+            { "range": "₹ 500 TO ₹ 999", "total": 50 },
+            { "range": "₹ 1000 TO ₹ 1499", "total": 29 },
+            { "range": "₹ 1500 TO ₹ 1999", "total": 14 },
+            { "range": "₹ 2000 TO ₹ 2499", "total": 2 },
+            { "range": "₹ 2500 TO ₹ 2999", "total": 5 },
+            { "range": "₹ 3000 AND ABOVE", "total": 1 }
+        ],
+    },
+    {
+        category: 'flowers-cakes',
+        data: [
+            { "range": "₹ 500 TO ₹ 999", "total": 3 },
+            { "range": "₹ 1000 TO ₹ 1499", "total": 38 },
+            { "range": "₹ 1500 TO ₹ 1999", "total": 15 },
+            { "range": "₹ 2000 TO ₹ 2499", "total": 4 },
+            { "range": "₹ 2500 TO ₹ 2999", "total": 2 },
+            { "range": "₹ 3000 AND ABOVE", "total": 2 }
+        ]
+    },
     {
         category: "all-flowers",
         data: [
@@ -631,6 +1088,17 @@ export const price = [
             { range: "₹ 1500 TO ₹ 1999", total: 12 },
             { range: "₹ 2000 TO ₹ 2499", total: 2 },
             { range: "₹ 2500 TO ₹ 2999", total: 3 }
+        ],
+    },
+    {
+        category: "delhi-ncr",
+        data: [
+            { "range": "₹ 0 TO ₹ 499", "total": 2 },
+            { "range": "₹ 500 TO ₹ 999", "total": 52 },
+            { "range": "₹ 1000 TO ₹ 1499", "total": 29 },
+            { "range": "₹ 1500 TO ₹ 1999", "total": 12 },
+            { "range": "₹ 2000 TO ₹ 2499", "total": 2 },
+            { "range": "₹ 2500 TO ₹ 2999", "total": 3 }
         ],
     },
     {
@@ -763,13 +1231,20 @@ export const price = [
             { range: "₹ 500 TO ₹ 999", total: 6 },
         ]
     },
-    
-    
-    
-    
-    
-    
-    
+    {
+        category: 'get-well-soon',
+        data: [
+            { "range": "₹ 500 TO ₹ 999", "total": 12 },
+            { "range": "₹ 1000 TO ₹ 1499", "total": 3 }
+        ]
+    }
+
+
+
+
+
+
+
 ]
 
 export const flowerType = [
@@ -782,6 +1257,17 @@ export const flowerType = [
             { type: "gerberas", total: 5 },
             { type: "orchids", total: 4 },
             { type: "mixed flowers", total: 3 }
+        ]
+    },
+    {
+        category: "delhi-ncr",
+        data: [
+            { "type": "roses", "total": 43 },
+            { "type": "carnations", "total": 10 },
+            { "type": "dry flowers", "total": 8 },
+            { "type": "gerberas", "total": 5 },
+            { "type": "orchids", "total": 4 },
+            { "type": "mixed flowers", "total": 3 }
         ]
     },
     {
@@ -843,7 +1329,7 @@ export const flowerType = [
         data: [
             { type: "orchids", total: 1 }
         ],
-        
+
     },
     {
         category: "gerbaras",
@@ -887,7 +1373,18 @@ export const flowerType = [
             { type: "roses", total: 5 },
             { type: "carnations", total: 1 }
         ]
-    }
+    },
+    {
+        category: "get-well-soon",
+        data: [
+            { "type": "roses", "total": 5 },
+            { "type": "gerberas", "total": 4 },
+            { "type": "carnations", "total": 2 },
+            { "type": "mixed flowers", "total": 1 },
+            { "type": "orchids", "total": 1 }
+        ]
+    },
+
 ];
 
 export const flowerColors = [
@@ -900,6 +1397,17 @@ export const flowerColors = [
             { color: "white", total: 6 },
             { color: "yellow", total: 5 },
             { color: "purple", total: 4 },
+        ],
+    },
+    {
+        category: "delhi-ncr",
+        data: [
+            {"color": "red", "total": 26},
+            {"color": "others", "total": 16},
+            {"color": "pink", "total": 14},
+            {"color": "white", "total": 6},
+            {"color": "yellow", "total": 5},
+            {"color": "purple", "total": 4}
         ],
     },
     {
@@ -1001,7 +1509,7 @@ export const flowerColors = [
             { color: "Red", total: 1 },
         ]
     },
-   
+
     {
         category: "celebrations",
         data: [
@@ -1019,6 +1527,17 @@ export const flowerColors = [
             { color: "white", total: 6 }
         ]
     },
+    {
+        category: 'get-well-soon',
+        data: [
+            { "color": "others", "total": 6 },
+            { "color": "pink", "total": 1 },
+            { "color": "purple", "total": 1 },
+            { "color": "red", "total": 1 },
+            { "color": "white", "total": 1 },
+            { "color": "yellow", "total": 1 }
+        ]
+    },
 ];
 
 export const flowerArrangements = [
@@ -1029,6 +1548,15 @@ export const flowerArrangements = [
             { arrangement: "vase", total: 11 },
             { arrangement: "basket", total: 3 },
             { arrangement: "sleeves", total: 1 },
+        ],
+    },
+    {
+        category: "delhi-ncr",
+        data: [
+            { "arrangement": "bouquet", "total": 57 },
+            { "arrangement": "vase", "total": 10 },
+            { "arrangement": "basket", "total": 3 },
+            { "arrangement": "sleeves", "total": 1 }
         ],
     },
     {
@@ -1115,6 +1643,13 @@ export const flowerArrangements = [
         category: "condolences",
         data: [
             { arrangement: "bouquet", total: 6 }
+        ]
+    },
+    {
+        category: "get-well-soon",
+        data: [
+            { "arrangement": "bouquet", "total": 9 },
+            { "arrangement": "vase", "total": 2 }
         ]
     },
 

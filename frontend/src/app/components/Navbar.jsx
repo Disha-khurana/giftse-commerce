@@ -29,8 +29,8 @@ const Navbar = () => {
       link: "/flowers",
     },
     {
-      name: "PERSONALIZED",
-      link: "/personalized",
+      name: "PERSONALISED",
+      link: "/personalised",
     },
     {
       name: "PLANTS",
@@ -1239,7 +1239,7 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-               {dropdown === "personalized" && (
+               {dropdown === "personalised" && (
                 <>
                   {personalizedSections.map((section, index) => (
                     <div

@@ -203,7 +203,7 @@ function Variety({ slug }) {
 }
           <div className="lg:p-4 ">
   {data[slug]?.length > 0 ? (
-    <div className={`grid grid-cols-1 md:grid-cols-2  ${categoryData.length <= 0 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'}`}>
+    <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${categoryData.length <= 0 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'}`}>
       {data[slug]?.map((item, index) => (
         <div
           key={index}

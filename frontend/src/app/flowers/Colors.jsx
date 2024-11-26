@@ -77,7 +77,7 @@ function Colors() {
     }
 
     const [sliderrRef, sliderr] = useKeenSlider({
-        loop: true,
+        loop: false,
         slides: {
             perView: 10, // Number of visible slides
             spacing: 5, // Space between slides
@@ -87,23 +87,23 @@ function Colors() {
                 slides: { perView: 10, spacing: 2 },
             },
             "(max-width: 768px)": {
-                slides: { perView: 2, spacing: 8 },
+                slides: { perView: 6, spacing: 8 },
             },
             "(max-width: 480px)": {
-                slides: { perView: 1, spacing: 5 },
+                slides: { perView: 3, spacing: 5 },
             },
         },
     });
 
   return (
-   <div className="relative bg-[url('/Images/flowers/bg.webp')] py-16">
+   <div className="relative bg-[url('/Images/flowers/bg.webp')] pb-10 md:py-16">
                     <div className="flex items-center justify-center space-x-4 relative z-10 mb-6">
                         <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
-                        <h2 className="font-bold text-3xl text-center">Choose a Favourite Colour</h2>
+                        <h2 className="font-bold text-2xl md:text-3xl text-center">Choose a Favourite Colour</h2>
                         <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
                     </div>
                     <button
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
+                        className="absolute left-8 lg:left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
                         onClick={() => sliderr?.current?.prev()}
                     >
                         &#x276E;
@@ -127,7 +127,7 @@ function Colors() {
                     </div>
 
                     <button
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
+                        className="absolute right-5 lg:right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:bg-gray-200"
                         onClick={() => sliderr?.current?.next()}
                     >
                         &#x276F;

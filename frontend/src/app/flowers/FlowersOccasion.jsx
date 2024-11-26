@@ -71,7 +71,7 @@ function PlantsOccasion() {
                 slides: { perView: 5, spacing: 2 },
             },
             "(max-width: 768px)": {
-                slides: { perView: 2, spacing: 8 },
+                slides: { perView: 3, spacing: 15 },
             },
             "(max-width: 480px)": {
                 slides: { perView: 1, spacing: 5 },
@@ -83,7 +83,7 @@ function PlantsOccasion() {
     <div className="space-y-10 bg-[url('/Images/flowers/bg.webp')] py-12 rounded-xl px-5 md:px-12">
                     <div className="flex items-center justify-center space-x-4">
                         <div className="w-16 h-px bg-[#7d8035] "></div>
-                        <h2 className="font-bold text-3xl text-center">Flowers for Every Occasion</h2>
+                        <h2 className="font-bold text-2xl md:text-3xl text-nowrap text-center">Flowers for Every Occasion</h2>
                         <div className="w-16 h-px bg-[#7d8035]"></div>
                     </div>
                     <div className="relative">

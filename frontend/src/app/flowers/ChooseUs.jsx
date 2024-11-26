@@ -25,10 +25,10 @@ function ChooseUs() {
 
     }
   return (
-    <div className="space-y-10 bg-[url('/Images/flowers/bg-img.webp')] py-9 rounded-xl">
+    <div className="space-y-10 bg-[url('/Images/flowers/bg-img.webp')] px-5 py-9 rounded-xl">
                 <div className="flex items-center justify-center space-x-4">
                     <Image src='/Images/flowers/choose/spark.svg' height={500} width={500} className="w-10 h-10" alt="spark" />
-                    <h2 className="font-bold text-3xl text-center">Why Choose FNP ?</h2>
+                    <h2 className="font-bold text-2xl md:text-3xl text-center">Why Choose FNP ?</h2>
                     <Image src='/Images/flowers/choose/spark.svg' height={500} width={500} className="w-10 h-10" alt="spark" />
                 </div>
                 <div className="flex flex-wrap  gap-20 justify-center ">

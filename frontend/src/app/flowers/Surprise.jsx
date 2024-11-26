@@ -26,12 +26,12 @@ function Surprise() {
                     {/* Title Section */}
                     <div className="flex items-center justify-center space-x-4 relative z-10">
                         <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
-                        <h2 className="font-bold text-3xl text-center">Plan The Perfect Surprise</h2>
+                        <h2 className="font-bold text-2xl md:text-3xl text-nowrap text-center">Plan The Perfect Surprise</h2>
                         <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
                     </div>
 
                     {/* Grid Section */}
-                    <div className="grid grid-cols-3 gap-5 relative z-10">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-5 relative z-10">
                         {flowerData.surprise.map((item, index) => (
                             <Link href={`/flowers${item.link}`} key={index} className="group relative">
                                 <Image

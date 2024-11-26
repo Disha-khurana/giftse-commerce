@@ -94,7 +94,7 @@ export default function Slider() {
         slides: { perView: 7, spacing: 10 },
       },
       "(max-width: 768px)": {
-        slides: { perView: 5, spacing: 8 },
+        slides: { perView: 4, spacing: 20 },
       },
       "(max-width: 480px)": {
         slides: { perView: 3, spacing: 5 },

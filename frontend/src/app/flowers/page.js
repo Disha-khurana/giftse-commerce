@@ -9,6 +9,7 @@ import Showstopper from "./Showstopper";
 import Pairslide from "./Pairslide";
 import Colors from "./Colors";
 import Autoplay from "./Autoplay";
+import Surprise from "./Surprise";
 
 function Page() {
 
@@ -83,7 +84,7 @@ function Page() {
 
 
     return (
-        <div className=" space-y-20">
+        <div className="space-y-10  lg:space-y-14">
             <Autoplay />
             <CategorySlide />
 
@@ -99,21 +100,22 @@ function Page() {
                 <Colors />
 
                 <Showstopper />
+                <Surprise/>
                 <Pairslide />
 
-                <div className="relative h-[400px] bg-black bg-cover  bg-no-repeat" style={{ backgroundImage: "url('/Images/flowers/country/countrybg.webp')" }}>
+                <div className="relative h-[450px] lg:h-[400px] bg-black bg-cover  bg-no-repeat" style={{ backgroundImage: "url('/Images/flowers/country/countrybg.webp')" }}>
                     {/* Semi-transparent black overlay */}
                     <div className="absolute inset-0 bg-black opacity-80 z-10"></div>
 
                     {/* Text Section */}
-                    <div className="absolute flex items-center justify-center left-[30%] py-20 space-x-4 z-20 ">
+                    <div className="absolute flex items-center justify-center left-20 lg:left-[30%] py-20 space-x-4 z-20 ">
                         <div className="w-16 h-px bg-[#7d8035]"></div>
-                        <h2 className="font-bold text-3xl text-center text-white">Delivering Blooms Across India</h2>
+                        <h2 className="font-bold text-2xl md:text-3xl lg:text-center text-nowrap text-white">Delivering Blooms Across India</h2>
                         <div className="w-16 h-px bg-[#7d8035]"></div>
                     </div>
 
                     {/* Grid of Images */}
-                    <div className="absolute px-14 py-40 inset-0 grid grid-cols-6 gap-5 z-20">
+                    <div className="absolute px-14 py-40 inset-0 grid grid-cols-4  lg:grid-cols-6 gap-5 z-20">
                         {flowerData.country.map((item, index) => (
                             <Link key={index} href={`/flowers${item.link}`}>
                                 <Image src={item.img} height={500} width={500} className="w-full h-auto rounded-3xl" alt={item.title} />
@@ -122,25 +124,25 @@ function Page() {
                     </div>
                 </div>
 
-                <Link href='/flowers/preserved'>
+                <Link href='/flowers/preserved-flowers'>
                     <Image src='/Images/flowers/globe/Preserved-Flowers.webp' height={3000} width={3000} className="w-full h-auto py-20" alt="flowers" />
                 </Link>
 
-                <div className="relative h-[400px] bg-black bg-cover bg-no-repeat" style={{ backgroundImage: "url('/Images/flowers/globe/globe.webp')" }}>
+                <div className="relative h-[450px] lg:h-[400px] bg-black bg-cover bg-no-repeat" style={{ backgroundImage: "url('/Images/flowers/globe/globe.webp')" }}>
                     {/* Semi-transparent black overlay */}
                     <div className="absolute inset-0 bg-black opacity-80 z-10"></div>
 
                     {/* Text Section */}
-                    <div className="absolute flex items-center justify-center left-[30%] py-20 space-x-4 z-20 ">
+                    <div className="absolute flex items-center justify-center left-28 lg:left-[30%] py-20 space-x-4 z-20 ">
 
                         <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
-                        <h2 className="font-bold text-white text-3xl text-center">Delivering Blooms Globally </h2>
+                        <h2 className="font-bold text-white text-2xl md:text-3xl text-center">Delivering Blooms Globally </h2>
                         <Image src="/Images/flowers/choose/spark.svg" height={500} width={500} className="w-10 h-10" alt="spark" />
 
                     </div>
 
                     {/* Grid of Images */}
-                    <div className="absolute px-14 py-40 inset-0 grid grid-cols-6 gap-5 z-20">
+                    <div className="absolute px-14 py-40 inset-0 grid-cols-4 grid lg:grid-cols-6 gap-5 z-20">
                         {flowerData.globe.map((item, index) => (
                             <Link key={index} href={`/flowers${item.link}`}>
                                 <Image src={item.img} height={500} width={500} className="w-full h-auto rounded-3xl" alt={item.title} />

@@ -776,6 +776,34 @@ export const data = {
       ]
     },
     {
+      id: 13,
+      image: [
+        "/Images/personalized/t-shirt/personalised-limited-edition-small-cotton-t-shirt_1.webp",
+        "/Images/personalized/t-shirt/personalised-limited-edition-small-cotton-t-shirt_2.webp",
+        "/Images/personalized/t-shirt/personalised-limited-edition-small-cotton-t-shirt_3.webp",
+        "/Images/personalized/t-shirt/personalised-limited-edition-small-cotton-t-shirt_4.webp",
+        "/Images/personalized/t-shirt/personalised-limited-edition-small-cotton-t-shirt_2.webp",
+      ],
+      link: "/personalised-limited-edition-small-cotton-t-shirt",
+      slug: "personalised-limited-edition-small-cotton-t-shirt",
+      title: "Personalised Limited Edition Cotton T Shirt- Small",
+      rate: "5.0",
+      price: "649",
+      "delivery": [
+        "One Personalised Half Sleeves Round Neck T-shirt",
+        "Suitable For: Unisex",
+        "Size: Small",
+        "Material: 88% Cotton, 12% Polyester",
+        "Colour: Royal Blue",
+        "For personalisation, please provide us with one year"
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+
+    },
+    {
       id: 4,
       image: [
         "/Images/flowers/exotic/exotic-flowers-bouquet_1.webp",
@@ -830,6 +858,319 @@ export const data = {
         'Dimensions: 24x18 inch',
         'Weight: Approx 50o-750 gms',
         'Country of Origin: India'
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      image: [
+        "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp",
+        "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp",
+        "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp",
+        "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp",
+        "/Images/flowers/usa/beautifully-tied-12-red-roses-bouquet_1.webp"
+      ],
+      link: "/beautifully-tied-12-red-roses-bouquet",
+      slug: "beautifully-tied-12-red-roses-bouquet",
+      title: "Beautifully Tied 12 Red Roses Bouquet",
+      rate: "5.0",
+      price: "3799",
+      delivery: 'Today',
+      delivery: [
+        '12 Red Roses Bouquet',
+        'Beautifully Tied'
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      image: [
+        '/Images/personalized/organiser/jewellery-organiser_1.webp',
+        '/Images/personalized/organiser/jewellery-organiser_2.webp',
+        '/Images/personalized/organiser/jewellery-organiser_3.webp',
+        '/Images/personalized/organiser/jewellery-organiser_4.webp',
+        '/Images/personalized/organiser/jewellery-organiser_5.webp',
+      ],
+      link: "/jewellery-organiser",
+      slug: "jewellery-organiser",
+      title: "Jewellery Organiser",
+      price: "1999",
+      delivery: 'Today',
+      delivery: [
+        "Jewellery organiser:1",
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      id: 14,
+      image: [
+        "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_1.webp",
+        "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_2.webp",
+        "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_3.webp",
+        "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_4.webp",
+        "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_5.webp",
+      ],
+      link: "/personalised-blue-notebook-and-pen-combo",
+      slug: 'personalised-blue-notebook-and-pen-combo',
+      title: "Personalised Blue Notebook & Pen Combo",
+      rate: "4.8",
+      price: "599",
+      delivery: 'Tomorrow',
+      delivery: [
+        "Personalised Notebook Pen Combo",
+        "Notebook Pen Colour: Blue",
+        "High quality notebook in A5 size",
+        "Texture design on cover sides",
+        "Contains total 160 writing pages",
+        "The notebook has a section with personal memorandum, calendar etc",
+        "The pen comes with metal highlights",
+        "For personalisation, please provide us with the name and surname",
+        "Showcasing metallic detailing on the pen and bold graphics on the notebook, this combo is sure to keep your loved ones' brilliant thoughts together."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      id: 16,
+      image: [
+        "/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp",
+        "/Images/birthday/bottle/personalised-temperature-hydration-bottle_2.webp",
+        "/Images/birthday/bottle/personalised-temperature-hydration-bottle_3.webp",
+        "/Images/birthday/bottle/personalised-temperature-hydration-bottle_4.webp",
+        "/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp",
+      ],
+      link: "/personalised-temperature-hydration-bottle",
+      slug: 'personalised-temperature-hydration-bottle',
+      title: "Personalised Temperature Hydration Bottle",
+      rate: "4.6",
+      price: "599",
+      delivery: 'Tomorrow',
+      delivery: [
+        "Personalised water bottle with LED temperature display: 1",
+        "Colour: Black",
+        "Material: Stainless steel",
+        "Capacity: 500 ml",
+        "Double insulated wall",
+        "Leak proof",
+        "Keeps water cold and warm upto 12 hours",
+        "Net Quantity: 1 Unit",
+        "Country Of Origin: India",
+        "For personalisation please provide us with a name"
+
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      image: [
+        '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_1.webp',
+        '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_2.webp',
+        '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_3.webp',
+        '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_4.webp',
+        '/Images/flowers/usa/lavender/lush-lavender-bouquet-regular_1.webp'
+      ],
+      link: "/lush-lavender-bouquet-regular",
+      slug: "lush-lavender-bouquet-regular",
+      title: "Lush Lavender Bouquet_Regular",
+      price: "5799",
+      delivery: 'Today',
+      delivery: [
+        "Crème Roses",
+        "Purple Stock",
+        "Purple Button Chrysanthemums",
+        "Lavender Cushion Spray Chrysanthemums",
+        "White Limonium",
+        "Bupleurum",
+        "Huckleberry",
+        "Cylinder Vase"
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      image: [
+        '/Images/personalized/hamper/thoughtfully-curated-gift-hamper-for-men_1.webp',
+        '/Images/personalized/hamper/thoughtfully-curated-gift-hamper-for-men_2.webp',
+        '/Images/personalized/hamper/thoughtfully-curated-gift-hamper-for-men_3.webp',
+        '/Images/personalized/hamper/thoughtfully-curated-gift-hamper-for-men_2.webp',
+        '/Images/personalized/hamper/thoughtfully-curated-gift-hamper-for-men_3.webp',
+      ],
+      link: "/thoughtfully-curated-gift-hamper-for-men",
+      slug: "thoughtfully-curated-gift-hamper-for-men",
+      title: "Thoughtfully Curated Gift Hamper For Men",
+      price: "2949",
+      rate: '5.0',
+      review: '2 reviews',
+      delivery: 'Today',
+      delivery: [
+        "1 Tie, Cufflinks Set",
+        "1 Zara Perfume 30 ml",
+        "1 Sepoy Co. Ginger Ale",
+        "2 Handmade Cookies",
+        "Black gift box",
+        "Net Quantity: 1 Set",
+        "Dimensions: 10x8x4 Inches",
+        "Weight: Approx 200 gm",
+        "Country Of Origin: UK Ginger Ale and India"
+
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      image: [
+        '/Images/personalized/neon/krishna-devotion-led-radiance_1.webp',
+        '/Images/personalized/neon/krishna-devotion-led-radiance_2.webp',
+        '/Images/personalized/neon/krishna-devotion-led-radiance_3.webp',
+        '/Images/personalized/neon/krishna-devotion-led-radiance_4.webp',
+        '/Images/personalized/neon/krishna-devotion-led-radiance_5.webp',
+      ],
+      link: "/krishna-devotion-led-radiance",
+      slug: "krishna-devotion-led-radiance",
+      title: "Krishna Devotion LED Radiance",
+      price: "2999",
+      delivery: 'Today',
+      delivery: [
+        "Neon light",
+        "Material: Acrylic and LED",
+        "Dimension: 12X24"
+
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      id: 15,
+      image: [
+        "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_1.webp",
+        "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_2.webp",
+        "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_3.webp",
+        "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_4.webp",
+        "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_5.webp",
+      ],
+      link: "/personalised-mens-classy-essentials-gift-box",
+      title: "Personalised Mens Classy Essentials Gift Box",
+      rate: "4.7",
+      slug: 'personalised-mens-classy-essentials-gift-box',
+      price: "1499",
+      delivery: [
+        "Personalised passport cover",
+        "Closed passport cover size: 14 x 10 cms",
+        "Open passport cover size: 14 x 20 cms",
+        "Personalised wallet: 8.7 x 11.5 cms",
+        "Personalised keychain: 1",
+        "Personalised eye wear case: 1",
+        "Material: PU leather",
+        "Net Quantity: 1 Set",
+        "1 Passport Cover, 1 Wallet, 1 Sunglass cover and 1 Key Chain",
+        "Country Of Origin: India",
+        "Packed in a reusable gift box",
+        "For personalisation, please provide us with a name, charm no. for key chain, charm no. for wallet, charm no. for passport cover, charm no. for eye wear case"
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      image: [
+        '/Images/personalized/caricature/personalised-couple-caricature-table-top_1.webp',
+        '/Images/personalized/caricature/personalised-couple-caricature-table-top_2.webp',
+        '/Images/personalized/caricature/personalised-couple-caricature-table-top_3.webp',
+        '/Images/personalized/caricature/personalised-couple-caricature-table-top_4.webp',
+        '/Images/personalized/caricature/personalised-couple-caricature-table-top_5.webp',
+      ],
+      link: "/personalised-couple-caricature-table-top",
+      slug: "personalised-couple-caricature-table-top",
+      title: "Personalised Couple Caricature Table Top",
+      rate: '5.0',
+      price: "399",
+      delivery: 'Today',
+      delivery: [
+        "One Personalised Couple on Bike Caricature Table Top",
+        "Material: MDF Wood",
+        "Dimensions: 4 x 7.2 inches",
+        "For personalisation, please provide us with 2 front face images",
+        "A fun and quirky gift idea for couples to eternalize their beautiful memories. Get this for your special someone or give it as a marriage anniversary gift for your favourite couple. A lovely surprise sure to make them feel special.",
+        "Net Quantity: 1 Unit",
+        "Country of Origin: India"
+
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      image: [
+        '/Images/personalized/cushion/personalised-love-affair-led-cushion_1.webp',
+        '/Images/personalized/cushion/personalised-love-affair-led-cushion_2.webp',
+        '/Images/personalized/cushion/personalised-love-affair-led-cushion_3.webp',
+        '/Images/personalized/cushion/personalised-love-affair-led-cushion_4.webp',
+        '/Images/personalized/cushion/personalised-love-affair-led-cushion_5.webp',
+
+      ],
+      link: "/personalised-love-affair-led-cushion",
+      slug: "personalised-love-affair-led-cushion",
+      title: "Personalised Love Affair LED Cushion",
+      rate: '5.0',
+      price: "549",
+      delivery: 'Today',
+      delivery: [
+        "Personalised LED Cushion with Yellow Light",
+        "Material: Canvas Poly Duck",
+        "Recron Filled Cushion",
+        "Dimensions: 10 x 11 inches",
+        "Net Quantity: 1 Unit",
+        "Material: Polyester",
+        "Country of Origin: India",
+        "For personalisation, please provide us with one image"
+
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      image: [
+        "/Images/flowers/blue/indigo-hued-flower-tabletop_1.webp",
+        "/Images/flowers/blue/indigo-hued-flower-tabletop_2.webp",
+        "/Images/flowers/blue/indigo-hued-flower-tabletop_3.webp",
+        "/Images/flowers/blue/indigo-hued-flower-tabletop_4.webp",
+        "/Images/flowers/blue/indigo-hued-flower-tabletop_5.webp",
+      ],
+      link: "/indigo-hued-flower-tabletop",
+      title: "Indigo Hued Flower Tabletop",
+      price: "699",
+      slug: "indigo-hued-flower-tabletop",
+      delivery: "Today",
+      delivery: [
+        "Flower table top",
+        "1 Unit",
+        "10x5x5 cm",
+        "250 gm",
+        "To be kept indoors only",
+        "Made with 100% natural flowers",
+        "Lasts for 2-3 years",
+        "India"
       ],
       "details": [
         "Ferns N Petals Pvt Ltd",

@@ -12,7 +12,7 @@ function Pairslide() {
             {
                 img: '/Images/flowers/pair/flowers-and-cakes_desk.webp',
                 title: 'Flowers and Cakes',
-                link: '/flowers-and-cakes'
+                link: '/flowers-cakes'
             },
             {
                 img: '/Images/flowers/pair/Flowers-and-Chocolates.webp',
@@ -54,7 +54,7 @@ function Pairslide() {
                 slides: { perView: 5, spacing: 2 },
             },
             "(max-width: 768px)": {
-                slides: { perView: 2, spacing: 8 },
+                slides: { perView: 2, spacing: 15 },
             },
             "(max-width: 480px)": {
                 slides: { perView: 1, spacing: 5 },
@@ -66,7 +66,7 @@ function Pairslide() {
     <div className="space-y-10 bg-[url('/Images/flowers/bg.webp')] py-12 rounded-xl px-5 md:px-12">
     <div className="flex items-center justify-center space-x-4">
         <div className="w-16 h-px bg-[#7d8035] "></div>
-        <h2 className="font-bold text-3xl text-center">Pair with Flowers </h2>
+        <h2 className="font-bold text-2xl md:text-3xl text-center">Pair with Flowers </h2>
         <div className="w-16 h-px bg-[#7d8035]"></div>
     </div>
     <div className="relative">
