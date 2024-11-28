@@ -7,22 +7,22 @@ function Plants() {
     const plants=[{
         image:"/Images/plants/Jade-Plants.webp",
         title:"Jade Plants",
-        link:'/jade-plants'
+        link:'/plants/jade-plants'
     },
     {
         image:"/Images/plants/Indoor-Plants.webp",
         title:"Indoor Plants",
-        link:'/indoor-plants'
+        link:'/plants/indoor-plants'
     },
     {
         image:"/Images/plants/Lucky-Bamboo.webp",
         title:"Lucky Bamboo",
-        link:'/lucky-bamboo'
+        link:'/plants/lucky-bamboo'
     },
     {
         image:"/Images/plants/Money-Plants.webp",
         title:"Money Plants",
-        link:'/money-plants'
+        link:'/plants/money-plants'
     }
 
 ]

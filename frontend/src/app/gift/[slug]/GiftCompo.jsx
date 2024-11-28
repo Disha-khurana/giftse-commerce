@@ -50,6 +50,7 @@ function GiftCompo({ slug }) {
     setOpenSection(openSection === sectionName ? '' : sectionName); // Toggle the section
   };
 
+
   const goDownHandle = () => {
     const offer = document.getElementById('details');
     if (offer) {
@@ -148,7 +149,7 @@ function GiftCompo({ slug }) {
     <div >
       {product ? (
         <div>
-          <div className="lg:flex px-5 md:px-20 lg:px-48 items-center lg:items-start gap-6 pt-20 pb-12">
+          <div className="lg:flex px-5 md:px-20 lg:px-32 items-center lg:items-start gap-10 pt-20 pb-12">
             <div className="flex flex-row lg:flex-col gap-4 lg:gap-0 lg:sticky lg:top-32 mb-6">
 
               <div className="w-full lg:max-w-lg">
@@ -342,7 +343,7 @@ function GiftCompo({ slug }) {
                   BUY NOW</button>
               </div>
               <div className='pt-10 px-4 py-5' >
-                <h5 className='text-xl font-semibold border-b border-b-slate-300 pb-2'>Offers Available</h5>
+                <h5 className='text-xl font-semibold border-b border-b-slate-300 pb-2' id='details'>Offers Available :</h5>
                 <div className="text-justify text-slate-800 w-full text-xs md:text-base leading-relaxed">
                   <div className="bank-offers">
                     <table className=" table-auto">
@@ -540,66 +541,47 @@ function GiftCompo({ slug }) {
                     </table>
                   </div>
                 </div>
-              </div>
+                <div className=' py-10 space-y-3' >
+            <h3 className='text-xl font-semibold'>Important Information :</h3>
+            <div className='border border-gray-200 px-3 py-1 rounded-xl'>
+              <p onClick={() => toggleSection('directions')} className='font-semibold flex items-center justify-between'>Directions:<MdKeyboardArrowDown /></p>
+              {openSection == 'directions' &&
+                <div>
+                  {product.storage ?
+
+                    <ul className="list-disc pl-5 space-y-2 mb-4">
+                      {product.storage.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul> : ""}
+                </div>
+              }
             </div>
 
-          </div>
-
-
-
-
-
-
-
-          <div className='px-5 md:px-20 lg:px-48 py-12 bg-slate-50' >
-            <h1 className='font-semibold pb-5 text-2xl'> Recently Viewed by You</h1>
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-3 lg:grid-cols-5'>
-
-              {product_details.map((item, index) => (
-                <Link key={index} href={`/gift${item.link}`}>
-                  <div className='space-y-1 bg-white p-3 '>
-                    <Image src={item.image[0]} height={500} width={500} alt={item.title} />
-                    <span className='flex justify-center items-center text-slate-800 text-base font-semibold pt-2' id='details'>{item.title}</span>
-                    <span className='font-semibold flex items-start'>₹<span className='text-lg'>{item.price}</span></span>
-                    <p className='text-xs text-slate-700'>Earliest Delivery:<span className='text-slate-900'>{item.delivery}</span></p>
-                    <div className='flex items-center justify-between text-xs'>
-                    <span>{item.review}</span>
-                      <h4 className='text-white bg-green-700 p-1  rounded flex items-center gap-1'>{item.rate}<IoStarHalfSharp/></h4>
-                      
-                    </div>
-                  </div>
-                </Link>
-              ))}
+            <div className=' border border-gray-200 px-3 py-1 rounded-xl'>
+              <p onClick={() => toggleSection('description')} className="font-semibold flex items-center justify-between">Product Description:<MdKeyboardArrowDown /></p>
+              {openSection == 'description' &&
+                <div>
+                  {product.delivery.map((item, index) => (
+                    <p key={index} className='mb-4'>{item}</p>
+                  ))}
+                </div>
+              }
             </div>
-          </div>
 
-          <div className='px-5 md:px-20 lg:px-48 py-10' >
-            <h1 className='font-bold text-2xl mb-4'>Important Information:</h1>
-            <p className='font-bold mb-2'>Directions:</p>
-            {product.storage ?
-              <ul className="list-disc pl-5 space-y-2 mb-4 border-b border-b-slate-400 pb-4">
-                {product.storage.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul> : ""}
+            <div className='border border-gray-200 px-3 py-1  rounded-xl '>
+              <p onClick={() => toggleSection('information')} className="font-semibold flex items-center justify-between ">Product Information:<MdKeyboardArrowDown /></p>
+              {openSection == 'information' &&
+                <div className="space-y-4">
+                  {/* Care dropdown */}
+                  <div className="border border-slate-200 p-2 w-full">
+                    <p
 
-            <p className="font-bold mb-2">Product Description:</p>
-            {product.delivery.map((item, index) => (
-              <p key={index} className='mb-4 border-b border-b-slate-400 pb-4'>{item}</p>
-            ))}
+                      className="cursor-pointer flex justify-between items-center text-lg font-semibold">
+                      Care:
 
-            <div className='border-b border-b-slate-400 pb-4 mb-2'>
-              <p className="font-bold mb-2">Product Information:</p>
-              <div className="flex flex-wrap gap-4">
-                {/* Care dropdown */}
-                <div className="bg-slate-100 border border-slate-200 p-2 w-full md:w-1/2">
-                  <p
-                    onClick={() => toggleSection('care')}
-                    className="cursor-pointer flex justify-between items-center text-lg font-semibold">
-                    Care
-                    <MdKeyboardArrowDown />
-                  </p>
-                  {openSection === 'care' && (
+                    </p>
+
                     <div className="mt-2">
                       {product.storage && (
                         <ul className="list-disc pl-5 space-y-2 mb-4">
@@ -639,18 +621,18 @@ function GiftCompo({ slug }) {
                         </>
                       )}
                     </div>
-                  )}
-                </div>
 
-                {/* Storage dropdown */}
-                <div className="bg-slate-100 border border-slate-200 p-2 w-full md:w-1/2">
-                  <p
-                    onClick={() => toggleSection('additional')}
-                    className="cursor-pointer text-lg flex justify-between items-center font-semibold">
-                    Additional Details
-                    <MdKeyboardArrowDown />
-                  </p>
-                  {openSection === 'additional' && (
+                  </div>
+
+                  {/* Storage dropdown */}
+                  <div className=" border border-slate-200 p-2 w-full">
+                    <p
+
+                      className="cursor-pointer text-lg flex justify-between items-center font-semibold">
+                      Additional Details:
+
+                    </p>
+
                     <div className="mt-2">
                       {product.personalisation ?
                         <>
@@ -677,10 +659,11 @@ function GiftCompo({ slug }) {
                           <p className="font-bold mb-2">Flowers Trivia:</p>
                           <ul className="list-disc pl-5 space-y-2">
                             {product.flowers_trivia.map((item, index) => (
-                              <li key={index}>{item}</li>
+                              <li key={index} className='w-full'>{item}</li>
                             ))}
                           </ul>
                         </> : ""}
+
                       {product.plant_trivia ?
                         <>
                           <p className="font-bold mb-2">Plants Trivia:</p>
@@ -691,24 +674,24 @@ function GiftCompo({ slug }) {
                           </ul>
                         </> : ""}
                     </div>
-                  )}
-                </div>
+
+                  </div>
 
 
 
-                <div className="bg-slate-100 border border-slate-200 p-2 w-full md:w-1/2">
-                  <p
-                    onClick={() => toggleSection('plant_care_instructions')}
-                    className="cursor-pointer flex justify-between items-center text-lg font-semibold">
-                    Ingredients
-                    <MdKeyboardArrowDown />
-                  </p>
-                  {openSection === 'plant_care_instructions' && (
+                  <div className=" border border-slate-200 p-2 w-full ">
+                    <p
+
+                      className="cursor-pointer flex justify-between items-center text-lg font-semibold">
+                      Ingredients
+
+                    </p>
+
                     <div className="mt-2">
                       {
                         product.ingredients ?
                           <>
-                           
+
                             <ul className="list-disc pl-5 space-y-2 mb-4">
                               {product.ingredients.map((item, index) => (
                                 <li key={index}>{item}</li>
@@ -720,19 +703,19 @@ function GiftCompo({ slug }) {
 
                       }
                     </div>
-                  )}
+
+                  </div>
+
+
                 </div>
-
-
-              </div>
-
+              }
 
             </div>
 
             {product.productDetails ?
               <>
                 <p className="font-bold mb-2">Product Details:</p>
-                <ul className="list-disc pl-5 space-y-2 mb-4 border-b border-b-slate-400 pb-4" >
+                <ul className="list-disc pl-5 space-y-2 mb-4 pb-4" >
                   {product.productDetails.map((item, index) => (
                     <li key={index}>{item.label}: {item.value}</li>
                   ))}
@@ -745,17 +728,57 @@ function GiftCompo({ slug }) {
             <div>
 
 
+              <div className='border border-gray-200 px-3 py-1 rounded-xl'>
+                <p onClick={() => toggleSection('manufacture')} className="font-semibold flex justify-between items-center">Manufacturer Details:<MdKeyboardArrowDown /></p>
+                {openSection == 'manufacture' &&
+                  <div>
+                    <ul className="list-disc pl-5 space-y-2 ">
+                      {product.details.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                }
 
-              <p className="font-bold mb-2">Manufacturer Details:</p>
-              <ul className="list-disc pl-5 space-y-2">
-                {product.details.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
 
-
+              </div>
             </div>
           </div>
+              </div>
+             
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+          <div className='px-5 md:px-20 lg:px-48 py-12 bg-slate-50' >
+            <h1 className='font-semibold pb-5 text-2xl'> Recently Viewed by You</h1>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-3 lg:grid-cols-5'>
+
+              {product_details.map((item, index) => (
+                <Link key={index} href={`/gift${item.link}`}>
+                  <div className='space-y-1 bg-white p-3 '>
+                    <Image src={item.image[0]} height={500} width={500} alt={item.title} />
+                    <span className='flex justify-center items-center text-slate-800 text-base font-semibold pt-2' >{item.title}</span>
+                    <span className='font-semibold flex items-start'>₹<span className='text-lg'>{item.price}</span></span>
+                    <p className='text-xs text-slate-700'>Earliest Delivery:<span className='text-slate-900'>{item.delivery}</span></p>
+                    <div className='flex items-center justify-between text-xs'>
+                      <span>{item.review}</span>
+                      <h4 className='text-white bg-green-700 p-1  rounded flex items-center gap-1'>{item.rate}<IoStarHalfSharp /></h4>
+
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          
         </div>
 
       ) : (

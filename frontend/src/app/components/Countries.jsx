@@ -10,65 +10,66 @@ function Countries() {
       alt: "singapore",
       title: "Singapore",
       description: "A bustling city-state known for its cultural diversity and innovation.",
-      link: "/singapore"
+      link: "/global/singapore"
     },
     {
       src: "/Images/country/Australia.webp",
       alt: "australia",
       title: "Australia",
       description: "Famous for its unique wildlife, beaches, and landmarks like the Sydney Opera House.",
-      link: "/australia"
+      link: "/global/australia"
     },
     {
       src: "/Images/country/Toronto.webp",
       alt: "toronto",
       title: "Toronto",
       description: "Canada’s largest city, known for its vibrant arts scene and CN Tower.",
-      link: "/toronto"
+      link: "/global/toronto"
     },
     {
       src: "/Images/country/Germany.webp",
       alt: "germany",
       title: "Germany",
       description: "A European powerhouse known for its history, art, and engineering excellence.",
-      link: "/germany"
+      link: "/global/germany"
     },
     {
       src: "/Images/country/UK.webp",
       alt: "uk",
       title: "United Kingdom",
       description: "Known for its royal heritage, historical landmarks, and cultural impact.",
-      link: "/uk"
+      link: "/global/uk"
     },
     {
       src: "/Images/country/UAE.webp",
       alt: "uae",
       title: "United Arab Emirates",
       description: "Home to futuristic cities like Dubai and iconic landmarks such as the Burj Khalifa.",
-      link: "/uae"
+      link: "/global/uae"
     },
     {
       src: "/Images/country/USA.webp",
       alt: "usa",
       title: "United States",
       description: "A diverse country known for its influence on global culture, economy, and technology.",
-      link: "/usa"
+      link: "/global/usa"
     },
     {
       src: "/Images/country/Worldwide-mob.webp",
       alt: "worldwide",
       title: "Worldwide",
       description: "Our services are available across the globe, bringing people together everywhere.",
-      link: "/worldwide"
+      link: "/global/worldwide"
     },
     {
       src: "/Images/country/Burj_Khalifa.webp",
       alt: "Burj_Khalifa",
       title: "Burj Khalifa",
       description: "The tallest building in the world, located in Dubai, UAE, representing modern architecture.",
-      link: "/burj_khalifa"
+      link: "/global/burj_khalifa"
     }
   ];
+  
   
   
 

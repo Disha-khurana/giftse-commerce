@@ -475,10 +475,10 @@ const Navbar = () => {
     {
       heading: "FOR EVERY OCCASION",
       links: [
-        { href: "/personalised/occasions/birthday", text: "Birthday" },
-        { href: "/personalised/occasions/anniversary", text: "Anniversary" },
-        { href: "/personalised/occasions/love-romance", text: "Love N Romance" },
-        { href: "/personalised/occasions/wedding", text: "Wedding" },
+        { href: "/personalised/birthday", text: "Birthday" },
+        { href: "/personalised/anniversary", text: "Anniversary" },
+        { href: "/personalised/love-and-romance", text: "Love N Romance" },
+        { href: "/personalised/wedding", text: "Wedding" },
       ],
     },
     {

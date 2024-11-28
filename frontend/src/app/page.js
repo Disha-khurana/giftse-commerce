@@ -24,7 +24,6 @@ export default function Home() {
     <div className="space-y-7 lg:space-y-10">
     <Calender/>
     <Slide/>
-    <Offer/>
     </div>
     <Filter/>
     {/* <Story/> */}

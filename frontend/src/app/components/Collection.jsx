@@ -4,20 +4,38 @@ import React from "react";
 
 function Collection() {
   const items = [
-    { image: "/Images/collection/Ckaes.webp", title: "Cakes" },
-    { image: "/Images/collection/FLowers.webp", title: "Flowers" },
-    {
-      image:
-        "/Images/collection/fabessentials-sea-breeze-spa-body-care-gift-box.webp",
-      title: "Combos",
+    { 
+      image: "/Images/collection/Ckaes.webp", 
+      title: "Cakes", 
+      link: "/cakes" 
     },
-    { image: "/Images/collection/Experiences.webp", title: "Experience" },
-    { image: "/Images/collection/goodluck.webp", title: "Plants" },
-    {
-      image: "/Images/collection/personalised-bluetooth-led-speaker.webp",
-      title: "Personalised",
+    { 
+      image: "/Images/collection/FLowers.webp", 
+      title: "Flowers", 
+      link: "/flowers" 
     },
+    {
+      image: "/Images/collection/fabessentials-sea-breeze-spa-body-care-gift-box.webp", 
+      title: "Combos", 
+      link: "/combos"
+    },
+    { 
+      image: "/Images/collection/Experiences.webp", 
+      title: "Experience", 
+      link: "/experience" 
+    },
+    { 
+      image: "/Images/collection/goodluck.webp", 
+      title: "Plants", 
+      link: "/plants" 
+    },
+    { 
+      image: "/Images/collection/personalised-bluetooth-led-speaker.webp", 
+      title: "Personalised", 
+      link: "/personalised" 
+    }
   ];
+  
 
   return (
     <div className="px-5 md:px-12">
@@ -34,7 +52,8 @@ function Collection() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
         {items.map((item, index) => (
-          <div className="flex flex-col items-center gap-3 md:gap-7 mb-4 lg:mb-0" key={index}>
+          <Link key={index} href={item.link}>
+          <div className="flex flex-col items-center gap-3 md:gap-7 mb-4 lg:mb-0" >
             <div className="overflow-hidden rounded-full ">
               <Image
                 src={item.image}
@@ -48,6 +67,7 @@ function Collection() {
               {item.title}
             </span>
           </div>
+          </Link>
         ))}
       </div>
     </div>

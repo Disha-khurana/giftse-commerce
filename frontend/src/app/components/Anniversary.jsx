@@ -4,15 +4,16 @@ import React from "react";
 
 function Anniversary() {
   const items = [
-    { image: "/Images/anniversary/Anniversary_Web_Cakes.webp", title: "Cakes" },
-    { image: "/Images/anniversary/Anniversary_Web_FlowersV2.webp", title: "Flowers" },
+    { image: "/Images/anniversary/Anniversary_Web_Cakes.webp", title: "Cakes",link:'/cakes' },
+    { image: "/Images/anniversary/Anniversary_Web_FlowersV2.webp", title: "Flowers",link:'/anniversary' },
     {
       image:
         "/Images/anniversary/Anniversary_Web_Combos.webp",
       title: "Combos",
+      link:'/combos'
     },
-    { image: "/Images/anniversary/Anniversary_Web_Home & Living V2.webp", title: "Home & Living" },
-    { image: "/Images/anniversary/Anniversary_Web_Premium GiftsV2.webp", title: "Premium Gifts" },
+    { image: "/Images/anniversary/Anniversary_Web_Home & Living V2.webp", title: "Home & Living" ,link:'/home-living'},
+    { image: "/Images/anniversary/Anniversary_Web_Premium GiftsV2.webp", title: "Premium Gifts" ,link:'/premium'},
   ];
 
   return (
@@ -30,7 +31,8 @@ function Anniversary() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
         {items.map((item, index) => (
-          <div className="flex flex-col items-center gap-4 lg:gap-7 mb-6 lg:mb-0" key={index}>
+          <Link href={item.link} key={index}>
+          <div className="flex flex-col items-center gap-4 lg:gap-7 mb-6 lg:mb-0" >
             <div className="overflow-hidden rounded-full ">
               <Image
                 src={item.image}
@@ -44,6 +46,7 @@ function Anniversary() {
               {item.title}
             </span>
           </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -1034,6 +1034,40 @@ export const data = {
     },
     {
       image: [
+          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_1.webp',
+          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_2.webp',
+          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_3.webp',
+          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_4.webp',
+          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_5.webp',
+      ],
+      link: "/personalised-birthday-special-led-speaker",
+      slug:'personalised-birthday-special-led-speaker',
+      title: "Personalised Birthday Special LED Lamp Speaker",
+      price: "849",
+      delivery: "Tomorrow",
+      delivery: [
+          "One Personalised Happy Birthday Bluetooth Multi Colour LED Speaker",
+          "Touch Lamp Portable Speaker",
+          "Warm-White LED Table Lamp",
+          "Built-in Smart Touchable Induction",
+          "Portable Bluetooth 3W Speaker",
+          "High Quality Wireless Stereo Speaker",
+          "Supports Micro SD/TF Card, 3.5mm AUX Input For Outdoor/Indoor Usage",
+          "Support Hands-Free Calling",
+          "Built-in 800mAh battery provides about 10 hours working time",
+          "It can be a wireless speaker, a table lamp or a music player",
+          "Net Quantity: 1 Unit",
+          "Dimensions: 3Watt 4.7x4 inches",
+          "For personalisation, please provide us with 3 images"
+
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+  },
+    {
+      image: [
         '/Images/personalized/neon/krishna-devotion-led-radiance_1.webp',
         '/Images/personalized/neon/krishna-devotion-led-radiance_2.webp',
         '/Images/personalized/neon/krishna-devotion-led-radiance_3.webp',
@@ -1265,6 +1299,34 @@ export const data = {
       "storage": [
         "Keep it away from water.",
         "Wipe clean with a soft cloth."
+      ],
+      "details": [
+        "Ferns N Petals Pvt Ltd",
+        "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
+      ]
+    },
+    {
+      "image": [
+        "/Images/personalized/ram/shri-ram-photo-frame-table-top_1.webp",
+        "/Images/personalized/ram/shri-ram-photo-frame-table-top_2.webp",
+        "/Images/personalized/ram/shri-ram-photo-frame-table-top_3.webp",
+        "/Images/personalized/ram/shri-ram-photo-frame-table-top_1.webp",
+        "/Images/personalized/ram/shri-ram-photo-frame-table-top_2.webp",
+      ],
+      "link": "/shri-ram-photo-frame-table-top",
+      "title": "Shri Ram Photo Frame Table Top",
+      'rate': '5.0',
+      'review': '1 reviews',
+      "price": "449",
+      "delivery": "Today",
+      "slug": "shri-ram-photo-frame-table-top",
+      "delivery": [
+        'Printed photo frame table top: 1',
+        'Material: MDF and wooden',
+        'Size: 7X7.2inches',
+        'Frame stand: 7X3inch',
+        'Net quantity: 1 Unit',
+        'Country Of Origin: India'
       ],
       "details": [
         "Ferns N Petals Pvt Ltd",

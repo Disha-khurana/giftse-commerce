@@ -8,22 +8,22 @@ function Stories() {
         {
             image:"/Images/story/Cushions2.webp",
             title:"Cushions",
-            link:"/cushions"
+            link:"/lifestyle/cushions"
         },
         {
             image:"/Images/story/Mugs2.webp",
             title:"Mugs",
-            link:"/mugs"
+            link:"/lifestyle/mugs"
         },
         {
             image:"/Images/story/Photoframe2.webp",
             title:"Photoframe",
-            link:"/photoframe"
+            link:"/personalised/photo-frames"
         },
         {
             image:"/Images/story/Stationary2.webp",
             title:"Stationary",
-            link:"/stationary"
+            link:"/personalised/stationary"
         }
     ]
   return (
