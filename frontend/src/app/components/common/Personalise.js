@@ -243,7 +243,7 @@ export const data =
             link: "/personalised-limited-edition-small-cotton-t-shirt",
             slug: "personalised-limited-edition-small-cotton-t-shirt",
             title: "Personalised Limited Edition Cotton T Shirt- Small",
-            rate: "5.0",
+            rate: "5",
             price: "649",
             delivery: 'Tomorrow'
         }
@@ -321,7 +321,7 @@ export const data =
             ],
             link: "/personalised-champange-couple-gift-box",
             title: "Personalised Champange Couple Gift Box",
-            rate: "5.0",
+            rate: "5",
             price: "1699",
             review: "1 reviews",
             delivery: "Tomorrow",
@@ -387,7 +387,7 @@ export const data =
             ],
             link: "/personalised-champange-couple-gift-box",
             title: "Personalised Champange Couple Gift Box",
-            rate: "5.0",
+            rate: "5",
             price: "1699",
             review: "1 reviews",
             delivery: "Tomorrow",

@@ -50,7 +50,7 @@ const Navbar = () => {
     },
     {
       name: "OCCASIONS",
-      link: "/occasions",
+      link: "/",
     },
     {
       name: "GLOBAL",

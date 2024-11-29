@@ -177,7 +177,7 @@ export const data = {
         ],
         link: "/jade-plant-4-glass-terrarium",
         title: "Jade Plant 4 Glass Terrarium",
-        rate: "5.0",
+        rate: "5",
         price: "399",
         review: "2 reviews",
         delivery: "Tomorrow",

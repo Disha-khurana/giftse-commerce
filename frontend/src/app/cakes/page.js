@@ -1,32 +1,36 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdStar } from "react-icons/md";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsCurrencyRupee } from "react-icons/bs";
 import { FiMinus } from "react-icons/fi";
 import { RiStarHalfSFill } from "react-icons/ri";
 import Image from "next/image";
+import { MdRecommend } from "react-icons/md";
+import { IoMdArrowRoundUp } from "react-icons/io";
+import { IoMdArrowRoundDown } from "react-icons/io";
+import { MdOutlineWatchLater } from "react-icons/md";
 
 function page() {
-    const [show, setShow] = useState({
-        price: "price",
-        cake: "cake",
-        category: "category",
-        options: "options",
-        shape: "shape",
-        weight: "weight",
-      });
+  const [show, setShow] = useState({
+    price: "price",
+    cake: "cake",
+    category: "category",
+    options: "options",
+    shape: "shape",
+    weight: "weight",
+  });
 
   const price = [
     { range: "₹ 0 TO ₹ 499", count: 10 },
-  { range: "₹ 500 TO ₹ 999", count: 255 },
-  { range: "₹ 1000 TO ₹ 1499", count: 64 },
-  { range: "₹ 1500 TO ₹ 1999", count: 11 },
-  { range: "₹ 2000 TO ₹ 2499", count: 1 }
+    { range: "₹ 500 TO ₹ 999", count: 255 },
+    { range: "₹ 1000 TO ₹ 1499", count: 64 },
+    { range: "₹ 1500 TO ₹ 1999", count: 11 },
+    { range: "₹ 2000 TO ₹ 2499", count: 1 }
   ];
 
-  const cakeFlavors =[
+  const cakeFlavors = [
     { flavor: "chocolate", count: 114 },
     { flavor: "truffle", count: 40 },
     { flavor: "pineapple", count: 33 },
@@ -39,7 +43,7 @@ function page() {
     { flavor: "mixfruit", count: 2 }
   ]
 
-  const cakeCategories  = [
+  const cakeCategories = [
     { type: "cream cakes", count: 256 },
     { type: "fondant cakes", count: 15 },
     { type: "photo cakes", count: 15 },
@@ -64,11 +68,11 @@ function page() {
     { weight: "1 kg", count: 23 },
     { weight: "1.5 kg", count: 4 }
   ];
-  
-  
-  
-  
-  
+
+
+
+
+
   const data = [
     {
       id: 1,
@@ -97,7 +101,7 @@ function page() {
       ],
       link: "/fruit-overload-cake-half-kg",
       title: "Overload Fruit Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -118,8 +122,8 @@ function page() {
       review: "273 reviews",
       delivery: "Today",
     },
-    
-    
+
+
     {
       id: 6,
       image: [
@@ -131,12 +135,12 @@ function page() {
       ],
       link: "/rich-coffee-cream-cake-half-kg",
       title: "Rich Coffee Cream Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
     },
-   
+
     {
       id: 8,
       image: [
@@ -151,8 +155,8 @@ function page() {
       price: "649",
       delivery: "Tomorrow",
     },
-    
-    
+
+
     {
       id: 10,
       image: [
@@ -164,14 +168,14 @@ function page() {
       ],
       link: "/dates-walnuts-mixed-dry-cake-500gms",
       title: "Dates & Walnuts Mixed Dry Cake 500gms",
-      rate: "5.0",
+      rate: "5",
       price: "999",
       review: "273 reviews",
       delivery: "Today",
     },
-    
+
     {
-      id:17,
+      id: 17,
       image: [
         "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
         "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
@@ -184,10 +188,10 @@ function page() {
       rate: "4.8",
       price: "1899",
     },
-    
-    
+
+
     {
-      id:20,
+      id: 20,
       image: [
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_2.webp",
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_3.webp",
@@ -203,25 +207,25 @@ function page() {
       delivery: "Today",
     },
     {
-        image: [
-          "/Images/birthday/red-velvet/red-velvet-bento-cake_1.webp",
-          "/Images/birthday/red-velvet/red-velvet-bento-cake_2.webp",
-          "/Images/birthday/red-velvet/red-velvet-bento-cake_3.webp",
-          "/Images/birthday/red-velvet/red-velvet-bento-cake_4.webp",
-          "/Images/birthday/red-velvet/red-velvet-bento-cake_5.webp",
+      image: [
+        "/Images/birthday/red-velvet/red-velvet-bento-cake_1.webp",
+        "/Images/birthday/red-velvet/red-velvet-bento-cake_2.webp",
+        "/Images/birthday/red-velvet/red-velvet-bento-cake_3.webp",
+        "/Images/birthday/red-velvet/red-velvet-bento-cake_4.webp",
+        "/Images/birthday/red-velvet/red-velvet-bento-cake_5.webp",
 
-        ],
-        link: "/red-velvet-bento-cake",
-        title: "Red Velvet Bento Cake 250 Gram",
-        rate: "4.8",
-        price: "449",
-        review: "161 reviews",
-        delivery: "Today",
-      },
-    
+      ],
+      link: "/red-velvet-bento-cake",
+      title: "Red Velvet Bento Cake 250 Gram",
+      rate: "4.8",
+      price: "449",
+      review: "161 reviews",
+      delivery: "Today",
+    },
+
   ];
-  
-  
+
+
   const [hoverEffect, setHoverEffect] = useState(null);
   const [count, setCount] = useState(0);
 
@@ -268,7 +272,7 @@ function page() {
                     <div key={index} className="flex items-center gap-3 mb-2">
                       <input type="checkbox" />
                       <span className="text-slate-500 flex items-center tracking-wide ">
-                        
+
                         {item.range} ({item.count})
                       </span>
                     </div>
@@ -278,143 +282,143 @@ function page() {
             </div>
 
             <div className="px-4 py-2 border-b border-b-gray-300">
-          <div className="flex justify-between py-2">
-            <h4 className="font-semibold">Flavour</h4>
-            {show.cake === "cake" ? (
-              <FiMinus onClick={() => handleChange("cake")} />
-            ) : (
-              <HiOutlinePlusSm onClick={() => handleChange("cake")} />
-            )}
-          </div>
-          {show.cake && (
-            <div>
-              {cakeFlavors.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 mb-2">
-                  <input type="checkbox" />
-                  <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.flavor} ({item.count})
-                  </span>
+              <div className="flex justify-between py-2">
+                <h4 className="font-semibold">Flavour</h4>
+                {show.cake === "cake" ? (
+                  <FiMinus onClick={() => handleChange("cake")} />
+                ) : (
+                  <HiOutlinePlusSm onClick={() => handleChange("cake")} />
+                )}
+              </div>
+              {show.cake && (
+                <div>
+                  {cakeFlavors.map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 mb-2">
+                      <input type="checkbox" />
+                      <span className="text-slate-500 flex items-center tracking-wide ">
+                        {item.flavor} ({item.count})
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          )}
-        </div>
 
-        <div className="px-4 py-2 border-b border-b-gray-300">
-          <div className="flex justify-between py-2">
-            <h4 className="font-semibold">Cake Type</h4>
-            {show.category === "category" ? (
-              <FiMinus onClick={() => handleChange("category")} />
-            ) : (
-              <HiOutlinePlusSm onClick={() => handleChange("category")} />
-            )}
-          </div>
-          {show.category && (
-            <div>
-              {cakeCategories.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 mb-2">
-                  <input type="checkbox" />
-                  <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.type} ({item.count})
-                  </span>
+            <div className="px-4 py-2 border-b border-b-gray-300">
+              <div className="flex justify-between py-2">
+                <h4 className="font-semibold">Cake Type</h4>
+                {show.category === "category" ? (
+                  <FiMinus onClick={() => handleChange("category")} />
+                ) : (
+                  <HiOutlinePlusSm onClick={() => handleChange("category")} />
+                )}
+              </div>
+              {show.category && (
+                <div>
+                  {cakeCategories.map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 mb-2">
+                      <input type="checkbox" />
+                      <span className="text-slate-500 flex items-center tracking-wide ">
+                        {item.type} ({item.count})
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          )}
-        </div>
 
-        <div className="px-4 py-2 border-b border-b-gray-300">
-          <div className="flex justify-between py-2">
-            <h4 className="font-semibold">Ingredients</h4>
-            {show.options === "options" ? (
-              <FiMinus onClick={() => handleChange("options")} />
-            ) : (
-              <HiOutlinePlusSm onClick={() => handleChange("options")} />
-            )}
-          </div>
-          {show.options && (
-            <div>
-              {cakeOptions.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 mb-2">
-                  <input type="checkbox" />
-                  <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.type} ({item.count})
-                  </span>
+            <div className="px-4 py-2 border-b border-b-gray-300">
+              <div className="flex justify-between py-2">
+                <h4 className="font-semibold">Ingredients</h4>
+                {show.options === "options" ? (
+                  <FiMinus onClick={() => handleChange("options")} />
+                ) : (
+                  <HiOutlinePlusSm onClick={() => handleChange("options")} />
+                )}
+              </div>
+              {show.options && (
+                <div>
+                  {cakeOptions.map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 mb-2">
+                      <input type="checkbox" />
+                      <span className="text-slate-500 flex items-center tracking-wide ">
+                        {item.type} ({item.count})
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          )}
-        </div>
 
-        <div className="px-4 py-2 border-b border-b-gray-300">
-          <div className="flex justify-between py-2">
-            <h4 className="font-semibold">Shape</h4>
-            {show.shape === "shape" ? (
-              <FiMinus onClick={() => handleChange("shape")} />
-            ) : (
-              <HiOutlinePlusSm onClick={() => handleChange("shape")} />
-            )}
-          </div>
-          {show.shape && (
-            <div>
-              {cakeShapes.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 mb-2">
-                  <input type="checkbox" />
-                  <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.shape} ({item.count})
-                  </span>
+            <div className="px-4 py-2 border-b border-b-gray-300">
+              <div className="flex justify-between py-2">
+                <h4 className="font-semibold">Shape</h4>
+                {show.shape === "shape" ? (
+                  <FiMinus onClick={() => handleChange("shape")} />
+                ) : (
+                  <HiOutlinePlusSm onClick={() => handleChange("shape")} />
+                )}
+              </div>
+              {show.shape && (
+                <div>
+                  {cakeShapes.map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 mb-2">
+                      <input type="checkbox" />
+                      <span className="text-slate-500 flex items-center tracking-wide ">
+                        {item.shape} ({item.count})
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          )}
-        </div>
 
-        <div className="px-4 py-2 ">
-          <div className="flex justify-between py-2">
-            <h4 className="font-semibold">Weight</h4>
-            {show.weight === "weight" ? (
-              <FiMinus onClick={() => handleChange("weight")} />
-            ) : (
-              <HiOutlinePlusSm onClick={() => handleChange("weight")} />
-            )}
-          </div>
-          {show.weight && (
-            <div>
-              {cakeWeights.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 mb-2">
-                  <input type="checkbox" />
-                  <span className="text-slate-500 flex items-center tracking-wide ">
-                    {item.weight} ({item.count})
-                  </span>
+            <div className="px-4 py-2 ">
+              <div className="flex justify-between py-2">
+                <h4 className="font-semibold">Weight</h4>
+                {show.weight === "weight" ? (
+                  <FiMinus onClick={() => handleChange("weight")} />
+                ) : (
+                  <HiOutlinePlusSm onClick={() => handleChange("weight")} />
+                )}
+              </div>
+              {show.weight && (
+                <div>
+                  {cakeWeights.map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 mb-2">
+                      <input type="checkbox" />
+                      <span className="text-slate-500 flex items-center tracking-wide ">
+                        {item.weight} ({item.count})
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          )}
-        </div>
 
           </div>
         </div>
         <div className="w-full space-y-6">
           <div className="bg-white p-3 md:p-4 mt-6 lg:mt-0">
-            <div className="md:flex gap-10 pb-4 md:pb-2">
+            <div className="md:flex gap-10 pb-4 md:pb-2 md:items-center">
               <div className="flex gap-5">
                 <h2 className="font-semibold text-lg lg:text-xl">
-                Cakes for Every Taste
+                  Cakes for Every Taste
                 </h2>
-              
+
               </div>
               <div className="flex gap-5 text-base md:text-[17px]">
                 <h4 className="text-blue-500 font-normal ">65784 Reviews</h4>
                 <span className="text-gray-600 ">| 30 of 100 Gifts</span>
               </div>
             </div>
-            <div className="hidden md:flex gap-7 ">
-              <h3 className="font-normal text-[17px]">Sort By:</h3>
-              <ul className="flex gap-7 text-gray-600">
-                <li>Recommended</li>
-                <li>New</li>
-                <li>Price:Low to High</li>
-                <li>Price:High to Low</li>
+            <div className="hidden md:flex gap-3 ">
+              <h3 className="font-normal text-gray-600 text-base">Sort By:</h3>
+              <ul className="flex gap-6 text-gray-600">
+                <li className="flex items-center gap-1 "><MdRecommend className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Recommended</span></li>
+                <li className="flex items-center gap-1 "><MdOutlineWatchLater className=""/><span className="border-b border-dashed border-b-gray-400">New</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundUp  className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:Low to High</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundDown className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:High to Low</span></li>
               </ul>
             </div>
           </div>
@@ -449,35 +453,36 @@ function page() {
                       />
                     )}
 
-                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 space-y-2">
-                      <h3 className="text-slate-800 text-sm">{item.title}</h3>
-                      <div className="flex justify-between">
-                        <span className="flex items-center font-semibold text-lg">
-                          <BsCurrencyRupee />
-                          {item.price}
-                        </span>
-                        {item.rate ? (
-                          <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
-                            <span>{item.rate}</span>
-                            <RiStarHalfSFill />
+                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 ">
+                      <div className="space-y-3">
+                        <div>
+                          <h3 className="text-slate-800 text-base">{item.title}</h3>
+                          {item.rate ?
+                            <div className="flex items-center text-xl text-yellow-500">
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              {item.rate < '5.0' ? <RiStarHalfSFill /> : <MdStar />}
+
+                            </div> : ""}
+                        </div>
+                        <div className="flex items-center justify-between">
+                          {
+                            item.rate && item.review && (
+
+                              <div className="flex items-center gap-3  ">
+                                <span className="bg-[#707428] rounded-br-[64px] text-white rounded-bl-[64px] rounded-tl-[64px] font-semibold px-2 text-base">{item.rate}<span className="text-xs font-normal opacity-60 text-slate-50">/5</span></span>
+                                <span className="font-semibold text-sm text-[#707428]">{item.review}</span>
+                              </div>
+                            )}
+                          <div className="flex items-center text-xl font-semibold">
+                            <BsCurrencyRupee />
+                            <span>{item.price}</span>
                           </div>
-                        ) : (
-                          ""
-                        )}
+                        </div>
                       </div>
-                      <div className="flex items-center justify-between text-xs">
-                        <h6 className="text-gray-500">
-                          Earliest Delivery :
-                          <span className="font-semibold text-gray-700">
-                            {" "}
-                            {item.delivery}
-                          </span>{" "}
-                        </h6>
-                        {
-                          item.review ? <span className="text-gray-500">{item.review}</span> : ""
-                        }
-                        
-                      </div>
+
                     </div>
                   </Link>
                 </div>

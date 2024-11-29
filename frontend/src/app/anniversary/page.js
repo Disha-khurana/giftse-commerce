@@ -1,12 +1,14 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdOutlineWatchLater, MdRecommend } from "react-icons/md";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsCurrencyRupee } from "react-icons/bs";
 import { FiMinus } from "react-icons/fi";
 import { RiStarHalfSFill } from "react-icons/ri";
 import Image from "next/image";
+import { MdStar } from "react-icons/md";
+import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 function page() {
 
@@ -38,7 +40,7 @@ function page() {
       ],
       link: "/fruit-overload-cake-half-kg",
       title: "Overload Fruit Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -60,20 +62,20 @@ function page() {
       delivery: "Today",
     },
     {
-        image: [
-          "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_1.webp",
-          "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_2.webp",
-          "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_3.webp",
-          "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_4.webp",
-          "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_5.webp",    
-        ],
-        link: "/anniversary-special-chocolate-cake-half-kg",
-        title: "Anniversary Special Chocolate Cake- Half Kg",
-        rate: "4.9",
-        price: "725",
-        review: "28 reviews",
-        delivery: "Today",
-      },
+      image: [
+        "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_1.webp",
+        "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_2.webp",
+        "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_3.webp",
+        "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_4.webp",
+        "/Images/anniversary/anniversary-cake/anniversary-special-chocolate-cake-half-kg_5.webp",
+      ],
+      link: "/anniversary-special-chocolate-cake-half-kg",
+      title: "Anniversary Special Chocolate Cake- Half Kg",
+      rate: "4.9",
+      price: "725",
+      review: "28 reviews",
+      delivery: "Today",
+    },
     {
       id: 4,
       image: [
@@ -91,20 +93,20 @@ function page() {
       delivery: "Today",
     },
     {
-        image: [
-          "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_1.webp",
-          "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_2.webp",
-          "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_3.webp",
-          "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_4.webp",
-          "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_1.webp",  
-        ],
-        link: "/personalised-champange-couple-gift-box",
-        title: "Personalised Champange Couple Gift Box",
-        rate: "5.0",
-        price: "1699",
-        review: "1 reviews",
-        delivery: "Tomorrow",
-      },
+      image: [
+        "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_1.webp",
+        "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_2.webp",
+        "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_3.webp",
+        "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_4.webp",
+        "/Images/anniversary/gift-box/personalised-champange-couple-gift-box_1.webp",
+      ],
+      link: "/personalised-champange-couple-gift-box",
+      title: "Personalised Champange Couple Gift Box",
+      rate: "5",
+      price: "1699",
+      review: "1 reviews",
+      delivery: "Tomorrow",
+    },
     {
       id: 6,
       image: [
@@ -116,14 +118,14 @@ function page() {
       ],
       link: "/rich-coffee-cream-cake-half-kg",
       title: "Rich Coffee Cream Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
     },
 
     {
-      id:13,
+      id: 13,
       image: [
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
@@ -136,12 +138,12 @@ function page() {
       rate: "4.3",
       price: "549",
     },
-   
-  
-    
+
+
+
   ];
-  
-  
+
+
   const [hoverEffect, setHoverEffect] = useState(null);
   const [count, setCount] = useState(0);
 
@@ -168,15 +170,15 @@ function page() {
       </div>
 
       <div className="flex gap-8">
-    
+
         <div className="w-full space-y-6">
           <div className="bg-white p-4">
-            <div className="md:flex gap-10 pb-2">
+            <div className="md:flex gap-5 md:items-center md:gap-10 pb-2">
               <div className="flex gap-5 mb-3 md:mb-0">
                 <h2 className="font-semibold text-lg lg:text-xl">
-                Anniversary All Gifts
+                  Anniversary All Gifts
                 </h2>
-                <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
+                <div className="font-semibold flex items-center rounded-br-[64px] rounded-tl-[64px] rounded-bl-[64px] text-white bg-green-800 px-1 rounded-sm">
                   <span>4.8</span>
                   <RiStarHalfSFill />
                 </div>
@@ -186,13 +188,13 @@ function page() {
                 <span className="text-gray-600 ">| 30 of 100 Gifts</span>
               </div>
             </div>
-            <div className="hidden md:flex gap-7 ">
-              <h3 className="font-normal text-[17px]">Sort By:</h3>
-              <ul className="flex gap-7 text-gray-600">
-                <li>Recommended</li>
-                <li>New</li>
-                <li>Price:Low to High</li>
-                <li>Price:High to Low</li>
+            <div className="hidden md:flex gap-3 ">
+              <h3 className="font-normal text-gray-600 text-base">Sort By:</h3>
+              <ul className="flex gap-6 text-gray-600">
+                <li className="flex items-center gap-1 "><MdRecommend className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Recommended</span></li>
+                <li className="flex items-center gap-1 "><MdOutlineWatchLater className=""/><span className="border-b border-dashed border-b-gray-400">New</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundUp  className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:Low to High</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundDown className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:High to Low</span></li>
               </ul>
             </div>
           </div>
@@ -208,7 +210,7 @@ function page() {
                   }}
                   onMouseLeave={() => setHoverEffect(null)}
                 >
-                  <Link href={`/gift${item.link}`} className="space-y-2">
+                  <Link href={`/gift${item.link}`} className="space-y-3">
                     {hoverEffect === index ? (
                       <Image
                         width={500}
@@ -227,35 +229,36 @@ function page() {
                       />
                     )}
 
-                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 space-y-2">
-                      <h3 className="text-slate-800 text-sm">{item.title}</h3>
-                      <div className="flex justify-between">
-                        <span className="flex items-center font-semibold text-lg">
-                          <BsCurrencyRupee />
-                          {item.price}
-                        </span>
-                        {item.rate ? (
-                          <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
-                            <span>{item.rate}</span>
-                            <RiStarHalfSFill />
+                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 ">
+                      <div className="space-y-3">
+                        <div>
+                          <h3 className="text-slate-800 text-base">{item.title}</h3>
+                          {item.rate ?
+                            <div className="flex items-center text-xl text-yellow-500">
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              {item.rate < '5.0' ? <RiStarHalfSFill /> : <MdStar />}
+
+                            </div> : ""}
+                        </div>
+                        <div className="flex items-center justify-between">
+                          {
+                            item.rate && item.review && (
+
+                              <div className="flex items-center gap-3  ">
+                                <span className="bg-[#707428] rounded-br-[64px] text-white rounded-bl-[64px] rounded-tl-[64px] font-semibold px-2 text-base">{item.rate}<span className="text-xs font-normal opacity-60 text-slate-50">/5</span></span>
+                                <span className="font-semibold text-sm text-[#707428]">{item.review}</span>
+                              </div>
+                            )}
+                          <div className="flex items-center text-xl font-semibold">
+                            <BsCurrencyRupee />
+                            <span>{item.price}</span>
                           </div>
-                        ) : (
-                          ""
-                        )}
+                        </div>
                       </div>
-                      <div className="flex items-center justify-between text-xs">
-                        <h6 className="text-gray-500">
-                          Earliest Delivery :
-                          <span className="font-semibold text-gray-700">
-                            {" "}
-                            {item.delivery}
-                          </span>{" "}
-                        </h6>
-                        {
-                          item.review ? <span className="text-gray-500">{item.review}</span> : ""
-                        }
-                        
-                      </div>
+
                     </div>
                   </Link>
                 </div>

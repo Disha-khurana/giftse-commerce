@@ -89,7 +89,7 @@ function GiftCompo({ slug }) {
       ],
       link: "/fruit-overload-cake-half-kg",
       title: "Overload Fruit Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -280,7 +280,7 @@ function GiftCompo({ slug }) {
                       type="text"
                       name="pincode"
                       placeholder="Select Delivery Date"
-                      className="border border-gray-400 focus:outline-none focus:ring-none rounded pl-10 pr-1 py-2"
+                      className="border border-gray-300 focus:outline-none focus:ring-none rounded pl-10 pr-1 py-2"
                     />
                     <SlCalender className='absolute left-2 top-1/2 transform -translate-y-1/2 text-xl text-gray-400' />
 
@@ -542,210 +542,215 @@ function GiftCompo({ slug }) {
                   </div>
                 </div>
                 <div className=' py-10 space-y-3' >
-            <h3 className='text-xl font-semibold'>Important Information :</h3>
-            <div className='border border-gray-200 px-3 py-1 rounded-xl'>
-              <p onClick={() => toggleSection('directions')} className='font-semibold flex items-center justify-between'>Directions:<MdKeyboardArrowDown /></p>
-              {openSection == 'directions' &&
-                <div>
-                  {product.storage ?
+                  <h3 className='text-xl font-semibold'>Important Information :</h3>
+                  <div className='border border-gray-300 px-3 py-1 rounded-xl cursor-pointer'>
+                    <p onClick={() => toggleSection('directions')} className='font-semibold flex items-center justify-between'>Directions:<MdKeyboardArrowDown /></p>
+                    {openSection == 'directions' &&
+                      <div>
+                        {product.storage ?
 
-                    <ul className="list-disc pl-5 space-y-2 mb-4">
-                      {product.storage.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
-                    </ul> : ""}
-                </div>
-              }
-            </div>
-
-            <div className=' border border-gray-200 px-3 py-1 rounded-xl'>
-              <p onClick={() => toggleSection('description')} className="font-semibold flex items-center justify-between">Product Description:<MdKeyboardArrowDown /></p>
-              {openSection == 'description' &&
-                <div>
-                  {product.delivery.map((item, index) => (
-                    <p key={index} className='mb-4'>{item}</p>
-                  ))}
-                </div>
-              }
-            </div>
-
-            <div className='border border-gray-200 px-3 py-1  rounded-xl '>
-              <p onClick={() => toggleSection('information')} className="font-semibold flex items-center justify-between ">Product Information:<MdKeyboardArrowDown /></p>
-              {openSection == 'information' &&
-                <div className="space-y-4">
-                  {/* Care dropdown */}
-                  <div className="border border-slate-200 p-2 w-full">
-                    <p
-
-                      className="cursor-pointer flex justify-between items-center text-lg font-semibold">
-                      Care:
-
-                    </p>
-
-                    <div className="mt-2">
-                      {product.storage && (
-                        <ul className="list-disc pl-5 space-y-2 mb-4">
-                          {product.storage.map((item, index) => (
-                            <li key={index}>{item}</li>
-                          ))}
-                        </ul>
-                      )}
-                      {product.plant_care_instructions && (
-                        <>
-                          <p className="font-bold mb-2">Plant Care Instructions:</p>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {product.plant_care_instructions.map((item, index) => (
+                          <ul className="list-disc pl-5 space-y-2 mb-4">
+                            {product.storage.map((item, index) => (
                               <li key={index}>{item}</li>
                             ))}
-                          </ul>
-                        </>
-                      )}
-                      {product.plant_care && (
-                        <>
-                          <p className="font-bold mb-2">Plant Care:</p>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {product.plant_care.map((item, index) => (
-                              <li key={index}>{item}</li>
-                            ))}
-                          </ul>
-                        </>
-                      )}
-                      {product.cake_care && (
-                        <>
-                          <p className="font-bold mb-2">Cake Care:</p>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {product.cake_care.map((item, index) => (
-                              <li key={index}>{item}</li>
-                            ))}
-                          </ul>
-                        </>
-                      )}
-                    </div>
+                          </ul> : ""}
+                      </div>
+                    }
+                  </div>
+
+                  <div className=' border border-gray-300 px-3 py-1 rounded-xl cursor-pointer'>
+                    <p onClick={() => toggleSection('description')} className="font-semibold flex items-center justify-between">Product Description:<MdKeyboardArrowDown /></p>
+                    {openSection == 'description' &&
+                      <div>
+                        {product.delivery.map((item, index) => (
+                          <p key={index} className='mb-4'>{item}</p>
+                        ))}
+                      </div>
+                    }
+                  </div>
+
+                  <div className='border border-gray-300 px-3 py-1  rounded-xl cursor-pointer'>
+                    <p onClick={() => toggleSection('information')} className="font-semibold flex items-center justify-between ">Product Information:<MdKeyboardArrowDown /></p>
+                    {openSection == 'information' &&
+                      <div className="space-y-4">
+                        {/* Care dropdown */}
+                        <div className="border border-slate-200 p-2 w-full">
+                          <p
+
+                            className="cursor-pointer flex justify-between items-center text-lg font-semibold">
+                            Care:
+
+                          </p>
+
+                          <div className="mt-2">
+                            {product.storage && (
+                              <ul className="list-disc pl-5 space-y-2 mb-4">
+                                {product.storage.map((item, index) => (
+                                  <li key={index}>{item}</li>
+                                ))}
+                              </ul>
+                            )}
+                            {product.plant_care_instructions && (
+                              <>
+                                <p className="font-bold mb-2">Plant Care Instructions:</p>
+                                <ul className="list-disc pl-5 space-y-2">
+                                  {product.plant_care_instructions.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                  ))}
+                                </ul>
+                              </>
+                            )}
+                            {product.plant_care && (
+                              <>
+                                <p className="font-bold mb-2">Plant Care:</p>
+                                <ul className="list-disc pl-5 space-y-2">
+                                  {product.plant_care.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                  ))}
+                                </ul>
+                              </>
+                            )}
+                            {product.cake_care && (
+                              <>
+                                <p className="font-bold mb-2">Cake Care:</p>
+                                <ul className="list-disc pl-5 space-y-2">
+                                  {product.cake_care.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                  ))}
+                                </ul>
+                              </>
+                            )}
+                          </div>
+
+                        </div>
+
+                        {/* Storage dropdown */}
+                        <div className=" border border-slate-200 p-2 w-full">
+                          <p
+
+                            className="cursor-pointer text-lg flex justify-between items-center font-semibold">
+                            Additional Details:
+
+                          </p>
+
+                          <div className="mt-2">
+                            {product.personalisation ?
+                              <>
+                                <p className="font-bold mb-2">Personalisation:</p>
+                                <ul className="list-disc pl-5 space-y-2">
+                                  {product.personalisation.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                  ))}
+                                </ul>
+                              </> : ""}
+
+                            {product.price_breakup ?
+                              <>
+                                <p className="font-bold mb-2">Price Breakup:</p>
+                                <ul className="list-disc pl-5 space-y-2">
+                                  {product.price_breakup.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                  ))}
+                                </ul>
+                              </> : ""}
+
+                            {product.flowers_trivia ?
+                              <>
+                                <p className="font-bold mb-2">Flowers Trivia:</p>
+                                <ul className="list-disc pl-5 space-y-2">
+                                  {product.flowers_trivia.map((item, index) => (
+                                    <li key={index} className='w-full'>{item}</li>
+                                  ))}
+                                </ul>
+                              </> : ""}
+
+                            {product.plant_trivia ?
+                              <>
+                                <p className="font-bold mb-2">Plants Trivia:</p>
+                                <ul className="list-disc pl-5 space-y-2">
+                                  {product.plant_trivia.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                  ))}
+                                </ul>
+                              </> : ""}
+                          </div>
+
+                        </div>
+
+
+
+                        <div className=" border border-slate-200 p-2 w-full ">
+                          <p
+
+                            className="cursor-pointer flex justify-between items-center text-lg font-semibold">
+                            Ingredients
+
+                          </p>
+
+                          <div className="mt-2">
+                            {
+                              product.ingredients ?
+                                <>
+
+                                  <ul className="list-disc pl-5 space-y-2 mb-4">
+                                    {product.ingredients.map((item, index) => (
+                                      <li key={index}>{item}</li>
+                                    ))}
+
+
+                                  </ul>
+                                </> : ""
+
+                            }
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                    }
 
                   </div>
 
-                  {/* Storage dropdown */}
-                  <div className=" border border-slate-200 p-2 w-full">
-                    <p
-
-                      className="cursor-pointer text-lg flex justify-between items-center font-semibold">
-                      Additional Details:
-
-                    </p>
-
-                    <div className="mt-2">
-                      {product.personalisation ?
-                        <>
-                          <p className="font-bold mb-2">Personalisation:</p>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {product.personalisation.map((item, index) => (
-                              <li key={index}>{item}</li>
+                  {product.productDetails ?
+                    <div className='border border-gray-300 px-3 py-1 rounded-xl cursor-pointer'>
+                    
+                      <p onClick={() => toggleSection('product')} className="font-semibold flex justify-between items-center">Product Details:<MdKeyboardArrowDown /></p>
+                      {openSection == 'product' &&
+                        <div>
+                          <ul className="list-disc pl-5 space-y-2 mb-4 pb-4" >
+                            {product.productDetails.map((item, index) => (
+                              <li key={index}>{item.label}: {item.value}</li>
                             ))}
+
                           </ul>
-                        </> : ""}
-
-                      {product.price_breakup ?
-                        <>
-                          <p className="font-bold mb-2">Price Breakup:</p>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {product.price_breakup.map((item, index) => (
-                              <li key={index}>{item}</li>
-                            ))}
-                          </ul>
-                        </> : ""}
-
-                      {product.flowers_trivia ?
-                        <>
-                          <p className="font-bold mb-2">Flowers Trivia:</p>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {product.flowers_trivia.map((item, index) => (
-                              <li key={index} className='w-full'>{item}</li>
-                            ))}
-                          </ul>
-                        </> : ""}
-
-                      {product.plant_trivia ?
-                        <>
-                          <p className="font-bold mb-2">Plants Trivia:</p>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {product.plant_trivia.map((item, index) => (
-                              <li key={index}>{item}</li>
-                            ))}
-                          </ul>
-                        </> : ""}
-                    </div>
-
-                  </div>
-
-
-
-                  <div className=" border border-slate-200 p-2 w-full ">
-                    <p
-
-                      className="cursor-pointer flex justify-between items-center text-lg font-semibold">
-                      Ingredients
-
-                    </p>
-
-                    <div className="mt-2">
-                      {
-                        product.ingredients ?
-                          <>
-
-                            <ul className="list-disc pl-5 space-y-2 mb-4">
-                              {product.ingredients.map((item, index) => (
-                                <li key={index}>{item}</li>
-                              ))}
-
-
-                            </ul>
-                          </> : ""
-
+                        </div>
                       }
-                    </div>
-
-                  </div>
-
-
-                </div>
-              }
-
-            </div>
-
-            {product.productDetails ?
-              <>
-                <p className="font-bold mb-2">Product Details:</p>
-                <ul className="list-disc pl-5 space-y-2 mb-4 pb-4" >
-                  {product.productDetails.map((item, index) => (
-                    <li key={index}>{item.label}: {item.value}</li>
-                  ))}
-
-                </ul>
-              </> : ""
-            }
+                    </div> : ""
+                  }
 
 
-            <div>
-
-
-              <div className='border border-gray-200 px-3 py-1 rounded-xl'>
-                <p onClick={() => toggleSection('manufacture')} className="font-semibold flex justify-between items-center">Manufacturer Details:<MdKeyboardArrowDown /></p>
-                {openSection == 'manufacture' &&
                   <div>
-                    <ul className="list-disc pl-5 space-y-2 ">
-                      {product.details.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
-                    </ul>
+
+
+                    <div className='border border-gray-300 px-3 py-1 rounded-xl cursor-pointer'>
+                      <p onClick={() => toggleSection('manufacture')} className="font-semibold flex justify-between items-center">Manufacturer Details:<MdKeyboardArrowDown /></p>
+                      {openSection == 'manufacture' &&
+                        <div>
+                          <ul className="list-disc pl-5 space-y-2 ">
+                            {product.details.map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      }
+
+
+                    </div>
                   </div>
-                }
-
-
+                </div>
               </div>
-            </div>
-          </div>
-              </div>
-             
+
             </div>
 
           </div>
@@ -778,7 +783,7 @@ function GiftCompo({ slug }) {
             </div>
           </div>
 
-          
+
         </div>
 
       ) : (

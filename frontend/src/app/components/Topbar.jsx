@@ -102,9 +102,9 @@ function Topbar() {
       <div className='bg-[#7d8035] '>
         <div className=' px-5 md:px-12 py-4 flex justify-between items-center '>
           {/* Left Section - Logo */}
-          <div className='flex-shrink-0'>
+          <Link href='/' className='flex-shrink-0'>
             <Image width={500} height={500} src='/Images/logo.webp' alt='logo' className='text-white w-auto h-full'/>
-          </div>
+          </Link>
 
           {/* Center Section - Search and Location */}
           <div className='flex-grow flex justify-center gap-5 items-center'>

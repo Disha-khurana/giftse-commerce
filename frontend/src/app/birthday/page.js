@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdOutlineWatchLater, MdRecommend, MdStar } from "react-icons/md";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsCurrencyRupee } from "react-icons/bs";
 import { FiMinus } from "react-icons/fi";
 import { RiStarHalfSFill } from "react-icons/ri";
 import Image from "next/image";
+import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 function page() {
   const [show, setShow] = useState({
@@ -115,7 +116,7 @@ function page() {
       ],
       link: "/fruit-overload-cake-half-kg",
       title: "Overload Fruit Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -179,7 +180,7 @@ function page() {
       ],
       link: "/rich-coffee-cream-cake-half-kg",
       title: "Rich Coffee Cream Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -241,7 +242,7 @@ function page() {
       ],
       link: "/dates-walnuts-mixed-dry-cake-500gms",
       title: "Dates & Walnuts Mixed Dry Cake 500gms",
-      rate: "5.0",
+      rate: "5",
       price: "999",
       review: "273 reviews",
       delivery: "Today",
@@ -257,13 +258,13 @@ function page() {
       ],
       link: "/feminine-fragrance-collection-for-her",
       title: "Feminine Fragrance Collection For Her",
-      rate: "5.0",
+      rate: "5",
       price: "399",
       review: "273 reviews",
       delivery: "Today",
     },
     {
-      id:12,
+      id: 12,
       image: [
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_1.webp",
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_2.webp",
@@ -277,7 +278,7 @@ function page() {
       price: "249",
     },
     {
-      id:13,
+      id: 13,
       image: [
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
@@ -291,7 +292,7 @@ function page() {
       price: "549",
     },
     {
-      id:14,
+      id: 14,
       image: [
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_1.webp",
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_2.webp",
@@ -305,7 +306,7 @@ function page() {
       price: "599",
     },
     {
-      id:15,
+      id: 15,
       image: [
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_1.webp",
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_2.webp",
@@ -319,7 +320,7 @@ function page() {
       price: "1499",
     },
     {
-      id:16,
+      id: 16,
       image: [
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp",
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_2.webp",
@@ -333,7 +334,7 @@ function page() {
       price: "599",
     },
     {
-      id:17,
+      id: 17,
       image: [
         "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
         "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
@@ -347,7 +348,7 @@ function page() {
       price: "1899",
     },
     {
-      id:18,
+      id: 18,
       image: [
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_1.webp",
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_2.webp",
@@ -361,7 +362,7 @@ function page() {
       price: "1899",
     },
     {
-      id:19,
+      id: 19,
       image: [
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_1.webp",
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_2.webp",
@@ -374,7 +375,7 @@ function page() {
       price: "449",
     },
     {
-      id:20,
+      id: 20,
       image: [
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_2.webp",
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_3.webp",
@@ -416,7 +417,7 @@ function page() {
       ],
       link: "/fruit-overload-cake-half-kg",
       title: "Overload Fruit Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -480,7 +481,7 @@ function page() {
       ],
       link: "/rich-coffee-cream-cake-half-kg",
       title: "Rich Coffee Cream Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -542,7 +543,7 @@ function page() {
       ],
       link: "/dates-walnuts-mixed-dry-cake-500gms",
       title: "Dates & Walnuts Mixed Dry Cake 500gms",
-      rate: "5.0",
+      rate: "5",
       price: "999",
       review: "273 reviews",
       delivery: "Today",
@@ -558,13 +559,13 @@ function page() {
       ],
       link: "/feminine-fragrance-collection-for-her",
       title: "Feminine Fragrance Collection For Her",
-      rate: "5.0",
+      rate: "5",
       price: "399",
       review: "273 reviews",
       delivery: "Today",
     },
     {
-      id:12,
+      id: 12,
       image: [
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_1.webp",
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_2.webp",
@@ -578,7 +579,7 @@ function page() {
       price: "249",
     },
     {
-      id:13,
+      id: 13,
       image: [
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
@@ -592,7 +593,7 @@ function page() {
       price: "549",
     },
     {
-      id:14,
+      id: 14,
       image: [
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_1.webp",
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_2.webp",
@@ -606,7 +607,7 @@ function page() {
       price: "599",
     },
     {
-      id:15,
+      id: 15,
       image: [
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_1.webp",
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_2.webp",
@@ -620,7 +621,7 @@ function page() {
       price: "1499",
     },
     {
-      id:16,
+      id: 16,
       image: [
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp",
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_2.webp",
@@ -634,7 +635,7 @@ function page() {
       price: "599",
     },
     {
-      id:17,
+      id: 17,
       image: [
         "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
         "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
@@ -648,7 +649,7 @@ function page() {
       price: "1899",
     },
     {
-      id:18,
+      id: 18,
       image: [
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_1.webp",
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_2.webp",
@@ -662,7 +663,7 @@ function page() {
       price: "1899",
     },
     {
-      id:19,
+      id: 19,
       image: [
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_1.webp",
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_2.webp",
@@ -675,7 +676,7 @@ function page() {
       price: "449",
     },
     {
-      id:20,
+      id: 20,
       image: [
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_2.webp",
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_3.webp",
@@ -717,7 +718,7 @@ function page() {
       ],
       link: "/fruit-overload-cake-half-kg",
       title: "Overload Fruit Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -781,7 +782,7 @@ function page() {
       ],
       link: "/rich-coffee-cream-cake-half-kg",
       title: "Rich Coffee Cream Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -843,7 +844,7 @@ function page() {
       ],
       link: "/dates-walnuts-mixed-dry-cake-500gms",
       title: "Dates & Walnuts Mixed Dry Cake 500gms",
-      rate: "5.0",
+      rate: "5",
       price: "999",
       review: "273 reviews",
       delivery: "Today",
@@ -859,13 +860,13 @@ function page() {
       ],
       link: "/feminine-fragrance-collection-for-her",
       title: "Feminine Fragrance Collection For Her",
-      rate: "5.0",
+      rate: "5",
       price: "399",
       review: "273 reviews",
       delivery: "Today",
     },
     {
-      id:12,
+      id: 12,
       image: [
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_1.webp",
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_2.webp",
@@ -879,7 +880,7 @@ function page() {
       price: "249",
     },
     {
-      id:13,
+      id: 13,
       image: [
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
@@ -893,7 +894,7 @@ function page() {
       price: "549",
     },
     {
-      id:14,
+      id: 14,
       image: [
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_1.webp",
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_2.webp",
@@ -907,7 +908,7 @@ function page() {
       price: "599",
     },
     {
-      id:15,
+      id: 15,
       image: [
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_1.webp",
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_2.webp",
@@ -921,7 +922,7 @@ function page() {
       price: "1499",
     },
     {
-      id:16,
+      id: 16,
       image: [
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp",
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_2.webp",
@@ -935,7 +936,7 @@ function page() {
       price: "599",
     },
     {
-      id:17,
+      id: 17,
       image: [
         "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
         "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
@@ -949,7 +950,7 @@ function page() {
       price: "1899",
     },
     {
-      id:18,
+      id: 18,
       image: [
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_1.webp",
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_2.webp",
@@ -963,7 +964,7 @@ function page() {
       price: "1899",
     },
     {
-      id:19,
+      id: 19,
       image: [
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_1.webp",
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_2.webp",
@@ -976,7 +977,7 @@ function page() {
       price: "449",
     },
     {
-      id:20,
+      id: 20,
       image: [
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_2.webp",
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_3.webp",
@@ -1018,7 +1019,7 @@ function page() {
       ],
       link: "/fruit-overload-cake-half-kg",
       title: "Overload Fruit Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -1082,7 +1083,7 @@ function page() {
       ],
       link: "/rich-coffee-cream-cake-half-kg",
       title: "Rich Coffee Cream Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -1144,7 +1145,7 @@ function page() {
       ],
       link: "/dates-walnuts-mixed-dry-cake-500gms",
       title: "Dates & Walnuts Mixed Dry Cake 500gms",
-      rate: "5.0",
+      rate: "5",
       price: "999",
       review: "273 reviews",
       delivery: "Today",
@@ -1160,13 +1161,13 @@ function page() {
       ],
       link: "/feminine-fragrance-collection-for-her",
       title: "Feminine Fragrance Collection For Her",
-      rate: "5.0",
+      rate: "5",
       price: "399",
       review: "273 reviews",
       delivery: "Today",
     },
     {
-      id:12,
+      id: 12,
       image: [
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_1.webp",
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_2.webp",
@@ -1180,7 +1181,7 @@ function page() {
       price: "249",
     },
     {
-      id:13,
+      id: 13,
       image: [
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
@@ -1194,7 +1195,7 @@ function page() {
       price: "549",
     },
     {
-      id:14,
+      id: 14,
       image: [
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_1.webp",
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_2.webp",
@@ -1208,7 +1209,7 @@ function page() {
       price: "599",
     },
     {
-      id:15,
+      id: 15,
       image: [
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_1.webp",
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_2.webp",
@@ -1222,7 +1223,7 @@ function page() {
       price: "1499",
     },
     {
-      id:16,
+      id: 16,
       image: [
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp",
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_2.webp",
@@ -1236,7 +1237,7 @@ function page() {
       price: "599",
     },
     {
-      id:17,
+      id: 17,
       image: [
         "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
         "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
@@ -1250,7 +1251,7 @@ function page() {
       price: "1899",
     },
     {
-      id:18,
+      id: 18,
       image: [
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_1.webp",
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_2.webp",
@@ -1264,7 +1265,7 @@ function page() {
       price: "1899",
     },
     {
-      id:19,
+      id: 19,
       image: [
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_1.webp",
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_2.webp",
@@ -1277,7 +1278,7 @@ function page() {
       price: "449",
     },
     {
-      id:20,
+      id: 20,
       image: [
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_2.webp",
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_3.webp",
@@ -1319,7 +1320,7 @@ function page() {
       ],
       link: "/fruit-overload-cake-half-kg",
       title: "Overload Fruit Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -1383,7 +1384,7 @@ function page() {
       ],
       link: "/rich-coffee-cream-cake-half-kg",
       title: "Rich Coffee Cream Cake Half Kg",
-      rate: "5.0",
+      rate: "5",
       price: "725",
       review: "273 reviews",
       delivery: "Today",
@@ -1445,7 +1446,7 @@ function page() {
       ],
       link: "/dates-walnuts-mixed-dry-cake-500gms",
       title: "Dates & Walnuts Mixed Dry Cake 500gms",
-      rate: "5.0",
+      rate: "5",
       price: "999",
       review: "273 reviews",
       delivery: "Today",
@@ -1461,13 +1462,13 @@ function page() {
       ],
       link: "/feminine-fragrance-collection-for-her",
       title: "Feminine Fragrance Collection For Her",
-      rate: "5.0",
+      rate: "5",
       price: "399",
       review: "273 reviews",
       delivery: "Today",
     },
     {
-      id:12,
+      id: 12,
       image: [
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_1.webp",
         "/Images/birthday/jade plant/jade-plant-in-gold-tone-metal-pot_2.webp",
@@ -1481,7 +1482,7 @@ function page() {
       price: "249",
     },
     {
-      id:13,
+      id: 13,
       image: [
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_1.webp",
         "/Images/birthday/gerbera blossom/mixed-brilliance-gerbera-blossoms_2.webp",
@@ -1495,7 +1496,7 @@ function page() {
       price: "549",
     },
     {
-      id:14,
+      id: 14,
       image: [
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_1.webp",
         "/Images/birthday/combo/personalised-blue-notebook-and-pen-combo_2.webp",
@@ -1509,7 +1510,7 @@ function page() {
       price: "599",
     },
     {
-      id:15,
+      id: 15,
       image: [
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_1.webp",
         "/Images/birthday/wallet/personalised-mens-classy-essentials-gift-box_2.webp",
@@ -1523,7 +1524,7 @@ function page() {
       price: "1499",
     },
     {
-      id:16,
+      id: 16,
       image: [
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_1.webp",
         "/Images/birthday/bottle/personalised-temperature-hydration-bottle_2.webp",
@@ -1537,7 +1538,7 @@ function page() {
       price: "599",
     },
     {
-      id:17,
+      id: 17,
       image: [
         "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
         "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
@@ -1551,7 +1552,7 @@ function page() {
       price: "1899",
     },
     {
-      id:18,
+      id: 18,
       image: [
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_1.webp",
         "/Images/birthday/scorpion-signature-mug/scorpion-signature-mug_2.webp",
@@ -1565,7 +1566,7 @@ function page() {
       price: "1899",
     },
     {
-      id:19,
+      id: 19,
       image: [
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_1.webp",
         "/Images/birthday/hanging frame/totally-scorpio-hanging-frame_2.webp",
@@ -1578,7 +1579,7 @@ function page() {
       price: "449",
     },
     {
-      id:20,
+      id: 20,
       image: [
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_2.webp",
         "/Images/birthday/truffle cake/chocolate-truffle-cream-cake-half-kg_3.webp",
@@ -1594,8 +1595,8 @@ function page() {
       delivery: "Today",
     },
   ];
-  
-  
+
+
   const [hoverEffect, setHoverEffect] = useState(null);
   const [count, setCount] = useState(0);
 
@@ -1727,12 +1728,12 @@ function page() {
         </div>
         <div className="w-full space-y-6">
           <div className="bg-white p-3 md:p-4 mt-6 lg:mt-0">
-            <div className="md:flex gap-10 pb-4 md:pb-2">
+            <div className="md:flex gap-10 md:items-center pb-4 md:pb-2">
               <div className="flex gap-5">
                 <h2 className="font-semibold text-lg lg:text-xl">
                   Memorable Birthday Gifts
                 </h2>
-                <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
+                <div className="font-semibold rounded-br-[64px] rounded-tl-[64px] rounded-bl-[64px] flex items-center text-white bg-green-800 px-1 rounded-sm">
                   <span>4.0</span>
                   <RiStarHalfSFill />
                 </div>
@@ -1742,13 +1743,13 @@ function page() {
                 <span className="text-gray-600 ">| 30 of 100 Gifts</span>
               </div>
             </div>
-            <div className="hidden md:flex gap-7 ">
-              <h3 className="font-normal text-[17px]">Sort By:</h3>
-              <ul className="flex gap-7 text-gray-600">
-                <li>Recommended</li>
-                <li>New</li>
-                <li>Price:Low to High</li>
-                <li>Price:High to Low</li>
+            <div className="hidden md:flex gap-3 ">
+              <h3 className="font-normal text-gray-600 text-base">Sort By:</h3>
+              <ul className="flex gap-6 text-gray-600">
+                <li className="flex items-center gap-1 "><MdRecommend className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Recommended</span></li>
+                <li className="flex items-center gap-1 "><MdOutlineWatchLater className=""/><span className="border-b border-dashed border-b-gray-400">New</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundUp  className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:Low to High</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundDown className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:High to Low</span></li>
               </ul>
             </div>
           </div>
@@ -1783,35 +1784,36 @@ function page() {
                       />
                     )}
 
-                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 space-y-2">
-                      <h3 className="text-slate-800 text-sm">{item.title}</h3>
-                      <div className="flex justify-between">
-                        <span className="flex items-center font-semibold text-lg">
-                          <BsCurrencyRupee />
-                          {item.price}
-                        </span>
-                        {item.rate ? (
-                          <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
-                            <span>{item.rate}</span>
-                            <RiStarHalfSFill />
+                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 ">
+                      <div className="space-y-3">
+                        <div>
+                          <h3 className="text-slate-800 text-base">{item.title}</h3>
+                          {item.rate ?
+                            <div className="flex items-center text-xl text-yellow-500">
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              {item.rate < '5.0' ? <RiStarHalfSFill /> : <MdStar />}
+
+                            </div> : ""}
+                        </div>
+                        <div className="flex items-center justify-between">
+                          {
+                            item.rate && item.review && (
+
+                              <div className="flex items-center gap-3  ">
+                                <span className="bg-[#707428] rounded-br-[64px] text-white rounded-bl-[64px] rounded-tl-[64px] font-semibold px-2 text-base">{item.rate}<span className="text-xs font-normal opacity-60 text-slate-50">/5</span></span>
+                                <span className="font-semibold text-sm text-[#707428]">{item.review}</span>
+                              </div>
+                            )}
+                          <div className="flex items-center text-xl font-semibold">
+                            <BsCurrencyRupee />
+                            <span>{item.price}</span>
                           </div>
-                        ) : (
-                          ""
-                        )}
+                        </div>
                       </div>
-                      <div className="flex items-center justify-between text-xs">
-                        <h6 className="text-gray-500">
-                          Earliest Delivery :
-                          <span className="font-semibold text-gray-700">
-                            {" "}
-                            {item.delivery}
-                          </span>{" "}
-                        </h6>
-                        {
-                          item.review ? <span className="text-gray-500">{item.review}</span> : ""
-                        }
-                        
-                      </div>
+
                     </div>
                   </Link>
                 </div>

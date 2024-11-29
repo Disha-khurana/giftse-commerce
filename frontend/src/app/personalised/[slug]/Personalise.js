@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdOutlineWatchLater, MdRecommend } from "react-icons/md";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsCurrencyRupee } from "react-icons/bs";
 import { FiMinus } from "react-icons/fi";
@@ -13,6 +13,7 @@ import { heading } from "@/app/components/common/Personalise";
 import { giftType } from "@/app/components/common/Personalise";
 import { personalise } from "@/app/components/common/Personalise";
 import { delivery } from "@/app/components/common/Personalise";
+import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 
 
@@ -21,7 +22,7 @@ function Personalise({ slug }) {
     price: 'price',
     giftType: 'giftType',
     personalise: 'personalise',
-    delivery:'delivery'
+    delivery: 'delivery'
 
 
   });
@@ -29,7 +30,7 @@ function Personalise({ slug }) {
   const priceData = price.find((item) => item.category === slug)?.data || [];
   const giftTypeData = giftType.find((item) => item.category === slug)?.data || [];
   const personaliseData = personalise.find((item) => item.category === slug)?.data || [];
-    const timeData = delivery.find((item) => item.category === slug)?.data || [];
+  const timeData = delivery.find((item) => item.category === slug)?.data || [];
   const [hoverEffect, setHoverEffect] = useState(null);
   const [count, setCount] = useState(0);
 
@@ -63,7 +64,7 @@ function Personalise({ slug }) {
 
 
       <div className="lg:flex gap-6 ">
-        {(priceData.length > 0 || giftTypeData.length > 0 || personaliseData.length > 0 ||timeData.length > 0) && (
+        {(priceData.length > 0 || giftTypeData.length > 0 || personaliseData.length > 0 || timeData.length > 0) && (
           <div className="bg-white py-4 w-full lg:w-[30%] ">
             <div className="sticky top-32 z-10">
               <h4 className="border-b border-b-gray-300 font-semibold px-4 pb-2 text-lg">
@@ -179,13 +180,13 @@ function Personalise({ slug }) {
         <div className="w-full space-y-6">
           {heading[slug] &&
             <div className="bg-white p-4 mt-4 md:mt-6 lg:mt-0">
-              <div className="flex gap-5 md:gap-10 pb-2">
+              <div className="flex gap-5 md:items-center md:gap-10 pb-2">
                 <div className="flex gap-5">
                   <h2 className="font-semibold text-lg lg:text-xl">
                     {heading[slug]?.title}
                   </h2>
                   {heading[slug]?.rate &&
-                    <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
+                    <div className="font-semibold rounded-br-[64px] rounded-tl-[64px] rounded-bl-[64px] flex items-center text-white bg-green-800 px-1 rounded-sm">
                       <span>{heading[slug]?.rate}</span>
                       <RiStarHalfSFill />
                     </div>
@@ -196,15 +197,15 @@ function Personalise({ slug }) {
                   <span className="text-gray-600 ">| 30 of 100 flowers</span>
                 </div>
               </div>
-              <div className="flex gap-2 md:gap-7 ">
-                <h3 className="font-normal text-sm md:text-[17px]">Sort By:</h3>
-                <ul className="flex gap-2 md:gap-7 text-sm md:text-[17px] text-gray-600">
-                  <li>Recommended</li>
-                  <li>New</li>
-                  <li>Price:Low to High</li>
-                  <li>Price:High to Low</li>
-                </ul>
-              </div>
+              <div className="hidden md:flex gap-3 ">
+              <h3 className="font-normal text-gray-600 text-base">Sort By:</h3>
+              <ul className="flex gap-6 text-gray-600">
+                <li className="flex items-center gap-1 "><MdRecommend className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Recommended</span></li>
+                <li className="flex items-center gap-1 "><MdOutlineWatchLater className=""/><span className="border-b border-dashed border-b-gray-400">New</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundUp  className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:Low to High</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundDown className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:High to Low</span></li>
+              </ul>
+            </div>
             </div>
           }
           <div className="lg:p-4 ">
@@ -239,36 +240,36 @@ function Personalise({ slug }) {
                         />
                       )}
 
-                      <div className="group-hover:-translate-y-7 translate-y-0 duration-500 bg-white p-2 space-y-2">
-                        <h3 className="text-slate-800 text-sm">{item.title}</h3>
-                        <div className="flex justify-between">
-                          <span className="flex items-center font-semibold text-lg">
-                            <BsCurrencyRupee />
-                            {item.price}
-                          </span>
-                          {item.rate ? (
-                            <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
-                              <span>{item.rate}</span>
-                              <RiStarHalfSFill />
+                      <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 ">
+                        <div className="space-y-3">
+                          <div>
+                            <h3 className="text-slate-800 text-base">{item.title}</h3>
+                            {item.rate ?
+                              <div className="flex items-center text-xl text-yellow-500">
+                                <MdStar />
+                                <MdStar />
+                                <MdStar />
+                                <MdStar />
+                                {item.rate < '5.0' ? <RiStarHalfSFill /> : <MdStar />}
+
+                              </div> : ""}
+                          </div>
+                          <div className="flex items-center justify-between">
+                            {
+                              item.rate && item.review && (
+
+                                <div className="flex items-center gap-3  ">
+                                  <span className="bg-[#707428] rounded-br-[64px] text-white rounded-bl-[64px] rounded-tl-[64px] font-semibold px-2 text-base">{item.rate}<span className="text-xs font-normal opacity-60 text-slate-50">/5</span></span>
+                                  <span className="font-semibold text-sm text-[#707428]">{item.review}</span>
+                                </div>
+                              )}
+                            <div className="flex items-center text-xl font-semibold">
+                              <BsCurrencyRupee />
+                              <span>{item.price}</span>
                             </div>
-                          ) : (
-                            ""
-                          )}
+                          </div>
                         </div>
-                        <div className="flex items-center justify-between text-xs">
-                          <h6 className="text-gray-500">
-                            Earliest Delivery :
-                            <span className="font-semibold text-gray-700">
-                              {" "}
-                              {item.delivery}
-                            </span>{" "}
-                          </h6>
-                          {item.review ? (
-                            <span className="text-gray-500">{item.review}</span>
-                          ) : (
-                            ""
-                          )}
-                        </div>
+
                       </div>
                     </Link>
                   </div>

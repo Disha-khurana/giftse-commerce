@@ -95,36 +95,36 @@ function LifestylePage({ slug }) {
                       />
                     )}
 
-                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 space-y-2">
-                      <h3 className="text-slate-800 text-sm">{item.title}</h3>
-                      <div className="flex justify-between">
-                        <span className="flex items-center font-semibold text-lg">
-                          <BsCurrencyRupee />
-                          {item.price}
-                        </span>
-                        {item.rate ? (
-                          <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
-                            <span>{item.rate}</span>
-                            <RiStarHalfSFill />
+                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 ">
+                      <div className="space-y-3">
+                        <div>
+                          <h3 className="text-slate-800 text-base">{item.title}</h3>
+                          {item.rate ?
+                            <div className="flex items-center text-xl text-yellow-500">
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              {item.rate < '5.0' ? <RiStarHalfSFill /> : <MdStar />}
+
+                            </div> : ""}
+                        </div>
+                        <div className="flex items-center justify-between">
+                          {
+                            item.rate && item.review && (
+
+                              <div className="flex items-center gap-3  ">
+                                <span className="bg-[#707428] rounded-br-[64px] text-white rounded-bl-[64px] rounded-tl-[64px] font-semibold px-2 text-base">{item.rate}<span className="text-xs font-normal opacity-60 text-slate-50">/5</span></span>
+                                <span className="font-semibold text-sm text-[#707428]">{item.review}</span>
+                              </div>
+                            )}
+                          <div className="flex items-center text-xl font-semibold">
+                            <BsCurrencyRupee />
+                            <span>{item.price}</span>
                           </div>
-                        ) : (
-                          ""
-                        )}
+                        </div>
                       </div>
-                      <div className="flex items-center justify-between text-xs">
-                        <h6 className="text-gray-500">
-                          Earliest Delivery :
-                          <span className="font-semibold text-gray-700">
-                            {" "}
-                            {item.delivery}
-                          </span>{" "}
-                        </h6>
-                        {item.review ? (
-                          <span className="text-gray-500">{item.review}</span>
-                        ) : (
-                          ""
-                        )}
-                      </div>
+
                     </div>
                   </Link>
                 </div>

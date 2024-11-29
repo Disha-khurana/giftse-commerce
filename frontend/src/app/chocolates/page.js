@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdOutlineWatchLater, MdRecommend, MdStar } from "react-icons/md";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsCurrencyRupee } from "react-icons/bs";
 import { FiMinus } from "react-icons/fi";
 import { RiStarHalfSFill } from "react-icons/ri";
 import Image from "next/image";
+import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 function page() {
   const [show, setShow] = useState({
@@ -25,96 +26,96 @@ function page() {
   ];
 
 
-  const data=[
+  const data = [
     {
-        image: [
-          "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
-          "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
-          "/Images/birthday/rocher/rocher-choco-bouquet_3.webp",
-          "/Images/birthday/rocher/rocher-choco-bouquet_4.webp",
-          "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
-        ],
-        link: "/rocher-choco-bouquet",
-        title: "Rocher Choco Bouquet",
-        rate: "4.8",
-        price: "1899",
-        delivery: "Today",
-      },
-      {
-        image: [
-          "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_1.webp",
-         "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_2.webp",
-         "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_3.webp",
-         "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_1.webp",
-         "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_2.webp",
-        ],
-        link: "/delectable-chocolates-in-floral-box-21-pcs",
-        title: "Delectable Chocolates In Floral Box 21 Pcs",
-        rate: "4.6",
-        price: "1199",
-        delivery: "Tomorrow",
-      },
-      {
-        image: [
-          "/Images/chocolates/medley/exquisite-chocolate-medley_1.webp",
-          "/Images/chocolates/medley/exquisite-chocolate-medley_2.webp",
-          "/Images/chocolates/medley/exquisite-chocolate-medley_3.webp",
-          "/Images/chocolates/medley/exquisite-chocolate-medley_4.webp",
-          "/Images/chocolates/medley/exquisite-chocolate-medley_6.webp",
-        
-        ],
-        link: "/exquisite-chocolate-medley",
-        title: "Exquisite Chocolate Medley",
-        price: "999",
-        delivery: "Tomorrow",
-      },
-      {
-        image: [
-          "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_1.webp",
-          "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_2.webp",
-          "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_3.webp",
-          "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_4.webp",
-          "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_5.webp",
-        
-        ],
-        link: "/assorted-cadbury-chocolates-bouquet",
-        title: "Assorted Cadbury Chocolates Bouquet",
-        price: "1025",
-        rate: "4.9",
-        delivery: "Today",
-        review:'26 reviews'
-      },
-      {
-        image: [
-          "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_1.webp",
-          "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_2.webp",
-          "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_3.webp",
-          "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_1.webp",
-          "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_2.webp",
-        
-        ],
-        link: "/swiss-chocolate-toblerone-treats",
-        title: "Swiss Chocolate Toblerone Treats",
-        price: "1099",
-        delivery: "Tomorrow",
-      },
-      {
-        image: [
-          "/Images/chocolates/gift-set/cherished-moments-gift-set_1.webp",
+      image: [
+        "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
+        "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
+        "/Images/birthday/rocher/rocher-choco-bouquet_3.webp",
+        "/Images/birthday/rocher/rocher-choco-bouquet_4.webp",
+        "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
+      ],
+      link: "/rocher-choco-bouquet",
+      title: "Rocher Choco Bouquet",
+      rate: "4.8",
+      price: "1899",
+      delivery: "Today",
+    },
+    {
+      image: [
+        "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_1.webp",
+        "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_2.webp",
+        "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_3.webp",
+        "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_1.webp",
+        "/Images/chocolates/floral-box/delectable-chocolates-in-floral-box-21-pcs_2.webp",
+      ],
+      link: "/delectable-chocolates-in-floral-box-21-pcs",
+      title: "Delectable Chocolates In Floral Box 21 Pcs",
+      rate: "4.6",
+      price: "1199",
+      delivery: "Tomorrow",
+    },
+    {
+      image: [
+        "/Images/chocolates/medley/exquisite-chocolate-medley_1.webp",
+        "/Images/chocolates/medley/exquisite-chocolate-medley_2.webp",
+        "/Images/chocolates/medley/exquisite-chocolate-medley_3.webp",
+        "/Images/chocolates/medley/exquisite-chocolate-medley_4.webp",
+        "/Images/chocolates/medley/exquisite-chocolate-medley_6.webp",
+
+      ],
+      link: "/exquisite-chocolate-medley",
+      title: "Exquisite Chocolate Medley",
+      price: "999",
+      delivery: "Tomorrow",
+    },
+    {
+      image: [
+        "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_1.webp",
+        "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_2.webp",
+        "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_3.webp",
+        "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_4.webp",
+        "/Images/chocolates/cadbury/assorted-cadbury-chocolates-bouquet_5.webp",
+
+      ],
+      link: "/assorted-cadbury-chocolates-bouquet",
+      title: "Assorted Cadbury Chocolates Bouquet",
+      price: "1025",
+      rate: "4.9",
+      delivery: "Today",
+      review: '26 reviews'
+    },
+    {
+      image: [
+        "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_1.webp",
+        "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_2.webp",
+        "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_3.webp",
+        "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_1.webp",
+        "/Images/chocolates/toblerone/swiss-chocolate-toblerone-treats_2.webp",
+
+      ],
+      link: "/swiss-chocolate-toblerone-treats",
+      title: "Swiss Chocolate Toblerone Treats",
+      price: "1099",
+      delivery: "Tomorrow",
+    },
+    {
+      image: [
+        "/Images/chocolates/gift-set/cherished-moments-gift-set_1.webp",
         "/Images/chocolates/gift-set/cherished-moments-gift-set_2.webp",
         "/Images/chocolates/gift-set/cherished-moments-gift-set_3.webp",
         "/Images/chocolates/gift-set/cherished-moments-gift-set_4.webp",
         "/Images/chocolates/gift-set/cherished-moments-gift-set_5.webp",
-        
-        ],
-        link: "/cherished-moments-gift-set",
-        title: "Swiss Chocolate Toblerone Treats",
-        price: "699",
-        delivery: "Tomorrow",
-      },
+
+      ],
+      link: "/cherished-moments-gift-set",
+      title: "Swiss Chocolate Toblerone Treats",
+      price: "699",
+      delivery: "Tomorrow",
+    },
   ]
-  
-  
+
+
   const [hoverEffect, setHoverEffect] = useState(null);
   const [count, setCount] = useState(0);
 
@@ -173,13 +174,13 @@ function page() {
         </div>
         <div className="w-full space-y-6">
           <div className="bg-white p-3 md:p-4 mt-6 lg:mt-0">
-            <div className="md:flex gap-10 pb-4 md:pb-2">
+            <div className="md:flex gap-5 md:items-center md:gap-10  pb-4 md:pb-2">
               <div className="flex gap-5">
                 <h2 className="font-semibold text-lg lg:text-xl">
-                Chocolates
+                  Chocolates
 
                 </h2>
-                <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
+                <div className="font-semibold flex items-center text-white rounded-br-[64px] rounded-tl-[64px] rounded-bl-[64px] bg-green-800 px-1 rounded-sm">
                   <span>4.6</span>
                   <RiStarHalfSFill />
                 </div>
@@ -189,13 +190,13 @@ function page() {
                 <span className="text-gray-600 ">| 30 of 100 Gifts</span>
               </div>
             </div>
-            <div className="hidden md:flex gap-7 ">
-              <h3 className="font-normal text-[17px]">Sort By:</h3>
-              <ul className="flex gap-7 text-gray-600">
-                <li>Recommended</li>
-                <li>New</li>
-                <li>Price:Low to High</li>
-                <li>Price:High to Low</li>
+            <div className="hidden md:flex gap-3 ">
+              <h3 className="font-normal text-gray-600 text-base">Sort By:</h3>
+              <ul className="flex gap-6 text-gray-600">
+                <li className="flex items-center gap-1 "><MdRecommend className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Recommended</span></li>
+                <li className="flex items-center gap-1 "><MdOutlineWatchLater className=""/><span className="border-b border-dashed border-b-gray-400">New</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundUp  className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:Low to High</span></li>
+                <li className="flex items-center gap-1 "><IoMdArrowRoundDown className="text-xl"/><span className="border-b border-dashed border-b-gray-400">Price:High to Low</span></li>
               </ul>
             </div>
           </div>
@@ -230,35 +231,36 @@ function page() {
                       />
                     )}
 
-                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 space-y-2">
-                      <h3 className="text-slate-800 text-sm">{item.title}</h3>
-                      <div className="flex justify-between">
-                        <span className="flex items-center font-semibold text-lg">
-                          <BsCurrencyRupee />
-                          {item.price}
-                        </span>
-                        {item.rate ? (
-                          <div className="font-semibold flex items-center text-white bg-green-800 px-1 rounded-sm">
-                            <span>{item.rate}</span>
-                            <RiStarHalfSFill />
+                    <div className="group-hover:-translate-y-5 translate-y-0 duration-500 bg-white p-2 ">
+                      <div className="space-y-3">
+                        <div>
+                          <h3 className="text-slate-800 text-base">{item.title}</h3>
+                          {item.rate ?
+                            <div className="flex items-center text-xl text-yellow-500">
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              <MdStar />
+                              {item.rate < '5.0' ? <RiStarHalfSFill /> : <MdStar />}
+
+                            </div> : ""}
+                        </div>
+                        <div className="flex items-center justify-between">
+                          {
+                            item.rate && item.review && (
+
+                              <div className="flex items-center gap-3  ">
+                                <span className="bg-[#707428] rounded-br-[64px] text-white rounded-bl-[64px] rounded-tl-[64px] font-semibold px-2 text-base">{item.rate}<span className="text-xs font-normal opacity-60 text-slate-50">/5</span></span>
+                                <span className="font-semibold text-sm text-[#707428]">{item.review}</span>
+                              </div>
+                            )}
+                          <div className="flex items-center text-xl font-semibold">
+                            <BsCurrencyRupee />
+                            <span>{item.price}</span>
                           </div>
-                        ) : (
-                          ""
-                        )}
+                        </div>
                       </div>
-                      <div className="flex items-center justify-between text-xs">
-                        <h6 className="text-gray-500">
-                          Earliest Delivery :
-                          <span className="font-semibold text-gray-700">
-                            {" "}
-                            {item.delivery}
-                          </span>{" "}
-                        </h6>
-                        {
-                          item.review ? <span className="text-gray-500">{item.review}</span> : ""
-                        }
-                        
-                      </div>
+
                     </div>
                   </Link>
                 </div>
