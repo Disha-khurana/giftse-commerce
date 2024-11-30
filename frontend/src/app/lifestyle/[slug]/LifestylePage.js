@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdStar } from "react-icons/md";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsCurrencyRupee } from "react-icons/bs";
 import { FiMinus } from "react-icons/fi";
