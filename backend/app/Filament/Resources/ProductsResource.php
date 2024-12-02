@@ -36,21 +36,21 @@ class ProductsResource extends Resource
                 RichEditor::make('direction')
                     ->columnSpanFull(),
                 Forms\Components\Textarea::make('description'),
-                RichEditor::make('direction')
+                RichEditor::make('description')
                     ->columnSpanFull(),
                 Forms\Components\Textarea::make('information'),
-                RichEditor::make('direction')
+                RichEditor::make('information')
                     ->columnSpanFull(),
                 Forms\Components\Textarea::make('details'),
-                RichEditor::make('direction')
+                RichEditor::make('details')
                     ->columnSpanFull(),
                 Forms\Components\Textarea::make('manufacture_details'),
-                RichEditor::make('direction')
+                RichEditor::make('manufacture_details')
                     ->columnSpanFull(),
-                Forms\Components\ FileUpload::make('images')
+                Forms\Components\FileUpload::make('images')
                 ->label('Product Images')
                 ->multiple()
-                ->required(),,
+                ->required(),
             ]);
     }
 
