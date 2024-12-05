@@ -13,7 +13,7 @@ export const data = {
       rate: "4.5",
       price: "575",
       review: "73 reviews",
-      delivery: "Today",
+      deliveryOption:"Today",
       slug: "decorated-chocolate-truffle-cake-half-kg",
       productDetails: [
         { label: "Cake Flavour", value: "Truffle" },
@@ -38,7 +38,7 @@ export const data = {
         "The cake stand, cutlery, and accessories used in the image are only for representation purposes. They are not delivered with the cake.",
         "This cake is hand delivered in a good quality cardboard box."
       ],
-      delivery: [
+      deliveryDetails: [
         "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
         "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
         "Since cakes are perishable in nature, we attempt delivery of your order only once.",
@@ -75,7 +75,7 @@ export const data = {
       rate: "4.5",
       price: "575",
       review: "73 reviews",
-      delivery: "Today",
+      deliveryOption:"Today",
       slug: "decorated-chocolate-truffle-cake-half-kg",
 
 
@@ -117,7 +117,7 @@ export const data = {
         "The cake stand, cutlery accessories used in the image are only for representation purposes. They are not delivered with the cake.",
         "This cake is hand delivered in a good quality cardboard box."
       ],
-      delivery: [
+      deliveryDetails: [
         "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
         "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
         "Since cakes are perishable in nature, we attempt delivery of your order only once.",
@@ -171,7 +171,7 @@ export const data = {
         "The cake stand, cutlery accessories used in the image are only for representation purposes. They are not delivered with the cake.",
         "This cake is hand delivered in a good quality cardboard box."
       ],
-      delivery: [
+      deliveryDetails: [
         "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
         "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
         "Since cakes are perishable in nature, we attempt delivery of your order only once.",
@@ -209,7 +209,7 @@ export const data = {
       "price": "649",
       "delivery": "Tomorrow",
       "slug": "birthday-bliss-vanilla-dream-cake-half-kg",
-      delivery: ["Celebrate with simplicity and elegance with our vanilla cream cake, adorned with a heartfelt 'Happy Birthday.' Its timeless vanilla flavour and creamy texture make it the perfect gift for any birthday celebration. Treat your loved ones to a taste of pure joy and nostalgia with this classic creation, a meaningful gesture that brings warmth and happiness to any occasion. Ideal for anyone who appreciates the simple pleasures of life."],
+      deliveryDetails: ["Celebrate with simplicity and elegance with our vanilla cream cake, adorned with a heartfelt 'Happy Birthday.' Its timeless vanilla flavour and creamy texture make it the perfect gift for any birthday celebration. Treat your loved ones to a taste of pure joy and nostalgia with this classic creation, a meaningful gesture that brings warmth and happiness to any occasion. Ideal for anyone who appreciates the simple pleasures of life."],
       productDetails: [
         { label: "Flavour", value: "Vanilla" },
         { label: "Weight", value: "Half Kg" },
@@ -262,7 +262,7 @@ export const data = {
       "delivery": "Today",
       "slug": "dates-walnuts-mixed-dry-cake-500gms",
 
-      delivery: ["A healthy and delicious cake made with the goodness of dates and walnuts. Perfect for those who prefer eggless cakes with a rich, dry texture. A wonderful choice for any occasion."],
+      deliveryDetails: ["A healthy and delicious cake made with the goodness of dates and walnuts. Perfect for those who prefer eggless cakes with a rich, dry texture. A wonderful choice for any occasion."],
       productDetails: [
         { label: "Cake Flavour", value: "Dates Walnuts" },
         { label: "Type of Cake", value: "Eggless Dry Cake" },
@@ -322,7 +322,7 @@ export const data = {
       "review": "227 reviews",
       "delivery": "Today",
       "slug": "butterscotch-cake-with-rasmalai-1kg",
-      delivery: ["A fusion of Butterscotch and Rasmalai, this cake brings a delightful combination of flavors for your celebrations. Perfect for large gatherings, this creamy cake serves 10-12 people."],
+      deliveryDetails: ["A fusion of Butterscotch and Rasmalai, this cake brings a delightful combination of flavors for your celebrations. Perfect for large gatherings, this creamy cake serves 10-12 people."],
       productDetails: [
         { label: "Cake Flavour", value: "Butterscotch with Rasmalai" },
         { label: "Type of Cake", value: "Cream" },
@@ -374,7 +374,7 @@ export const data = {
       "review": "161 reviews",
       "delivery": "Today",
       "slug": "red-velvet-bento-cake",
-      delivery: ["Elevate your gifting experience with our red velvet bento cream cake. A symphony of flavours where layers of cocoa intertwine with creamy perfection. Crafted for 2-3 people to relish, it's a heartfelt gift. Share the joy of taste that brings a moment of indulgence to any occasion."],
+      deliveryDetails: ["Elevate your gifting experience with our red velvet bento cream cake. A symphony of flavours where layers of cocoa intertwine with creamy perfection. Crafted for 2-3 people to relish, it's a heartfelt gift. Share the joy of taste that brings a moment of indulgence to any occasion."],
       productDetails: [
         { label: "Flavour", value: "Red Velvet" },
         { label: "Type of Cake", value: "Cream Cake" },
@@ -428,7 +428,7 @@ export const data = {
       "price": "649",
       "delivery": "Today",
       "slug": "velvety-chocolate-truffle-cake-500-gm",
-      delivery: ["Elevate the art of gifting with our divine chocolate truffle cake, a luxurious blend of velvety chocolate ganache and moist cake layers. Perfect for those who appreciate the finer things in life, this indulgent treat is a symphony of rich flavours and decadent textures. Its exquisite taste and elegant presentation make it an unforgettable gift for anyone seeking pure delight and culinary perfection."],
+      deliveryDetails: ["Elevate the art of gifting with our divine chocolate truffle cake, a luxurious blend of velvety chocolate ganache and moist cake layers. Perfect for those who appreciate the finer things in life, this indulgent treat is a symphony of rich flavours and decadent textures. Its exquisite taste and elegant presentation make it an unforgettable gift for anyone seeking pure delight and culinary perfection."],
       productDetails: [
         { label: "Flavour", value: "Chocolate Truffle" },
         { label: "Weight", value: "Half Kg" },
@@ -478,7 +478,7 @@ export const data = {
       title: "Rocher Choco Bouquet",
       rate: "4.8",
       price: "1899",
-      delivery: ["We all deserve to include some sweetness in our lives. Why not make room for some delicacies with this special Ferrero Rocher bunch entwined in the form of an elegant bouquet? When given as a gift, it will represent luck and the promise of adventure."],
+      deliveryDetails: ["We all deserve to include some sweetness in our lives. Why not make room for some delicacies with this special Ferrero Rocher bunch entwined in the form of an elegant bouquet? When given as a gift, it will represent luck and the promise of adventure."],
       productDetails: [
         { label: "Bouquet of Ferrero Rocher Chocolates", value: "16 pcs." },
         { label: "Red Color Non Woven Paper", value: "Yes" },
@@ -554,7 +554,7 @@ export const data = {
       price: "575",
       review: "273 reviews",
       'delivery': "Today",
-      delivery: ["A delicious and indulgent Truffle cake that is perfect for celebrations. Adorned with chocolate glaze and cherries, this creamy, decadent cake will leave everyone asking for more."],
+      deliveryDetails: ["A delicious and indulgent Truffle cake that is perfect for celebrations. Adorned with chocolate glaze and cherries, this creamy, decadent cake will leave everyone asking for more."],
       productDetails: [
         { label: "Cake Flavour", value: "Truffle" },
         { label: "Shape", value: "Round" },
@@ -613,8 +613,8 @@ export const data = {
       rate: "4.9",
       price: "725",
       review: "28 reviews",
-      delivery: "Today",
-      delivery: ["A heart-shaped chocolate cake perfect for your loved ones. Made with the finest ingredients, this cake combines the richness of chocolate and the creamy texture of a smooth cream base, ideal for a romantic gesture or special celebration."],
+      deliveryOption:"Today",
+      deliveryDetails: ["A heart-shaped chocolate cake perfect for your loved ones. Made with the finest ingredients, this cake combines the richness of chocolate and the creamy texture of a smooth cream base, ideal for a romantic gesture or special celebration."],
       productDetails: [
         { label: "Flavour", value: "Chocolate" },
         { label: "Type of Cake", value: "Cream" },
@@ -663,8 +663,8 @@ export const data = {
       rate: "4.8",
       price: "949",
       review: "92 reviews",
-      delivery: "Today",
-      delivery: [
+      deliveryOption:"Today",
+      deliveryDetails: [
         "15 Baby Pink Carnations",
         "White Gypsophila Gypsy Fillers",
         "FNP Off White N Light Pink Non Woven Packing",
@@ -818,8 +818,8 @@ export const data = {
       price: "749",
       slug: 'exotic-flowers-bouquet',
       review: "34 reviews",
-      delivery: "Today",
-      delivery: [
+      deliveryOption:"Today",
+      deliveryDetails: [
         "4 Pink Gerberas",
         "3 Red Roses",
         "3 White Carnations",
@@ -848,8 +848,8 @@ export const data = {
       price: "2899",
       slug: 'majestic-50-red-roses-bouquet',
       review: "20 reviews",
-      delivery: "Today",
-      delivery: [
+      deliveryOption:"Today",
+      deliveryDetails: [
         '50 Red Roses',
         'Green Morpankhi Leaf Filler',
         'Wrapped in Non-Woven White Paper',
@@ -877,8 +877,8 @@ export const data = {
       title: "Beautifully Tied 12 Red Roses Bouquet",
       rate: "5",
       price: "3799",
-      delivery: 'Today',
-      delivery: [
+      deliveryOption:'Today',
+      deliveryDetails: [
         '12 Red Roses Bouquet',
         'Beautifully Tied'
       ],
@@ -899,8 +899,8 @@ export const data = {
       slug: "jewellery-organiser",
       title: "Jewellery Organiser",
       price: "1999",
-      delivery: 'Today',
-      delivery: [
+      deliveryOption:'Today',
+      deliveryDetails: [
         "Jewellery organiser:1",
       ],
       "details": [
@@ -922,8 +922,8 @@ export const data = {
       title: "Personalised Blue Notebook & Pen Combo",
       rate: "4.8",
       price: "599",
-      delivery: 'Tomorrow',
-      delivery: [
+      deliveryOption:'Tomorrow',
+      deliveryDetails: [
         "Personalised Notebook Pen Combo",
         "Notebook Pen Colour: Blue",
         "High quality notebook in A5 size",
@@ -953,8 +953,8 @@ export const data = {
       title: "Personalised Temperature Hydration Bottle",
       rate: "4.6",
       price: "599",
-      delivery: 'Tomorrow',
-      delivery: [
+      deliveryOption:'Tomorrow',
+      deliveryDetails: [
         "Personalised water bottle with LED temperature display: 1",
         "Colour: Black",
         "Material: Stainless steel",
@@ -984,8 +984,8 @@ export const data = {
       slug: "lush-lavender-bouquet-regular",
       title: "Lush Lavender Bouquet_Regular",
       price: "5799",
-      delivery: 'Today',
-      delivery: [
+      deliveryOption:'Today',
+      deliveryDetails: [
         "Crème Roses",
         "Purple Stock",
         "Purple Button Chrysanthemums",
@@ -1014,8 +1014,8 @@ export const data = {
       price: "2949",
       rate: '5.0',
       review: '2 reviews',
-      delivery: 'Today',
-      delivery: [
+      deliveryOption:'Today',
+      deliveryDetails: [
         "1 Tie, Cufflinks Set",
         "1 Zara Perfume 30 ml",
         "1 Sepoy Co. Ginger Ale",
@@ -1034,38 +1034,38 @@ export const data = {
     },
     {
       image: [
-          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_1.webp',
-          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_2.webp',
-          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_3.webp',
-          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_4.webp',
-          '/Images/personalized/lamp/personalised-birthday-special-led-speaker_5.webp',
+        '/Images/personalized/lamp/personalised-birthday-special-led-speaker_1.webp',
+        '/Images/personalized/lamp/personalised-birthday-special-led-speaker_2.webp',
+        '/Images/personalized/lamp/personalised-birthday-special-led-speaker_3.webp',
+        '/Images/personalized/lamp/personalised-birthday-special-led-speaker_4.webp',
+        '/Images/personalized/lamp/personalised-birthday-special-led-speaker_5.webp',
       ],
       link: "/personalised-birthday-special-led-speaker",
-      slug:'personalised-birthday-special-led-speaker',
+      slug: 'personalised-birthday-special-led-speaker',
       title: "Personalised Birthday Special LED Lamp Speaker",
       price: "849",
-      delivery: "Tomorrow",
-      delivery: [
-          "One Personalised Happy Birthday Bluetooth Multi Colour LED Speaker",
-          "Touch Lamp Portable Speaker",
-          "Warm-White LED Table Lamp",
-          "Built-in Smart Touchable Induction",
-          "Portable Bluetooth 3W Speaker",
-          "High Quality Wireless Stereo Speaker",
-          "Supports Micro SD/TF Card, 3.5mm AUX Input For Outdoor/Indoor Usage",
-          "Support Hands-Free Calling",
-          "Built-in 800mAh battery provides about 10 hours working time",
-          "It can be a wireless speaker, a table lamp or a music player",
-          "Net Quantity: 1 Unit",
-          "Dimensions: 3Watt 4.7x4 inches",
-          "For personalisation, please provide us with 3 images"
+      deliveryOption:"Tomorrow",
+      deliveryDetails: [
+        "One Personalised Happy Birthday Bluetooth Multi Colour LED Speaker",
+        "Touch Lamp Portable Speaker",
+        "Warm-White LED Table Lamp",
+        "Built-in Smart Touchable Induction",
+        "Portable Bluetooth 3W Speaker",
+        "High Quality Wireless Stereo Speaker",
+        "Supports Micro SD/TF Card, 3.5mm AUX Input For Outdoor/Indoor Usage",
+        "Support Hands-Free Calling",
+        "Built-in 800mAh battery provides about 10 hours working time",
+        "It can be a wireless speaker, a table lamp or a music player",
+        "Net Quantity: 1 Unit",
+        "Dimensions: 3Watt 4.7x4 inches",
+        "For personalisation, please provide us with 3 images"
 
       ],
       "details": [
         "Ferns N Petals Pvt Ltd",
         "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
       ]
-  },
+    },
     {
       image: [
         '/Images/personalized/neon/krishna-devotion-led-radiance_1.webp',
@@ -1078,8 +1078,8 @@ export const data = {
       slug: "krishna-devotion-led-radiance",
       title: "Krishna Devotion LED Radiance",
       price: "2999",
-      delivery: 'Today',
-      delivery: [
+      deliveryOption:'Today',
+      deliveryDetails: [
         "Neon light",
         "Material: Acrylic and LED",
         "Dimension: 12X24"
@@ -1104,7 +1104,7 @@ export const data = {
       rate: "4.7",
       slug: 'personalised-mens-classy-essentials-gift-box',
       price: "1499",
-      delivery: [
+      deliveryDetails: [
         "Personalised passport cover",
         "Closed passport cover size: 14 x 10 cms",
         "Open passport cover size: 14 x 20 cms",
@@ -1136,8 +1136,8 @@ export const data = {
       title: "Personalised Couple Caricature Table Top",
       rate: '5.0',
       price: "399",
-      delivery: 'Today',
-      delivery: [
+      deliveryOption:'Today',
+      deliveryDetails: [
         "One Personalised Couple on Bike Caricature Table Top",
         "Material: MDF Wood",
         "Dimensions: 4 x 7.2 inches",
@@ -1166,8 +1166,8 @@ export const data = {
       title: "Personalised Love Affair LED Cushion",
       rate: '5.0',
       price: "549",
-      delivery: 'Today',
-      delivery: [
+      deliveryOption:'Today',
+      deliveryDetails: [
         "Personalised LED Cushion with Yellow Light",
         "Material: Canvas Poly Duck",
         "Recron Filled Cushion",
@@ -1195,8 +1195,8 @@ export const data = {
       title: "Indigo Hued Flower Tabletop",
       price: "699",
       slug: "indigo-hued-flower-tabletop",
-      delivery: "Today",
-      delivery: [
+      deliveryOption:"Today",
+      deliveryDetails: [
         "Flower table top",
         "1 Unit",
         "10x5x5 cm",
@@ -1226,7 +1226,7 @@ export const data = {
       rate: "4.5",
       price: "2449",
       review: "80 reviews",
-      delivery: "Today",
+      deliveryOption:"Today",
       "delivery": [
         "37 Red Roses",
         "Green Color Delhi Asparagus Fillers",
@@ -1418,7 +1418,7 @@ export const data = {
       rate: "4.3",
       price: "549",
       slug: "heavenly-6-white-roses-bunch",
-      delivery: "Today",
+      deliveryOption:"Today",
       "delivery": [
         "6 White Roses",
         "White Packing Paper",
@@ -1474,7 +1474,7 @@ export const data = {
       rate: "4.9",
       price: "899",
       slug: "happy-times-carnations-bouquet",
-      delivery: "Today",
+      deliveryOption:"Today",
       "delivery": [
         "6 Baby Pink Carnations",
         "6 Yellow Carnations",
@@ -1532,7 +1532,7 @@ export const data = {
       title: "Blushing Rose Love Elegance",
       price: "1749",
       slug: "blushing-rose-love-elegance",
-      delivery: "Today",
+      deliveryOption:"Today",
       "delivery": [
         "Premium, unscented peach rose: 10",
         "Premium, unscented aqua pink rose: 10",
@@ -1617,7 +1617,7 @@ export const data = {
         "This cake is hand delivered in a good quality cardboard box."
       ],
 
-      delivery: [
+      deliveryDetails: [
         "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
         "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
         "Since cakes are perishable in nature, we attempt delivery of your order only once.",
@@ -1658,7 +1658,7 @@ export const data = {
       "review": "1 reviews",
       "delivery": "Tomorrow",
       "slug": "personalised-champange-couple-gift-box",
-      delivery: [
+      deliveryDetails: [
         "Personalised champagne glass: Set of 2",
         "Personalised photo frame",
         "Red cardboard box: 10 x 10 inches"
@@ -1763,7 +1763,7 @@ export const data = {
       rate: "4.8",
       price: "899",
       review: "12 reviews",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       "delivery": [
         "Plant Name: Jade Plant",
         "Plant Height: 6 Inches",
@@ -1816,7 +1816,7 @@ export const data = {
       slug: "syngonium-plant-in-grey-ceramic-pot",
       title: "Syngonium Plant In Grey Ceramic Pot",
       price: "399",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       "delivery": [
         "Plant Name: Syngonium Plant",
         "Plant Type: Air Purifying Foliage",
@@ -1870,7 +1870,7 @@ export const data = {
       rate: "5",
       price: "399",
       review: "2 reviews",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       "delivery": [
         "Plant Name: Syngonium Plant",
         "Plant Type: Air Purifying Foliage",
@@ -1923,7 +1923,7 @@ export const data = {
       rate: "5",
       price: "1499",
       slug: "sweet-memories-pink-roses-bouquet-chocolate-cake",
-      delivery: "Today",
+      deliveryOption:"Today",
       review: "767 reviews",
       "delivery": [
         "12 Aqua Pink Roses",
@@ -1982,7 +1982,7 @@ export const data = {
       rate: "4.9",
       price: "1799",
       slug: "magical-dust-carnations-n-truffle-cake-combo",
-      delivery: "Today",
+      deliveryOption:"Today",
       review: "302 reviews",
       "delivery": [
         "Baby pink carnations: 15",
@@ -2131,7 +2131,7 @@ export const data = {
       rate: "4.9",
       price: "1449",
       slug: "elegant-vibe-red-roses-bouquet-pineapple-cake",
-      delivery: "Today",
+      deliveryOption:"Today",
       review: "86 reviews"
     },
     {
@@ -2146,7 +2146,7 @@ export const data = {
       title: "Dry Fruits Feast",
       price: "2099",
       slug: "dry-fruits-feast",
-      delivery: "Today"
+      deliveryOption:"Today"
     },
     {
       image: [
@@ -2160,7 +2160,7 @@ export const data = {
       title: "Rustic Dry Flower Arrangement",
       price: "549",
       slug: "rustic-dry-flower-arrangement",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       'delivery': [
         'Pampaas grass',
         'Palm stick',
@@ -2192,9 +2192,9 @@ export const data = {
       price: "1199",
       rate: '5.0',
       slug: "personalised-blushing-beauty-love-combo",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       review: '1 reviews',
-      delivery: [
+      deliveryDetails: [
         'Antique pink preserved rose',
         'FNP black colour forever kappa board box: 11 x 11 x 9.5 inches',
         'Personalised box cover cum frame',
@@ -2229,9 +2229,9 @@ export const data = {
       price: "1425",
       rate: '5.0',
       slug: "vibrant-purple-orchid-bunch",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       review: '91 reviews',
-      delivery: [
+      deliveryDetails: [
         "Green Color Dracaena Leaf Filler",
         "Transparent Pipni Glass Vase 9 In",
         "Net Quantity: 1 Bouquet",
@@ -2258,7 +2258,7 @@ export const data = {
       rate: "5",
       price: "1540",
       slug: "brighten-up-the-day-roses-bouquet-pineapple-cake",
-      delivery: "Today",
+      deliveryOption:"Today",
       review: "76 reviews",
       "delivery": [
         "10 Yellow Roses",
@@ -2334,7 +2334,7 @@ export const data = {
       rate: "4.8",
       price: "1149",
       slug: "10-pink-roses-with-pineapple-cake-standard",
-      delivery: "Today",
+      deliveryOption:"Today",
       review: "13 reviews",
       "delivery": [
         "10 Pink Roses",
@@ -2407,7 +2407,7 @@ export const data = {
       rate: "5",
       price: "1249",
       slug: "jasmine-whispers-n-chocolate-dreams",
-      delivery: "Today",
+      deliveryOption:"Today",
       review: "133 reviews"
     },
     {
@@ -2423,7 +2423,7 @@ export const data = {
       price: "649",
       review: "202 reviews",
       slug: "fudge-brownie-cake-half",
-      delivery: "Today",
+      deliveryOption:"Today",
       productDetails: [
         { label: "Cake Flavour", value: "Truffle" },
         { label: "Shape", value: "Round" },
@@ -2446,7 +2446,7 @@ export const data = {
         "The cake stand, cutlery accessories used in the image are only for representation purposes. They are not delivered with the cake.",
         "This cake is hand delivered in a good quality cardboard box."
       ],
-      delivery: [
+      deliveryDetails: [
         "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape.",
         "The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
         "Since cakes are perishable in nature, we attempt delivery of your order only once.",
@@ -2482,7 +2482,7 @@ export const data = {
       link: "/personalized-special-couple-mug",
       title: "Personalized Special Couple Mug",
       price: "249",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       rate: "4.2",
       review: "473 reviews",
       slug: "personalized-special-couple-mug"
@@ -2498,7 +2498,7 @@ export const data = {
       link: "/forever-annoying-love-mug",
       title: "Forever Annoying Love Mug",
       price: "249",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       slug: "forever-annoying-love-mug"
     },
     {
@@ -2512,7 +2512,7 @@ export const data = {
       link: "/personalised-red-rose-mug-set",
       title: "Personalised Red Rose Mug Set",
       price: "599",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       slug: "personalised-red-rose-mug-set"
     },
     {
@@ -2526,7 +2526,7 @@ export const data = {
       link: "/3d-ceramic-black-matte-marble-coffee-mug",
       title: "3D Ceramic Black Matte Marble Coffee Mug",
       price: "599",
-      delivery: "Tomorrow",
+      deliveryOption:"Tomorrow",
       slug: "3d-ceramic-black-matte-marble-coffee-mug"
     },
     {
