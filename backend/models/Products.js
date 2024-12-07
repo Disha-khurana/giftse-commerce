@@ -3,46 +3,83 @@ const mongoose = require('mongoose');
 const productSchema = new mongoose.Schema({
   image: {
     type: [String],
-    required: false 
+    required: false
   },
+  
   link: {
     type: String,
-    required: true 
+    required: true
   },
+  
   slug: {
     type: String,
-    required: true 
+    required: true
   },
+  
   title: {
     type: String,
-    required: true 
+    required: true
   },
+
+  category: {
+    type: String,
+    required: true,
+    default : 'Anniversary'
+  },
+  
+  
   price: {
     type: Number,
     required: true
-},
-rate: {
+  },
+  
+  rate: {
     type: Number,
     required: false
-},
-review: {
+  },
+  
+  review: {
     type: String,
     required: false
-},
+  },
+  
   deliveryOption: {
     type: String,
     enum: ['Today', 'Tomorrow', 'Date'],
     required: false
   },
+  
   deliveryDetails: [String], 
+  
   personalisation: [String],
+  
   notes: [String],
-  storage: [String],
-  flowers_trivia: [String],
-  details: [String]
+  
+  ingredients: [String],
+  
+  // productDetails: [
+  //   {
+  //     label: {
+  //       type: String,
+  //       enum: [
+  //         "Cake_Flavour",
+  //         "Shape",
+  //         "Weight",
+  //         "Net_Quantity",
+  //         "Diameter",
+  //         "Country_of_Origin",
+  //         "Serves"
+  //       ],
+  //       required: true
+  //     },
+  //     value: {
+  //       type: String,
+  //       required: true
+  //     }
+  //   }
+  // ]
 });
 
 const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;
-

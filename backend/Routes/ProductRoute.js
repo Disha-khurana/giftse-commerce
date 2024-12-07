@@ -1,8 +1,9 @@
-// routes/productRoutes.js
 const express = require('express');
 const router = express.Router();
-const { addProduct } = require('../controller/productcontroller'); 
-// Route to add a new product
-router.post('/', addProduct);
+const { addProduct, getProducts, getProduct } = require('../controller/productcontroller'); 
+
+router.post('/products', addProduct);
+router.get('/products',getProducts);
+router.get('/product/:slug',getProduct);
 
 module.exports = router;

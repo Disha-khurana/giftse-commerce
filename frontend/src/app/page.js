@@ -22,10 +22,10 @@ export default function Home() {
     <Slider/>
     <Categories/>
     <div className="space-y-7 lg:space-y-10">
-    <Calender/>
-    <Slide/>
-    </div>
+    {/* <Calender/> */}
     <Filter/>
+    </div>
+    <Slide/>
     {/* <Story/> */}
     <Collection/>
     <Flowers/>

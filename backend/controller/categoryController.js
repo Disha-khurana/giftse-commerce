@@ -1,31 +1,57 @@
-// controllers/categoryController.js
-const Category = require('../models/Categories'); // Adjust the path as needed
+const Category = require('../models/Categories');
 
-// Controller function to add a category
 const addCategory = async (req, res) => {
   try {
     const categoryData = req.body;
 
-    // Validate required fields
     if (!categoryData.name) {
       return res.status(400).json({ message: 'Category name is required' });
     }
 
-    // Create and save the new category
+    const existingProduct = await Category.findOne({ name: categoryData.name });
+
+    if (existingProduct) {
+      console.log('Category already exists');
+      return res.status(400).send('Category already exists');
+    }
+
     const newCategory = new Category(categoryData);
     const savedCategory = await newCategory.save();
 
-    console.log('Category saved:', savedCategory);
+    console.log('Category saved');
     res.status(201).json({
       message: 'Category saved successfully',
       category: savedCategory,
     });
   } catch (error) {
     console.error('Error while saving category:', error);
-    res.status(500).json({ message: 'Error saving category' });
+    return res.status(500).json({ message: 'Error saving category' });
   }
 };
 
-module.exports = { addCategory };
+const getCategories = async (req, res) => {
+  try {
+    const category = await Category.find({})
+    res.json(category)
+  } catch (err) {
+    return res.status(500).json({ message: "Internal server error" })
+  }
+}
+
+const getCategory = async (req, res) => {
+  try {
+    const category = await Category.findOne({ slug: req.params.slug })
+    if (!category) {
+      return res.status(400).json({ message: 'Category not found' })
+    }
+    res.json(category)
+  } catch (err) {
+    return res.status(500).json({ message: "Internal server error" })
+  }
+}
+
+
+
+module.exports = { addCategory, getCategory, getCategories };
 
 

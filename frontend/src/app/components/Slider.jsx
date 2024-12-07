@@ -11,9 +11,9 @@ import "swiper/css/navigation";
 function Slider() {
   const images = [
     "/Images/slider/img1.webp",
-    "/Images/slider/img2.webp",
+    // "/Images/slider/img2.webp",
     "/Images/slider/img3.webp",
-    "/Images/slider/img4.webp",
+    // "/Images/slider/img4.webp",
     "/Images/slider/img5.webp",
     "/Images/slider/img6.webp",
     "/Images/slider/img7.webp",

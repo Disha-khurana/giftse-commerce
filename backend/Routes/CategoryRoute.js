@@ -1,10 +1,11 @@
-// routes/categoryRoutes.js
 const express = require('express');
 
 const router = express.Router();
-const { addCategory } = require('../controller/categoryController'); // Adjust the path as needed
+const { addCategory, getCategories, getCategory } = require('../controller/categoryController'); 
 
-// Route to add a new category
-router.post('/', addCategory);
+router.get('/category',getCategories);
+router.get('/category/:slug',getCategory);
+router.post('/category', addCategory);
+
 
 module.exports = router;

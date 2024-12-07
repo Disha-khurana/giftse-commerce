@@ -1732,20 +1732,7 @@ export const data = {
         "Address: FNP Estates, Ashram Marg, Sultanpur Mandi Road, Gadaipur, Chhatarpur Farms, DLF Farms, New Delhi, Delhi 110030"
       ]
     },
-    {
-      "image": [
-        "/Images/birthday/rocher/rocher-choco-bouquet_1.webp",
-        "/Images/birthday/rocher/rocher-choco-bouquet_2.webp",
-        "/Images/birthday/rocher/rocher-choco-bouquet_3.webp",
-        "/Images/birthday/rocher/rocher-choco-bouquet_4.webp",
-        "/Images/birthday/rocher/rocher-choco-bouquet_1.webp"
-      ],
-      "link": "/rocher-choco-bouquet",
-      "title": "Rocher Choco Bouquet",
-      "rate": "4.8",
-      "price": "1899",
-      "slug": "rocher-choco-bouquet"
-    },
+   
 
 
     {
@@ -2044,6 +2031,7 @@ export const data = {
         "FSSAI License No. 10019011006502"
       ]
     },
+    
     {
       "image": [
         "/Images/birthday/timeless-love-cake/timeless-love-red-roses-bouquet-chocolate-cake_1.webp",
@@ -2481,6 +2469,7 @@ export const data = {
       ],
       link: "/personalized-special-couple-mug",
       title: "Personalized Special Couple Mug",
+      
       price: "249",
       deliveryOption:"Tomorrow",
       rate: "4.2",
