@@ -1,4 +1,4 @@
-const Slide = require('../models/Slide1')
+const Slide = require('../models/Slide')
 
 const addImage = async(req,res)=>{
     try {
@@ -10,6 +10,7 @@ const addImage = async(req,res)=>{
         }
         const newSlide = new Slide(data);
         await newSlide.save();
+        console.log(newSlide)
         console.log('Image saved');
         res.status(201).send('Image saved successfully');
       } catch (error) {
@@ -18,4 +19,14 @@ const addImage = async(req,res)=>{
       } 
 }
 
-module.exports = {addImage}
+const getImage = async(req,res)=>{
+  try{
+    const image = await Slide.find({})
+    res.json(image)
+  }catch(error){
+    console.error(error);  
+    res.status(500).json({ message: 'Internal server error' }); 
+  }
+}
+
+module.exports = {addImage , getImage};

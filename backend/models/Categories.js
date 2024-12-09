@@ -5,6 +5,7 @@ const categorySchema = new mongoose.Schema(
   {
     name: { type: String, required: true, unique: true },
     description: { type: String },
+    image:{type:String , required:false , unique : true},
     link: { type: String, unique: true, required: true },
     slug: { type: String, unique: true, required: true },
     is_active: { type: Boolean, default: true },
@@ -14,12 +15,5 @@ const categorySchema = new mongoose.Schema(
   }
 );
 
-// Middleware to generate a slug from the name
-// categorySchema.pre('save', function (next) {
-//   if (!this.link) {
-//     this.link = slugify(this.name, { lower: true, strict: true });
-//   }
-//   next();
-// });
 
 module.exports = mongoose.model('Category', categorySchema);

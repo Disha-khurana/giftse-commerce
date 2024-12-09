@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { addImage } = require('../controller/slideController'); 
+const { addImage, getImage } = require('../controller/slideController'); 
 
-router.post('/slide', addImage);
-// router.get('/slide',getSlide);
+router.post('/', addImage);
+router.get('/',getImage);
 
 module.exports = router;

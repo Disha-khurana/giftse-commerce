@@ -3,17 +3,17 @@ const mongoose = require('mongoose')
 const slideSchema = new mongoose.Schema({
     image: {
         type: String,
-        required: false
+        required:true
       },
       
       link: {
         type: String,
-        required: true
+        required:true
       },
       
       slug: {
         type: String,
-        required: true
+        required:true
       }, 
 })
 

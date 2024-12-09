@@ -13,8 +13,8 @@ import { MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md';
 function Filter() {
  
   const images = [
-    "/Images/offer/offer1.webp",
-    "/Images/offer/offer2.webp",
+    "/Images/offer/luxeoffer.webp",
+    "/Images/offer/plantsoffer.webp",
   ];
 
   const items1 = [
