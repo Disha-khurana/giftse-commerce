@@ -1,6 +1,12 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React,{
+  useState,useEffect,
+  use
+} from "react";
+import { ApiBaseurl } from "./common/Apiurl";
 
 function Collection() {
   const items = [
@@ -36,6 +42,23 @@ function Collection() {
     }
   ];
   
+
+  useEffect(()=>{
+
+   const fetechData = async () =>{
+
+    console.log('hjyffyfjjffjf',ApiBaseurl)
+
+    const data = await fetch(`${ApiBaseurl}/category`)
+
+    const jsdata = await data.json()
+
+    console.log('hjyffyfjjffjf',jsdata)
+   }
+
+   fetechData()
+
+  },[])
 
   return (
     <div className="px-5 md:px-12">
