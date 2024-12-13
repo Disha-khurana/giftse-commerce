@@ -5,17 +5,21 @@ import {  Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import React, { useState } from 'react'
+import { ApiBaseurl } from "./common/Apiurl";
+import React, { useEffect, useState } from 'react'
 import { IoLocationSharp } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md';
+import Link from 'next/link';
 
 
 function Filter() {
- 
-  const images = [
-    "/Images/offer/luxeoffer.webp",
-    "/Images/offer/plantsoffer.webp",
-  ];
+ const[images,setImages] = useState([]);
+ const[loading,setLoading] = useState(true);
+ const [selectedOccasion, setSelectedOccasion] = useState('Select an occasion');
+const [selectedGift, setSelectedGift] = useState('Select an gift');
+const [openOffer, setOpenOffer] = useState(false);
+  const[openGifts , setOpenGifts] = useState(false);
+
 
   const items1 = [
     { name: 'Diwali' },
@@ -41,10 +45,25 @@ const items2 = [
   { name: "Gift Hampers" }
 ];
 
-const [selectedOccasion, setSelectedOccasion] = useState('Select an occasion');
-const [selectedGift, setSelectedGift] = useState('Select an gift');
-const [openOffer, setOpenOffer] = useState(false);
-  const[openGifts , setOpenGifts] = useState(false);
+useEffect(()=>{
+  const fetchImage = async()=>{
+    try{
+      const response = await fetch(`${ApiBaseurl}/images`)
+      const ImageData = await response.json();
+      setImages(ImageData);
+    }catch(error){
+      console.error('Error fetching images',error)
+    }finally{
+      setLoading(false)
+    }
+  }
+  fetchImage()
+},[ApiBaseurl])
+
+if(loading){
+  return<div>Loading...</div>
+}
+
 
 
 
@@ -156,17 +175,23 @@ const [openOffer, setOpenOffer] = useState(false);
         loop={true}
         className="w-full h-auto "
       >
-        {images.map((image, index) => (
+        {images.length === 0 ? (
+            <div>No images available.</div>
+          ) : (
+            images.map((item, index) => (
           <SwiperSlide key={index} className=" justify-center bg-image flex ">
+            <Link href={item.link}>
             <Image
-              src={image}
+              src={item.image}
               alt={`Slide ${index}`}
               className="w-full h-full hidden md:block"
               width={1000}
               height={5000}
             />
+            </Link>
           </SwiperSlide>
-        ))}
+        ))
+      )}
       </Swiper>
     </div>
 

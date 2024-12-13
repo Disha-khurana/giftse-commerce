@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,29 +7,33 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { ApiBaseurl } from "./common/Apiurl";
+import Link from "next/link";
 
 function Slider() {
-  const images = [
-    "/Images/slider/img1.webp",
-    // "/Images/slider/img2.webp",
-    "/Images/slider/img3.webp",
-    // "/Images/slider/img4.webp",
-    "/Images/slider/img5.webp",
-    "/Images/slider/img6.webp",
-    "/Images/slider/img7.webp",
-  ];
+const[slider,setSlider] = useState([]);
+const[loading,setLoading] = useState(true);
 
-  const slide=[
-    "/Images/slider/LUXE_Mob.webp",
-    "/Images/slider/Wedding_Mob.webp",
-    "/Images/slider/Childrens_Day.webp",
-    "/Images/slider/Birthday_banner.webp",
-    "/Images/slider/Anniversary_Mob.webp"
-  ]
+
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+    const fetchSlider = async()=>{
+      try{
+        const response = await fetch(`${ApiBaseurl}/slide`)
+        const slideData = await response.json();
+        setSlider(slideData)
+      }catch(error){
+        console.error('Error fetching slider',error);
+      }finally{
+        setLoading(false);
+      }
+    }
+    fetchSlider();
+  }, [ApiBaseurl]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <section>
@@ -41,18 +45,23 @@ function Slider() {
         loop={true}
         className="relative w-full container mx-auto "
       >
-        {images.map((image, index) => (
+         {slider.length === 0 ? (
+            <div>No images available.</div>
+          ) : (
+            slider.slice(0,5).map((item, index) => (
           <SwiperSlide key={`desktop-${index}`} className=" justify-center flex bg-image">
+            <Link href={item.link}>
             <img
-              src={image}
+              src={item.image}
               alt={`Slide ${index}`}
               className="object-cover w-full h-auto  hidden lg:block"
               width={1000}
               height={5000}
             />
+            </Link>
           </SwiperSlide>
-        ))}
-       
+        ))
+      )}
       </Swiper>
      
         <Swiper
@@ -63,17 +72,23 @@ function Slider() {
         loop={true}
         className="relative w-full container mx-auto"
       >
-         {slide.map((image, index) => (
+          {slider.length === 0 ? (
+            <div>No images available.</div>
+          ) : (
+            slider.slice(5,9).map((item, index) => (
           <SwiperSlide key={`mobile-${index}`} className="flex justify-center bg-image">
+            <Link href={item.link}>
             <img
-              src={image}
+              src={item.image}
               alt={`Slide ${index}`}
               className="object-cover w-full h-auto lg:hidden "
               width={1000}
               height={5000}
             />
+            </Link>
           </SwiperSlide>
-        ))}
+        ))
+      )}
        
       </Swiper>
     </section>

@@ -4,6 +4,7 @@ require('../models/Categories')
 require('../models/Slide')
 require('../models/OfferSlide')
 require('../models/Images')
+require('../models/Global')
 
 mongoose.connect('mongodb://localhost:27017/products', {
   useNewUrlParser: true,

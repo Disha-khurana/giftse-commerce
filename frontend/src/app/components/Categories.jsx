@@ -1,44 +1,61 @@
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { ApiBaseurl } from "./common/Apiurl";
 
 function Categories() {
-    const category = [
-        { img: '/Images/category/bday.webp', title: 'Birthday' ,link:'/birthday'},
-        { img: '/Images/category/same-day-delivery.webp', title: '2-Hour Delivery',link:'/delivery' },
-        { img: '/Images/category/luxe.webp', title: 'Luxe',link:'/luxe' },
-        { img: '/Images/category/anniversary.webp', title: 'Anniversary',link:'/anniversary' },
-        { img: '/Images/category/flowers.webp', title: 'Flowers',link:'/flowers' },
-        { img: '/Images/category/international.webp', title: 'International',link:'/global' },
-        { img: '/Images/category/combos.webp', title: 'Combos',link:'/combos' },
-        { img: '/Images/category/zodiac-saggitarius_Squircle-27-11-24.webp', title: 'Zodiac Gifts',link:'/lifestyle/zodiac-gifts' },
-    ];
+   const [categories, setCategories] = useState([]);
+     const [loading, setLoading] = useState(true);
+     useEffect(() => {
+       const fetchData = async () => {
+         try {
+           const response = await fetch(`${ApiBaseurl}/category`);
+           const data = await response.json();
+           setCategories(data);
+         } catch (error) {
+           console.error('Error fetching data:', error);
+         } finally {
+           setLoading(false); 
+         }
+       };
+   
+       fetchData(); 
+     }, [ApiBaseurl]); 
+   
+     if (loading) {
+       return <div>Loading...</div>;
+     }
 
-    return (
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-5 px-5 md:px-12 ">
-            {category.map((item, index) => (
-                <Link key={index} href={item.link}>
-                <div className="flex flex-col items-center relative mb-6 lg:mb-0">
-                    <div className='overflow-hidden rounded-lg'>
+     return (
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-5 px-5 md:px-12">
+          {categories.length === 0 ? (
+            <div>No categories available</div>
+          ) : (
+            categories.slice(0,9).map((item, index) => (
+              <div key={index} className="flex flex-col items-center relative mb-6 lg:mb-0">
+                <Link href={item.link}>
+                  <div className="overflow-hidden rounded-lg">
                     <Image
-                        width={200}
-                        height={200}
-                        src={item.img}
-                        alt={item.title}
-                        className="transition-transform duration-700 hover:scale-110"
+                      width={200}
+                      height={200}
+                      src={item.image}
+                      alt={item.name}
+                      className="transition-transform duration-700 hover:scale-110 h-[150px]"
                     />
-                    </div>
-                    <Link 
-                        href={`/${item.title.toLowerCase().replace(/\s+/g, '-')}`} 
-                        className="bg-white px-3 py-1 md:py-2 font-semibold text-[0.65rem] md:text-xs lg:text-sm rounded-3xl border border-gray-300 absolute -bottom-4 text-center"
-                    >
-                        {item.title}
-                    </Link>
-                </div>
+                  </div>
                 </Link>
-            ))}
+                <Link
+                  href={item.name}
+                  className="bg-white px-3 py-1 md:py-2 font-semibold text-[0.65rem] md:text-xs lg:text-sm rounded-3xl border border-gray-300 absolute -bottom-4 text-center"
+                >
+                  {item.name}
+                </Link>
+              </div>
+            ))
+          )}
         </div>
-    );
-}
-
-export default Categories;
+      );
+    }
+      
+export default Categories

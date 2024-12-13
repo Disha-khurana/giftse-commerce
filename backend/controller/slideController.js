@@ -3,7 +3,7 @@ const Slide = require('../models/Slide')
 const addImage = async(req,res)=>{
     try {
         const data = req.body;
-        const existingImage = await Slide.findOne({ slug: data.slug });
+        const existingImage = await Slide.findOne({ image: data.image });
         if (existingImage) {
           console.log('Image already exists');
           return res.status(400).send('Image already exists');
