@@ -20,7 +20,7 @@ function Together() {
       link:'/birthday/flowers-cakes'
     },
     {
-      src: "/Images/together/Chocolates Combos .webp",
+      src: "/Images/together/Chocolates Combos.webp",
       width: 900,
       height: 900,
 
