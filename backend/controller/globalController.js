@@ -7,7 +7,7 @@ const globalData = async(req,res)=>{
             return res.status(400).send('The input must be a string');
         }
 
-        const existingData = await Global.find({ slug: { $in: data.map(item => item.slug) }});
+        const existingData = await Global.find({ title: { $in: data.map(item => item.title) }});
         if (existingData.length > 0) {
             const duplicates = existingData.map(item => item.slug);
             console.log('duplicates found')
@@ -37,4 +37,40 @@ const getGlobalData = async(req,res)=>{
     }
 }
 
-module.exports = {globalData,getGlobalData}
+const updateGlobalData = async(req,res) =>{
+    try{
+        const updatedData = await Global.findOneAndUpdate(
+            {title:req.params.title},
+            {$set : req.body},
+            {new:true,runValidators: true}
+        );
+        if(!updatedData){
+            return res.status(404).json({message:"Category not found"});
+        }
+
+        res.status(200).json({
+            message:"Data updated successfully"
+        })
+    }catch(err){
+        console.log(err);
+        res.status(500).json({message:"Internal server error"})
+    }
+}
+
+const deleteData = async(req,res) =>{
+    try{
+        const deletedData = await Global.findOneAndDelete({title:req.params.title})
+
+        if(!deletedData){
+            return res.status(404).json({message:"Data not found"})
+        }
+        res.status(200).json({
+        message:"Data deleted successfully"
+    })
+    }catch(err){
+       console.error(err)
+       res.status(500).json({message:"Internal server error"}) 
+    }
+}
+
+module.exports = {globalData,getGlobalData,updateGlobalData,deleteData}

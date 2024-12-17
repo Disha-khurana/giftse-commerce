@@ -50,8 +50,50 @@ const getCategory = async (req, res) => {
   }
 }
 
+const updateCategory = async (req, res) => {
+  try {
+    const updatedCategory = await Category.findOneAndUpdate(
+      { slug: req.params.slug },
+      { $set: req.body }, 
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedCategory) {
+      return res.status(404).json({ message: "Category not found" });
+    }
+
+    res.status(200).json({
+      message: "Category updated successfully",
+      category: updatedCategory,
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
+
+const deleteCategory = async (req, res) => {
+  try {
+    const deletedCategory = await Category.findOneAndDelete({ slug: req.params.slug });
 
 
-module.exports = { addCategory, getCategory, getCategories };
+    if (!deletedCategory) {
+      return res.status(404).json({ message: "Category not found" });
+    }
+
+    res.status(200).json({
+      message: "Category deleted successfully",
+      category: deletedCategory,
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
+
+
+
+
+module.exports = { addCategory, getCategory, getCategories, updateCategory,deleteCategory };
 
 
