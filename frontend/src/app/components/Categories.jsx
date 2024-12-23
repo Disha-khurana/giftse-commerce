@@ -32,7 +32,7 @@ function Categories() {
           {categories.length === 0 ? (
             <div>No categories available</div>
           ) : (
-            categories.slice(0,9).map((item, index) => (
+            categories.slice(4,13).map((item, index) => (
               <div key={index} className="flex flex-col items-center relative mb-6 lg:mb-0">
                 <Link href={item.link}>
                   <div className="overflow-hidden rounded-lg">

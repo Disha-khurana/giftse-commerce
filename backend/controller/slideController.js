@@ -29,4 +29,48 @@ const getImage = async(req,res)=>{
   }
 }
 
-module.exports = {addImage , getImage};
+const updateImage = async(req,res)=>{
+  try{
+    let updatedImg = await Slide.findOneAndUpdate(
+      {slug:req.params.slug},
+      {$set:req.body},
+      {new:true, runValidators:true}
+    );
+    if(!updatedImg){
+      updatedImg = new Slide({slug:req.params.slug, ...req.body})
+      await updatedImg.save();
+
+      return res.status(201).json({
+        message:"New Slider image added.",
+        updatedImg
+      })
+    }
+
+    res.status(200).json({
+      message:"Slider image updated successfully.",
+      updatedImg
+    })
+  }catch(err){
+    console.log(err)
+    res.status(500).json({message:"Internal server error."})
+  }
+}
+
+const deleteImage = async(req,res)=>{
+  try{
+    const deleteSlide = await Slide.findOneAndDelete({slug:req.params.slug})
+
+    if(!deleteSlide){
+      return res.status(200).json({message:'Slider image not found.'})
+    }
+    res.status(200).json({
+      message:"Slider image deleted successfully."
+    })
+
+  }catch(err){
+    console.log(err)
+    res.status(500).json({message:"Internal server error"})
+  }
+}
+
+module.exports = {addImage , getImage , updateImage , deleteImage};

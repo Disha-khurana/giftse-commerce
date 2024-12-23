@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
-const Product = require('../models/Products'); 
+require('../models/Products'); 
 require('../models/Categories')
 require('../models/Slide')
 require('../models/OfferSlide')
 require('../models/Images')
 require('../models/Global')
+require('../models/User');
 
 mongoose.connect('mongodb://localhost:27017/products', {
   useNewUrlParser: true,

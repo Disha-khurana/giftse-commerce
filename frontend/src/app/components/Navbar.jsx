@@ -3,66 +3,87 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { ApiBaseurl } from "./common/Apiurl";
+import { IoIosSearch } from "react-icons/io";
 
 const Navbar = () => {
+  const [categories, setCategories] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [dropdown, setDropdown] = useState(null);
   const menuRef = useRef(null);
   const [menuWidth, setMenuWidth] = useState(0);
+    const [placeholder, setPlaceholder] = useState(""); // Current placeholder text to display
+    const [phase, setPhase] = useState("typing"); // Phase of animation: "typing" or "deleting"
+    const [charIndex, setCharIndex] = useState(0); // Current character index
+    const [placeholderIndex, setPlaceholderIndex] = useState(0);
+    const [isComplete, setIsComplete] = useState(false);  // Current placeholder index
 
-  const items = [
-    
-    {
-      name: "BIRTHDAY",
-      link: "/birthday",
-    },
-    {
-      name: "ANNIVERSARY",
-      link: "/anniversary",
-    },
-    {
-      name: "CAKES",
-      link: "/cakes",
-    },
-    {
-      name: "FLOWERS",
-      link: "/flowers",
-    },
-    {
-      name: "PERSONALISED",
-      link: "/personalised",
-    },
-    {
-      name: "PLANTS",
-      link: "/plants",
-    },
-    {
-      name: "CHOCOLATES",
-      link: "/chocolates",
-    },
-    {
-      name: "COMBOS",
-      link: "/combos",
-    },
-    {
-      name: "LIFESTYLE",
-      link: "/lifestyle",
-    },
-    {
-      name: "OCCASIONS",
-      link: "/",
-    },
-    {
-      name: "GLOBAL",
-      link: "/global",
-    },
-    {
-      name: "ON TREND",
-      link: "/on-trend",
-    },
-  ];
-
+    const placeholders = [
+      "Diwali gifts",
+      "Birthday gifts",
+      "Personalised Photo Frames",
+      "Gifts for men",
+      "Fresh Fruit cakes",
+      "Gifts for kids",
+      "Search flowers,cakes,gifts,etc.",
+    ];
   
+    useEffect(() => {
+      if (isComplete) return; // Stop the animation if all placeholders have been displayed
+  
+      const currentText = placeholders[placeholderIndex];
+  
+      // Typing phase
+      if (phase === "typing" && charIndex <= currentText.length) {
+        const typingTimeout = setTimeout(() => {
+          setPlaceholder((prev) => prev + currentText[charIndex]);
+          setCharIndex((prev) => prev + 1);
+        }, 100);
+  
+        if (charIndex === currentText.length) {
+          // Check if it's the last placeholder and has finished typing
+          if (placeholderIndex === placeholders.length - 1) {
+            setIsComplete(true); // Mark completion if it's the last placeholder
+          } else {
+            setPhase("deleting"); // Otherwise, switch to deleting
+          }
+        }
+  
+        return () => clearTimeout(typingTimeout);
+      }
+  
+      // Deleting phase
+      if (phase === "deleting" && charIndex >= 0) {
+        const deletingTimeout = setTimeout(() => {
+          setPlaceholder((prev) => prev.slice(0, -1));
+          setCharIndex((prev) => prev - 1);
+        }, 100);
+  
+        if (charIndex === 0) {
+          // Cycle to the next placeholder if not at the end
+          setPlaceholderIndex((prev) => prev + 1);
+          setPhase("typing");
+        }
+  
+        return () => clearTimeout(deletingTimeout);
+      }
+    }, [charIndex, phase, placeholderIndex, placeholders, isComplete]);
+
+  useEffect(() => {
+    const fetchCategory = async () => {
+      try {
+        const response = await fetch(`${ApiBaseurl}/category`);
+        const data = await response.json();
+        setCategories(data);
+      } catch (err) {
+        console.log('Error fetching data:', err)
+      }
+    }
+    fetchCategory();
+  }, [ApiBaseurl])
+
+
+
 
   const festivalSections = [
     {
@@ -204,7 +225,7 @@ const Navbar = () => {
       ],
     },
   ];
-  
+
 
   const anniversarySections = [
     {
@@ -356,7 +377,7 @@ const Navbar = () => {
     {
       heading: "IN FOCUS",
       links: [
-       
+
         { href: "/flowers/all-flowers", text: "All Flowers" },
         { href: "/flowers/bestsellers", text: "Best Sellers" },
         { href: "/flowers/same-day-delivery", text: "Same Day Delivery" },
@@ -520,7 +541,7 @@ const Navbar = () => {
       ],
     },
   ];
-  
+
   const plantSections = [
     {
       heading: "ELITE GREENS",
@@ -1053,7 +1074,7 @@ const Navbar = () => {
       ],
     },
   ];
-  
+
   // Calculate width of menu items container
   useEffect(() => {
     if (menuRef.current) {
@@ -1080,20 +1101,23 @@ const Navbar = () => {
           ref={menuRef}
           className="hidden md:flex space-x-5 font-medium relative "
         >
-          {items.map((item, index) => (
-            <li
-              key={index}
-              onMouseEnter={() => handleMouseEnter(item.name.toLowerCase())}
-              className="relative flex items-end"
-            >
-              <Link href={item.link}>{item.name}</Link>
-              <MdKeyboardArrowDown
-                className={`transition-transform text-lg duration-700 ${
-                  dropdown === item.name.toLowerCase() ? "rotate-180" : ""
-                }`}
-              />
-            </li>
-          ))}
+          {categories.length === 0 ? (
+            <div>No Categories available.</div>
+          ) : (
+            categories.slice(0, 12).map((item, index) => (
+              <li
+                key={index}
+                onMouseEnter={() => handleMouseEnter(item.name.toLowerCase())}
+                className="relative flex items-end"
+              >
+                <Link href={item.link}>{item.name}</Link>
+                <MdKeyboardArrowDown
+                  className={`transition-transform text-lg duration-700 ${dropdown === item.name.toLowerCase() ? "rotate-180" : ""
+                    }`}
+                />
+              </li>
+            ))
+          )}
 
           {dropdown && (
             <div
@@ -1101,16 +1125,15 @@ const Navbar = () => {
               className="absolute top-full mt-2 bg-white shadow-lg rounded-md px-6 grid grid-cols-7 gap-5 "
               style={{ width: menuWidth, left: 0 }}
             >
-             
-             
+
+
               {dropdown === "birthday" && (
                 <>
                   {birthdaySections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-4 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-4 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1142,9 +1165,8 @@ const Navbar = () => {
                   {anniversarySections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-4 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-4 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1171,14 +1193,13 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-               {dropdown === "cakes" && (
+              {dropdown === "cakes" && (
                 <>
                   {cakeSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1205,14 +1226,13 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-               {dropdown === "flowers" && (
+              {dropdown === "flowers" && (
                 <>
                   {flowerSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1239,14 +1259,13 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-               {dropdown === "personalised" && (
+              {dropdown === "personalised" && (
                 <>
                   {personalizedSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1278,9 +1297,8 @@ const Navbar = () => {
                   {plantSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1307,14 +1325,13 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-               {dropdown === "chocolates" && (
+              {dropdown === "chocolates" && (
                 <>
                   {chocolateSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1341,14 +1358,13 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-               {dropdown === "combos" && (
+              {dropdown === "combos" && (
                 <>
                   {comboSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1382,14 +1398,13 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-               {dropdown === "lifestyle" && (
+              {dropdown === "lifestyle" && (
                 <>
                   {lifestyleSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1416,14 +1431,13 @@ const Navbar = () => {
                   </div>
                 </>
               )}
-               {dropdown === "occasions" && (
+              {dropdown === "occasions" && (
                 <>
                   {festivalSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-4 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-4 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1471,9 +1485,8 @@ const Navbar = () => {
                   {globalSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2 text-[#2278b8] ">
                         {section.country.toUpperCase()}
@@ -1489,7 +1502,7 @@ const Navbar = () => {
                       ))}
                     </div>
                   ))}
-                  
+
                 </>
               )}
               {dropdown === "on trend" && (
@@ -1497,9 +1510,8 @@ const Navbar = () => {
                   {lifestyleSections.map((section, index) => (
                     <div
                       key={index}
-                      className={`pt-6 pb-20 ps-5 ${
-                        index % 2 === 1 ? "bg-slate-50" : ""
-                      }`}
+                      className={`pt-6 pb-20 ps-5 ${index % 2 === 1 ? "bg-slate-50" : ""
+                        }`}
                     >
                       <p className="font-semibold text-sm mb-2">
                         {section.heading.toUpperCase()}
@@ -1530,37 +1542,43 @@ const Navbar = () => {
           )}
         </ul>
       </div>
+      <div className="lg:hidden px-5 md:px-10 py-5 bg-[#7d8035] sticky top-0 z-50">
+        <div className=" mb-2">
+          <Image
+            width={150}
+            height={150}
+            src="/Images/logo.webp"
+            alt="logo"
+            className=""
+          />
+         
+        </div>
+        <div className='relative w-full lg:max-w-[600px] flex items-center'>
+        <button onClick={() => setIsOpen(!isOpen)} className="text-xl absolute inset-y-0  left-3">
+            ☰
+          </button>
+          <input
+            type="text"
+            placeholder={placeholder}
+            className="w-full px-4 py-[8px] pl-[40px] rounded-md focus:outline-none placeholder-sm focus:ring-0 border-none"
 
-      <div className="lg:hidden flex items-center justify-between px-5 md:px-10 py-3 bg-[#7d8035] sticky top-0 z-50">
-        <Image
-          width={100}
-          height={100}
-          src="/Images/logo.webp"
-          alt="logo"
-          className=""
-        />
-        <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
-          ☰
-        </button>
+          />
+          <IoIosSearch className="absolute right-3 text-2xl inset-y-0 mt-2" />
+        </div>
       </div>
 
       {isOpen && (
         <ul className="lg:hidden bg-white shadow-md space-y-4 p-4 font-medium">
-          <li className=" flex items-end">
-            <Link href="/diwali">DIWALI</Link>
-          </li>
-          <li className=" flex items-end">
-            <Link href="/women">Women</Link>
-          </li>
-          <li className=" flex items-end">
-            <Link href="/kids">Kids</Link>
-          </li>
-          <li className=" flex items-end">
-            <Link href="/lifestyle">Home & Living</Link>
-          </li>
-          <li className=" flex items-end">
-            <Link href="/beauty">Beauty</Link>
-          </li>
+          {categories.length === 0 ? (
+            <div>No Categories available.</div>
+          ) : (
+            categories.slice(0, 12).map((item, index) => (
+              <li key={index} className=" flex items-end border-b border-b-slate-300 pb-2">
+                <Link href={item.link}>{item.name}</Link>
+              </li>
+
+            ))
+          )}
         </ul>
       )}
     </nav>

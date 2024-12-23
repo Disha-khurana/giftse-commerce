@@ -15,7 +15,7 @@ const slideSchema = new mongoose.Schema({
         type: String,
         required:true
       }, 
-})
+},{timestamps:true})
 
 const Slide = mongoose.model('Slide',slideSchema)
 module.exports = Slide;

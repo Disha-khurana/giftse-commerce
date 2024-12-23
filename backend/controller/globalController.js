@@ -7,7 +7,7 @@ const globalData = async(req,res)=>{
             return res.status(400).send('The input must be a string');
         }
 
-        const existingData = await Global.find({ title: { $in: data.map(item => item.title) }});
+        const existingData = await Global.find({ slug: { $in: data.map(item => item.slug) }});
         if (existingData.length > 0) {
             const duplicates = existingData.map(item => item.slug);
             console.log('duplicates found')
@@ -37,29 +37,37 @@ const getGlobalData = async(req,res)=>{
     }
 }
 
-const updateGlobalData = async(req,res) =>{
-    try{
-        const updatedData = await Global.findOneAndUpdate(
-            {title:req.params.title},
-            {$set : req.body},
-            {new:true,runValidators: true}
+const updateGlobalData = async (req, res) => {
+    try {
+        let updatedData = await Global.findOneAndUpdate(
+            { slug: req.params.slug },
+            { $set: req.body },
+            { new: true, runValidators: true }
         );
-        if(!updatedData){
-            return res.status(404).json({message:"Category not found"});
-        }
 
+        if (!updatedData) {
+            updatedData = new Global({ slug: req.params.slug, ...req.body });
+            await updatedData.save();
+
+            return res.status(201).json({
+                message: "Country not found, so a new Country was created.",
+                updatedData
+            });
+        }
+        
         res.status(200).json({
-            message:"Data updated successfully"
-        })
-    }catch(err){
+            message: "Data updated successfully",
+            updatedData
+        });
+    } catch (err) {
         console.log(err);
-        res.status(500).json({message:"Internal server error"})
+        res.status(500).json({ message: "Internal server error" });
     }
-}
+};
 
 const deleteData = async(req,res) =>{
     try{
-        const deletedData = await Global.findOneAndDelete({title:req.params.title})
+        const deletedData = await Global.findOneAndDelete({slug:req.params.slug})
 
         if(!deletedData){
             return res.status(404).json({message:"Data not found"})

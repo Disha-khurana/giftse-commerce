@@ -52,25 +52,32 @@ const getCategory = async (req, res) => {
 
 const updateCategory = async (req, res) => {
   try {
-    const updatedCategory = await Category.findOneAndUpdate(
+    let updatedCategory = await Category.findOneAndUpdate(
       { slug: req.params.slug },
-      { $set: req.body }, 
+      { $set: req.body },
       { new: true, runValidators: true }
     );
 
     if (!updatedCategory) {
-      return res.status(404).json({ message: "Category not found" });
+      updatedCategory = new Category({ slug: req.params.slug, ...req.body });
+      await updatedCategory.save();
+
+      return res.status(201).json({
+        message: "Category not found, so a new category was created.",
+        category: updatedCategory
+      });
     }
 
     res.status(200).json({
-      message: "Category updated successfully",
-      category: updatedCategory,
+      message: "Category updated successfully.",
+      category: updatedCategory
     });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Internal server error" });
   }
 };
+
 
 const deleteCategory = async (req, res) => {
   try {

@@ -15,7 +15,7 @@ const offerslideSchema = new mongoose.Schema({
         type: String,
         required:true
       }, 
-})
+},{timestamps:true})
 
 const OfferSlide = mongoose.model('OfferSlide',offerslideSchema)
 module.exports = OfferSlide;

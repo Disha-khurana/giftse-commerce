@@ -15,7 +15,7 @@ const imageSchema = new mongoose.Schema({
         type: String,
         required:true
       }, 
-})
+},{timestamps:true})
 
 const Images = mongoose.model('Images',imageSchema)
 module.exports = Images;

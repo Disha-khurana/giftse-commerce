@@ -42,4 +42,50 @@ const getOfferImage = async (req, res) => {
     }
 }
 
-module.exports = { addOfferImage,getOfferImage }
+const updateOfferImages = async(req,res)=>{
+    try{
+        let offerImage = await offerSlide.findOneAndUpdate(
+            {slug:req.params.slug},
+            {$set:req.body},
+            {new:true, runValidators:true}
+        );
+
+        if(!offerImage){
+            offerImage = new offerSlide({slug:req.params.slug, ...req.body})
+            await offerImage.save();
+
+            return res.status(201).json({
+                message:"New image added.",
+                offerImage
+            });
+        }
+
+        res.status(200).json({
+            message:"Image updated successfully",
+            offerImage
+        })
+
+    }catch(err){
+        console.log(err)
+        res.status(500).json({message:'Internal server error'})
+    }
+}
+
+const deleteOfferImage = async(req,res)=>{
+    try{
+        const deleteOfferImage = await offerSlide.findOneAndDelete({slug:req.params.slug})
+
+        if(!deleteOfferImage){
+            return res.status(404).json({message:'Offer image not found.'})
+        }
+
+        res.status(200).json({
+            message:"Offer image deleted successfully."
+        })
+    }catch(err){
+        console.log(err)
+        res.status(500).json({message:"Internal server error."})
+    }
+}
+
+module.exports = { addOfferImage,getOfferImage, updateOfferImages, deleteOfferImage }

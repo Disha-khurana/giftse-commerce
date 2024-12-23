@@ -42,5 +42,11 @@ const getProduct = async(req,res)=>{
   }
 }
 
+const getUser = (req,res)=>{
 
-module.exports = { addProduct ,getProducts ,getProduct};
+  return res.json({message:'Hello'})
+
+}
+
+
+module.exports = { addProduct ,getProducts ,getProduct,getUser};

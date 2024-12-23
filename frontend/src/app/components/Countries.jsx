@@ -49,7 +49,7 @@ function Countries() {
           ):(
         country.map((item, index) => (
           <div key={index} onMouseEnter={()=>setHover(index)} className={` ${hover == index ?'w-96' :'w-44'} group h-96 relative duration-300`}>
-            <Image src={item.src} alt={item.title} height={500} width={500} className="w-full h-full "/>
+            <Image src={item.src} alt={item.alt} height={500} width={500} className="w-full h-full "/>
             <Link href={item.link}>
                <div className={`absolute scale-0 ${hover== index && "group-hover:scale-100"} ${hover== index && "scale-100"} duration-300 inset-0 bg-[rgba(0,0,0,0.30)] tracking-normal text-white  flex flex-col justify-center items-center`}>
                <span className="text-lg font-semibold">{item.title}</span>

@@ -37,4 +37,49 @@ const getImages =async (req,res)=>{
     }
 }
 
-module.exports = {setImages,getImages}
+const updateImages = async(req,res)=>{
+    try{
+        let updatedImage = await Images.findOneAndUpdate(
+            {slug:req.params.slug},
+            {$set:req.body},
+            {new:true, runValidators:true}
+        );
+
+        if(!updatedImage){
+            updatedImage = new Images({slug:req.params.slug, ...req.body})
+            await updatedImage.save();
+
+            return res.status(201).json({
+                message:"New image added.",
+                updatedImage
+            });
+        }
+
+        res.status(200).json({
+            message:"Image updated successfully",
+            updatedImage
+        })
+
+    }catch(err){
+        console.log(err)
+        res.status(500).json({message:'Internal server error'})
+    }
+}
+
+const deleteImages = async(req,res)=>{
+    try{
+        const deleteImage = await Images.findOneAndDelete({slug:req.params.slug})
+
+        if(!deleteImage){
+            return res.status(404).json({message:'Image not found.'})
+        }
+        res.status(200).json({
+            message:"Image deleted successfully"
+        })
+    }catch(err){
+        console.error(err)
+        res.status(500).json({message:"Internal server error"})
+    }
+}
+
+module.exports = {setImages,getImages,updateImages, deleteImages}
