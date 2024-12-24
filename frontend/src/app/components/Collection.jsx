@@ -11,7 +11,7 @@ import { ApiBaseurl } from "./common/Apiurl";
 function Collection() {
   const items = [
     { 
-      image: "/Images/collection/Ckaes.webp", 
+      image: "/Images/collection/Cakes.webp", 
       title: "Cakes", 
       link: "/cakes" 
     },

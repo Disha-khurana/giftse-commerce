@@ -1,6 +1,9 @@
 'use client';
 import Image from 'next/image';
+import { FaApple } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import Link from 'next/link';
+import { FcGoogle } from "react-icons/fc";
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { ApiBaseurl } from '../components/common/Apiurl';
@@ -11,26 +14,6 @@ function Page() {
   const [error, setError] = useState('');
   const router = useRouter();
 
-  const socialLinks = [
-    {
-      link: 'https://www.facebook.com/',
-      imgSrc: '/Images/icon/fb.webp',
-      alt: 'facebook',
-      text: 'Sign in with Facebook',
-    },
-    {
-      link: 'https://x.com/',
-      imgSrc: '/Images/icon/twitter.webp',
-      alt: 'twitter',
-      text: 'Sign in with Twitter',
-    },
-    {
-      link: 'https://www.google.com/',
-      imgSrc: '/Images/icon/google.webp',
-      alt: 'google',
-      text: 'Sign in with Google',
-    },
-  ];
 
   const validateForm = (formData, isSignup = false) => {
     if (isSignup && !formData.name) return 'Name is required.';
@@ -85,40 +68,64 @@ function Page() {
     e.preventDefault();
     setError('');
     setIsLoading(true);
-
+  
     const formData = new FormData(e.target);
     const payload = {
       email: formData.get('email'),
       password: formData.get('password'),
     };
-
+  
+    console.log('Payload:', payload);
+  
+    // Client-side validation
     const validationError = validateForm(payload, false);
     if (validationError) {
       setError(validationError);
       setIsLoading(false);
       return;
     }
-
+  
+    // Further client-side validation for email and password
+    if (!payload.email || !payload.password) {
+      setError('Email and password are required.');
+      setIsLoading(false);
+      return;
+    }
+  
+    // Optional: Validate email format (you can improve this regex or use a library like validator.js)
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(payload.email)) {
+      setError('Please enter a valid email address.');
+      setIsLoading(false);
+      return;
+    }
+  
     try {
       const response = await fetch(`${ApiBaseurl}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      const data = await response.json();
+
+  
       if (response.ok) {
+        const data = await response.json();
         alert('Logged in successfully!');
         e.target.reset();
       } else {
-        setError(data.message);
+        alert('User doesnot exist.')
+        const errorData = await response.text();
+        setError(errorData || 'Login failed.');
       }
     } catch (err) {
-      console.error(err);
+      console.error('Error:', err);
       setError('An unexpected error occurred.');
     } finally {
       setIsLoading(false);
     }
   };
+  
+  
 
   const toggleForm = (formType) => {
     setIsLogin(formType === 'login');
@@ -132,25 +139,10 @@ function Page() {
   return (
     <div className='flex bg-slate-100 justify-center py-20'>
     
-    <div className='bg-[#b1b268] py-32 px-7 w-80'>
-      <div className='flex flex-col justify-center space-y-3'>
-        <p className='text-white pb-5'>Login using social media to get quick access</p>
-
-        {socialLinks.map((item,index)=>(
-        <Link key={index} href={item.link} target='blank'>
-        <div className='flex items-center justify-center px-3 gap-2 bg-blue-600 py-1'>
-          <Image src={item.imgSrc} height={500} width={500} alt={item.alt} className='w-6 h-6' />
-          <span className='text-white text-sm'>{item.text}</span>
-        </div>
-        </Link>
-        ))}
-
-        
-      </div>
-    </div>
+    
 
 
-    <div className='flex flex-col items-center justify-center py-10 h-[480px] bg-white shadow-lg px-5 w-[500px]'>
+    <div className='flex flex-col items-center justify-center py-8 h-[450px] rounded-[20px] bg-white shadow-lg px-5 w-[500px]'>
       <h2 className='text-2xl font-bold'>{isLogin ? 'Log into your account' : 'Create an account'}</h2>
       <div className='flex gap-2'>
         <p>{isLogin ? "Don’t have an account?" : "Already have an account?"}</p>
@@ -166,24 +158,30 @@ function Page() {
 
       <div className='space-y-6 flex flex-col items-center justify-center'>
         {isLogin ? (
-          <form className='text-center'>
+          <form onSubmit={handleLogin} className='text-center'>
             <input type='text' placeholder='*Email Address' name='email' className='p-1 border-b focus:outline-none border-slate-500 focus:border-blue-700 w-80 mt-7' />
             <input type='password' placeholder='*Password' name='password' className='p-1 border-b focus:outline-none border-slate-500 focus:border-blue-700 w-80 mt-7' />
-            <div className='flex justify-center mt-4 gap-16 '>
-              <label className="flex space-x-2 ">
-                <input type="checkbox" className="form-checkbox text-blue-500 focus:ring-blue-500" />
-                <span>Remember me</span>
-              </label>
-              <span className='text-blue-500'>Forgot Password?</span>
+            <div className='flex justify-end me-16 items-center mt-4 gap-16 '>
+              
+              <span className='text-blue-500 text-sm'>Forgot Password?</span>
             </div>
-            <button className='bg-blue-600 text-white py-2 w-[70%] mt-12'>Login </button>
+            <div className='space-y-3 mt-5'>
+            <button type='submit' className='bg-blue-600 rounded-md text-white py-2 w-[70%]'>Login </button>
+            <p className='text-gray-500 text-[13px]'>Or sign in with</p>
+            <div className='flex items-center gap-5 justify-center'>
+              <Link href='https://www.google.com/' className='bg-slate-100 py-2 px-8 shadow-md rounded-md'><FcGoogle className='text-xl'/></Link>
+              <Link href='https://www.facebook.com/' className='bg-slate-100 py-2 px-8 shadow-md rounded-md'><FaFacebook className='text-xl text-blue-600'/></Link>
+              <Link href='https://www.apple.com/' className='bg-slate-100 py-2 px-8 shadow-md rounded-md'><FaApple className='text-xl'/></Link>
+            
+            </div>
+            </div>
           </form>
         ) : (
           <form onSubmit={handleSignup} className='text-center'>
             <input type='text' placeholder='*Full Name' name='name' className='p-1 border-b focus:outline-none border-slate-500 focus:border-blue-700 w-80 mt-7' />
             <input type='email' placeholder='*Email Address' name='email' className='p-1 border-b focus:outline-none border-slate-500 focus:border-blue-700 w-80 mt-7' />
             <input type='password' placeholder='*Password' name='password' className='p-1 border-b focus:outline-none border-slate-500 focus:border-blue-700 w-80 mt-7' />
-            <button type='submit' className='bg-blue-600 text-white py-2 w-[70%] mt-12'>Sign Up</button>
+            <button type='submit' className='bg-blue-600 rounded-md text-white py-2 w-[70%] mt-12'>Sign Up</button>
           </form>
         )}
       </div>

@@ -10,6 +10,7 @@ const Navbar = () => {
   const [categories, setCategories] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [dropdown, setDropdown] = useState(null);
+  const [itemWidth, setItemWidth] = useState(0);
   const menuRef = useRef(null);
   const [menuWidth, setMenuWidth] = useState(0);
     const [placeholder, setPlaceholder] = useState(""); // Current placeholder text to display
@@ -1078,9 +1079,13 @@ const Navbar = () => {
   // Calculate width of menu items container
   useEffect(() => {
     if (menuRef.current) {
-      setMenuWidth(menuRef.current.offsetWidth);
+      const width = menuRef.current.offsetWidth;
+      setMenuWidth(width);
+      if (categories.length > 0) {
+        setItemWidth(width / categories.length); // Calculate width for each item
+      }
     }
-  }, []);
+  }, [categories]);
 
   // Toggle dropdown visibility
   const handleMouseEnter = (menu) => {
