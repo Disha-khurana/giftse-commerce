@@ -36,6 +36,8 @@ function Page() {
       password: formData.get('password'),
     };
 
+    console.log('Payload:', payload); // Debugging: log payload
+
     const validationError = validateForm(payload, true);
     if (validationError) {
       setError(validationError);
@@ -49,20 +51,25 @@ function Page() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
+
       const data = await response.json();
+
+      console.log('Response:', data); // Debugging: log server response
+
       if (response.ok) {
         alert('User created successfully!');
         e.target.reset();
       } else {
-        setError(data.message);
+        setError(data.message || 'Signup failed.');
       }
     } catch (err) {
-      console.error(err);
+      console.error('Error:', err);
       setError('An unexpected error occurred.');
     } finally {
       setIsLoading(false);
     }
-  };
+};
+
 
   const handleLogin = async (e) => {
     e.preventDefault();
